@@ -32,7 +32,7 @@ TBA
         steps = Integer // Number of vertices that the ring mesh has
         tiles = Integer // Nummber of times the texture should be wrapped around the ring
         innerShadeTexture = Texture2D // This texture's opaque pixels cast shadows on our inner surface.
-        innerShadeTiles - Integer // How much is the innerShadeTexture tiled?
+        innerShadeTiles - Integer // How much is the innerShadeTexture tiled? optional.
         innerShadeRotationPeriod = Single // How many seconds does it take for the inner shade texture to rotate once
       }
     }
