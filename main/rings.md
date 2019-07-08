@@ -22,7 +22,10 @@ TBA
         thickness = Single // Thickness of the ring in milliradii.[2]
         angle = Single // Angle of the ring plane to the planet's equator. (inclination)
         longitudeOfAscendingNode = Single // Angle between the absolute reference direction and the ascending node. It works just like the corresponding property on celestial bodies. 
-        
+        texture = Texture2D // The texture applied to the ring.
+        color = Color // Unknown, experiments are welcome!
+        lockRotation = Boolean // SHould be lock the rotatin of our ring?
+        rotationPeriod = Single // Rotation period of the ring in seconds. Defaults to that of the parent body if lockRotation is false. If true, the ring will stand perfectly still
       }
     }
   }
