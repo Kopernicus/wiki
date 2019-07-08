@@ -26,6 +26,14 @@ TBA
         color = Color // Unknown, experiments are welcome!
         lockRotation = Boolean // SHould be lock the rotatin of our ring?
         rotationPeriod = Single // Rotation period of the ring in seconds. Defaults to that of the parent body if lockRotation is false. If true, the ring will stand perfectly still
+        unlit = Boolean // Whether an "Unlit" shader should be applied to the ring
+        useNewShader = Boolean // Use the custom ring shader instead of the built-in Unity shaders
+        penumbraMultiplier = Single // Parameter of custom ring shader
+        steps = Integer // Number of vertices that the ring mesh has
+        tiles = Integer // Nummber of times the texture should be wrapped around the ring
+        innerShadeTexture = Texture2D // This texture's opaque pixels cast shadows on our inner surface.
+        innerShadeTiles - Integer // How much is the innerShadeTexture tiled?
+        innerShadeRotationPeriod = Single // How many seconds does it take for the inner shade texture to rotate once
       }
     }
   }
