@@ -1,7 +1,7 @@
 LandControl
-				{
-					altitudeBlend = 0.1
-					altitudeFrequency = 12
+{
+			altitudeBlend = 0.1
+			altitudeFrequency = 12
 					altitudeOctaves = 2
 					altitudePersistance = 0.6
 					altitudeSeed = 12249
