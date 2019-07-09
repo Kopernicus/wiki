@@ -2,7 +2,7 @@
 <!-- SUBTITLE: A Heightmap PQSMod that lets you use 16-bpp encoded textures. -->
 
 # Explanation
-What is "bpp"? [This aticle should make it clearer.](https://en.wikipedia.org/wiki/Color_depth)
+What is "bpp"? [This article should make it clearer.](https://en.wikipedia.org/wiki/Color_depth)
 
 # Example
 
