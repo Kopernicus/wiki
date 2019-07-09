@@ -2,16 +2,16 @@
 <!-- SUBTITLE: A mod to modify the planetary system used by KSP -->
 
 # Prerequisites
-* [What are ConfigNodes?](/config-nodes)
+* [What are ConfigNodes?](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/ConfigNodes.md)
 
-# [Syntax for planets](/syntax-for-planets)
+# Syntax for planets
 * [@Kopernicus node](/kop)
-* [Body node](/body)
-	+ [Template subnode](/template)
-	+ [Properties subnode](/properties)
-	+ [Orbit subnode](/orbit)
-	+ [ScaledVersion subnode](scaledversion)
-	+ [Rings subnode](/rings)
+* [Body node](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Body.md)
+	+ [Template subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Template.md)
+	+ [Properties subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Properties.md)
+	+ [Orbit subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Orbit.md)
+	+ [ScaledVersion subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/ScaledVersion.md)
+	+ [Rings subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Rings.md)
 	+ [Atmosphere subnode](/atmosphere)
 	+ [PQS subnode](/pqs)
 	+ [Ocean subnode](/ocean)
