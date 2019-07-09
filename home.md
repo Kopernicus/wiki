@@ -5,6 +5,7 @@
 * [What are ConfigNodes?](/config-nodes)
 
 # [Syntax for planets](/syntax-for-planets)
+* [@Kopernicus node](/kop)
 * [Body node](/body)
 	+ [Template subnode](/template)
 	+ [Properties subnode](/properties)
