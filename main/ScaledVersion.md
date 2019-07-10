@@ -1,6 +1,6 @@
 <!--Subtitle: On Tycho and Prague-->
-##Example:
-
+**Example:**
+```
         Orbit
         {
             referenceBody = Sun
@@ -14,7 +14,7 @@
             meanAnomalyAtEpoch = 0
             epoch = 30000000000000
         }
-  
+```
 
 The Orbit node goes in the Body node.   
 * referenceBody is what the object orbits. put in its name exactly as it is spelled.   
