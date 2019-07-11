@@ -11,3 +11,6 @@ Click the link that corresponds to your operating system and folow the direction
 
 ## Installing Git
 You may use whatever Git GUI/client you wish, however they all (to my knowledge) require Git. Git 2.22.0 can be downloaded from https://git-scm.com/downloads.
+
+Clone the wiki's repository to your machine. The URL is https://github.com/DeltaDizzy/Unofficial-Kop-Wiki.git
+Until further notice all Jekyll work will go in the jekyll branch
