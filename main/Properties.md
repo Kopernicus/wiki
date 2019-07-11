@@ -5,7 +5,7 @@ The `Properties { }` node in a configuration file for Kopernicus describes the p
 
 |Property|Format|Description|
 |--------|------|-----------|
-|description|String|Here goes the description for the info box of the body that you can access in map view.<sup>*</sup>|
+|description|String|Here goes the description for the info box of the body that you can access in map view. *You can insert line breaks using the syntax `\\nn`*|
 |useTheInName|Boolean|If the body name should be prefixed with "the" in some situations, such as "the sun."|
 |radius|Double|The radius (half of the body's diameter) of the body in meters.|
 |mass|Double|The mass of the body in kilograms. You can use scientific notation here, like `1.234567+e20`|
@@ -29,16 +29,12 @@ The `Properties { }` node in a configuration file for Kopernicus describes the p
 |selectable|?TRUE/FALSE?|?If the body should be unselectable?|
 |RDVisibility|?|?|
 |maxZoom|?integer?|?Max Zoom limit for TrackingStation and MapView. Set the number of meters that can fit in the full height of the screen?|
-|biomeMap|file path|The path to the biome map texture, without the GameData in front of it and with an extension. See the Biome subnode for more information|
-
-
-<sup>*</sup>As of 2018-0531 you can insert line breaks in descriptions using the syntax '\\\nn'
-
+|biomeMap|file path|The path to the biome map texture, without the GameData in front of it and with an extension. See the [Biome subnode](/properties/biome) for more information|
 
 ### Subnodes
 ***
-* Biomes { }
-* ScienceValues {}
+* [Biomes/Biome { }](/properties/biome)
+* [ScienceValues { }](/properties/sciencevalues)
 
 ## Example:
 
