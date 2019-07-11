@@ -6,8 +6,8 @@
 
 # Syntax for planets
 * [@Kopernicus node](/kop)
-* [Body node](main/Body.md)
-	+ [Template subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Template.md)
+* [Body node](/main/Body)
+	+ [Template subnode](/main/Template.md)
 	+ [Properties subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Properties.md)
 	+ [Orbit subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Orbit.md)
 	+ [ScaledVersion subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/ScaledVersion.md)
