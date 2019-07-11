@@ -15,19 +15,18 @@ title: Kopernicus Wiki
 ---
 
 # Prerequisites
-* [What are ConfigNodes?](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/ConfigNodes.md)
+* [What are ConfigNodes?]({% link main/ConfigNodes.md %})
 
 # Syntax for planets
-* [@Kopernicus node](/kop)
-* [Body node](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Body.md)
-	+ [Template subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Template.md)
-	+ [Properties subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Properties.md)
-	+ [Orbit subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Orbit.md)
-	+ [ScaledVersion subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/ScaledVersion.md)
-	+ [Rings subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Rings.md)
-	+ [Atmosphere subnode](/atmosphere)
-	+ [PQS subnode](/pqs)
-	+ [Ocean subnode](/ocean)
+* [Body node]({% link main/Body.md %})
+	+ [Template subnode]({% link main/Template.md %})
+	+ [Properties subnode]({% link main/Properties.md %})
+	+ [Orbit subnode]({% link main/Orbit.md %})
+	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
+	+ [Rings subnode]({% link main/rings2.md %})
+	+ Atmosphere subnode
+	+ PQS subnode
+	+ Ocean subnode
 
 # KopernicusExpansion
 ### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.
