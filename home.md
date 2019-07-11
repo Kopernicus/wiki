@@ -2,11 +2,11 @@
 <!-- SUBTITLE: A mod to modify the planetary system used by KSP -->
 
 # Prerequisites
-* [What are ConfigNodes?](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/ConfigNodes.md)
+* [What are ConfigNodes?](/main/ConfigNodes.md)
 
 # Syntax for planets
 * [@Kopernicus node](/kop)
-* [Body node](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Body.md)
+* [Body node](main/Body.md)
 	+ [Template subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Template.md)
 	+ [Properties subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Properties.md)
 	+ [Orbit subnode](https://github.com/DeltaDizzy/Kop-Wiki-Backup/blob/master/main/Orbit.md)
