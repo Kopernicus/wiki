@@ -10,8 +10,7 @@
 
 layout: default
 title: Kopernicus Wiki
-
-# SUBTITLE: A mod to modify the planetary system used by KSP
+subtitle: A mod to modify the planetary system used by KSP
 ---
 
 # Prerequisites
@@ -24,19 +23,20 @@ title: Kopernicus Wiki
 	+ [Orbit subnode]({% link main/Orbit.md %})
 	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
 	+ [Rings subnode]({% link main/rings2.md %})
-	+ Atmosphere subnode
-	+ PQS subnode
-	+ Ocean subnode
+	+ [Atmosphere subnode]({% link main/Atmosphere.md %})
+	+ [PQS subnode]({% link main/PQS.md %})
+		- [PQSMods]({% link pqsmods/PQSMods.md %})
+	+ [Ocean subnode]({% link main/Ocean.md %})
 
 # KopernicusExpansion
 ### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.
-* 	[Comet Tails](/kex/comettails)
-* 	[Emissive FX](/kex/emissivefx)
-* 	[EVA Footprints](/kex/evafootprints)
+* 	[Comet Tails]({% link kex/CometTails.md %})
+* 	[Emissive FX]({% link kex/EmissiveFX.md %})
+* 	[EVA Footprints]({% link kex/EVAFootprints.md %})
 * 	Modular Noise
-* 	[Procedural Gas Giants](/kex/procgiants)
-* 	[Reentry Effects](/kex/reentryeffects)
+* 	[Procedural Gas Giants]({% link kex/ProceduralGasGiants.md %})
+* 	[Reentry Effects]({% link kex/ReentryEffects.md %})
 * 	Regional PQS Mods
-* 	[VertexHeightDeformity](/kex/vhmdeformity)
-* 	[VertexHeightMap16](/kex/vhm16)
-* 	[Wormholes](/kex/wormholes)
+* 	[VertexHeightDeformity]({% link kex/VertexHeightDeformity.md %})
+* 	[VertexHeightMap16]({% link kex/VertexHeightMap16.md %})
+* 	[Wormholes]({% link kex/Wormholes.md %})
