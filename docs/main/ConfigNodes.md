@@ -1,9 +1,5 @@
----
-layout: default
-title: ConfigNodes
----
-
-A quick summary of ConfigNodes
+<!-- TITLE: ConfigNodes -->
+<!-- SUBTITLE: A quick summary of ConfigNodes -->
 
 # What is a ConfigNode?
 ConfigNodes are a data storage / settings format that is used by KSP. They are most commonly used in `.cfg` files, but you can find them inside of `.craft` and `.sfs` files too.
