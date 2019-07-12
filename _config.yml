@@ -24,7 +24,7 @@ github_username:  DeltaDizzy
 # Build settings
 markdown: kramdown
 # theme: minima
-theme: cayman
+theme: jekyll-theme-cayman
 # remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
