@@ -19,16 +19,16 @@ The `Properties { }` node in a configuration file for Kopernicus describes the p
 |[emissivity](https://en.wikipedia.org/wiki/Emissivity)|Double|?scale from 0 to 1?|
 |coreTemperatureOffset|?|?|
 |[tidallyLocked](https://en.wikipedia.org/wiki/Tidal_locking)|Boolean|Statement that determines if the body is tidally locked to its parent. This means that it takes as long to rotate arounds its own axis as it does to make a full orbit around its parent. In real-life and KSP most (large) moons are tidally locked.|
-|isHomeWorld|TRUE/FALSE|Statement that determines if this is the body that houses KSC. For stability's sake It's recommended to keep this at false for any bodies you add.|
-|timewarpAltitudeLimits|array of integers|Determines at which altitude above sealevel certain timewarp altitudes become available. 0 30000 30000 60000 100000 300000 600000 800000 means that 1x timewarp is available at 0 meters, 5x timewarp at 30000 meters all the way up to the max timewarp starting at 800000 meters.|
-|sphereOfInfluence|float|In meters. The sphere of influence of the body. This is generally calculated as described [here](http://wiki.kerbalspaceprogram.com/wiki/Sphere_of_influence). In case you need it to be unrealistically big or small you can change it here.|
-|[hillSphere](https://en.wikipedia.org/wiki/Hill_sphere)|integer|In meters. Similar to Sphere of Influence. ?How does Kopernicus/KSP use it?|
-|solarRotationPeriod|?|?|
-|navballSwitchRadiusMult|integer|?In meters?|
-|navballSwitchRadiusMultLow|integer|?In meters?|
-|selectable|?TRUE/FALSE?|?If the body should be unselectable?|
-|RDVisibility|?|?|
-|maxZoom|?integer?|?Max Zoom limit for TrackingStation and MapView. Set the number of meters that can fit in the full height of the screen?|
+|isHomeWorld|Boolean|Statement that determines if this is the body that houses KSC. For stability's sake It's recommended to keep this at false for any bodies you add.|
+|timewarpAltitudeLimits|Integer[]|Determines at which altitude above sealevel certain timewarp altitudes become available. 0 30000 30000 60000 100000 300000 600000 800000 means that 1x timewarp is available at 0 meters, 5x timewarp at 30000 meters all the way up to the max timewarp starting at 800000 meters.|
+|sphereOfInfluence|Double|In meters. The sphere of influence of the body. This is generally calculated as described [here](http://wiki.kerbalspaceprogram.com/wiki/Sphere_of_influence). In case you need it to be unrealistically big or small you can change it here.|
+|solarRotationPeriod|Boolean|Whether the body should use the solar day instead of the sidereal day.|
+|navballSwitchRadiusMult|Double|?In meters?|
+|navballSwitchRadiusMultLow|Double|?In meters?|
+|selectable|Boolean|Whether the body should be selectable. Partially controlled by `Body/barycenter`.|
+|RnDVisibility|RnDVisibility|(Also RDVisibility) The visibility state of the body in the RnD archives. Possible values are `Visible`, `Noicon`, `Hidden`, or `Skip`.|
+|RnDRotation|Boolean|Whether the body should rotate in the RnD archives.|
+|maxZoom|Single|The max zoom limit for the tracking station and the map view. Sets the number of meters that can fit in the full height of the screen.|
 |biomeMap|file path|The path to the biome map texture, without the GameData in front of it and with an extension. See the [Biome subnode](/properties/biome) for more information|
 
 ### Subnodes
