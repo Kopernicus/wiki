@@ -1,15 +1,19 @@
 The `Body { }` node is a wrapper node for the aspects of a body and contains a lot of the essential components for making a body. `Body { }` is a subnode of the `@Kopernicus` node.
 
 **Subnodes**
-- `Debug { }`
 - `Template { }`
 - `Properties { }`
 - `Orbit { }`
 - `ScaledVersion { }`
-- `PQS { }`
 - `Atmosphere { }`
+- `PQS { }`
 - `Ocean { }`
+- `Rings { }`
 - `Particles { }`
+- `HazardousBody { }`
+- `SpaceCenter { }`
+- `Debug { }`
+- `PostSpawnOrbit { }`
 
 **Example**
 ```
@@ -17,11 +21,11 @@ Body
 {
   name = Pear
   cacheFile = Fruits/Cache/Pear.bin
+  barycenter = false
+  identifier = Grapefruit/Pear
+  randomMainMenuBody = true
+  contractWeight = 15
   
-  Debug
-  {
-  ...
-  }
   Template
   {
   ...
@@ -39,6 +43,14 @@ Body
   ...
   }
   PQS
+  {
+  ...
+  }
+  Ocean
+  {
+  ...
+  }
+  Debug
   {
   ...
   }
