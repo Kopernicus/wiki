@@ -1,3 +1,9 @@
+---
+layout: default
+title: ConfigNodes
+subtitle: What are ConfigNodes?
+---
+
 <!-- TITLE: ConfigNodes -->
 <!-- SUBTITLE: A quick summary of ConfigNodes -->
 
