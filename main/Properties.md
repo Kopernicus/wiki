@@ -1,3 +1,9 @@
+---
+layout: default
+title: Properties
+subtitle: The basic building blocks of every world
+---
+
 <!--Subtitle: The basic building blocks of every world-->
 The `Properties { }` node in a configuration file for Kopernicus describes the planet itself. Parameters like description, mass, gravity and biomes are specified here. 
 
