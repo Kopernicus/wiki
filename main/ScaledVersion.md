@@ -22,8 +22,8 @@ ScaledVersion
 
 |Property|Format|Description|
 |--------|------|-----------|
-|type|String|Either _Vacuum_ or _Atmospheric_, depending on whether the body has an atmosphere or not
-|fadeStart|Double|Altitude, in meters, at which the transition to ScaledSpace starts
-|fadeEnd|Double|Altitude, in meters, at which the transition to ScaledSpace ends
-|sphericalModel|Boolean|?Does?
-|deferMesh|Boolean|?Does?
+|type|String|Either _Vacuum_ or _Atmospheric_, depending on whether the body has an atmosphere or not|
+|fadeStart|Double|Altitude, in meters, at which the transition to ScaledSpace starts|
+|fadeEnd|Double|Altitude, in meters, at which the transition to ScaledSpace ends|
+|sphericalModel|Boolean|?Does?|
+|deferMesh|Boolean|?Does?|
