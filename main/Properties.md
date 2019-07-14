@@ -9,8 +9,8 @@ The `Properties { }` node describes the body itself, and is a subnode of `Body {
 
 ### Subnodes
 ***
-* [Biomes/Biome { }](/properties/biome)
-* [ScienceValues { }](/properties/sciencevalues)
+* [Biomes/Biome { }](/main/Properties/Biome.md)
+* [ScienceValues { }](/main/Properties/ScienceValues.md)
 
 ## Example:
 ```
@@ -65,4 +65,4 @@ Properties
 |RnDVisibility|RnDVisibility|(Also RDVisibility) The visibility state of the body in the RnD archives. Possible values are `Visible`, `Noicon`, `Hidden`, or `Skip`.|
 |RnDRotation|Boolean|Whether the body should rotate in the RnD archives.|
 |maxZoom|Single|The max zoom limit for the tracking station and the map view. Sets the number of meters that can fit in the full height of the screen.|
-|biomeMap|File Path|The path to the biome map texture. See the [Biome subnode](/properties/biome) for more information|
+|biomeMap|File Path|The path to the biome map texture. See the [Biome subnode](/main/Properties/Biome.md) for more information|
