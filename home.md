@@ -1,11 +1,13 @@
-<!-- TITLE: Kopernicus -->
-<!-- SUBTITLE: A mod to modify the planetary system used by KSP -->
+---
+layout: default
+title: Kopernicus
+subtitle: A mod to modify the planetary system used by KSP
+---
 
 # Prerequisites
 * [What are ConfigNodes?](/main/ConfigNodes.md)
 
 # Syntax for planets
-* [@Kopernicus node](/kop.md)
 * [Body node](/main/Body.md)
 	+ [Template subnode](/main/Template.md)
 	+ [Properties subnode](/main/Properties.md)
@@ -18,13 +20,13 @@
 
 # [KopernicusExpansion](/kopernicusexpansion)
 ### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.
-* 	[Comet Tails](/kex/comettails)
-* 	[Emissive FX](/kex/emissivefx)
-* 	[EVA Footprints](/kex/evafootprints)
+* 	[Comet Tails](/kex/CometTails.md)
+* 	[Emissive FX](/kex/EmissiveFX.md)
+* 	[EVA Footprints](/kex/EVAFootprints.md)
 * 	Modular Noise
-* 	[Procedural Gas Giants](/kex/procgiants)
-* 	[Reentry Effects](/kex/reentryeffects)
+* 	[Procedural Gas Giants](/kex/ProceduralGasGiants.md)
+* 	[Reentry Effects](/kex/ReentryEffects.md)
 * 	Regional PQS Mods
-* 	[VertexHeightDeformity](/kex/vhmdeformity)
-* 	[VertexHeightMap16](/kex/vhm16)
-* 	[Wormholes](/kex/wormholes)
+* 	[VertexHeightDeformity](/kex/VertexHeightDeformity.md)
+* 	[VertexHeightMap16](/kex/VertexHeightMap16.md)
+* 	[Wormholes](/kex/Wormholes.md)
