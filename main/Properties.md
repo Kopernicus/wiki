@@ -5,9 +5,39 @@ subtitle: The basic building blocks of every world
 ---
 
 <!--Subtitle: The basic building blocks of every world-->
-The `Properties { }` node in a configuration file for Kopernicus describes the planet itself. Parameters like description, mass, gravity and biomes are specified here. 
+The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here. 
 
+### Subnodes
+***
+* [Biomes/Biome { }](/properties/biome)
+* [ScienceValues { }](/properties/sciencevalues)
 
+## Example:
+```
+Properties
+{
+  description = Fancy!
+  radius = 500000
+  geeASL = 1.2
+  rotates = true
+  rotationPeriod = 18600
+  initialRotation = 12
+  tidallyLocked = false
+  isHomeWorld = false
+  timewarpAltitudeLimits = 0 10000 20000 40000 75000 150000 300000 400000
+  sphereOfInfluence = 52500000
+  maxZoom = 100000
+  ScienceValues
+  {
+  ...
+  }
+  biomeMap = Path/To/Your/Biome_map.dds
+  Biomes
+  {
+  ...
+  }
+}
+```
 
 |Property|Format|Description|
 |--------|------|-----------|
@@ -35,27 +65,4 @@ The `Properties { }` node in a configuration file for Kopernicus describes the p
 |RnDVisibility|RnDVisibility|(Also RDVisibility) The visibility state of the body in the RnD archives. Possible values are `Visible`, `Noicon`, `Hidden`, or `Skip`.|
 |RnDRotation|Boolean|Whether the body should rotate in the RnD archives.|
 |maxZoom|Single|The max zoom limit for the tracking station and the map view. Sets the number of meters that can fit in the full height of the screen.|
-|biomeMap|file path|The path to the biome map texture, without the GameData in front of it and with an extension. See the [Biome subnode](/properties/biome) for more information|
-
-### Subnodes
-***
-* [Biomes/Biome { }](/properties/biome)
-* [ScienceValues { }](/properties/sciencevalues)
-
-## Example:
-
-        Properties
-        {
-            description = Some nice description
-            radius = 600000
-            mass = 5.29E+22
-            gravParameter = 9.81
-            geeASL = 1.0
-            rotates = true
-            rotationPeriod = 21600
-            initialRotation = 0
-            tidallyLocked = false
-            isHomeWorld =   true
-            timewarpAltitudeLimits = 0 30000 30000 60000 100000 300000 600000 800000
-            sphereOfInfluence = 84159286
-        }
+|biomeMap|File Path|The path to the biome map texture. See the [Biome subnode](/properties/biome) for more information|
