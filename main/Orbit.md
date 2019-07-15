@@ -38,8 +38,8 @@ Orbit
 |epoch|Double|The epoch at which `meanAnomalyAtEpoch` is described.|
 |iconColor|[Color](/main/datatypes.md)|(Also nodeColor) The color of the orbit icon/node.|
 |iconTexture|File Path|The path to the custom icon texture.|
-|mode|OrbitDrawMode|Orbit Draw Mode. Possible values are `TODO`. Default is `REDRAW_AND_RECALCULATE`.|
-|icon|OrbitDrawIcons|Orbit Icon Mode. Possible values are `TODO`. Default is `ALL`.|
+|mode|OrbitDrawMode|Orbit Draw Mode. Possible values are `OFF`, `REDRAW_ONLY`, `REDRAW_AND_FOLLOW`, and `REDRAW_AND_RECALCULATE`. Default is `REDRAW_AND_RECALCULATE`.|
+|icon|OrbitDrawIcons|Orbit Icon Mode. Possible values are `NONE`, `OBJ`, `OBJ_PE_AP`, and `ALL`. Default is `ALL`.|
 |cameraSmaRatioBounds|Single[]|Orbit rendering bounds. Takes two values, the lower bound and the upper bound.|
 
 NOTE: Hyperedit uses these same values. Simply move your planet around with it and copy the values out of its "complex" tab into their respective feilds in the config. beware of SOI's changing size when they reload to adjust for the new position.
