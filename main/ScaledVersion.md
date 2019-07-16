@@ -3,7 +3,7 @@ The `ScaledVersion { }` node in a configuration file for Kopernicus is a less-de
 
 **Subnodes**
 * [Material { }](https://github.com/Kopernicus/Kopernicus/wiki/Material) = Updates to textures and atmosphere rims.
-* [Light { }](https://github.com/BryceSchroeder/Kopernicus/wiki/Light) = Used for making stars.
+* [Light { }](/main/ScaledVersion/Light.md) = Used for making stars.
 * [Coronas { }](https://github.com/Kopernicus/Kopernicus/wiki/Coronas) = Used for making stars.
 
 **Example**
