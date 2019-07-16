@@ -21,7 +21,7 @@ The `Light { }` subnode of the `ScaledVersion { }` node describes the light qual
 |sunLensFlareColor|Color|The color of the star's LensFlare effect. Gets multiplied with the color of the base texture (yellow-ish for stock flare).|
 |givesOffLight|Boolean|Whether the star should emit light and have a LensFlare effect, or whether it's an object like a black hole.|
 |sunAU|Double|Distance in meters. ?Something to do with setting AU from parent star to home world? What's it for? we know it does not affect star luminosity calcuation.|
-|luminosity|Double|Misnomer. Insolation in watts per square meter at Kerbin's orbit. Calculate for other stars as the (starluminosity)^0.5 * 1360, where starLuminosity = 1 is the starLuminosity of the stock sun (roughly 1/100th the luminosity of the real world sun). You can use it to calcuate the starluminocity by 4 * Math.PI * kerbinAU * kerbinAU * luminosity. |
+|luminosity|Double|Misnomer. Insolation in watts per square meter at Kerbin's orbit. Calculate for other stars as the (starluminosity)^0.5 * 1360, where starLuminosity = 1 is the starLuminosity of the stock sun (roughly 1/100th the luminosity of the real world sun). You can use it to calcuate the starLuminosity by 4 * Math.PI * kerbinAU * kerbinAU * luminosity. |
 |insolation|Double| ?value modifying _luminosity_ for power reaching surface?|
 |radiationFactor|Double|?Description here?|
 |brightnessCurve|FloatCurve|Associates a distance value with a multiplier for the brightness of the LensFlare effect. The distances are measured in 1/`sunAU` value. See the example above for more info.|
