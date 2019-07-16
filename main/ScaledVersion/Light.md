@@ -53,5 +53,20 @@ Light
     key = 5.084181 3.997075 -0.001802375 -0.001802375
     key = 38.56295 1.82142 0.0001713 0.0001713
   }
+  IntensityCurve
+  {
+	  key = 0 0.9 0 0
+	  key = 1 0.9 0 0
+  }
+  ScaledIntensityCurve
+  {
+	  key = 0 0.9 0 0
+	  key = 1 0.9 0 0
+  }
+  IVAIntensityCurve
+  {
+	  key = 0 0.8099999 0 0
+	  key = 1 0.8099999 0 0
+  }
 }
 ```
