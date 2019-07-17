@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: ScaledVersion
+---
 
 The `ScaledVersion { }` node in a configuration file for Kopernicus describes a less-detailed model of your planet that appears in the map view and from large distances.
 
