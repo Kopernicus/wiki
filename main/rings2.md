@@ -93,7 +93,7 @@ Rings
 |useNewShader|Boolean|Whether to use the new custom ring shader that includes a planet shadow instead of the built-in Unity shaders.|
 |penumbraMultiplier|Single|A penumbra multiplier to the NewShader. Makes planet shadow softer (values larger than one) or less soft (smaller than one). Softness still depends on distance from sun, distance from planet and radius of sun and planet.|
 |steps|Integer|The amount of vertices around the ring.|
-|tiles|Integer|Number of times to tile the texture around the ring. Texture coordinates depend on this! If 0, then a thin strip from (0,0) to (1,1) is applied to the whole ring.<br>Otherwise the following rectangles are tiled top-to-bottom:<br>\\|      \\|            \\|            \\|<br>\\| side \\|   inner    \\|   outer    \\|<br>\\|      \\|            \\|            \\|<br>\\(0.0,0)-(0.2,1): Top/bottom edges<br>\\(0.2,0)-(0.6,1): Inner edge<br>\\(0.6,0)-(1.0,1): Outer edge|
+|tiles|Integer|Number of times to tile the texture around the ring. Texture coordinates depend on this! If 0, then a thin strip from (0,0) to (1,1) is applied to the whole ring.<br>Otherwise the following rectangles are tiled top-to-bottom:<br>|      |            |            |<br>| side |   inner    |   outer    |<br>|      |            |            |<br>(0.0,0)-(0.2,1): Top/bottom edges<br>(0.2,0)-(0.6,1): Inner edge<br>(0.6,0)-(1.0,1): Outer edge|
 |innerShadeTexture|File Path|The path to the texture whose opaque pixels cast shadows on the ring's inner surface.|
 |innerShadeTiles|Integer|The `innerShadeTexture` repeats this many times over the inner surface.|
 |innerShadeRotationPeriod|Single|The number of seconds the `innerShadeTexture` takes to complete one rotation.|
