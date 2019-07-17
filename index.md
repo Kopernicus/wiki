@@ -31,7 +31,7 @@ subtitle: A mod to modify the planetary system used by KSP
 	+ Atmosphere subnode
 		- AtmosphereFromGround subnode
 	+ PQS subnode
-		- [PQSMod subnodes]({% link pqsmods/PQSMods.md %})
+		- [PQSMod subnodes]({% link PQSMods/PQSMods.md %})
 	+ Ocean subnode
 	+ HazardousBody subnode
 	+ Particles subnode
