@@ -24,7 +24,7 @@ subtitle: A mod to modify the planetary system used by KSP
 		- [Biomes subnode]({% link main/Properties/Biome.md %})
 	+ [Orbit subnode]({% link main/Orbit.md %})
 	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
-		- [Material subnode]({% link main/ScaledVersion/Material.md %})
+		- Material subnode
 	+ [Rings subnode]({% link main/rings2.md %})
 	+ Atmosphere subnode
 		- AtmosphereFromGround subnode
@@ -42,7 +42,7 @@ subtitle: A mod to modify the planetary system used by KSP
 		- [ScienceValues subnode]({% link main/Properties/ScienceValues.md %})
 	+ [Orbit subnode]({% link main/Orbit.md %})
 	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
-		- [Material subnode]({% link main/ScaledVersion/Material.md %})
+		- Material subnode
 		- [Light subnode]({% link main/ScaledVersion/Material.md %})
 		- [Coronas subnode]({% link main/ScaledVersion/Material.md %})
 	+ [Rings subnode]({% link main/rings2.md %})
