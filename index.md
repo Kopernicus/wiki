@@ -43,8 +43,8 @@ subtitle: A mod to modify the planetary system used by KSP
 	+ [Orbit subnode]({% link main/Orbit.md %})
 	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
 		- Material subnode
-		- [Light subnode]({% link main/ScaledVersion/Material.md %})
-		- [Coronas subnode]({% link main/ScaledVersion/Material.md %})
+		- [Light subnode]({% link main/ScaledVersion/Light.md %})
+		- [Coronas subnode]({% link main/ScaledVersion/Coronas.md %})
 	+ [Rings subnode]({% link main/rings2.md %})
 	+ Atmosphere subnode
 	+ Ocean subnode
