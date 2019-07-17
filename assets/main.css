@@ -364,10 +364,16 @@ table {
         font-size: 18px; } }
 
 /**
- * Subtitles
+ * Subtitles and Titles
  */
 .subtitle {
-  font-size: 24px; }
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 24px; 
+  margin-bottom: 5px;
+}
 
 /**
  * Syntax highlighting styles
