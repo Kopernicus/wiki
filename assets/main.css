@@ -364,6 +364,12 @@ table {
         font-size: 18px; } }
 
 /**
+ * Subtitles
+ */
+.subtitle {
+  font-size: 24px; }
+
+/**
  * Syntax highlighting styles
  */
 .highlight {
