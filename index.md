@@ -26,14 +26,14 @@ subtitle: A mod to modify the planetary system used by KSP
 	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
 		- [Material subnode]({% link main/ScaledVersion/Material.md %})
 	+ [Rings subnode]({% link main/rings2.md %})
-	+ [Atmosphere subnode]({% link main/Atmosphere.md %})
-		- [AtmosphereFromGround subnode]({% link main/Atmosphere/AtmosphereFromGround.md %})
-	+ [PQS subnode]({% link main/PQS.md %})
+	+ Atmosphere subnode
+		- AtmosphereFromGround subnode
+	+ PQS subnode
 		- [PQSMod subnodes]({% link pqsmods/PQSMods.md %})
-	+ [Ocean subnode]({% link main/Ocean.md %})
-	+ [HazardousBody subnode]({% link main/HazardousBody.md %})
-	+ [Particles subnode]({% link main/Particles.md %})
-	+ [Debug subnode]({% link main/Debug.md %})
+	+ Ocean subnode
+	+ HazardousBody subnode
+	+ Particles subnode
+	+ Debug subnode
 
 ## Syntax for stars
 * [Body node]({% link main/Body.md %})
@@ -46,11 +46,11 @@ subtitle: A mod to modify the planetary system used by KSP
 		- [Light subnode]({% link main/ScaledVersion/Material.md %})
 		- [Coronas subnode]({% link main/ScaledVersion/Material.md %})
 	+ [Rings subnode]({% link main/rings2.md %})
-	+ [Atmosphere subnode]({% link main/Atmosphere.md %})
-	+ [Ocean subnode]({% link main/Ocean.md %})
-	+ [HazardousBody subnode]({% link main/HazardousBody.md %})
-	+ [Particles subnode]({% link main/Particles.md %})
-	+ [Debug subnode]({% link main/Debug.md %})
+	+ Atmosphere subnode
+	+ Ocean subnode
+	+ HazardousBody subnode
+	+ Particles subnode
+	+ Debug subnode
 
 # KopernicusExpansion
 ### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.
