@@ -9,6 +9,11 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        {%- if page.subtitle -%}
+        <span class="subtitle">
+          {{ page.subtitle }}
+        </span>
+        {%- endif -%}
         {{ content }}
       </div>
     </main>
