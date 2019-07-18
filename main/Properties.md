@@ -4,7 +4,6 @@ title: Properties
 subtitle: The basic building blocks of every world
 ---
 
-<!--Subtitle: The basic building blocks of every world-->
 The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here. 
 
 ### Subnodes
@@ -54,9 +53,9 @@ Properties
 |[albedo](https://en.wikipedia.org/wiki/Albedo)|Double|How reflective the body is. scale from 0 to 1|
 |[emissivity](https://en.wikipedia.org/wiki/Emissivity)|Double|?scale from 0 to 1?|
 |coreTemperatureOffset|?|?|
-|[tidallyLocked](https://en.wikipedia.org/wiki/Tidal_locking)|Boolean|Statement that determines if the body is tidally locked to its parent. This means that it takes as long to rotate arounds its own axis as it does to make a full orbit around its parent. In real-life and KSP most (large) moons are tidally locked.|
+|[tidallyLocked](https://en.wikipedia.org/wiki/Tidal_locking)|Boolean|Statement that determines if the body is tidally locked to its parent. This means that it takes as long to rotate around its own axis as it does to make a full orbit around its parent. In real-life and KSP most (large) moons are tidally locked.|
 |isHomeWorld|Boolean|Statement that determines if this is the body that houses KSC. For stability's sake It's recommended to keep this at false for any bodies you add.|
-|timewarpAltitudeLimits|Integer[]|Determines at which altitude above sealevel certain timewarp altitudes become available. 0 30000 30000 60000 100000 300000 600000 800000 means that 1x timewarp is available at 0 meters, 5x timewarp at 30000 meters all the way up to the max timewarp starting at 800000 meters.|
+|timewarpAltitudeLimits|Integer[]|Determines at which altitude above sea level certain timewarp altitudes become available. 0 30000 30000 60000 100000 300000 600000 800000 means that 1x timewarp is available at 0 meters, 5x timewarp at 30000 meters all the way up to the max timewarp starting at 800000 meters.|
 |sphereOfInfluence|Double|In meters. The sphere of influence of the body. This is generally calculated as described [here](http://wiki.kerbalspaceprogram.com/wiki/Sphere_of_influence). In case you need it to be unrealistically big or small you can change it here.|
 |solarRotationPeriod|Boolean|Whether the body should use the solar day instead of the sidereal day.|
 |navballSwitchRadiusMult|Double|?In meters?|

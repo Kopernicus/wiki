@@ -9,9 +9,10 @@ If you add a  `Template { }` node to the configuration, Kopernicus will import t
 ```
 Template
 {
-  name = Duna
+  name = Eve
   removeAtmosphere = true
-  
+  removeAllPQSMods = true
+  removeOcean = true
 }
 ```
 
