@@ -3,10 +3,11 @@
   <div class="wrapper">
     <script>
       var refer = document.referrer;
+      document.getElementById("referrerdebug").innerHTML = refer;
       if (refer.length > 0){ 
         var res = refer.replace(/https:\/\//, "");
         res = res.replace(/kopernicuswiki.github.io\//, "");
-        res = res.concat(", ", res);
+        res = ", " + res;
         var inner = document.getElementById("referrer").innerHTML;
         var position = 25;
         document.getElementById("referrer").innerHTML = [inner.slice(0, position), res, inner.slice(position)].join('');
@@ -29,6 +30,7 @@
         </label>
 
         <div class="trigger">
+          <p id="referrerdebug"></p>
           {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
