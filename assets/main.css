@@ -377,6 +377,13 @@ table {
 }
 
 /**
+ * Make referrer object invisible
+ */
+#referrer {
+  display: none;
+}
+
+/**
  * Syntax highlighting styles
  */
 .highlight {
