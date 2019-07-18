@@ -368,11 +368,12 @@ table {
  */
 .subtitle {
   font-size: 20px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .title {
-  font-size: 24px; 
-  margin-bottom: 5px;
+  font-size: 28px; 
+  margin-bottom: 0px;
 }
 
 /**
