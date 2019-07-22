@@ -1,5 +1,5 @@
 An impartial backup of the [official wiki](https://kopernicus.tmsp.io) for the [Kopernicus plugin](https://github.com/Kopernicus/Kopernicus) for Kerbal Space Program. 
-The current targeted version of Kopernicus is 1.7.1-5.
+The current targeted version of Kopernicus is 1.7.3-1.
 
 # Contributing
 It is preferred that all contributions be done via a text editor and a git client, as opposed to authoring the changes on GitHub.
