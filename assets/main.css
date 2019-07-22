@@ -364,10 +364,24 @@ table {
         font-size: 18px; } }
 
 /**
- * Subtitles
+ * Subtitles and Titles
  */
 .subtitle {
-  font-size: 24px; }
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 28px; 
+  margin-bottom: 0px;
+}
+
+/**
+ * Make referrer object invisible
+ */
+#referrer {
+  display: none;
+}
 
 /**
  * Syntax highlighting styles

@@ -1,8 +1,21 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
+    <script>
+      var refer = document.referrer;
+      document.getElementById("referrerdebug").innerHTML = refer;
+      if (refer.length > 0){ 
+        var res = refer.replace(/https:\/\//, "");
+        res = res.replace(/kopernicuswiki.github.io\//, "");
+        res = ", " + res;
+        var inner = document.getElementById("referrer").innerHTML;
+        var position = 25;
+        document.getElementById("referrer").innerHTML = [inner.slice(0, position), res, inner.slice(position)].join('');
+      }
+    </script>
+    <p id="referrer">{%- capture referlink -%}{%- endcapture -%}</p>
     {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | split: ", " | default: default_paths -%}
+    {%- assign page_paths = site.header_pages | append: referlink | split: ", " | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
@@ -17,6 +30,7 @@
         </label>
 
         <div class="trigger">
+          <p id="referrerdebug"></p>
           {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
