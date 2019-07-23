@@ -21,7 +21,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: DeltaDizzy
 github_username:  DeltaDizzy
 header_pages: main/ConfigNodes.md, main/datatypes.md, main/Body.md, main/Template.md, main/Properties.md, main/Orbit.md, main/ScaledVersion.md, main/Rings.md
-google_analytics: false
 
 # Build settings
 markdown: kramdown
