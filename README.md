@@ -15,9 +15,9 @@ You may use whatever Git GUI/client you wish, however they all (to my knowledge)
 Clone the wiki's repository to your machine. The URL is https://github.com/kopernicuswiki/kopernicuswiki.github.io.git
 
 ## Page Format
-As discussed in issue #4, the format for every page in the Wiki should be as follows:
+As discussed in [issue #4](https://github.com/kopernicuswiki/kopernicuswiki.github.io/issues/4), the format for every page in the Wiki should be as follows:
 
-Description
+Description of the item
 
 **Example**
 ```
