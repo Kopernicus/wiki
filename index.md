@@ -33,8 +33,8 @@ subtitle: A mod to modify the planetary system used by KSP
 	+ PQS subnode
 		- [PQSMod subnodes]({% link PQSMods/PQSMods.md %})
 	+ Ocean subnode
-	+ HazardousBody subnode
-	+ Particles subnode
+	+ [HazardousBody subnode]({% link main/HazardousBody.md %})
+	+ [Particles subnode]({% link main/Particle.md %})
 	+ [Debug subnode]({% link main/Debug.md %})
 
 ## Syntax for stars
