@@ -33,9 +33,9 @@ subtitle: A mod to modify the planetary system used by KSP
 	+ PQS subnode
 		- [PQSMod subnodes]({% link PQSMods/PQSMods.md %})
 	+ Ocean subnode
-	+ HazardousBody subnode
-	+ Particles subnode
-	+ Debug subnode
+	+ [HazardousBody subnode]({% link main/HazardousBody.md %})
+	+ [Particles subnode]({% link main/Particle.md %})
+	+ [Debug subnode]({% link main/Debug.md %})
 
 ## Syntax for stars
 * [Body node]({% link main/Body.md %})
@@ -52,7 +52,7 @@ subtitle: A mod to modify the planetary system used by KSP
 	+ Ocean subnode
 	+ HazardousBody subnode
 	+ Particles subnode
-	+ Debug subnode
+	+ [Debug subnode]({% link main/Debug.md %})
 
 # KopernicusExpansion
 ### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.
