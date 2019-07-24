@@ -7,10 +7,10 @@ The `ScaledVersion { }` node in a configuration file for Kopernicus describes a 
 
 
 **Subnodes**
-* [Material { }]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %}) = Updates to textures and atmosphere rims.
-* [OnDemand { }]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %}) = Used for textures that should be loaded OnDemand.
-* [Light { }]({{ site.baseurl }}{% link main/ScaledVersion/Light.md %}) = Used for making stars.
-* [Coronas { }]({{ site.baseurl }}{% link main/ScaledVersion/Coronas.md %}) = Used for making stars.
+* [Material { }](/main/ScaledVersion/Material.html) = Updates to textures and atmosphere rims.
+* [OnDemand { }](/main/ScaledVersion/OnDemand.html) = Used for textures that should be loaded OnDemand.
+* [Light { }](/main/ScaledVersion/Light.html) = Used for making stars.
+* [Coronas { }](/main/ScaledVersion/Coronas.html) = Used for making stars.
 
 **Example**
 ```
