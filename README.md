@@ -24,6 +24,7 @@ Description of the item
 Your example of the item should go here
 If comments are needed, they should be inline, // Like this!
 Unless the comment is for a node. Then the comments should go
+
 // Like this,
 ForANode
 {
