@@ -14,3 +14,5 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 
 **PQSMods**
 + [LandControl]({{ "/PQSMods/LandControl.html" | relative_url }})
++ [VertexColorMap]({{ "/PQSMods/VertexColorMap.html" | relative_url }})
++ [VertexHeightMap]({{ "/PQSMods/VertexHeightMap.html" | relative_url }})
