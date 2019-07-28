@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kopernicus Wiki
-email: your-email@example.com
+email: ""
 description: For all your Kopernicus Syntax Needs
 baseurl: "/wiki" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: DeltaDizzy
-github_username:  DeltaDizzy
+twitter_username: ""
+github_username:  kopernicuswiki
 header_pages: main/ConfigNodes.md, main/datatypes.md, main/Body.md, main/Template.md, main/Properties.md, main/Orbit.md, main/ScaledVersion.md, main/Rings.md
 
 # Build settings
