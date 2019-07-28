@@ -14,55 +14,55 @@ subtitle: A mod to modify the planetary system used by KSP
 ---
 
 # Prerequisites
-* [What are ConfigNodes?]({% link main/ConfigNodes.md %})
+* [What are ConfigNodes?]({{ "main/ConfigNodes.html" | relative_url  }})
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
-* [Data Types]({% link main/datatypes.md %})
+* [Data Types]({{ "main/datatypes.html" | relative_url  }})
 
 ## Syntax for planets
-* [Body node]({% link main/Body.md %})
-	+ [Template subnode]({% link main/Template.md %})
-	+ [Properties subnode]({% link main/Properties.md %})
-		- [ScienceValues subnode]({% link main/Properties/ScienceValues.md %})
-		- [Biomes subnode]({% link main/Properties/Biome.md %})
-	+ [Orbit subnode]({% link main/Orbit.md %})
-	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
+* [Body node]({{ "main/Body.html" | relative_url  }})
+	+ [Template subnode]({{ "main/Template.html" | relative_url  }})
+	+ [Properties subnode]({{ "main/Properties.html" | relative_url  }})
+		- [ScienceValues subnode]({{ "main/Properties/ScienceValues.html" | relative_url  }})
+		- [Biomes subnode]({{ "main/Properties/Biome.html" | relative_url  }})
+	+ [Orbit subnode]({{ "main/Orbit.html" | relative_url  }})
+	+ [ScaledVersion subnode]({{ "main/ScaledVersion.html" | relative_url  }})
 		- Material subnode
-	+ [Rings subnode]({% link main/Rings.md %})
+	+ [Rings subnode]({{ "main/Rings.html" | relative_url  }})
 	+ Atmosphere subnode
 		- AtmosphereFromGround subnode
 	+ PQS subnode
-		- [PQSMod subnodes]({% link PQSMods/PQSMods.md %})
+		- [PQSMod subnodes]({{ "PQSMods/PQSMods.html" | relative_url  }})
 	+ Ocean subnode
-	+ [HazardousBody subnode]({% link main/HazardousBody.md %})
-	+ [Particles subnode]({% link main/Particle.md %})
-	+ [Debug subnode]({% link main/Debug.md %})
+	+ [HazardousBody subnode]({{ "main/HazardousBody.html" | relative_url  }})
+	+ [Particles subnode]({{ "main/Particle.html" | relative_url  }})
+	+ [Debug subnode]({{ "main/Debug.html" | relative_url  }})
 
 ## Syntax for stars
-* [Body node]({% link main/Body.md %})
-	+ [Template subnode]({% link main/Template.md %})
-	+ [Properties subnode]({% link main/Properties.md %})
-		- [ScienceValues subnode]({% link main/Properties/ScienceValues.md %})
-	+ [Orbit subnode]({% link main/Orbit.md %})
-	+ [ScaledVersion subnode]({% link main/ScaledVersion.md %})
+* [Body node]({{ "main/Body.html" | relative_url  }})
+	+ [Template subnode]({{ "main/Template.html" | relative_url  }})
+	+ [Properties subnode]({{ "main/Properties.html" | relative_url  }})
+		- [ScienceValues subnode]({{ "main/Properties/ScienceValues.html" | relative_url  }})
+	+ [Orbit subnode]({{ "main/Orbit.html" | relative_url  }})
+	+ [ScaledVersion subnode]({{ "main/ScaledVersion.html" | relative_url  }})
 		- Material subnode
-		- [Light subnode]({% link main/ScaledVersion/Light.md %})
-		- [Coronas subnode]({% link main/ScaledVersion/Coronas.md %})
-	+ [Rings subnode]({% link main/Rings.md %})
+		- [Light subnode]({{ "main/ScaledVersion/Light.html" | relative_url  }})
+		- [Coronas subnode]({{ "main/ScaledVersion/Coronas.html" | relative_url  }})
+	+ [Rings subnode]({{ "main/Rings.html" | relative_url  }})
 	+ Atmosphere subnode
 	+ Ocean subnode
 	+ HazardousBody subnode
 	+ Particles subnode
-	+ [Debug subnode]({% link main/Debug.md %})
+	+ [Debug subnode]({{ "main/Debug.html" | relative_url  }})
 
 # KopernicusExpansion
 ### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.
-* 	[Comet Tails]({% link kex/CometTails.md %})
-* 	[Emissive FX]({% link kex/EmissiveFX.md %})
-* 	[EVA Footprints]({% link kex/EVAFootprints.md %})
+* 	[Comet Tails]({{ "kex/CometTails.html" | relative_url  }})
+* 	[Emissive FX]({{ "kex/EmissiveFX.html" | relative_url  }})
+* 	[EVA Footprints]({{ "kex/EVAFootprints.html" | relative_url  }})
 * 	Modular Noise
-* 	[Procedural Gas Giants]({% link kex/ProceduralGasGiants.md %})
-* 	[Reentry Effects]({% link kex/ReentryEffects.md %})
+* 	[Procedural Gas Giants]({{ "kex/ProceduralGasGiants.html" | relative_url  }})
+* 	[Reentry Effects]({{ "kex/ReentryEffects.html" | relative_url  }})
 * 	Regional PQS Mods
-* 	[VertexHeightDeformity]({% link kex/VertexHeightDeformity.md %})
-* 	[VertexHeightMap16]({% link kex/VertexHeightMap16.md %})
-* 	[Wormholes]({% link kex/Wormholes.md %})
+* 	[VertexHeightDeformity]({{ "kex/VertexHeightDeformity.html" | relative_url  }})
+* 	[VertexHeightMap16]({{ "kex/VertexHeightMap16.html" | relative_url  }})
+* 	[Wormholes]({{ "kex/Wormholes.html" | relative_url  }})
