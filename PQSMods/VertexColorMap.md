@@ -4,23 +4,23 @@ title: VertexColorMap
 subtitle: Coloring the world one map at a time.
 ---
 
-The `VertexColorMap { }` PQSMod is a mod that applies a color map over the terrain.
+The VertexColorMap PQSMod is a mod that applies a color map over the terrain.
 
 **Example**
+```
 PQS
 {
-	Mods
-	{
-		...
-		VertexColorMap
-		{
-			map = Fruits/PluginData/Blueberry_colormap.dds
-			order = 20
-			enabled = true
-		}
-		...
-	}
+  Mods
+  {
+    VertexColorMap
+    {
+      map = Fruits/PluginData/Blueberry_colormap.dds
+      order = 20
+      enabled = true
+    }
+  }
 }
+```
 
 |Property|Format|Description|
 |--------|------|-----------|
