@@ -29,7 +29,7 @@ Rings
 		thickness = 100
 		steps = 120
 
-		texture = MyMod/MyTexture
+		texture = Fruits/PluginData/Grapefruit_rings.dds
 		// Number of times to tile the texture around the ring
 		// Texture coordinates depend on this!
 		// If 0, then a thin strip from (0,0) to (1,1) is applied to the whole ring.
