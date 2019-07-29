@@ -4,7 +4,7 @@ title: Rings
 subtitle: Enchanting Italians for 300 years
 ---
 
-Each `Body { }` may have a node called `Rings { }`, a wrapper node containing one or more `Ring { }` nodes, each of which defines a planetary ring. These may be flat discs as with Saturn, loops of ribbon as with the Ringworld, or voluminous cylinders.
+Each `Body` may have a node called `Rings`, a wrapper node containing one or more `Ring` nodes, each of which defines a planetary ring. These may be flat discs as with Saturn, loops of ribbon as with the Ringworld, or voluminous cylinders.
 
 Distance units for rings are milliradii, thousandths of the radius of the parent body. So 1000 is 1 radius, 2000 is 2 radii, etc.
 

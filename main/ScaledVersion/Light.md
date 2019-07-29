@@ -3,7 +3,7 @@ layout: default
 title: Light
 ---
 
-The `Light { }` subnode of the `ScaledVersion { }` node describes the light quality of the star itself. 
+The `Light` subnode of the `ScaledVersion` node describes the light quality of the star itself. 
 
 **Example**
 ```

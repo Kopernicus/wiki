@@ -4,12 +4,12 @@ title: Properties
 subtitle: The basic building blocks of every world
 ---
 
-The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here. 
+The `Properties` node describes the body itself, and is a subnode of `Body`. Basic parameters like description, radius, gravity and biomes are specified here. 
 
 ### Subnodes
 ***
-* [Biomes/Biome { }](/main/Properties/Biome.html)
-* [ScienceValues { }](/main/Properties/ScienceValues.html)
+* [Biomes/Biome](/main/Properties/Biome.html)
+* [ScienceValues](/main/Properties/ScienceValues.html)
 
 ## Example:
 ```
