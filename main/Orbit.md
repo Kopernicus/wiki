@@ -26,7 +26,7 @@ Orbit
 |Property|Format|Description|
 |--------|------|-----------|
 |referenceBody|String|The `name` of the object the body orbits.|   
-|color|Color|The color of the orbit line. See [the datatypes page](/main/datatypes.html) for more info on colors.| 
+|color|Color|The color of the orbit line. See [the datatypes page]({{ "/main/datatypes.html" | relative_url }}) for more info on colors.| 
 |inclination|Double|The tilt of the orbit in degrees. 0 = normal, 90 = polar, 180 = retrograde, etc...|
 |eccentricity|Double|The difference between your body's apoapsis and periapsis. It is a value between 0 and 1, where 0 is a perfect circle, and 1 is a straight line. 0.5 would give an oval shape.|
 |period|Double|The custom orbital period in seconds. This can be used to set extreme orbital periods.|
