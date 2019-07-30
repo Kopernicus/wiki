@@ -40,4 +40,4 @@ ForANode
 |(Example) order|Integer|The order the PQSMod should be applied in.| 
 
 ### Links
-Links are to be in the form `[text]({{site.baseurl}}{% link <path in repo>%})`
+Links are to be in the form `[text]({{ site.baseurl }}{% link <path in repo> %})`
