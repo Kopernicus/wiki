@@ -3,7 +3,7 @@ layout: default
 title: HazardousBody
 ---
 
-The `HazardousBody { }` subnode of the `Body { }` node indicates that the body is hazardous, and thus, the body will gradually apply heat to the vessel as the vessel nears the body. It replaces `HazardousOceans { }` as the `HazardousBody { }` has more fine control and detail.
+The `HazardousBody` subnode of the `Body` node indicates that the body is hazardous, and thus, the body will gradually apply heat to the vessel as the vessel nears the body. It replaces `HazardousOceans { }` as the `HazardousBody { }` has more fine control and detail.
 
 **Example**
 ```

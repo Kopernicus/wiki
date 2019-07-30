@@ -3,7 +3,7 @@ layout: default
 title: Debug
 ---
 
-The `Debug { }` subnode of the `Body { }` node describes the various debugging properties of the body.
+The `Debug` subnode of the `Body` node describes the various debugging properties of the body.
 
 **Example**
 ```
