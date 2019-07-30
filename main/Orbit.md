@@ -26,7 +26,7 @@ Orbit
 |Property|Format|Description|
 |--------|------|-----------|
 |referenceBody|String|The `name` of the object the body orbits.|   
-|color|Color|The color of the orbit line. See [the datatypes page]({{ "/main/datatypes.html" | relative_url }}) for more info on colors.| 
+|color|Color|The color of the orbit line. See [the datatypes page]({{ site.baseurl }}{% link /main/datatypes.md %}) for more info on colors.| 
 |inclination|Double|The tilt of the orbit in degrees. 0 = normal, 90 = polar, 180 = retrograde, etc...|
 |eccentricity|Double|The difference between your body's apoapsis and periapsis. It is a value between 0 and 1, where 0 is a perfect circle, and 1 is a straight line. 0.5 would give an oval shape.|
 |period|Double|The custom orbital period in seconds. This can be used to set extreme orbital periods.|
@@ -36,7 +36,7 @@ Orbit
 |[meanAnomalyAtEpoch](https://en.wikipedia.org/wiki/Mean_anomaly)|Double|The position of the body along the orbit, in radians, at the specified epoch.|
 |meanAnomalyAtEpochD|Double|Similar to `meanAnomalyAtEpoch`, but is in degrees instead of radians. Useful for more precise measurement.|
 |epoch|Double|The epoch at which `meanAnomalyAtEpoch` is described.|
-|iconColor|[Color]({{ "/main/datatypes.html" | relative_url }})|(Also nodeColor) The color of the orbit icon/node.|
+|iconColor|[Color]({{ site.baseurl }}{% link /main/datatypes.md %})|(Also nodeColor) The color of the orbit icon/node.|
 |iconTexture|File Path|The path to the custom icon texture.|
 |mode|OrbitDrawMode|Orbit Draw Mode. Possible values are `OFF`, `REDRAW_ONLY`, `REDRAW_AND_FOLLOW`, and `REDRAW_AND_RECALCULATE`. Default is `REDRAW_AND_RECALCULATE`.|
 |icon|OrbitDrawIcons|Orbit Icon Mode. Possible values are `NONE`, `OBJ`, `OBJ_PE_AP`, and `ALL`. Default is `ALL`.|
