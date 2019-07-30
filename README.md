@@ -3,7 +3,7 @@ The current targeted version of Kopernicus is 1.7.3-1.
 
 # Contributing
 It is preferred that all contributions be done via a text editor and a git client, as opposed to authoring the changes on GitHub.
-This allows for consistent page formatting. If you wish to be able to test out changes before uploading, you must install Jekyll and its dependencies. Follow the page format listed below if you wish to contribute to a file or create a new file. NOTE: New RELATIVE links should be made in the form \[Text to be linked\]\(\{\{ "relative link" \| relative_url \}\}\)
+This allows for consistent page formatting. If you wish to be able to test out changes before uploading, you must install Jekyll and its dependencies. Follow the page format listed below if you wish to contribute to a file or create a new file. NOTE: New RELATIVE links should be made in the form \[Text to be linked\]\(\{\{ site.baseurl \}\}\{% link file_to_be_linked.with-extension %\}\)
 
 ## Installing Jekyll
 Head to [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/) and scroll to the bottom. 
