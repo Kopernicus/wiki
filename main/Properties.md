@@ -4,17 +4,12 @@ title: Properties
 subtitle: The basic building blocks of every world
 ---
 
-The `Properties` node describes the body itself, and is a subnode of `Body`. Basic parameters like description, radius, gravity and biomes are specified here. 
+The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here. 
 
 ### Subnodes
 ***
-<<<<<<< HEAD
-* [Biomes/Biome](/main/Properties/Biome.html)
-* [ScienceValues](/main/Properties/ScienceValues.html)
-=======
-* [Biomes/Biome { }]({{ "/main/Properties/Biome.html" | relative_url }})
-* [ScienceValues { }]({{ "/main/Properties/ScienceValues.html" | relative_url }})
->>>>>>> 6cbc7b0905671099df9f086e8d826c504d710fec
+* [Biomes/Biome { }]({{ site.baseurl }}{% link Properties/Biome.md %})
+* [ScienceValues { }]({{ site.baseurl }}{% link Properties/ScienceValues.md %})
 
 ## Example:
 ```
@@ -69,4 +64,4 @@ Properties
 |RnDVisibility|RnDVisibility|(Also RDVisibility) The visibility state of the body in the RnD archives. Possible values are `Visible`, `Noicon`, `Hidden`, or `Skip`.|
 |RnDRotation|Boolean|Whether the body should rotate in the RnD archives.|
 |maxZoom|Single|The max zoom limit for the tracking station and the map view. Sets the number of meters that can fit in the full height of the screen.|
-|biomeMap|File Path|The path to the biome map texture. See the [Biome subnode]({{ "/main/Properties/Biome.html" | relative_url }}) for more information|
+|biomeMap|File Path|The path to the biome map texture. See the [Biome subnode]({{ site.baseurl }}{% link /main/Properties/Biome.md %}) for more information|
