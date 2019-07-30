@@ -3,7 +3,7 @@ layout: default
 title: Particles
 ---
 
-The `Particle` node is a subnode of the `Particles` wrapper node, contained inside the `Body` node. TODO
+The `Particle { }` node is a subnode of the `Particles { }` wrapper node, contained inside the `Body { }` node. TODO
 
 **Example**
 ```
