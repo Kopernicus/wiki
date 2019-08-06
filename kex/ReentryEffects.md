@@ -133,12 +133,11 @@ Body
 }
 ```
 
-
-**Explanation**
 NOTE: Anything that isn't a Node is a Min/Max Node that contains simply a `min` and a `max` key that details the minimum and maximum for that Min/Max Node.
+
 |Property/Node|Format|Description|
 |-------------|------|-----------|
-|ReentryEffects|Node||Node for all aerodrag effects.|
+|ReentryEffects|Node|Node for all aerodrag effects.|
 |ReentryHeat|Node|Node for the reentry flame effects. The minimum values occur when the reentry flames are fading into or out of existence, and the maximum values occur when the reentry flames are in full effect. The "Fade-in" and "Fade-out" duration depend on your craft's speed and the atmospheric pressure.|
 |airspeedNoisePitch|Single|"Woosh" sound effect pitch. 1 is probably the "normal" pitch, but the maximum is unknown.|
 |airspeedNoiseVolume|Single|"Woosh" sound effect volume. 1 appears to be the max volume.|
