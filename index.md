@@ -26,13 +26,15 @@ subtitle: A mod to modify the planetary system used by KSP
     - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %})
   + [Orbit subnode]({{ site.baseurl }}{% link main/Orbit.md %})
   + [ScaledVersion subnode]({{ site.baseurl }}{% link main/ScaledVersion.md %})
-    - Material subnode
+    - [Material subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %})
+    - [OnDemand subnode]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %})
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
-  + Atmosphere subnode
-    - AtmosphereFromGround subnode
+  + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
+    - [AtmosphereFromGround subnode]({{ site.baseurl }}{% link main/Atmosphere/AtmosphereFromGround.md %})
   + PQS subnode
     - [PQSMod subnodes]({{ site.baseurl }}{% link PQSMods/PQSMods.md %})
   + Ocean subnode
+	  - Fog subnode
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Particles subnode]({{ site.baseurl }}{% link main/Particle.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
@@ -44,14 +46,13 @@ subtitle: A mod to modify the planetary system used by KSP
     - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
   + [Orbit subnode]({{ site.baseurl }}{% link main/Orbit.md %})
   + [ScaledVersion subnode]({{ site.baseurl }}{% link main/ScaledVersion.md %})
-    - Material subnode
+    - [Material subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %})
     - [Light subnode]({{ site.baseurl }}{% link main/ScaledVersion/Light.md %})
     - [Coronas subnode]({{ site.baseurl }}{% link main/ScaledVersion/Corona.md %})
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
-  + Atmosphere subnode
-  + Ocean subnode
-  + HazardousBody subnode
-  + Particles subnode
+  + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
+  + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
+  + [Particles subnode]({{ site.baseurl }}{% link main/Particle.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
 
 # KopernicusExpansion
