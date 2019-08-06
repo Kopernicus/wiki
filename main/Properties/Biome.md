@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Biome
+title: Biomes
 ---
 
 The `Biome { }` node is a subnode of `Biomes { }`, a wrapper node for all of the Biomes. Each biome contains its own name, color, and science multiplier.

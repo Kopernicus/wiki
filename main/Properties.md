@@ -15,7 +15,7 @@ The `Properties { }` node describes the body itself, and is a subnode of `Body {
 ```
 Properties
 {
-  description = Fancy!
+  description = A big ol' round blueberry. I wonder if it's sweet and juicy?
   radius = 500000
   geeASL = 1.2
   rotates = true
@@ -30,7 +30,7 @@ Properties
   {
   ...
   }
-  biomeMap = Path/To/Your/Biome_map.dds
+  biomeMap = Fruits/PluginData/Blueberry_biomemap.dds
   Biomes
   {
   ...

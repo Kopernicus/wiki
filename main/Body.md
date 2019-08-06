@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Body
+subtitle: Bodies lie dead on the floor...
 ---
 
 The `Body { }` node is a wrapper node for the aspects of a body and contains the essential components for making a body. `Body { }` is a subnode of the `@Kopernicus` node.
