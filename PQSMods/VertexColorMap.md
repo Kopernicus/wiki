@@ -4,7 +4,7 @@ title: VertexColorMap
 subtitle: Coloring the world one map at a time.
 ---
 
-The VertexColorMap PQSMod is a mod that applies a color map over the terrain.
+The `VertexColorMap` PQSMod is a mod that applies a color map over the terrain.
 
 **Example**
 ```
