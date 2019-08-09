@@ -7,14 +7,14 @@ subtitle: Customize your Reentry like never before!
 The `ReentryFX { }` subnode is a part of Kopernicus Expansion and allows you to add and customize the body's reentry effects.
 
 **Example**
-This is the default effect configuration, provided by SnailsAttack.
 ```
+// This is the default effect configuration, provided by SnailsAttack.
 Body
 {
 	ReentryEffects
 	{
 		ReentryHeat
-		{	
+		{
 			airspeedNoisePitch
 			{
 				min = 0.5
@@ -133,7 +133,7 @@ Body
 }
 ```
 
-NOTE: Anything that isn't a Node is a Min/Max Node that contains simply a `min` and a `max` key that details the minimum and maximum for that Min/Max Node.
+NOTE: Anything that isn't a Node is a Min/Max Node that contains simply a `min` and a `max` key that details the minimum and maximum for that Min/Max Node. Also, items between Nodes belong to the Node above it.
 
 |Property/Node|Format|Description|
 |-------------|------|-----------|

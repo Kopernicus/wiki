@@ -59,6 +59,7 @@ Material
 ```
 
 NOTE: `Vacuum = "V"`, `Atmospheric = "A"`, and `Star = "S"`.
+
 |Property|Format|Applies to Type(s)|Description|
 |--------|------|------------------|-----------|
 |color|Color|V, A|The main color of the body. Default is (1, 1, 1, 1).|
@@ -84,9 +85,9 @@ NOTE: `Vacuum = "V"`, `Atmospheric = "A"`, and `Star = "S"`.
 |sunspotTexOffset|Vector2|S|The offset of the sunspot texture.|
 |sunspotPower|Single|S|The power of the sunspots. Default is 1.|
 |sunspotColor|Color|S|The color of the sunspots. Default is (0, 0, 0, 0).|
-|rimColor|Color|S|The rimlight color. Default is (1, 1, 1, 1).|
-|rimPower|Single|A, S|The rim(light) power of the atmosphere. Default for "A" is 3, "S" is 0.2.|
-|rimBlend|Single|A, S|The rim(light) blend of the atmosphere. Default for "A" is 1, "S" is 0.2.|
+|rimColor|Color|S|The rim color. Default is (1, 1, 1, 1).|
+|rimPower|Single|A, S|How far from the rim of the sphere/planet the atmosphere rim will go. The lower the number, the greater the coverage. The higher the number, the closer to the edge of the sphere it will cling to. Default for "A" is 3, "S" is 0.2.|
+|rimBlend|Single|A, S|The blend between the atmosphere and the rim. Default for "A" is 1, "S" is 0.2.|
 |rimColorRamp|File Path|A|The texture containing the atmosphere's rim color ramp. Default is "White".|
 |rimColorRampScale|Vector2|A|The scale of the rim color ramp.|
 |rimColorRampOffset|Vector2|A|The offset of the rim color ramp.|
