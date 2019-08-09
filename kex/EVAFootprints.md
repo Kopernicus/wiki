@@ -10,10 +10,10 @@ This handy, or should I say, "footy," part of Kopernicus Expansion allows kerbal
 ```
 Body
 {
-	PQS
-	{
-		allowFootprints = true
-	}
+  PQS
+  {
+    allowFootprints = true
+  }
 }
 ```
 

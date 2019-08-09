@@ -10,18 +10,18 @@ The `Wormhole { }` node of the Kopernicus Expansion provides the ability to tran
 ```
 Body
 {
-	Wormhole
-	{
-		partner = WormholeTarget
-		influenceAltitude = 8000
-		jumpMaxAltitude = 7700
-		jumpMinAltitude = 10
-		entryMessage = Entering the wormhole.
-		exitMessage = Bye, wormhole!
-		heatRate = 0.1
-		entryMsgDuration = 7
-		exitMsgDuration = 7
-	}
+  Wormhole
+  {
+    partner = WormholeTarget
+    influenceAltitude = 8000
+    jumpMaxAltitude = 7700
+    jumpMinAltitude = 10
+    entryMessage = Entering the wormhole.
+    exitMessage = Bye, wormhole!
+    heatRate = 0.1
+    entryMsgDuration = 7
+    exitMsgDuration = 7
+  }
 }
 ```
 

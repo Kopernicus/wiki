@@ -15,27 +15,27 @@ The `Ocean { }` subnode contains all of the information needed to produce an oce
 ```
 Ocean
 {
-	maxQuadLengthsPerFrame = 0.03
-	minLevel = 2
-	maxLevel = 12
-	minDetailDistance = 8
-	oceanColor = #8a0303
-	Material
-	{
-	...
-	}
-	FallbackMaterial
-	{
-	...
-	}
-	Mods
-	{
-	...
-	}
-	Fog
-	{
-	...
-	}
+  maxQuadLengthsPerFrame = 0.03
+  minLevel = 2
+  maxLevel = 12
+  minDetailDistance = 8
+  oceanColor = #8a0303
+  Material
+  {
+  ...
+  }
+  FallbackMaterial
+  {
+  ...
+  }
+  Mods
+  {
+  ...
+  }
+  Fog
+  {
+  ...
+  }
 }
 ```
 

@@ -11,125 +11,125 @@ The `ReentryFX { }` subnode is a part of Kopernicus Expansion and allows you to 
 // This is the default effect configuration, provided by SnailsAttack.
 Body
 {
-	ReentryEffects
-	{
-		ReentryHeat
-		{
-			airspeedNoisePitch
-			{
-				min = 0.5
-				max = 2
-			}
-			airspeedNoiseVolume
-			{
-				min = 0
-				max = 1
-			}
-			edgeFade
-			{
-				min = 0
-				max = 0.3
-			}
-			falloff1
-			{
-				min = 0.9
-				max = 0.9
-			}
-			falloff2
-			{
-				min = 1
-				max = 1
-			}
-			falloff3
-			{
-				min = 2
-				max = 1
-			}
-			intensity
-			{
-				min = 0
-				max = 0.11
-			}
-			length
-			{
-				min = 5
-				max = 15
-			}
-			lightPower
-			{
-				min = -3
-				max = 8
-			}
-			wobble
-			{
-				min = 1
-				max = 1
-			}	
-			color
-			{
-				min = 1,0.294,0.114,0
-				max = 1,0.294,0.114,1
-			}
-		}
-		Condensation
-		{
-			airspeedNoisePitch
-			{
-				min = 0.3
-				max = 1
-			}
-			airspeedNoiseVolume
-			{
-				min = 0
-				max = 0.5
-			}
-			edgeFade
-			{
-				min = 0
-				max = 0
-			}
-			falloff1
-			{
-				min = 0.9
-				max = 0.9
-			}
-			falloff2
-			{
-				min = -0.6
-				max = -0.6
-			}
-			falloff3
-			{
-				min = 0.5
-				max = 0.5
-			}
-			intensity
-			{
-				min = 0
-				max = 0.11
-			}
-			length
-			{
-				min = 2
-				max = 3.5
-			}
-			lightPower
-			{
-				min = 0
-				max = 0
-			}
-			wobble
-			{
-				min = 0
-				max = -0.2
-			}	
-			color
-			{
-				min = 0.22,0.22,0.22,0
-				max = 0.22,0.22,0.22,1
-			}
-		}
-	}
+  ReentryEffects
+  {
+    ReentryHeat
+    {
+      airspeedNoisePitch
+      {
+        min = 0.5
+        max = 2
+      }
+      airspeedNoiseVolume
+      {
+        min = 0
+        max = 1
+      }
+      edgeFade
+      {
+        min = 0
+        max = 0.3
+      }
+      falloff1
+      {
+        min = 0.9
+        max = 0.9
+      }
+      falloff2
+      {
+        min = 1
+        max = 1
+      }
+      falloff3
+      {
+        min = 2
+        max = 1
+      }
+      intensity
+      {
+        min = 0
+        max = 0.11
+      }
+      length
+      {
+        min = 5
+        max = 15
+      }
+      lightPower
+      {
+        min = -3
+        max = 8
+      }
+      wobble
+      {
+        min = 1
+        max = 1
+      } 
+      color
+      {
+        min = 1,0.294,0.114,0
+        max = 1,0.294,0.114,1
+      }
+    }
+    Condensation
+    {
+      airspeedNoisePitch
+      {
+        min = 0.3
+        max = 1
+      }
+      airspeedNoiseVolume
+      {
+        min = 0
+        max = 0.5
+      }
+      edgeFade
+      {
+        min = 0
+        max = 0
+      }
+      falloff1
+      {
+        min = 0.9
+        max = 0.9
+      }
+      falloff2
+      {
+        min = -0.6
+        max = -0.6
+      }
+      falloff3
+      {
+        min = 0.5
+        max = 0.5
+      }
+      intensity
+      {
+        min = 0
+        max = 0.11
+      }
+      length
+      {
+        min = 2
+        max = 3.5
+      }
+      lightPower
+      {
+        min = 0
+        max = 0
+      }
+      wobble
+      {
+        min = 0
+        max = -0.2
+      } 
+      color
+      {
+        min = 0.22,0.22,0.22,0
+        max = 0.22,0.22,0.22,1
+      }
+    }
+  }
 }
 ```
 

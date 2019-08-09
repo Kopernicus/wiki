@@ -8,20 +8,20 @@ subtitle: Low Effort Storms, circa 2015
 ```
 ScaledVersion
 {
-	ProceduralGasGiant
-	{
-		rampTexture = Fruits/PluginData/Grapefruit_procgasgiantramp.dds
-		stormMap = Fruits/PluginData/Grapefruit_stormmap.dds
-		seed = 35293
-		cloudSpeed = 50
-		hasStorms = true
-		distortion = 3.5
-		frequency = 8.75
-		lacunarity = 2.5
-		gain = 0.5
-		stormFrequency = 2.5
-		stormDistortion = 8.35
-	}
+  ProceduralGasGiant
+  {
+    rampTexture = Fruits/PluginData/Grapefruit_procgasgiantramp.dds
+    stormMap = Fruits/PluginData/Grapefruit_stormmap.dds
+    seed = 35293
+    cloudSpeed = 50
+    hasStorms = true
+    distortion = 3.5
+    frequency = 8.75
+    lacunarity = 2.5
+    gain = 0.5
+    stormFrequency = 2.5
+    stormDistortion = 8.35
+  }
 }
 ```
 

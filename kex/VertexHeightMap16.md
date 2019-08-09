@@ -10,18 +10,18 @@ A replacement for the `VertexHeightMap` PQSMod that allows you to use textures e
 ```
 PQS
 {
-	Mods
-	{
-		VertexHeightMap16
-		{
-			map = Fruits/PluginData/Tomato_heightmap16.dds
-			offset = -5000
-			deformity = 15000
-			scaleDeformityByRadius = false
-			enabled = true
-			order = 20
-		}
-	}
+  Mods
+  {
+    VertexHeightMap16
+    {
+      map = Fruits/PluginData/Tomato_heightmap16.dds
+      offset = -5000
+      deformity = 15000
+      scaleDeformityByRadius = false
+      enabled = true
+      order = 20
+    }
+  }
 }
 ```
 
