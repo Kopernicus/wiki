@@ -4,9 +4,10 @@ title: Particles
 subtitle: "You would not believe your eyes, If ten million fireflies..."
 ---
 
+The `Particles { }` node is used to add particles to Celestial Bodies. You can define several different "species" of particles by using multiple `Value { }` subnodes.
+
 # Example
 ```
-// This example was assembled primarily through the efforts of Zaffre.
 @Kopernicus
 {
   Body
