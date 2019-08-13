@@ -10,12 +10,16 @@ This allows for consistent page formatting. If you wish to be able to test out c
 Head to [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/) and scroll to the bottom. 
 Click the link that corresponds to your operating system and follow the directions on that page.
 
-### Installing Git
-You may use whatever Git GUI/client you wish, however they all (to my knowledge) require Git. Git 2.22.0 can be downloaded from https://git-scm.com/downloads.
+## Installing Git
+You may use whatever Git GUI/client you wish, however they all (to my knowledge) require Git. The latest version of Git can be downloaded from https://git-scm.com/downloads.
 
-Clone the wiki's contributing repository to your machine. The URL for the contributing repository is https://github.com/kopernicuswiki/wiki.git
+## How to finally contribute
 
-## Submitting Contributions
+### Authoring and Submitting
+Fork the wiki repository, then clone your fork to your computer. Create a new branch when working on anything new. Once you have COMPLETLEY FINISHED your changes, 
+commit them to your repository and create a pul request to kopernicuswiki/wiki and taget the `master` branch. Once your pull request has been approved by a maintainer,
+feel free to merge it if it hasnt been already. Within a few moments your content wil have been added to the wiki!
+
 ### Page Format
 As discussed in [issue #4](https://github.com/kopernicuswiki/kopernicuswiki.github.io/issues/4), the format for every page in the Wiki should be as follows:
 
