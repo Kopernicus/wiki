@@ -36,7 +36,7 @@ subtitle: A mod to modify the planetary system used by KSP
   + Ocean subnode
     - Fog subnode
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
-  + [Particles subnode]({{ site.baseurl }}{% link main/Particle.md %})
+  + [Particles subnode]({{ site.baseurl }}{% link main/Particles.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
 
 ## Syntax for stars
@@ -52,7 +52,7 @@ subtitle: A mod to modify the planetary system used by KSP
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
   + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
-  + [Particles subnode]({{ site.baseurl }}{% link main/Particle.md %})
+  + [Particles subnode]({{ site.baseurl }}{% link main/Particles.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
 
 # KopernicusExpansion
