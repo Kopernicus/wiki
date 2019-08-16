@@ -34,7 +34,7 @@ subtitle: A mod to modify the planetary system used by KSP
   + PQS subnode
     - [PQSMod subnodes]({{ site.baseurl }}{% link PQSMods/PQSMods.md %})
   + Ocean subnode
-	  - Fog subnode
+    - Fog subnode
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Particles subnode]({{ site.baseurl }}{% link main/Particle.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
