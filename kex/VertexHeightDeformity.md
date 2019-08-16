@@ -1,19 +1,25 @@
-<!-- TITLE: VertexHeightDeformity -->
-<!-- SUBTITLE: Deforms the terrain by a given value -->
+---
+layout: default
+title: VertexHeightDeformity
+---
 
-
-```text
+```
 PQS
 {
   Mods
   {
     VertexHeightDeformity
     {
-      deformity = //amount to deform the terrain by
-      scaleDeformityByRadius = true/false //multiply deformity by sphere radius?
+      deformity = 0.01
+      scaleDeformityByRadius = true
       enabled = true
-      order = //you know all this already
+      order = 21
     }
   }
 }
 ```
+
+|Property|Format|Description|
+|--------|------|-----------|
+|deformity|Double|The amount of deformation that the terrain should undergo. Each point's height on the sphere is multiplied by this value.|
+|scaleDeformityByRadius|Boolean|Whether to multiply the deformity by the body's radius.|
