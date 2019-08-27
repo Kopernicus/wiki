@@ -1,38 +1,32 @@
 ---
 layout: default
 title: VertexHeightNoise
-subtitle: TBD
 ---
 
-The `VertexHeightNoise` PQSMod is a mod that adds heightnoise to the terrain. This makes the terrain bumpier, though the "style" of bumps/features change with the noise type. 
-The noise is also additive, meaning that instead of overrwriting the terrain altitude, it simply adds or subtracts from it.
+The `VertexHeightNoise` PQSMod is a mod that adds height noise to the terrain. This makes the terrain bumpier, though the "style" of bumps/features change with the noise type. 
+The noise is also additive, meaning that instead of overwriting the terrain altitude, it simply adds or subtracts from it.
 
 **Example**
 ```
-@Kopernicus
+PQS
 {
-    Body
+  Mods
+  {
+    VertexHeightNoise
     {
-        PQS
-        {
-            Mods
-            {
-                VertexHeightNoise
-                {
-                    deformity = Single
-                    frequency = Single
-                    octaves = Single
-                    persistance = Single
-                    seed = Int32
-                    noiseType = KopernicusNoiseType
-                    mode = KopernicusNoiseQuality
-                    lacunarity = Single
-                    name = String // Optional unless you have more than one VertexHeightNoise PQSMod
-                    order = Int32
-                }
-            }
-        }
+      deformity = 1200
+      frequency = 0.5
+      octaves = 3
+      persistence = 0.2
+      seed = 134256
+      noiseType = Perlin
+      mode = High
+      lacunarity = 0.7
+      
+      enabled = true
+      order = 25
     }
+  }
 }
 ```
 
@@ -44,6 +38,17 @@ This may seem nice, but there are several issues with VertexHeightNoise. These i
 
 It is recommended that you instead use one of the VertexHeightNoiseVertHeightCurve PQSMods instead.
 
-* {{ site.baseurl }}{% link PQSMods/VHNVHC.md %}
-* {{ site.baseurl }}{% link PQSMods/VHNVHC2.md %}
-* {{ site.baseurl }}{% link PQSMods/VHNVHC3.md %}
+* VertexHeightNoiseVertHeightCurve
+* [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
+* VertexHeightNoiseVertHeightCurve3
+
+|Property|Format|Description|
+|--------|------|-----------|
+|deformity|Single|The deformity of the simplex terrain noise.|
+|frequency|Single|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
+|octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
+|persistence|Single|The complexity of or amount of detail in the noise.|
+|lacunarity|Single|The size of the gaps that are in the noise.|
+|seed|Integer|The random seed of the noise.|
+|noiseType|[NoiseType]({{ site.baseurl }}{% link main/datatypes.md %})|The type of the specified noise.|
+|mode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The quality mode of the noise.|
