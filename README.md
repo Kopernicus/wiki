@@ -20,7 +20,12 @@ Once you have installed all external programs, fork the wiki repository before c
 ### Page Format
 The format for every page should be as follows:
 
-Description of the item
+---
+layout: default
+title: pageTitle
+---
+
+Description of the feature/node being discussed, plus an explanation of what it does.
 
 **Example**
 ```
@@ -44,4 +49,5 @@ ForANode
 |(Example) order|Integer|The order the PQSMod should be applied in.| 
 
 **Links**
+
 Intra-repository links are to be in the form `[text]({{ site.baseurl }}{% link <absolute path in repo> %})`
