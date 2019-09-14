@@ -19,3 +19,4 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 + [VertexHeightNoise]({{ site.baseurl }}{% link PQSMods/VertexHeightNoise.md %})
 + VertexHeightNoiseVertHeightCurve
 + [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
++ [VertexSimplexHeight]({{ site.baseurl }}{% link PQSMods/VertexSimplexHeight.md %})
