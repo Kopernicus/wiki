@@ -8,7 +8,7 @@ This allows for consistent page formatting. If you wish to be able to test out c
 ## External Programs
 
 ### Installing Git
-You may use whatever Git GUI/client you wish, although if ou do not already have one we recommend GitKraken or Git itself. The latest version of Git can be downloaded from [https://git-scm.com/downloads](https://git-scm.com/downloads) and GitKraken can be found at [https://www.gitkraken.com/download](https://www.gitkraken.com/download)
+You may use whatever Git GUI/client you wish, although if you do not already have one we recommend GitKraken or Git itself. The latest version of Git can be downloaded from [https://git-scm.com/downloads](https://git-scm.com/downloads) and GitKraken can be found at [https://www.gitkraken.com/download](https://www.gitkraken.com/download)
 
 ### Installing Jekyll (optional)
 Head to [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/) and scroll to the bottom. 
@@ -20,10 +20,10 @@ Once you have installed all external programs, fork the wiki repository before c
 ### Page Format
 The format for every page should be as follows:
 
----
+\---
 layout: default
 title: pageTitle
----
+\---
 
 Description of the feature/node being discussed, plus an explanation of what it does.
 
