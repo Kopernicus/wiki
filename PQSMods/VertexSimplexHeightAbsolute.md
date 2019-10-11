@@ -3,7 +3,7 @@ layout: default
 title: VertexSimplexHeightAbsolute
 ---
 
-The `VertexSimplexHeightAbsolute` PQSMod is a mod that adds height noise to the terrain. TBD
+The `VertexSimplexHeightAbsolute` PQSMod conforms the terrain to a set height using simplex noise.
 
 **Example**
 ```
