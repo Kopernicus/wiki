@@ -28,5 +28,6 @@ pressureCurve = FloatCurve
 |File Path|A String containing a file path to a file. The path is relative to GameData, meaning the path starts after GameData.|"Fruit/Configs/Apple.cfg", "Mod/PluginData/SampleTex.png", "Fruit/Cache/Grapefruit.bin"|
 |x[]|A comma-separated list with values of type x.|"Integer[] = 1, 2, -10, 24", "String[] = Hi, Bye, IOParser, Excel"|
 |FloatCurve|A list of keys, each with 2 or 4 values. The first two values are the "time" and "value" values, and the next two are the derivatives of the curve (optional).|Error: Exceeds size limit.|
+|NoiseType|The type of noise to use with Noise-generating PSQMods|Options are "Perlin", "Billow", or "RidgedMultiFractal"|
 |Vector2/3|TODO|TODO|
 |Quaternion|TODO|TODO|
