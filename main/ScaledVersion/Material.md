@@ -64,7 +64,7 @@ NOTE: `Vacuum = "V"`, `Atmospheric = "A"`, and `Star = "S"`.
 |--------|------|------------------|-----------|
 |color|Color|V, A|The main color of the body. Default is (1, 1, 1, 1).|
 |specColor|Color|V, A|The specular color. Default is (0.5, 0.5, 0.5, 1).|
-|shininess|Single|V, A|The shininess of the planet. Default is 0.078125.|
+|shininess|Single|V, A|The size of the bright spot of sunlight reflecting off the body. The effect is obvious on oceans, but it is less noticeable on bodies without oceans. Default is 0.078125.|
 |texture|File Path|V, A|(Also `mainTex`) The texture containing the ScaledSpace color map. Default is "White".|
 |mainTexScale|Vector2|V, A|The scale of the color map.|
 |mainTexOffset|Vector2|V, A|The offset of the color map.|
