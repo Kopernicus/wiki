@@ -18,8 +18,8 @@ Orbit
   semiMajorAxis = 2620000000000
   longitudeOfAscendingNode = 40
   argumentOfPeriapsis = 10
-  meanAnomalyAtEpoch = 0
-  epoch = 30000000000000
+  meanAnomalyAtEpoch = 2.01
+  epoch = 0
 }
 ```
 
@@ -33,9 +33,9 @@ Orbit
 |[semiMajorAxis](https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes)|Double|The average altitude of the body above its `referenceBody`'s center.|
 |longitudeOfAscendingNode|Double|The longitude at where the body crosses the `referenceBody`'s equator. It relies on `inclination`.|
 |argumentOfPeriapsis|Double|The longitude of the `referenceBody` where the body's periapsis is.|
-|[meanAnomalyAtEpoch](https://en.wikipedia.org/wiki/Mean_anomaly)|Double|The position of the body along the orbit, in radians, at the specified epoch.|
+|[meanAnomalyAtEpoch](https://en.wikipedia.org/wiki/Mean_anomaly)|Double|The position of the body along the orbit, in radians, at the specified epoch between 0 and 2π, where 0 is the periapsis and π is the apoapsis.|
 |meanAnomalyAtEpochD|Double|Similar to `meanAnomalyAtEpoch`, but is in degrees instead of radians. Useful for more precise measurement.|
-|epoch|Double|The epoch at which `meanAnomalyAtEpoch` is described.|
+|epoch|Double|The epoch at which `meanAnomalyAtEpoch` is described. Typically should be at 0 for best accuracy.|
 |iconColor|[Color]({{ site.baseurl }}{% link main/datatypes.md %})|(Also nodeColor) The color of the orbit icon/node.|
 |iconTexture|File Path|The path to the custom icon texture.|
 |mode|OrbitDrawMode|Orbit Draw Mode. Possible values are `OFF`, `REDRAW_ONLY`, `REDRAW_AND_FOLLOW`, and `REDRAW_AND_RECALCULATE`. Default is `REDRAW_AND_RECALCULATE`.|
