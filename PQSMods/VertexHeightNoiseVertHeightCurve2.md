@@ -53,7 +53,11 @@ NOTE: `___` is substituted for "Add" and "Sub." "Add" creates a "base layer" of 
 |Property|Format|Description|
 |--------|------|-----------|
 |deformity|Single|The overall deformity of the noise.|
+<<<<<<< HEAD
 |ridgedMode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The noise quality for both `ridgedAdd` and `ridgedSub`.|
+=======
+|ridgedMode|[NoiseQualities]({{ site.baseurl }}{% link main/datatypes.md %})|The noise quality for both `ridgedAdd` and `ridgedSub`.|
+>>>>>>> 955c427 (noise types are now noise quality)
 |ridged___Frequency|Single|The size of the each feature of the ridged noise. As frequency gets bigger, size gets smaller.|
 |ridged___Lacunarity|Single|The size of the gaps that are in the noise.|
 |ridged___Octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
