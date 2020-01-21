@@ -42,6 +42,49 @@ It is recommended that you instead use one of the VertexHeightNoiseVertHeightCur
 * [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
 * VertexHeightNoiseVertHeightCurve3
 
+If you want to replicate the effect of VHN with one of the above mods, it is relatively simple to do so.
+
+```
+PQS
+{
+    Mods
+    {
+        VertexHeightNoiseVertHeightCurve2
+        {
+            // All blank fields can be whatever you want, see the VHNVHC2 page for more information on them. 
+            deformity = 
+            ridgedMode = 
+
+            ridgedAddSeed = 
+            ridgedAddFrequency = 
+            ridgedAddLacunarity = 
+            ridgedAddOctaves = 
+
+            ridgedSubSeed = 
+            ridgedSubFrequency = 0
+            ridgedSubLacunarity = 
+            ridgedSubOctaves = 
+
+            simplexCurve
+            {
+                key = 0 1
+                key = 1 0
+            }
+
+            simplexHeightStart = 
+            simplexHeightEnd = 
+            simplexSeed = 
+            simplexOctaves = 
+            simplexPersistence = 
+            simplexFrequency = 0
+
+            enabled = true
+            order = 
+        }
+    }
+}
+```
+
 |Property|Format|Description|
 |--------|------|-----------|
 |deformity|Single|The deformity of the simplex terrain noise.|
