@@ -13,10 +13,9 @@ Body
   {
     Instance
     {
-      heat = 0.01
-      interval = 0.5
-      HeatMap = Fruits/PluginData/Orange_heatmap.dds
-
+      ambientTemp = 270
+      HeatMap = MyMod/PluginData/MyPlanet/heatmap.dds
+      
       AltitudeCurve
       {
         key = 0 1
@@ -54,9 +53,8 @@ Body
 
 |Property|Format|Description|
 |--------|------|-----------|
-|heat|Double|The average heat on the body.|
-|interval|Single|How much time passes between applying the heat to a vessel.|
+|ambientTemp|Double|The ambient temperature. INTERROGATE SIGMA|
+|HeatMap|File Path|A greyscale map for fine control of the ambient temperature. It acts as a multiplier map. Black = 0, White = 1.|
 |AltitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain altitude.|
 |LatitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain latitude.|
 |LongitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain longitude.|
-|HeatMap|File Path|A greyscale map for fine control of the heat on the body. Black = 0, White = 1.|
