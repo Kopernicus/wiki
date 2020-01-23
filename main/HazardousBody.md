@@ -53,7 +53,7 @@ Body
 
 |Property|Format|Description|
 |--------|------|-----------|
-|ambientTemp|Double|The ambient temperature. INTERROGATE SIGMA|
+|ambientTemp|Double|This is the base temperature before applying modifiers such as the Alt/Lon/Lat Curves and the HeatMap. After all such modiers are applied , if the new temperature is higher than KSP's default ambient temperature, then the new one will be applied. If KSP's is higher, KSP's shall be used instead.|
 |HeatMap|File Path|A greyscale map for fine control of the ambient temperature. It acts as a multiplier map. Black = 0, White = 1.|
 |AltitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain altitude.|
 |LatitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain latitude.|
