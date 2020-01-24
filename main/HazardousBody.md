@@ -14,6 +14,8 @@ Body
     Instance
     {
       ambientTemp = 270
+      biomeName = Sargasso Seas
+      sumTemp = true
       HeatMap = MyMod/PluginData/MyPlanet/heatmap.dds
       
       AltitudeCurve
@@ -53,8 +55,10 @@ Body
 
 |Property|Format|Description|
 |--------|------|-----------|
-|ambientTemp|Double|This is the base temperature before applying modifiers such as the Alt/Lon/Lat Curves and the HeatMap. After all such modiers are applied , if the new temperature is higher than KSP's default ambient temperature, then the new one will be applied. If KSP's is higher, KSP's shall be used instead.|
-|HeatMap|File Path|A greyscale map for fine control of the ambient temperature. It acts as a multiplier map. Black = 0, White = 1.|
-|AltitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain altitude.|
-|LatitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain latitude.|
-|LongitudeCurve|FloatCurve|A multiplier of the average heat that gets applied at a certain longitude.|
+|sumTemp|Boolean|LOOK AT CODE/ASK SIGMA|
+|biomeName|String|Optional. This limits this instance of HazardousBody to the specified biome.|
+|ambientTemp|Double|Optional, defaults to 0. This is the base temperature before applying modifiers such as the Alt/Lon/Lat Curves and the HeatMap. After all such modiers are applied , if the new temperature is higher than KSP's default ambient temperature, then the new one will be applied. If KSP's is higher, KSP's shall be used instead.|
+|HeatMap|File Path|Optional. A greyscale map for fine control of the ambient temperature. It acts as a multiplier map. Black = 0, White = 1.|
+|AltitudeCurve|FloatCurve|Optional, defaults to 1 at all altitudes. A multiplier of the average heat that gets applied at a certain altitude.|
+|LatitudeCurve|FloatCurve|Optional, defaults to 1 at all latitudes. A multiplier of the average heat that gets applied at a certain latitude.|
+|LongitudeCurve|FloatCurve|Optional, defaults to 1 at all longitudes. A multiplier of the average heat that gets applied at a certain longitude.|
