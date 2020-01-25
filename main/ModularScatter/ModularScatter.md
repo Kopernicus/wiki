@@ -8,4 +8,5 @@ There are currently three ModularScatter components.
 
 * [HeatEmitter]({{site.baseurl}}{% main/ModularScatter/HeatEmitter.md %})
 * [LightEmitter]({{site.baseurl}}{% main/ModularScatter/LightEmitterEmitter.md %})
+* [ScatterColliders]({{site.baseurl}}{% main/ModularScatter/ScatterColliders.md %})
 * [SeaLevelScatter]({{site.baseurl}}{% main/ModularScatter/SeaLevelScatter.md %})
