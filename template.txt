@@ -1,0 +1,15 @@
+// Template for new files - remove this line after copy
+---
+layout: default
+title: PageTitle
+---
+
+[Description]
+
+[Example]
+
+|Property|Format|Description|
+|--------|------|-----------|
+[Table]
+
+[Subnodes]
