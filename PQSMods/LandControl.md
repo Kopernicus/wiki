@@ -5,6 +5,10 @@ title: LandControl
 
 LandControl is a PQSMod that controls regional, longitudinal, and latitudinal aspects. It is mainly used to add scatters, which are 3D meshed objects that are generated on the surface. Scatters are mainly controlled through the [`ModularScatter`]({{ site.baseurl }}{% link ModularScatter/ModularScatter.md %}) class.
 
+**Subnodes**
+* [Scatters { } / scatters { }]({{ site.baseurl }}{% link PQSMods/LandControl/Scatters.md %})
+* [LandClasses { } / landClasses { }]({{site.baseurl}}{% link PQSMods/LandControl/LandClasses.md %})
+
 **Example**
 ```
 PQS
@@ -137,3 +141,20 @@ PQS
 |altitudeBlend|Single|The blend between the different altitudes.|
 |altitudeFrequency|Single|The frequency of the noise applied to the altitudes.|
 |altitudeOctaves|Integer|The octaves of the noise applied to the altitudes.|
+|altitudePersistance|Single|The persistence of the noise applied to the altitudes.|
+|altitudeSeed|Integer|The random seed for the noise applied to the altitudes.|
+|createColors|Boolean|Whether the colors should be generated.|
+|createScatter|Boolean|Whether the scatters should be generated.|
+|heightMap|File Path|The path to the heightmap for LandControl.|
+|latitudeBlend|Single|The blend between the different latitudes.|
+|latitudeFrequency|Single|The frequency of the noise applied to the latitudes.|
+|latitudeOctaves|Integer|The octaves of the noise applied to the latitudes.|
+|latitudePersistance|Single|The persistence of the noise applied to the latitudes.|
+|latitudeSeed|Integer|The random seed for the noise applied to the latitudes.|
+|longitudeBlend|Single|The blend between the different longitudes.|
+|longitudeFrequency|Single|The frequency of the noise applied to the longitudes.|
+|longitudeOctaves|Integer|The octaves of the noise applied to the longitudes.|
+|longitudePersistance|Single|The persistence of the noise applied to the longitudes.|
+|longitudeSeed|Integer|The random seed for the noise applied to the longitudes.|
+|useHeightMap|Boolean|Whether to use the specified height map.|
+|vHeightMax|Single|The max vertical height of the body. Acts as a deformity?|
