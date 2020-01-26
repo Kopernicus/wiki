@@ -10,5 +10,3 @@ title: ScatterColliders
 |Property|Format|Description|
 |--------|------|-----------|
 [Table]
-
-[Subnodes]

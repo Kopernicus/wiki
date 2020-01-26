@@ -10,5 +10,3 @@ title: HeatEmitter
 |Property|Format|Description|
 |--------|------|-----------|
 [Table]
-
-[Subnodes]

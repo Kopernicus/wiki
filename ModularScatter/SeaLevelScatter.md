@@ -10,5 +10,3 @@ title: SeaLevelScatter
 |Property|Format|Description|
 |--------|------|-----------|
 [Table]
-
-[Subnodes]

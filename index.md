@@ -40,6 +40,7 @@ title: Kopernicus Wiki
     - [AtmosphereFromGround subnode]({{ site.baseurl }}{% link content/Atmosphere/AtmosphereFromGround.md %}) **NON-STARS ONLY**
   + [PQS subnode]({{site.baseurl}}{% link content/PQSMods/PQS.md %}) **NON-STARS ONLY**
     - [PQSMod subnodes]({{ site.baseurl }}{% link content/PQSMods/PQSMods.md %}) **NON-STARS ONLY**
+      * [Modular Scatter]({{ site.baseurl }}{% link ModularScatter/ModularScatter.md %}) **NON-STARS ONLY**
   + [Ocean subnode]({{ site.baseurl }}{% link content/Ocean.md%}) **NON-STARS ONLY**
     - Fog subnode **NON-STARS ONLY**
   + [SpaceCenter subnode]({{site.baseurl}}{% link content/SpaceCenter.md %}) **HOMEWORLD ONLY**

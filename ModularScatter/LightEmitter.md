@@ -10,5 +10,3 @@ title: LightEmitter
 |Property|Format|Description|
 |--------|------|-----------|
 [Table]
-
-[Subnodes]
