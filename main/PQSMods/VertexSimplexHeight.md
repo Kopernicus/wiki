@@ -3,7 +3,7 @@ layout: default
 title: VertexSimplexHeight
 ---
 
-The `VertexSimplexHeight` PQSMod effectively generates [Perlin noise]({{ site.baseurl }}{% link main/datatypes.md %}) more efficiently than [`VertexHeightNoise { }`]({{ site.baseurl }}{% link PQSMods/VertexHeightNoise.md %}) and is less buggy too.
+The `VertexSimplexHeight` PQSMod effectively generates [Perlin noise]({{ site.baseurl }}{% link main/datatypes.md %}) more efficiently than [`VertexHeightNoise { }`]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %}) and is less buggy too.
 
 **Example**
 ```
