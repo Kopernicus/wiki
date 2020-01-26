@@ -6,10 +6,10 @@ title: PageTitle
 
 [Description]
 
+[Subnodes]
+
 [Example]
 
 |Property|Format|Description|
 |--------|------|-----------|
 [Table]
-
-[Subnodes]
