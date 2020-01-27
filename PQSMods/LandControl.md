@@ -3,11 +3,11 @@ layout: default
 title: LandControl
 ---
 
-LandControl is a PQSMod that controls regional, longitudinal, and latitudinal aspects. It is mainly used to add scatters, which are 3D meshed objects that are generated on the surface. Scatters are mainly controlled through the [`ModularScatter`]({{ site.baseurl }}{% link ModularScatter/ModularScatter.md %}) class.
+LandControl is a PQSMod that controls regional, longitudinal, and latitudinal aspects. It is mainly used to add scatters, which are 3D meshed objects that are generated on the surface. Scatters are mainly controlled through the [`ModularScatter`]({{ site.baseurl }}{% link PQSMods/LandControl/ModularScatter/ModularScatter.md %}) class.
 
 **Subnodes**
 * [Scatters { } / scatters { }]({{ site.baseurl }}{% link PQSMods/LandControl/Scatters.md %})
-* [LandClasses { } / landClasses { }]({{site.baseurl}}{% link PQSMods/LandControl/LandClasses.md %})
+* [LandClasses { } / landClasses { }]({{ site.baseurl }}{% link PQSMods/LandControl/LandClasses.md %})
 
 **Example**
 ```
