@@ -1,0 +1,14 @@
+{
+    "markdownlint.config" : {
+        "default": true,
+        "no-hard-tabs": false,
+        "no-emphasis-as-header": false,
+        "blanks-around-fences": false,
+        "fenced-code-language": false,
+        "blanks-around-lists": false,
+        "blanks-around-headers": false,
+        "ul-style":{
+            "style": "sublist"
+        }
+    }
+}
