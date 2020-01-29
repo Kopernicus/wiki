@@ -2,6 +2,7 @@
     "markdownlint.config" : {
         "default": true,
         "no-hard-tabs": false,
+        "no-empty-code-lang": false,
         "no-emphasis-as-header": false,
         "blanks-around-fences": false,
         "fenced-code-language": false,
