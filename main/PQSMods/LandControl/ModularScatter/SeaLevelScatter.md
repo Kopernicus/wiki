@@ -1,8 +1,28 @@
 ---
 layout: default
-title: LightEmitter
+title: SeaLevelScatter
 ---
 
 ```
-
+PQS
+{
+    Mods
+    {
+        LandControl
+        {
+            ...
+            scatters
+            {
+                Value
+                {
+                    ...
+                    Components
+                    {
+                        
+                    }
+                }
+            }
+        }
+    }
+}
 ```
