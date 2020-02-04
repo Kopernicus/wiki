@@ -41,7 +41,8 @@ Body
         materialType = // Enum, values are Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation 
         Material
         {
-            
+            factor = // Int32, how many zoom levels there are (see video), fewer results in more discrete levels, 1 will softlock
+              
         }
 
     }
