@@ -4,6 +4,8 @@ title: Particles
 subtitle: "You would not believe your eyes, if ten million fireflies..."
 ---
 
+### [WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.]
+
 The `Particles { }` wrapper node is used to add particles to bodies. You can define several different "species" of particles by using multiple `Value { }` subnodes. NOTE:  Do not use this with a rapidly rotating body.  Doing so will yield unintended results that will be easily made apparent after a quick timewarp.
 
 **Example**
@@ -17,20 +19,20 @@ Body
     {
       target = Sun
       texture = Fruits/PluginData/Tomato_particle.dds
-      
+
       minEmission = 1.0
       maxEmission = 4.0
       sizeMin = 20.0
       sizeMax = 45.0
       lifespanMin = 500
       lifespanMax = 1250
-      
+
       speedScale = -0.0000001
       rate = -0.05
       collide = false
       randVelocity = 0.05, 0.05, 0.05
       force = 0,0 0
-      
+
       Colors
       {
         color1 = 0.9,0.3,0.4,1
