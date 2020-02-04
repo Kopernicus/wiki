@@ -3,12 +3,11 @@ layout: default
 title: Config Nodes
 ---
 
-# What is a ConfigNode?
+***What is a ConfigNode?***
 ConfigNodes are a data storage / settings format that is used by KSP. They are most commonly used in `.cfg` files, but you can find them inside of `.craft` and `.sfs` files too.
 Whenever you want to modify anything in KSP, you will have to deal with ConfigNodes.
 
-A Config Node consists of three parts:
-
+A Config Node consists of three parts:  
 * header
 * values
 * subnodes
@@ -72,13 +71,13 @@ Kopernicus
 {
     // Naming the system
     name = My cool system
-    
+
     // Creating my first body
     Body
     {
         // I have heard this name before...
         name = Kerbin
-        
+
         // Access the properties of the body
         Properties
         {
@@ -107,20 +106,19 @@ Kopernicus
     {
         // I have heard this name before...
         name = Kerbin
-        
+
         // Access the properties of the body
         Properties
         {
             // Describing Kerbin
             description = That blue ball around the Sun
-        
+
         } // Properties
-    
+
     } // Body
 
 } // Kopernicus
 ```
-
 
 That way you can always tell where you actually added the node.
 
@@ -232,5 +230,22 @@ Kopernicus
 ## Conditions
 All configs that were previously shown would apply themselves to the first node they can find that matches their name. This is undesired in most cases, since you want to be able to finetune the config of a specific body or part etc. ModuleManager can, instead of selecting the first matching one, select configs based on their values. To do this, you have to add `:HAS[#name[value]]` to the name of the node. `name` is the key of the value you want to select, and `value` it's value. If the value doesn't matter to you, you can use a wildcard, that will match everything: `:HAS[#name[*]]`. You can also negate the selection, `:HAS[~name[value]]` will select a config that doesn't have a property with the specified name.
 
-**TODO: :NEEDS, :FOR, :AFTER**
+### :NEEDS[]
+The `:NEEDS` condition allows a config to specify its dependencies. The config will not run if the specified mod is not installed. The name of the mod will most commonly be the folder name in GameData. Sometimes, the name of the mod will be the name of the `.dll` file, which can be found by right-clicking the file on Windows and selecting Properties. For nested mods in GameData, the name can be found in the config (the `:FOR` condition discussed later). For example, putting `:NEEDS[Fruits]` after the node name makes the config run *only if* the mod `Fruits` is installed.
 
+### :FOR[]
+`:FOR[]` specifies the mod that the config belongs to. It can be used if the mod is located in a nested folder inside GameData. Usually, not every config in a mod will need to include the `:FOR[]` condition.
+
+### Mod Order
+Module Manager loads mods in a certain order according to their conditions.
+1. `:FIRST`
+2. Configs with no condition
+3. `:BEFORE[]`
+4. `:FOR[]`
+5. `:AFTER[]`
+6. `:LAST[]`
+7. `:FINAL`
+
+Each of the conditions except for `:FINAL` accept a mod to go before/for/after/last. Mod names are discussed in the `:NEEDS[]` section.
+
+**TODO: :FOR, :AFTER**
