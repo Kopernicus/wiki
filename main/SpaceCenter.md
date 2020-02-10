@@ -1,11 +1,15 @@
 ---
 layout: default
 title: SpaceCenter
+subtitle: Jeb's home sweet home - oops, where'd it go?
 ---
 
-The `SpaceCenter { }` node describes the location and altitude of the KSC and the MapDecal that creates the flat region it is located on. It is a subnode of `Body { }`.
+The `SpaceCenter { }` node describes the location and altitude of the KSC and the MapDecal that creates the flat region it is located on. It is a subnode of `Body { }`. It should only be used for the home world(?).
 
-## Example
+**Subnodes**
+* [`Material { }`]({{ site.baseurl }}{% link /main/SpaceCenter/GrassMaterial.md %})
+
+**Example**
 ```md
 @Kopernicus
 {
@@ -61,3 +65,25 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
 
 |Property|Format|Description|
 |--------|------|-----------|
+|latitude|Double|Latitude of the KSC building collection.|
+|longitude|Double|Longitude of the KSC building collection.|
+|repositionRadial|Vector3|?|
+|decalLatitude|Double|Latitude of the KSC MapDecal.|
+|decalLongitude|Double|Longitude of the KSC MapDecal.|
+|lodvisibleRangeMultiplier|Double|Multiplier of the visible range from the Space Center view(?).|
+|reorientFinalAngle|Single|Final angle of the KSC(?).|
+|reorientInitialUp|Vector3|"Up" direction of the KSC(?).|
+|reorientToSphere|Boolean|Whether to reorient to a sphere(?).|
+|reorientToSphereSurface|Boolean|Whether to reorient to the sphere's surface(?).|
+|reorientToSphereSurfaceAddHeight|Boolean|Whether to add height to the reoriented sphere's surface(?).|
+|position|Vector3|The position of the KSC. NOT LAT/LONG!|
+|radius|Double|Height and scale of the KSC.|
+|heightMapDeformity|Double|External height map deformity(?).|
+|absoluteOffset|Double|Offset from the ground.|
+|absolute|Boolean|?|
+|groundColor|Color|Color of the KSC grass.|
+|groundTexture|File Path|The texture containing the KSC's ground texture when viewed up close.|
+|editorGroundColor|Color|Color of the KSC grass found in the editor.|
+|editorGroundTex|File Path|The texture containing the KSC's ground texture when viewed up close from the editor.|
+|editorGroundTexScale|Vector2|Scale of the grass texture found in the editor.|
+|editorGroundTexOffset|Vector2|Offset of the grass texture found in the editor.|
