@@ -57,8 +57,18 @@ Body
             steepTexOffset = vector2
             steepBumpMap = texture2d
             steepBumpMapScale = vector2
-            ln 167 https://github.com/Kopernicus/Kopernicus/blob/5d416886f60baac0c57495e410aaa0d5cb6c9d05/src/Kopernicus/Configuration/MaterialLoader/PQSTriplanarZoomRotationLoader.cs
-            spec
+            steepBumpMapOffset = vector2
+            steepNearTiling = single
+            steepTiling = single // far tiling
+            lowTex = texture3d
+            lowTexScale = vector2
+            lowTexOffset = vector2
+            lowTiling = single
+            midTex = texture3d
+            midTexScale = vector2
+            midTexOffset = vector2
+            midTiling = single
+            
         }
 
     }
