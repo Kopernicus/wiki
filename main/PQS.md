@@ -42,7 +42,23 @@ Body
         Material
         {
             factor = // Int32, how many zoom levels there are (see video), fewer results in more discrete levels, 1 will softlock
-              
+            factorBlendWidth = // Single CHECK WITH GAMESLINX EXAMPLE
+            factorRotation = // Single
+            saturation = // single
+            contrast = single
+            tintColor = Color
+            specularColor = color
+            albedoBrightness = single
+            steepPower = single
+            steepTexStart = Single
+            steepTexEnd = single
+            steepTex = texture2d
+            steepTexScale = vector2
+            steepTexOffset = vector2
+            steepBumpMap = texture2d
+            steepBumpMapScale = vector2
+            ln 167 https://github.com/Kopernicus/Kopernicus/blob/5d416886f60baac0c57495e410aaa0d5cb6c9d05/src/Kopernicus/Configuration/MaterialLoader/PQSTriplanarZoomRotationLoader.cs
+            spec
         }
 
     }
