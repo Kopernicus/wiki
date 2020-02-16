@@ -7,7 +7,9 @@ subtitle: Jeb's home sweet home - oops, where'd it go?
 The `SpaceCenter { }` node describes the location and altitude of the KSC and the MapDecal that creates the flat region it is located on. It is a subnode of `Body { }`. It should only be used for the home world(?).
 
 **Subnodes**
-* [`Material { }`]({{ site.baseurl }}{% link /main/SpaceCenter/GrassMaterial.md %})
+```
+* `Material { }` link to grassamaterial
+```
 
 **Example**
 ```md
