@@ -2,7 +2,7 @@
 layout: default
 title: AtmosphericTriplanarZoomRotation
 ---
-
+https://discordapp.com/channels/609759014384828446/609759014384828449/678797826255487008
 ```
 Body
 {
@@ -15,22 +15,22 @@ Body
             factorBlendWidth = // Single, smoothing applied to each transition between factors. goes as low as 0.05 (recommended) and 1. 1 would be a solid (instant) transition.
             rotationFactor = // Single, angle whch the texture rotates between factors, affects shadows
             albedoBrightness = single // terrain brightness
-            saturation = // single
-            contrast = single
-            tintColor = Color
-            specularColor = color
-            steepPower = single
-            steepTexStart = Single
-            steepTexEnd = single
-            steepTex = texture2d
-            steepTexScale = vector2
-            steepTexOffset = vector2
-            steepBumpMap = texture2d
-            steepBumpMapScale = vector2
-            steepBumpMapOffset = vector2
-            steepNearTiling = single
-            steepTiling = single // far tiling
-            lowTex = texture3d
+            saturation = single, modfies the ground texture saturation (scale of 0-1)
+            contrast = single, modfies the ground texture brightness (scale of 0-1)
+            tintColor = Color, sets the ground texture's color
+            specularColor = color, sets the shine color of the ground texture CONFIRM THIS
+            steepPower = single, stregth of cliff textures on steep slopes
+            steepTexStart = Single, distance from camera that cliff textures start to fade out at. this should be closer to the camera than steepTexEnd
+            steepTexEnd = single, distance from camera that cliff textures finish fading out at. this should be farther from the camera than steepTexStart.
+            steepTex = texture2d, the texture to use
+            steepTexScale = vector2, does nothing?? CONFIRM
+            steepTexOffset = vector2 ????
+            steepBumpMap = texture2d bump map for the steep texture
+            steepBumpMapScale = vector2 same as above
+            steepBumpMapOffset = vector2 same as above
+            steepNearTiling = single, how many times to tile the texture (when near?)
+            steepTiling = single // far tiling (see above)
+            lowTex = texture3d // for all these just see above
             lowTexScale = vector2
             lowTexOffset = vector2
             lowTiling = single
