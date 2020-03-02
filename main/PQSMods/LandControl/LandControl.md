@@ -63,9 +63,7 @@ PQS
                 delete = False
                 Material
                 {
-                    mainTex = BUILTIN/brown_cliff	//Filepath for the scatter's texture
-                    color = 1,1,1,0.421999991
-                    diff = 0.2	//Unknown
+					// COntents depend on materialType chosen above, see ScatterMaterialType page
                 }
             }
         }
