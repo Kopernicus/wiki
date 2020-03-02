@@ -38,14 +38,14 @@ PQS
         vHeightMax = 6000 - SINGLE
         order = 100
         enabled = True
-        name = _LandClass	//Its name
+        name = _LandClass	//LC name - string
 
         scatters	//Adds a scatter to be used.  In this case, a brown rock.
         {
             Value
             {
-                materialType = DiffuseWrapped // Type of material to use. - ScatterMaterialType { Diffuse, BumpedDiffuse, DiffuseDetail, DiffuseWrapped, CutoutDiffuse, AerialCutout, Standard}
-                mesh = BUILTIN/boulder		//Filepath to mesh. Must be .obj!!!
+                materialType = DiffuseWrapped // Type of material to use - ScatterMaterialType { Diffuse, BumpedDiffuse, DiffuseDetail, DiffuseWrapped, CutoutDiffuse, AerialCutout, Standard}
+                mesh = BUILTIN/boulder		//Filepath to mesh. Must be .obj!!! - maybe list BUILTINs
                 castShadows = True	//Obvious - BOOLEAN
                 densityFactor = 1 - DOUBLE
                 material = BUILTIN/scatter_rock_laythe	//Avoid using this.  Delete it.  Can take the place of the Material subside below.  The two are not compatible together.
