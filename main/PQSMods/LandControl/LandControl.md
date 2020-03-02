@@ -55,7 +55,7 @@ PQS
                 maxScale = 1.5	//Max size - SINGLE
                 minScale = 0.25	//Minimun size - SINGLE
                 maxScatter = 30	//Max # of scatters loaded?? - INT32
-                maxSpeed = 1000		//Assuming this dictates the maximum degrees of rotation - DOUBLE
+                maxSpeed = 1000		//Mostly unknown. It affects the frequency of scatter spawns. Posssibly a misspelling of maxSpread.
                 recieveShadows = True		//If it receives shadows or not duh - BOOLEAN
                 name = BrownRock	//Name - STRING
                 seed = 345234534	//Seed for scatter distribution
@@ -63,9 +63,7 @@ PQS
                 delete = False
                 Material
                 {
-                    mainTex = BUILTIN/brown_cliff	//Filepath for the scatter's texture
-                    color = 1,1,1,0.421999991
-                    diff = 0.2	//Unknown
+					// COntents depend on materialType chosen above, see ScatterMaterialType page
                 }
             }
         }
