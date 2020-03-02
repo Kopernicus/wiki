@@ -55,7 +55,7 @@ PQS
                 maxScale = 1.5	//Max size - SINGLE
                 minScale = 0.25	//Minimun size - SINGLE
                 maxScatter = 30	//Max # of scatters loaded?? - INT32
-                maxSpeed = 1000		//Assuming this dictates the maximum degrees of rotation - DOUBLE
+                maxSpeed = 1000		//Mostly unknown. It affects the frequency of scatter spawns. Posssibly a misspelling of maxSpread.
                 recieveShadows = True		//If it receives shadows or not duh - BOOLEAN
                 name = BrownRock	//Name - STRING
                 seed = 345234534	//Seed for scatter distribution
