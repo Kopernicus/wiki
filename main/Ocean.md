@@ -14,11 +14,14 @@ The `Ocean { }` subnode contains all of the information needed to produce an oce
 ```
 Ocean
 {
-  maxQuadLengthsPerFrame = 0.03
-  minLevel = 2
-  maxLevel = 12
-  minDetailDistance = 8
-  oceanColor = #8a0303
+    ocean = True/False
+    oceanColor = Color, color of the ocean in the map view
+    oceanHeight = Float
+    density = Float
+    minLevel = Integer
+    maxLevel = Integer
+    minDetailDistance = Float
+    maxQuadLengthsPerFrame = Float
   Material
   {
     color = Color as seen from up close, default is 1,1,1,1
@@ -46,7 +49,7 @@ Ocean
     falloffExp = Float, default is 2
     fogColor = Color, default is 0,0,1,1, AP Fog Color (what is that)
     heightFallOff = Float, default = 1, AP Height Fall Off
-    globalDensity = FLoat, default is 1, AP Global Density
+    globalDensity = Float, default is 1, AP Global Density
     atmosphereDepth = Float, default is 1, AP Atmosphere Depth
     fogColorRamp = Gradient
     fogColorRampScale = X,Y
@@ -59,11 +62,45 @@ Ocean
   }
   FallbackMaterial
   {
-  ...
+    color = Color as seen from up close, default is 1,1,1,1
+    colorFromSpace = Color as seen from far away (how do color maps affect this?), default is 1,1,1,1
+    specColor = Color, default = 1,1,1,1
+    shininess = Float, default = 0.078125
+    gloss = Float, default = 0.078125
+    tiling = Float, default = 1
+    waterTex = Texture, default is "white"
+    waterTexScale = X,Y
+    waterTexOffset = X,Y
+    waterTex1 = Texture, default is "white"
+    waterTex1Scale = X,Y
+    waterTex1Offset = X,Y
+    fadeStart = Float, default is 1
+    fadeEnd = Float, default is 1
+    planetOpacity = Float, default = 1
+  }
+  Mods
+  {
+    // just put PQSMods here. WHether they work is a different story
   }
   Fog
   {
-  ...
+    afgAltMult = Float
+    afgBase = Float
+    afgLerp = True/False
+    afgMin = Float
+    fogColorEnd = Color
+    fogColorStart = Color
+    fogDensityAltScalar = Float
+    fogDensityExponent = Float
+    fogDensityPQSMult = Float
+    fogDensityStart = Float
+    skyColorMult = Float
+    skyColorOpacityAltMult = Float
+    skyColorOpacityBase = Float
+    sunAltMult = Float
+    sunBase = Float
+    sunMin = Float
+    useFog = True/False
   }
 }
 ```
