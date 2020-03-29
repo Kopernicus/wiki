@@ -37,6 +37,7 @@ subtitle: A mod to modify the planetary system used by KSP
     - Fog subnode
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
+  
   ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.0-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.***
   + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
 
