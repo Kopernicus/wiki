@@ -33,6 +33,9 @@ Step 1: starting
 {
 	Body
 	{
+		
+	}
+}
 ```
 Now, what everthing does: the `@Kopernicus:AFTER[Kopernicus]` forces KSP to load your planet(s) after Kopernicus itself. Otherwise, it would load your pack with Kopernicus still inactive, and thus Kopernicus will not load your pack since it has already been loaded by KSP.
 
@@ -44,10 +47,12 @@ Step 2: basic info
 {
 	Body
 	{
-		name = (Your Planet`s Name)
-		cacheFile = (Optional.)
+		name = [Your Planet`s Name]
+		cacheFile = [Optional]
+	}
+}
 ```
-The planet`s name speaks for itself, it is the name that will be seen in-game. The `cacheFile` is optional: Kopernicus generates a cache file by default, but with the cacheFile line you can specify a filepath and force Kopernicus to generate the cachefile(s) in a specific location. For instance, you can use the following filepath: "MyFirstPack/CacheFiles/MyPlanet.bin". As you can see, you should not add `GameData/`, Kopernicus automatically searches in the GameData folder. Also, make sure that, at the end, you add the name of your planet plus `.bin`. Never ever forget to add `.bin`!
+The planet's name speaks for itself, it is the name that will be seen in-game. The `cacheFile` is optional: Kopernicus generates a cache file by default, but with the cacheFile line you can specify a filepath and force Kopernicus to generate the cachefile(s) in a specific location. For instance, you can use the following filepath: "MyFirstPack/CacheFiles/MyPlanet.bin". As you can see, you should not add `GameData/`, Kopernicus automatically searches in the GameData folder. Also, make sure that, at the end, you add the name of your planet plus `.bin`. Never ever forget to add `.bin`!
 
 Step 3: Template
 
@@ -60,29 +65,49 @@ Template
     removeOcean = true
 }
 ```
-In this case, I chose Kerbin as a template. If you choose a template, Kopernicus clones a stock planet and renames it. Next, you can either add:
+These lines go right after `name` in the `Body { }` node. Your entire config now looks like this:
+```
+@Kopernicus:AFTER[Kopernicus]
+{
+	Body
+	{
+		name = [Your Planet`s Name]
+		cacheFile = [Optional]
+		Template
+		{
+			name = Laythe
+			removeAllPQSMods = true
+			removeOcean
+		}
+	}
+}
+```
 
-- `removeAllPQSMods = true` to remove all PQS mods and turn the templated planet into a flat sphere
+All the other nodes that will be talked about in this tutorial go inside the `Body { }` node. Don't worry if you get lost, the completed config will be posted at the end.
+
+In this case, I chose Laythe as a template. If you choose a template, Kopernicus clones a stock planet and renames it. Next, you can either add:
+
+- `removeAllPQSMods = true` to remove all PQS mods and turn the templated planet into a flat textureless sphere
 
 - `removePQSMods = PQSMod1,PQSMod2,etc.` to remove specific PQSmods from the templated planet that your planet does not need.
 
 As you can see I also added `removeOcean = true`. I think that line is pretty self-explanatory.
 
-Step 4: properties
+Step 4: Properties
 
 Now we will set the physical properties of your planet.
 ```
 Properties //Physical properties
 {
     description = First planet you ever made! You can be proud of yourself.
-    radius = 7000000 //Distance from the planet`s core to it`s surface. How `big` is the planet?
-    geeASL = 0.67 //Surface gravity in G`s
-    rotationPeriod = 36000
-    rotates = true //Important!
-    tidallyLocked = false
-    initialRotation = 0
-    isHomeWorld = false //Very important!
-    timewarpAltitudeLimits = 0 30000 30000 60000 300000 300000 400000 700000
+    radius = 7000000 //Distance from the planet's core to it's surface. How 'big' is the planet?
+    geeASL = 0.67 //Surface gravity in Gs
+    rotationPeriod = 36000 // how long a day is on your planet, measured in seconds
+    rotates = true //Optional, defaults to true
+    tidallyLocked = false // optional, defaults to false
+    initialRotation = 0 // optional, defaults to 0
+    isHomeWorld = false //optional, defaults to false
+    timewarpAltitudeLimits = 0 30000 30000 60000 300000 300000 400000 700000 // the altitudes the various timewarp levels become available at
     ScienceValues //Scientific expiriments value multiplier
     {
         landedDataValue = 2 //For expiriments taken on the surface
@@ -92,18 +117,16 @@ Properties //Physical properties
         inSpaceLowDataValue = 7 //For expiriments taken in space, close to your planet
         inSpaceHighDataValue = 6 //For expiriments taken in space, far away from your planet
         recoveryValue = 7 //Science multiplier for expiriment data taken from recovered vessels
-        flyingAltitudeThreshold = 12000
-        spaceAltitudeThreshold = 140000
+        flyingAltitudeThreshold = 12000 // transition altitude between flying low/flying high
+        spaceAltitudeThreshold = 140000 // transition altitude between in space low/in space high
     }
 }
 ```
-As you can see I`ve added some notes to the config. Do not include those in your config. Anyhow, the `description` defines the info displayed when clicking the info-tab in the map view in-game. `tidallyLocked` determines if a planet`s surface does not move relative to the parent object: it`s rotation period is identical to it`s orbital period. `initialRotation` determines how a planet is rotated on start. `isHomeWorld` is for debugging purposes.
+As you can see I`ve added some notes to the config. You don't have to include those in your config. Anyhow, the `description` defines the info displayed when clicking the info-tab in the map view in-game. `tidallyLocked` determines if a planet`s surface does not move relative to the parent object: it`s rotation period is identical to it`s orbital period. `initialRotation` determines how a planet is rotated on start. `isHomeWorld` is for debugging purposes.
 
 Then there`s `timewarpAltitudeLimits`. This entry determines what timewarp speed is unlocked at what altitude. For instance, in the example code the time warp speeds 5x and 10x are unlocked at 30000m above sea level.
 
-Now, this is what your config should look like right now:
-
-Step 5: orbit properties
+Step 5: Orbit Properties
 
 It`s already starting to look like something, isn`t it? Now, we must specify your planet`s orbit.
 ```
@@ -124,11 +147,11 @@ Again, I`ve left some notes in place. The `referenceBody` defines what celestial
 
 The `color` entry defines the color of your planet`s orbit line in the map view. For instance, Jool`s orbit is green, Eve`s orbit is purple, Kerbin`s orbit is blue, Duna`s orbit is red, and the color specified in the example would result in a white orbit line. The `1,1,1,1` determine how much red, green and blue is present, and the last one determines the `lightness`. It should be on a scale of 0-1 or you could use `RGBA( R(0-255), G(0-255), B(0-255), A(0-255))`
 
-Step 6: ScaledSpace update
+Step 6: ScaledSpace
 
 If you`d load up your planet right now, it wouldn`t work yet. But if it would work, in the map view it would look identical to the templated planet. To combat this we need to update the ScaledSpace with the following lines:
 ```
-ScaledVersion //Update scaledspace
+ScaledVersion // version of your planet that exists in scaledspace
 {
     type = Atmospheric
     fadeStart = 0
@@ -160,7 +183,7 @@ Now, the following entries are optional: `type`, `fadeStart`, `fadeEnd`, `shinin
 
 Now, the most important entries: `texture` and `normals`. `texture` needs a filepath that leads to the texture file you made for your planet. It will glue this texture over the templated planet. To make sure that your planet neither looks like a recolored Eve for example nor a flat ball, the `normals` entry needs a normal map in the `DXT5_nm` format. The normal map will make your planet look 3D in scaledspace rather than a perfectly smooth orb. If you are uncertain how to export your normal map as `DXT5_nm`, I will do a tutorial on that too. It can be done with Photoshop, but I`ve managed to do it with GIMP, which is absolutely free! Futhermore, you do not have to save it as DXT5_nm for your normal map to work, it`s just that normal maps that are not saved as DXT5_nm create an annoying lighting issue in ScaledSpace. It`s not gamebreaking, it just looks ugly.
 
-Step 7: atmospheres (optional step)
+Step 7: Atmospheres (optional step)
 
 If you want to create a planet that has an atmosphere, then do not skip this step. Otherwise, go on.
 
