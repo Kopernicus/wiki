@@ -1,85 +1,36 @@
 ---
 layout: default
 title: HeightColorMap
-subtitle: Coloring the world one *step* at a time.
 ---
 
-The `HeightColorMap` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses.
-
-**Subnodes**
-* `LandClasses { }` (defined below)
+The `HeightColorMap` PQSMod is a mod that colors the tarrain based on altitude using user-defined landclasses.
 
 **Example**
 ```
 PQS
 {
-    Mods
+  Mods
+  {
+    HeightColorMap
     {
-        HeightColorMap
+        blend = Float
+        LandClasses
         {
-            enabled = true
-            order = 24
-            
-            blend = 0.1
-            LandClasses
+            LandClass
             {
-                LandClass
-                {
-                    name = _Ocean
-                    color = 0.1,0.2,0.8,1
-                    altitudeStart = 0.0
-                    altitudeEnd = 0.125
-                    lerpToNext = true
-                }
-                LandClass
-                {
-                    name = _Plains
-                    color = 0.7,0.6,0.1,1
-                    altitudeStart = 0.125
-                    altitudeEnd = 0.375
-                    lerpToNext = true
-                }
-                LandClass
-                {
-                    name = _MountainSide
-                    color = 0.6,0.9,0.05,1
-                    altitudeStart = 0.375
-                    altitudeEnd = 0.75
-                    lerpToNext = true
-                }
-                LandClass
-                {
-                    name = _RoundingTheSummit
-                    color = 0.7,0.85,0.2,1
-                    altitudeStart = 0.75
-                    altitudeEnd = 0.9
-                    lerpToNext = true
-                }
-                LandClass
-                {
-                    name = _IceCap
-                    color = 0.9,0.9,0.9,1
-                    altitudeStart = 0.9
-                    altitudeEnd = 1.0
-                    lerpToNext = false
-                }
+                name = String
+                delete = Boolean // default is false
+                color = Color
+                altitudeStart = Float // Fractional altitude start | altitude = (vertexHeight - vertexMinHeightOfPQS) / vertexHeightDeltaOfPQS
+                altitudeEnd = Float
+                lerpToNext = Boolean // should we blend into the next landclass? set to true on all but the last
             }
         }
     }
+  }
 }
 ```
 
 |Property|Format|Description|
 |--------|------|-----------|
-|blend|Float|The blend between the LandClasses.|
-
-## LandClasses
-The `LandClasses { }` wraps several `LandClass { }` nodes that describe an individual region's color as defined by altitudes.
-
-|Property|Format|Description|
-|--------|------|-----------|
-|name|String|The name of the LandClass.|
-|color|Color|The color to be applied to the LandClass.|
-|altitudeStart|Float|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of valid PQS height: `altitude = (vertexHeight - vertexMinHeightOfPQS) / vertexHeightDeltaOfPQS`.|
-|altitudeEnd|Float|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|
-|lerpToNext|Boolean|Whether to blend into the next LandClass. Highly recommended to set to true on all but the last LandClass.|
+|map|File Path|The texture containing the color map for the body.|
