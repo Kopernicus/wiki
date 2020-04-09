@@ -6,7 +6,7 @@ The `PQS { }` node describes properties of the Procedural Quad Sphere that makes
 
 ### Subnodes
 ***
-* [Mods]({{ site.baseurl }}{% link PQSMods/PQSMods.md%})
+* [Mods]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md%})
 
 ## Example
 ```md

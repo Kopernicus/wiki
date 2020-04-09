@@ -31,8 +31,8 @@ subtitle: A mod to modify the planetary system used by KSP
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
   + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
     - [AtmosphereFromGround subnode]({{ site.baseurl }}{% link main/Atmosphere/AtmosphereFromGround.md %})
-  + PQS subnode
-    - [PQSMod subnodes]({{ site.baseurl }}{% link PQSMods/PQSMods.md %})
+  + [PQS subnode]({{site.baseurl}}{% link main/PQS.md %})
+    - [PQSMod subnodes]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md %})
   + [Ocean subnode]({{ site.baseurl }}{% link main/Ocean.md%})
     - Fog subnode
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
