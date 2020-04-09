@@ -20,6 +20,7 @@ baseurl: "/wiki" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Kopernicus
 header_pages: main/ConfigNodes.md, main/datatypes.md, main/Body.md, main/Template.md, main/Properties.md, main/Orbit.md, main/ScaledVersion.md, main/Rings.md
+build_date: 2020-03-29
 
 # Build settings
 markdown: kramdown
@@ -42,4 +43,3 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: jekyll-theme-cayman
