@@ -1,7 +1,7 @@
 ---
 layout: default
 title: VertexHeightMap
-subtitle: Reaching new heights, one map at a time!
+subtitle: Reaching new heights, one map at a time
 ---
 
 The `VertexHeightMap` PQSMod is a mod that adds a given height map to the terrain. This means that height mods are additive, i.e. heightmaps don't set a fixed height.
