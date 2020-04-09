@@ -37,8 +37,9 @@ subtitle: A mod to modify the planetary system used by KSP
     - Fog subnode
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
-  #### [WARNING | The Particles subnode has been removed in Kopernicus 1.8.0-1, with no replacement. Only use this node if you pack is restricted to KSP 1.7.3 or earlier]
-  + [Particles subnode]({{ site.baseurl }}{% link main/Particles.md %})
+  
+  ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.***
+  + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
 
 ## Syntax for stars
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
@@ -53,18 +54,18 @@ subtitle: A mod to modify the planetary system used by KSP
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
   + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
-  + [Particles subnode]({{ site.baseurl }}{% link main/Particles.md %})
+  + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
 
 # KopernicusExpansion
-### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed
-*   [Comet Tails]({{ site.baseurl }}{% link kex/CometTails.md %})
-*   [Emissive FX]({{ site.baseurl }}{% link kex/EmissiveFX.md %})
-*   [EVA Footprints]({{ site.baseurl }}{% link kex/EVAFootprints.md %})
-*   Modular Noise
-*   [Procedural Gas Giants]({{ site.baseurl }}{% link kex/ProceduralGasGiants.md %})
-*   [Reentry Effects]({{ site.baseurl }}{% link kex/ReentryEffects.md %})
-*   Regional PQS Mods
-*   [VertexHeightDeformity]({{ site.baseurl }}{% link kex/VertexHeightDeformity.md %})
-*   [VertexHeightMap16]({{ site.baseurl }}{% link kex/VertexHeightMap16.md %})
-*   [Wormholes]({{ site.baseurl }}{% link kex/Wormholes.md %})
+**WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
+* [Comet Tails]({{ site.baseurl }}{% link kex/CometTails.md %})
+* [Emissive FX]({{ site.baseurl }}{% link kex/EmissiveFX.md %})
+* [EVA Footprints]({{ site.baseurl }}{% link kex/EVAFootprints.md %})
+* Modular Noise
+* [Procedural Gas Giants]({{ site.baseurl }}{% link kex/ProceduralGasGiants.md %})
+* [Reentry Effects]({{ site.baseurl }}{% link kex/ReentryEffects.md %})
+* Regional PQS Mods
+* [VertexHeightDeformity]({{ site.baseurl }}{% link kex/VertexHeightDeformity.md %})
+* [VertexHeightMap16]({{ site.baseurl }}{% link kex/VertexHeightMap16.md %})
+* [Wormholes]({{ site.baseurl }}{% link kex/Wormholes.md %})
