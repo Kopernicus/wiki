@@ -18,7 +18,7 @@ subtitle: A mod to modify the planetary system used by KSP
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
 * [Data Types]({{ site.baseurl }}{% link main/DataTypes.md %})
 
-## Syntax for planets
+## Syntax for Planets
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
   + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
@@ -42,7 +42,7 @@ subtitle: A mod to modify the planetary system used by KSP
   ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.0-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.***
   + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
 
-## Syntax for stars
+## Syntax for Stars
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
   + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
@@ -61,19 +61,6 @@ subtitle: A mod to modify the planetary system used by KSP
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
 
 # KopernicusExpansion
-<<<<<<< HEAD
-### WARNING: These pages are not intended for beginners, and a basic level of experience is assumed
-*   [Comet Tails]({{ site.baseurl }}{% link kex/CometTails.md %})
-*   [Emissive FX]({{ site.baseurl }}{% link kex/EmissiveFX.md %})
-*   [EVA Footprints]({{ site.baseurl }}{% link kex/EVAFootprints.md %})
-*   Modular Noise
-*   [Procedural Gas Giants]({{ site.baseurl }}{% link kex/ProceduralGasGiants.md %})
-*   [Reentry Effects]({{ site.baseurl }}{% link kex/ReentryEffects.md %})
-*   Regional PQS Mods
-*   [VertexHeightDeformity]({{ site.baseurl }}{% link kex/VertexHeightDeformity.md %})
-*   [VertexHeightMap16]({{ site.baseurl }}{% link kex/VertexHeightMap16.md %})
-*   [Wormholes]({{ site.baseurl }}{% link kex/Wormholes.md %})
-=======
 **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
 * [Comet Tails]({{ site.baseurl }}{% link kex/CometTails.md %})
 * [Emissive FX]({{ site.baseurl }}{% link kex/EmissiveFX.md %})
@@ -85,4 +72,8 @@ subtitle: A mod to modify the planetary system used by KSP
 * [VertexHeightDeformity]({{ site.baseurl }}{% link kex/VertexHeightDeformity.md %})
 * [VertexHeightMap16]({{ site.baseurl }}{% link kex/VertexHeightMap16.md %})
 * [Wormholes]({{ site.baseurl }}{% link kex/Wormholes.md %})
->>>>>>> 76f7263 (Fix for 1.8)
+
+# External Resources
+* [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
+* [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
+* [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
