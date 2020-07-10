@@ -20,7 +20,7 @@ subtitle: A mod to modify the planetary system used by KSP
 
 ## Syntax for planets
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
-  + [Template subnode]({{{ site.baseurl }}{% link main/Template.md %})
+  + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
     - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
     - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %})
@@ -41,7 +41,7 @@ subtitle: A mod to modify the planetary system used by KSP
 
 ## Syntax for stars
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
-  + [Template subnode]({{{ site.baseurl }}{% link main/Template.md %})
+  + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
     - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
   + [Orbit subnode]({{ site.baseurl }}{% link main/Orbit.md %})
