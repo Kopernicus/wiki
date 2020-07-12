@@ -13,11 +13,11 @@ PQS
   {
     LandControl
     {	// Descriptions are only provided for the altitude input paramaters but they apply to Latitude and Longitude as well.
-        altitudeBlend = 0.01	// Blend: Determines how it blends with above or below terrain - SINGLE
-        altitudeFrequency = 2	// Frequency: Frequency, or how big/small the noise is - SINGLE
-        altitudeOctaves = 2	// In some nodes they may slightly alter the appearance from blurry to less blurry, but that's about it - INT32
-        altitudePersistance = 0.5	// How much it resists being overwritten? - SINGLE
-        altitudeSeed = 53453		// It's a seed.  Fairly obvious. - INT32
+        altitudeBlend = 0.01	// Blend: Determines how it blends with above or below terrain - FLOAT
+        altitudeFrequency = 2	// Frequency: Frequency, or how big/small the noise is - FLOAT
+        altitudeOctaves = 2	// In some nodes they may slightly alter the appearance from blurry to less blurry, but that's about it - INTEGER
+        altitudePersistance = 0.5	// How much it resists being overwritten? - FLOAT
+        altitudeSeed = 53453		// It's a seed.  Fairly obvious. - INTEGER
         createColors = True	// True/False  Whether or not to use or affect colors - BOOLEAN
         createScatter = True	// True/false Whether or not it bothered with creating scatters - BOOLEAN
         heightMap = BUILTIN/oceanmoon_height	// Use for height map as of yet unknown.  Using it as a mask? - FILE PATH
@@ -35,10 +35,10 @@ PQS
         longitudeSeed = 98888
 
         useHeightMap = False	//Whether or not to use the height map...  For whatever it's for. - BOOLEAN
-        vHeightMax = 6000 - SINGLE
+        vHeightMax = 6000 - FLOAT
         order = 100
         enabled = True
-        name = _LandClass	//LC name - string
+        name = _LandClass	//LC name - STRING
 
         scatters	//Adds a scatter to be used.  In this case, a brown rock.
         {
@@ -47,14 +47,14 @@ PQS
                 materialType = DiffuseWrapped // Type of material to use - ScatterMaterialType { Diffuse, BumpedDiffuse, DiffuseDetail, DiffuseWrapped, CutoutDiffuse, AerialCutout, Standard}
                 mesh = BUILTIN/boulder		//Filepath to mesh. Must be .obj!!! - maybe list BUILTINs
                 castShadows = True	//Obvious - BOOLEAN
-                densityFactor = 1 - DOUBLE
+                densityFactor = 1 - FLOAT
                 material = BUILTIN/scatter_rock_laythe	//Avoid using this.  Delete it.  Can take the place of the Material subside below.  The two are not compatible together.
-                maxCache = 512		//How many scatters this has loaded? Not sure. - INT32
-                maxCacheDelta = 32	//No idea what delta means - INT32
-                maxLevelOffset = 0 // INT32
-                maxScale = 1.5	//Max size - SINGLE
-                minScale = 0.25	//Minimun size - SINGLE
-                maxScatter = 30	//Max # of scatters loaded?? - INT32
+                maxCache = 512		//How many scatters this has loaded? Not sure. - INTEGER
+                maxCacheDelta = 32	//No idea what delta means - INTEGER
+                maxLevelOffset = 0 // INTEGER
+                maxScale = 1.5	//Max size - FLOAT
+                minScale = 0.25	//Minimun size - FLOAT
+                maxScatter = 30	//Max # of scatters loaded?? - INTEGER
                 maxSpeed = 1000		//Mostly unknown. It affects the frequency of scatter spawns. Posssibly a misspelling of maxSpread.
                 recieveShadows = True		//If it receives shadows or not duh - BOOLEAN
                 name = BrownRock	//Name - STRING
@@ -76,12 +76,12 @@ PQS
                 color = 1,1,1,0		//What color you want the land to be
                 coverageBlend = 1	//How much it blends with terrain under (and/or over?) it
                 coverageFrequency = 12	
-                coverageOctaves = 6	//Honestly not sure this actually does anything
+                coverageOctaves = 6	
                 coveragePersistance = 0.5
                 coverageSeed = 234124
                 name = IceCaps	//Self explanatory
                 latDelta = 0
-                latitudeDouble = True	//Whether it should use latitudeDouble as well as normal latitude
+                latitudeFLOAT = True	//Whether it should use latitudeFLOAT as well as normal latitude
                 lonDelta = 1	//Not a clue what these Delta options do
                 minimumRealHeight = 20
                 noiseBlend = 0.25	//How much colored noise blends with standard Value color
@@ -105,7 +105,7 @@ PQS
                     startEnd = -10
                     startStart = -10
                 }
-                latitudeDoubleRange	//Determines the end point for latitude range
+                latitudeFLOATRange	//Determines the end point for latitude range
                 {
                     endEnd = 11
                     endStart = 11
@@ -138,8 +138,8 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|deformity|Single|The deformity of the simplex terrain noise.|
-|frequency|Single|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
+|deformity|FLOAT|The deformity of the simplex terrain noise.|
+|frequency|FLOAT|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
 |octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|persistence|Single|The complexity of or amount of detail in the noise.|
+|persistence|FLOAT|The complexity of or amount of detail in the noise.|
 |seed|Integer|The random seed of the noise.|

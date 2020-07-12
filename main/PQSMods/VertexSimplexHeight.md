@@ -3,7 +3,7 @@ layout: default
 title: VertexSimplexHeight
 ---
 
-The `VertexSimplexHeight` PQSMod effectively generates [Perlin noise]({{ site.baseurl }}{% link main/datatypes.md %}) more efficiently than [`VertexHeightNoise { }`]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %}) and is less buggy too.
+The `VertexSimplexHeight` PQSMod generates monochrome [Perlin noise]({{ site.baseurl }}{% link main/datatypes.md %}) for use in terrain deformation.
 
 **Example**
 ```
@@ -13,10 +13,10 @@ PQS
   {
     VertexSimplexHeight
     {
-      deformity = Double
-      frequency = Double
-      octaves = Double
-      persistence = Double
+      deformity = Float
+      frequency = Float
+      octaves = Float
+      persistence = Float
       seed = 340978
 
       enabled = true
@@ -28,8 +28,8 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|deformity|Double|The deformity of the perlin noise.|
-|frequency|Double|The size of the each feature of the perlin noise. As frequency gets bigger, size gets smaller.|
-|octaves|Double|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|persistence|Double|The complexity of or amount of detail in the noise.|
+|deformity|Float|The deformity of the perlin noise.|
+|frequency|Float|The size of the each feature of the perlin noise. As frequency gets bigger, size gets smaller.|
+|octaves|Float|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
+|persistence|Float|The complexity of or amount of detail in the noise.|
 |seed|Integer|The random seed of the noise.|
