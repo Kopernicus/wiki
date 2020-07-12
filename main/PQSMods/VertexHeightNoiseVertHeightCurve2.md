@@ -65,3 +65,46 @@ NOTE: `___` is substituted for "Add" and "Sub." "Add" creates a "base layer" of 
 |simplexOctaves|Double|Similar to `ridged___Octaves`.|
 |simplexPersistence|Double|The complexity of or amount of detail in the noise.|
 |simplexSeed|Integer|Similar to `ridged___Seed`.|
+
+If you want to replicate the effect of VertexHeightNoise with this mod, it is relatively simple to do so.
+
+```
+PQS
+{
+    Mods
+    {
+        VertexHeightNoiseVertHeightCurve2
+        {
+            // All blank fields can be whatever you want 
+            deformity = 
+            ridgedMode = 
+
+            ridgedAddSeed = 
+            ridgedAddFrequency = 
+            ridgedAddLacunarity = 
+            ridgedAddOctaves = 
+
+            ridgedSubSeed = 
+            ridgedSubFrequency = 0
+            ridgedSubLacunarity = 
+            ridgedSubOctaves = 
+
+            simplexCurve
+            {
+                key = 0 1
+                key = 1 0
+            }
+
+            simplexHeightStart = 
+            simplexHeightEnd = 
+            simplexSeed = 
+            simplexOctaves = 
+            simplexPersistence = 
+            simplexFrequency = 0
+
+            enabled = true
+            order = 
+        }
+    }
+}
+```
