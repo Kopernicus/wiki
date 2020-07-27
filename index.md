@@ -18,9 +18,9 @@ subtitle: A mod to modify the planetary system used by KSP
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
 * [Data Types]({{ site.baseurl }}{% link main/datatypes.md %})
 
-## Syntax for planets
+## Syntax for Celestial Bodies
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
-  + [Template subnode]({{{ site.baseurl }}{% link main/Template.md %})
+  + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
     - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
     - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %})
@@ -28,6 +28,8 @@ subtitle: A mod to modify the planetary system used by KSP
   + [ScaledVersion subnode]({{ site.baseurl }}{% link main/ScaledVersion.md %})
     - [Material subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %})
     - [OnDemand subnode]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %})
+    - [Light subnode]({{ site.baseurl }}{% link main/ScaledVersion/Light.md %}) **STARS ONLY**
+    - [Coronas subnode]({{ site.baseurl }}{% link main/ScaledVersion/Corona.md %}) **STARS ONLY**
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
   + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
     - [AtmosphereFromGround subnode]({{ site.baseurl }}{% link main/Atmosphere/AtmosphereFromGround.md %})
@@ -35,22 +37,6 @@ subtitle: A mod to modify the planetary system used by KSP
     - [PQSMod subnodes]({{ site.baseurl }}{% link PQSMods/PQSMods.md %})
   + Ocean subnode
     - Fog subnode
-  + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
-  + [Particles subnode]({{ site.baseurl }}{% link main/Particles.md %})
-  + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
-
-## Syntax for stars
-* [Body node]({{ site.baseurl }}{% link main/Body.md %})
-  + [Template subnode]({{{ site.baseurl }}{% link main/Template.md %})
-  + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
-    - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
-  + [Orbit subnode]({{ site.baseurl }}{% link main/Orbit.md %})
-  + [ScaledVersion subnode]({{ site.baseurl }}{% link main/ScaledVersion.md %})
-    - [Material subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %})
-    - [Light subnode]({{ site.baseurl }}{% link main/ScaledVersion/Light.md %})
-    - [Coronas subnode]({{ site.baseurl }}{% link main/ScaledVersion/Corona.md %})
-  + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
-  + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Particles subnode]({{ site.baseurl }}{% link main/Particles.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
