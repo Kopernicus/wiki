@@ -17,21 +17,21 @@ LandControl
   {
     Value
     {
-      materialType = DiffuseWrapped // Type of material to use - ScatterMaterialType { Diffuse, BumpedDiffuse, DiffuseDetail, DiffuseWrapped, CutoutDiffuse, AerialCutout, Standard}
-      mesh = BUILTIN/boulder		//Filepath to mesh. Must be .obj!!! - maybe list BUILTINs
-      castShadows = True	//Obvious - BOOLEAN
-      densityFactor = 1 - DOUBLE
-      maxCache = 512		//How many scatters this has loaded? Not sure. - INT32
-      maxCacheDelta = 32	//No idea what delta means - INT32
-      maxLevelOffset = 0 // INT32
-      maxScale = 1.5	//Max size - SINGLE
-      minScale = 0.25	//Minimun size - SINGLE
-      maxScatter = 30	//Max # of scatters loaded?? - INT32
-      maxSpeed = 1000		//Mostly unknown. It affects the frequency of scatter spawns. Posssibly a misspelling of maxSpread.
-      recieveShadows = True		//If it receives shadows or not duh - BOOLEAN
-      name = BrownRock	//Name - STRING
-      seed = 345234534	//Seed for scatter distribution
-      verticalOffset = 0		//How far it is offset, so it can be floating or offset underground
+      materialType = DiffuseWrapped
+      mesh = BUILTIN/boulder
+      castShadows = True
+      densityFactor = 1
+      maxCache = 512
+      maxCacheDelta = 32
+      maxLevelOffset = 0
+      maxScale = 1.5
+      minScale = 0.25
+      maxScatter = 30
+      maxSpeed = 1000
+      recieveShadows = True
+      name = BrownRock
+      seed = 345234534
+      verticalOffset = 0
       delete = False
       Material
       {
