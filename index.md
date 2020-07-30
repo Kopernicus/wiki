@@ -23,20 +23,20 @@ subtitle: A mod to modify the planetary system used by KSP
   + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
     - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
-    - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %})
+    - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %}) **NON-STARS ONLY**
   + [Orbit subnode]({{ site.baseurl }}{% link main/Orbit.md %})
   + [ScaledVersion subnode]({{ site.baseurl }}{% link main/ScaledVersion.md %})
     - [Material subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %})
-    - [OnDemand subnode]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %})
+    - [OnDemand subnode]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %}) **NON-STARS ONLY**
     - [Light subnode]({{ site.baseurl }}{% link main/ScaledVersion/Light.md %}) **STARS ONLY**
     - [Coronas subnode]({{ site.baseurl }}{% link main/ScaledVersion/Corona.md %}) **STARS ONLY**
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
   + [Atmosphere subnode]({{ site.baseurl }}{% link main/Atmosphere.md %})
-    - [AtmosphereFromGround subnode]({{ site.baseurl }}{% link main/Atmosphere/AtmosphereFromGround.md %})
-  + [PQS subnode]({{ site.baseurl }}{% link main/PQS.md %})
-    - [PQSMod subnodes]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md %})
-  + [Ocean subnode]({{ site.baseurl }}{% link main/Ocean.md %})
-    - Fog subnode
+    - [AtmosphereFromGround subnode]({{ site.baseurl }}{% link main/Atmosphere/AtmosphereFromGround.md %}) **NON-STARS ONLY**
+  + [PQS subnode]({{site.baseurl}}{% link main/PQS.md %}) **NON-STARS ONLY**
+    - [PQSMod subnodes]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md %}) **NON-STARS ONLY**
+  + [Ocean subnode]({{ site.baseurl }}{% link main/Ocean.md%}) **NON-STARS ONLY**
+    - Fog subnode **NON-STARS ONLY**
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
   
@@ -61,3 +61,4 @@ subtitle: A mod to modify the planetary system used by KSP
 * [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
 * [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
 * [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
+* [List of BUILTIN Textures for 1.8](https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8)
