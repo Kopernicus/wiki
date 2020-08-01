@@ -4,12 +4,14 @@ title: PQS
 ---
 The `PQS { }` node describes properties of the Procedural Quad Sphere that makes up the body and the material used for it (physics and redering-wise). It also contains the `Mods { }` subnode, which specifies which PQSMods to apply to customize the body.
 
-### Subnodes
-***
-* [Mods]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md%})
+**Subnodes**
+* [Mods { }]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md%})
+* Material { }
+  * [AtmosphericTriplanarZoomRotation]({{ site.baseurl }}{% link main/Material/PQSAtmosphericTriplanarZoomRotation.md %})
+  * [AtmosphericTriplanarZoomRotationTextureArray]({{ site.baseurl }}{% link main/Material/PQSAtmosphericTriplanarZoomRotationTextureArray.md %})
 
-## Example
-```md
+**Example**
+```
 Body
 {
     PQS
@@ -37,16 +39,21 @@ Body
 
         mapMaxHeight = // Float, the max altitude that can be represented by the height map?
 
-        materialType = // Enum, values are Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation, but only 4 of these are commonly used and the rest will be deferred or not added.
+        // PQS Render material?
+        materialType = // Enum, values are Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation, AtmosphericTriplanarZoomRotationTextureArray (1.9)
         Material
         {
-            // Each materialType has different options, so choose one from the list at the bottom of the page to see the associated Material block.
+            // Each materialType has different options, so choose one from the list at the top of the page to see the associated Material block.
         }
 
+        Mods
+        {
+            ...
+        }
     }
 }
 ```
 
 
-* [AtmosphericTriplanarZoomRotation]({{ site.baseurl }}{% link main/Material/PQSAtmosphericTriplanarZoomRotation.md %})
+* 
 
