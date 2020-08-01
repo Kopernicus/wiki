@@ -13,11 +13,11 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 |order|Integer|The order that the PQSMod should be processed in. PQSMods are processed in increasing `order` value, so a mod with `order` 20 would be applied before a mod with order `100`.|
 
 **PQSMods**
-+ [LandControl]({{ site.baseurl }}{% link PQSMods/LandControl.md %})
-+ [VertexColorMap]({{ site.baseurl }}{% link PQSMods/VertexColorMap.md %})
-+ [VertexHeightMap]({{ site.baseurl }}{% link PQSMods/VertexHeightMap.md %})
-+ [VertexHeightNoise]({{ site.baseurl }}{% link PQSMods/VertexHeightNoise.md %})
-+ VertexHeightNoiseVertHeightCurve
-+ [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
-+ [VertexSimplexHeight]({{ site.baseurl }}{% link PQSMods/VertexSimplexHeight.md %})
-+ [VertexSimplexHeightAbsolute]({{ site.baseurl }}{% link PQSMods/VertexSimplexHeightAbsolute.md %})
++ [LandControl]({{ site.baseurl }}{% link main/PQSMods/LandControl/LandControlLanding.md %})
++ [VertexColorMap]({{ site.baseurl }}{% link main/PQSMods/VertexColorMap.md %})
++ [HeightColorMap]({{ site.baseurl }}{% link main/PQSMods/HeightColorMap.md %})
++ [VertexHeightMap]({{ site.baseurl }}{% link main/PQSMods/VertexHeightMap.md %})
++ [VertexHeightNoise]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %})
++ [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
++ [VertexSimplexHeight]({{ site.baseurl }}{% link main/PQSMods/VertexSimplexHeight.md %})
++ [VertexSimplexHeightAbsolute]({{ site.baseurl }}{% link main/PQSMods/VertexSimplexHeightAbsolute.md %})
