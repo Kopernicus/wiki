@@ -57,12 +57,12 @@ Body
 
 |Property|Format|Description|
 |--------|------|-----------|
-|minLevel|Integer|The minimum level of triangles needed to render the PQS. Advised not to alter.|
-|maxLevel|Integer|The maximum level of triangles needed to render the PQS. Higher levels can lead to more detailed, yet much more noisy and sharp, terrain.|
-|minDetailDistance|Double|?|
+|minLevel|Integer|The minimum level of triangles needed to render the PQS (subdivision level). Advised not to alter.|
+|maxLevel|Integer|The maximum level of triangles needed to render the PQS (subdivision level). Higher levels can lead to more detailed, yet much more noisy and sharp, terrain.|
+|minDetailDistance|Double|The minimum distance needed to render scatters?|
 |maxQuadLengthsPerFrame|Single|Unknown use. Advised not to alter.|
 |fadeStart|Single|The altitude, in meters, in which the PQS begins to fade out. Should line up with ScaledVersion's `fadeStart`.|
-|fadeEnd|Single|The altitude, in meters, in which the PQS is fully faded. Should line up with ScaledVersion's `fadeStart`.|
+|fadeEnd|Single|The altitude, in meters, in which the PQS is fully faded. Should line up with ScaledVersion's `fadeEnd`.|
 |deactivateAltitude|Single|The altitude, in meters, in which the PQS is deactivated.|
 |mapMaxHeight|Double|The maximum altitude, in meters, that can be possibly represented by the height map?|
 |materialType|PQSMaterial|The name of the material type to use in the `Material { }` subnode. Possible values: Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation, AtmosphericTriplanarZoomRotationTextureArray (1.9).|
