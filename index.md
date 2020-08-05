@@ -37,6 +37,7 @@ subtitle: A mod to modify the planetary system used by KSP
     - [PQSMod subnodes]({{ site.baseurl }}{% link main/PQSMods/PQSMods.md %}) **NON-STARS ONLY**
   + [Ocean subnode]({{ site.baseurl }}{% link main/Ocean.md%}) **NON-STARS ONLY**
     - Fog subnode **NON-STARS ONLY**
+  + [SpaceCenter subnode]({{site.baseurl}}{% link main/SpaceCenter.md %}) **HOMEWORLD ONLY**
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
   
