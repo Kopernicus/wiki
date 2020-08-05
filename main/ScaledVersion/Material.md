@@ -33,11 +33,12 @@ Material
 	rimBlend = 0.875
 	Gradient
 	{
-		0.0 = #4dcff0
-		0.25 = #13a1ed
-		0.5 = #1f67b5
-		0.75 = #132abf
-		1.0 = #160c75
+		0.0 = 0.2,0.9,0.4,1.0
+		0.05 = 0.5,0.7,0.2,1.0
+		0.1 = 0.6,0.5,0.1,1.0
+		0.2 = 0.2,0.2,0.0,1.0
+		0.5 = 0.05,0.05,0.0,1.0
+		1.0 = 0.0,0.0,0.0,1.0
 	}
 	
 	resourceMap = Fruits/PluginData/Blueberry_resourcemap.dds
@@ -91,7 +92,7 @@ NOTE: `Vacuum = "V"`, `Atmospheric = "A"`, and `Star = "S"`.
 |rimColorRamp|File Path|A|The texture containing the atmosphere's rim color ramp. Default is "White".|
 |rimColorRampScale|Vector2|A|The scale of the rim color ramp.|
 |rimColorRampOffset|Vector2|A|The offset of the rim color ramp.|
-|Gradient|Gradient|A|The `rimColorRamp`, but explicitly defined through a gradient. The left value is the position on the gradient from 0 to 1, and the right value is the color at that position.|
+|Gradient|Gradient|A|The `rimColorRamp`, but explicitly defined through a gradient. The left value is the position on the gradient from 0 to 1, and the right value is the color at that position. 0 describes the side facing the local star, and 1 describes the side facing away from the local star. For a realistic gradient, the terminator value should be approximately at 0.1, whereas stock gradients have a terminator at 0.5.|
 |localLightDirection|Vector4|A|The direction of the local light. Default is (1, 0, 0, 0).|
 |resourceMap|File Path|V, A|The texture containing the body's resource map. Default is "Black".|
 |resourceMapScale|Vector2|V, A|The scale of the resource map.|

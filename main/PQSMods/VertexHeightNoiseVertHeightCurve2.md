@@ -4,47 +4,56 @@ title: VertexHeightNoiseVertHeightCurve2
 ---
 
 The `VertexHeightNoiseVertHeightCurve2` PQSMod is one of several mods in the HeightNoise family. They all produce heightmap noise, which can make terrain considerably more interesting.
-It is considered by some to be a much more customizable and far stabler alternative to `VertexHeightNoise { }`.
+It is considered by some to be a much more customizable and far stabler alternative to [`VertexHeightNoise`]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %}).
+
+To replicate the effects of `VertexHeightNoise`, simply set the `ridgedSub` and `simplex` keys to 0 and set the `simplexCurve` to 
+```
+simplexCurve
+{
+  key = 0 1
+  key = 1 0
+}
+```
 
 **Example**
 ```
 PQS
 {
-  Mods
-  {
-    VertexHeightNoiseVertHeightCurve2
+    Mods
     {
-      deformity = 200000
-      ridgedMode = Medium
+        VertexHeightNoiseVertHeightCurve2
+        {
+            deformity = 200000
+            ridgedMode = Medium
 
-      ridgedAddSeed = 1
-      ridgedAddFrequency = 4
-      ridgedAddLacunarity = 0.7
-      ridgedAddOctaves = 4
+            ridgedAddSeed = 1
+            ridgedAddFrequency = 4
+            ridgedAddLacunarity = 0.7
+            ridgedAddOctaves = 4
 
-      ridgedSubSeed = 1
-      ridgedSubFrequency = 8
-      ridgedSubLacunarity = 1.4
-      ridgedSubOctaves = 15
+            ridgedSubSeed = 1
+            ridgedSubFrequency = 8
+            ridgedSubLacunarity = 1.4
+            ridgedSubOctaves = 15
 
-      simplexCurve
-      {
-        key = 0 0 0.146 0.146
-        key = 0.79 0.245 0.68 1.5
-        key = 1 1 6.11 6.11
-      }
+            simplexCurve
+            {
+                key = 0 0 0.146 0.146
+                key = 0.79 0.245 0.68 1.5
+                key = 1 1 6.11 6.11
+            }
 
-      simplexHeightStart = 0
-      simplexHeightEnd = 1000
-      simplexSeed = 1
-      simplexOctaves = 8
-      simplexPersistence = 0.5
-      simplexFrequency = 1
-      
-      enabled = true
-      order = 2
+            simplexHeightStart = 0
+            simplexHeightEnd = 1000
+            simplexSeed = 1
+            simplexOctaves = 8
+            simplexPersistence = 0.5
+            simplexFrequency = 1
+
+            enabled = true
+            order = 2
+        }
     }
-  }
 }
 ```
 
