@@ -19,23 +19,23 @@ Body
         {
             bounceCombine = // Enum, values are Average = 0, Multiply = 1, Minimum = 2, Maximum = 4
             bounceCombine = // same type as above
-            bounciness = //Single
-            staticFriction = // Single
-            dynamicFriction = // Single
+            bounciness = //Float
+            staticFriction = // Float
+            dynamicFriction = // Float
         }
 
         // PQS Detail Settings
-        minLevel = // Int32
-        maxLevel = // Int32
-        minDetailDistance = // Double
-        maxQuadlengthsPerFrame = // Single
+        minLevel = // Integer
+        maxLevel = // Integer
+        minDetailDistance = // Float
+        maxQuadlengthsPerFrame = // Float
 
         //PQS fades, should roughly line up with ScaledSpace fades
-        fadeStart = // Single
-        fadeEnd = // Single
-        deactivateAltitude = // Double, whata ltutude is PQS disabled at
+        fadeStart = // Float
+        fadeEnd = // Float
+        deactivateAltitude = // Float, whata altitude is PQS disabled at
 
-        mapMaxHeight = // Double, the max altitude that can be represented by the height map?
+        mapMaxHeight = // Float, the max altitude that can be represented by the height map?
 
         // PQS Render material?
         materialType = // Enum, values are Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation 
