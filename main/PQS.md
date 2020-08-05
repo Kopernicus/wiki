@@ -18,22 +18,22 @@ Body
         PhysicsMaterial
         {
             bounceCombine = // Enum, values are Average = 0, Multiply = 1, Minimum = 2, Maximum = 4
-            frictionCombine = // same type as above
+            bounceCombine = // same type as above
             bounciness = //Float
             staticFriction = // Float
             dynamicFriction = // Float
         }
 
         // PQS Detail Settings
-        minLevel = // Integer, the minimum subdivision level allowed on the planet
-        maxLevel = // Integer, the maximum subdivision level allowed on the planet
-        minDetailDistance = // Float, the distance at which scatters become allowed to render at
+        minLevel = // Integer
+        maxLevel = // Integer
+        minDetailDistance = // Float
         maxQuadlengthsPerFrame = // Float
 
         //PQS fades, should roughly line up with ScaledSpace fades
         fadeStart = // Float
         fadeEnd = // Float
-        deactivateAltitude = // Float, what altitude is PQS disabled at in meters above sea level
+        deactivateAltitude = // Float, whata altitude is PQS disabled at
 
         mapMaxHeight = // Float, the max altitude that can be represented by the height map?
 
