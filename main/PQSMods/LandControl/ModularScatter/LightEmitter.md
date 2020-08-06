@@ -3,7 +3,7 @@ layout: default
 title: LightEmitter
 ---
 
-The `LightEmitter` ModularScatter component allows for scatters to provide their own light based on numerous arguments.
+The `LightEmitter` ModularScatter component allows for scatters to provide their own light based on numerous arguments. Most arguments are optional.
 
 ```
 LandControl
@@ -18,8 +18,11 @@ LandControl
             {
                 LightEmitter
                 {
-                    type = Spot
-                    
+                    type = Point
+                    color = 0.85,0.88,1,1
+                    range = 3000
+                    intensity = 6
+                    offset = 0,0,0
                 }
             }
         }
