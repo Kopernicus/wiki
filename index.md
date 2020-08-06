@@ -13,10 +13,16 @@ title: Kopernicus Wiki
 subtitle: A mod to modify the planetary system used by KSP
 ---
 
-# Prerequisites
+## Prerequisites
 * [What are ConfigNodes?]({{ site.baseurl }}{% link main/ConfigNodes.md %})
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
-* [Data Types]({{ site.baseurl }}{% link main/DataTypes.md %})
+* [Data Types]({{ site.baseurl }}{% link main/datatypes.md %})
+
+## External Resources
+* [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
+* [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
+* [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
+* [List of BUILTIN Textures for 1.8](https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8)
 
 ## Syntax for Celestial Bodies
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
@@ -44,8 +50,8 @@ subtitle: A mod to modify the planetary system used by KSP
   
   ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.0-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.***
   + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
-
-# KopernicusExpansion
+  
+## KopernicusExpansion
 **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
 * [Comet Tails]({{ site.baseurl }}{% link kex/CometTails.md %})
 * [Emissive FX]({{ site.baseurl }}{% link kex/EmissiveFX.md %})
@@ -57,9 +63,3 @@ subtitle: A mod to modify the planetary system used by KSP
 * [VertexHeightDeformity]({{ site.baseurl }}{% link kex/VertexHeightDeformity.md %})
 * [VertexHeightMap16]({{ site.baseurl }}{% link kex/VertexHeightMap16.md %})
 * [Wormholes]({{ site.baseurl }}{% link kex/Wormholes.md %})
-
-# External Resources
-* [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
-* [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
-* [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
-* [List of BUILTIN Textures for 1.8](https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8)
