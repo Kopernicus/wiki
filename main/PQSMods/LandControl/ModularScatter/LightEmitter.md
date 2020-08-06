@@ -32,7 +32,7 @@ LandControl
 
 |Property|Format|Description|
 |--------|------|-----------|
-|type|LightType|The type of light to be emitted from the scatter. Values are `Spot`, `Directional`, `Point`, `Rectangle`, or `Disc`.|
+|type|LightType|The type of light to be emitted from the scatter. Values are `Spot`, `Directional` (more resource-intensive), `Point`, `Rectangle` (rectangle-shaped area light that affects only baked lightmaps and lightprobes), or `Disc` (disc-shaped area light that affects only baked lightmaps and lightprobes).|
 |color|Color|The color of light to be emitted.|
 |colorTemperature|Single|The color temperature of the light. Correlated Color Temperature (abbreviated as CCT) is multiplied with the color filter when calculating the final color of a light source. The color temperature of the electromagnetic radiation emitted from an ideal black body is defined as its surface temperature in Kelvin. White is 6500K according to the D65 standard. Candle light is 1800K.|
 |intensity|Single|The intensity of the light.|
