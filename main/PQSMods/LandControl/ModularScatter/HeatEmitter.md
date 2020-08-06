@@ -2,8 +2,7 @@
 layout: default
 title: HeatEmitter
 ---
-
-Hello!
+The `HeatEmitter` ModularScatter component allows for scatters and their respective body to emit heat depending on the biome of and distance to the scatter.
 
 ```md
 LandControl
@@ -21,6 +20,7 @@ LandControl
                     temperature = 300
                     sumTemp = false
                     biomeName = Highlands
+                    
                     AltitudeCurve
                     {
                         key = 0 0
@@ -28,16 +28,6 @@ LandControl
                         key = 65000 1.3
                         key = 80000 1.4
                         key = 130000 0.8
-                    }
-                    LatitudeCurve
-                    {
-                        key = 0 1
-                        key = 1 1
-                    }
-                    LongitudeCurve
-                    {
-                        key = 0 1
-                        key = 1 1
                     }
                     DistanceCurve
                     {
@@ -62,8 +52,8 @@ Many parameters function identically to corresponding parameters in [HazardousBo
 |temperature|Double|The ambient temperature, corresponds to `ambientTemp` in HazardousBody.|
 |sumTemp|Boolean|Whether `temperature` should be added to the current heat rather than set the current heat.|
 |biomeName|String|The name of the biome for this scatter to have its HeatEmitter enabled for.|
-|AltitudeCurve|FloatCurve|Float curve that associates an altitude above the body's core with a temperature multiplier.|
-|LatitudeCurve|FloatCurve|Float curve that associates a latitude with a temperature multiplier.|
-|LongitudeCurve|FloatCurve|Float curve that associates a longitude with a temperature multiplier.|
-|DistanceCurve|FloatCurve|Float curve that associates a distance from the scatter with a temperature multiplier.|
+|AltitudeCurve|FloatCurve|(Optional) Float curve that associates an altitude above the body's core with a temperature multiplier.|
+|LatitudeCurve|FloatCurve|(Optional) Float curve that associates a latitude with a temperature multiplier.|
+|LongitudeCurve|FloatCurve|(Optional) Float curve that associates a longitude with a temperature multiplier.|
+|DistanceCurve|FloatCurve|(Optional) Float curve that associates a distance from the scatter with a temperature multiplier.|
 |HeatMap|File Path|(Optional) The path to a greyscale map that gives finer control of the temperature on the body. Black = 0, White = 1.|
