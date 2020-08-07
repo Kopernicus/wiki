@@ -19,7 +19,7 @@ description: For all your Kopernicus Syntax Needs
 baseurl: "/wiki" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Kopernicus
-header_pages: main/ConfigNodes.md, main/Body.md, main/Template.md, main/Properties.md, main/Orbit.md, main/ScaledVersion.md, main/PQS.md, main/PQSMods/PQSMods.md, main/Rings.md, main/datatypes.md
+header_pages: main/ConfigNodes.md, main/Body.md, main/Template.md, main/Properties.md, main/Orbit.md, main/ScaledVersion.md, main/PQS.md, main/PQSMods/PQSMods.md, main/Rings.md, main/DataTypes.md
 build_date: 2020-07-27
 
 # Build settings
