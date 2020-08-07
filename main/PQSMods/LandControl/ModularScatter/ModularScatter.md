@@ -4,7 +4,7 @@ title: ModularScatter
 ---
 
 ModularScatter is a system for easily adding behaviour to ground scatters in much the same way that PartModules add behaviour to parts. 
-There are currently three ModularScatter components.
+There are currently four ModularScatter components.
 
 * [HeatEmitter]({{site.baseurl}}{% link main/PQSMods/LandControl/ModularScatter/HeatEmitter.md %})
 * [LightEmitter]({{site.baseurl}}{% link main/PQSMods/LandControl/ModularScatter/LightEmitter.md %})
