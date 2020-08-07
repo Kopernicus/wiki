@@ -35,7 +35,7 @@ Through experimentation, it was realized that the only setting really worth chan
 
 <button data-toggle="collapse" data-target="#collapse-table">Show Tables</button>
 
-{:table-collapse: #collapse-table .collapse}  
+{: #collapse-table .collapse}  
 |Property|Format|Description|
 |--------|------|-----------|
 |scaleSpeed|Float|Speed at which the corona rescales|
