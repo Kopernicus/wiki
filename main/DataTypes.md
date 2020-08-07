@@ -33,9 +33,11 @@ pressureCurve = FloatCurve
 ```
 ExampleFloatCurve
 {
-  key = 0 0
-  key = 0.5 2
-  key = 1 1
+    key = 0 250
+    key = 3.35 500 36.70368 -1.219512
+    key = 15.65 485 -3.517569 -16.3017
+    key = 52.3 100 -3.71531 -15.77211
+    key = 53.64 0
 }
 ```
 
