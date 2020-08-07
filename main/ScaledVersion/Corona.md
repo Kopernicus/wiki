@@ -44,8 +44,8 @@ Through experimentation, it was realized that the only setting really worth chan
 |updateInterval|Float|The number of seconds before the corona updates.|
 |speed|Integer|The speed at which ???|
 |rotation|Float|The rotation of the texture around the star as viewed in-game.|
-
-
+  
+{: #collapse-table .collapse}  
 |Property|Format|Description|
 |--------|------|-----------|
 |texture|File Path|The texture containing the corona texture.|
