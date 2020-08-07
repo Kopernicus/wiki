@@ -7,7 +7,7 @@ The `Scatters` node in the LandControl PQSMod defines the scatters to be used wi
 
 **Subnodes**
 * [Material { }]({{ site.baseurl }}{% link main/PQSMods/LandControl/ScatterMaterialType.md %})
-* [Components { }]({{ site.baseurl }}{% link main/PQSMods/LandControl/ModularScatter/ModularScatter.md %})
+* [Components { }]({{ site.baseurl }}{% link main/PQSMods/LandControl/ModularScatter/ModularScatter.md %}) (Also known as ModularScatter)
 
 **Example**
 ```
@@ -53,7 +53,7 @@ LandControl
 |materialType|[ScatterMaterialType]({{ site.baseurl }}{% link main/PQSMods/LandControl/ScatterMaterialType.md %})|The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]({{ site.baseurl }}{% link main/PQSMods/LandControl/ScatterMaterialType.md %}) page.
 |material|BUILTIN|Stock material to use instead of specifying a materialType and Material { }. Avoid using this! Will not work in conjunction with the materialType and Material { }.|
 |mesh|File Path|The path to an .obj file that contains the scatter's mesh.|
-|Meshes|File Path list|A list of file paths to be used as meshes. Discouraged because format is unknown for now.|
+|Meshes|List of File Paths|A list of file paths to be used as meshes. Inside this node, there can be keys named anything, and the value would be a File Path.|
 |castShadows|Boolean|Whether the scatter should cast shadows.|
 |receiveShadows|Boolean|Whether the scatter should receive shadows - i.e., have shadows casted upon it.|
 |densityFactor|Double|Should be set to 1, unless working with extremely small bodies? Use is unknown.|
