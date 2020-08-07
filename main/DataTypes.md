@@ -44,7 +44,7 @@ ExampleFloatCurve
 |Path Format|Description|Example|
 |-----------|-----------|-------|
 |GameData Path|The file path within GameData. This method is mostly used for specifying assets from either the same mod or a different one from the config itself.|MPE/MPE_Textures/PluginData/Ervo_biomes.png|
-|BUILTIN Path|The name of a texture located in the stock asset files|BUILTIN/Grass2 - A full list of BUILTIN textures can be found [here], though they include things not used for planets.(https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8).|
+|BUILTIN Path|The name of a texture located in the stock asset files|BUILTIN/Grass2 - A full list of BUILTIN textures can be found [here](https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8), though they include things not used for planets.|
 
 |Color Format|Description|Example|
 |------------|-----------|-------|
