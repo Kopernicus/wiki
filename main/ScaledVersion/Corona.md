@@ -52,4 +52,4 @@ Through experimentation, it was realized that the only setting really worth chan
 |mainTexOffset|Vector2|The offset of the corona texture.|
 |invFade|Float|The soft particles factor. Default is 1.|
 
-{:#collapse-table}{:.collapse}
+hello{:#collapse-table}{:.collapse}
