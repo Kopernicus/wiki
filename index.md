@@ -29,11 +29,11 @@ subtitle: A mod to modify the planetary system used by KSP
   + [Template subnode]({{ site.baseurl }}{% link main/Template.md %})
   + [Properties subnode]({{ site.baseurl }}{% link main/Properties.md %})
     - [ScienceValues subnode]({{ site.baseurl }}{% link main/Properties/ScienceValues.md %})
-    - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %}) **NON-STARS ONLY**
+    - [Biomes subnode]({{ site.baseurl }}{% link main/Properties/Biome.md %})
   + [Orbit subnode]({{ site.baseurl }}{% link main/Orbit.md %})
   + [ScaledVersion subnode]({{ site.baseurl }}{% link main/ScaledVersion.md %})
     - [Material subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %})
-    - [OnDemand subnode]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %}) **NON-STARS ONLY**
+    - [OnDemand subnode]({{ site.baseurl }}{% link main/ScaledVersion/OnDemand.md %})
     - [Light subnode]({{ site.baseurl }}{% link main/ScaledVersion/Light.md %}) **STARS ONLY**
     - [Coronas subnode]({{ site.baseurl }}{% link main/ScaledVersion/Corona.md %}) **STARS ONLY**
   + [Rings subnode]({{ site.baseurl }}{% link main/Rings.md %})
