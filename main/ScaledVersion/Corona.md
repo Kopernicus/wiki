@@ -35,7 +35,6 @@ Through experimentation, it was realized that the only setting really worth chan
 
 <button data-toggle="collapse" data-target="#collapse-table">Show Tables</button>
 
-{:#collapse-table}{:.collapse}
 |Property|Format|Description|
 |--------|------|-----------|
 |scaleSpeed|Float|Speed at which the corona rescales|
@@ -52,3 +51,5 @@ Through experimentation, it was realized that the only setting really worth chan
 |mainTexScale|Vector2|The scale of the corona texture.|
 |mainTexOffset|Vector2|The offset of the corona texture.|
 |invFade|Float|The soft particles factor. Default is 1.|
+
+{:#collapse-table}{:.collapse}
