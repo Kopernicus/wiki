@@ -7,19 +7,19 @@ subtitle: Bodies lie dead on the floor...
 The `Body { }` node contains all the aspects of a body and describes the essential components for making a body. `Body { }` is a subnode of the `@Kopernicus` node.
 
 **Subnodes**
-- [`Template { }`]({{ site.baseurl }}{% link main/Template.md %})
-- [`Properties { }`]({{ site.baseurl }}{% link main/Properties.md %})
-- [`Orbit { }`]({{ site.baseurl }}{% link main/Orbit.md %})
-- [`ScaledVersion { }`]({{ site.baseurl }}{% link main/ScaledVersion.md %})
-- [`Atmosphere { }`]({{ site.baseurl }}{% link main/Atmosphere.md %})
-- [`PQS { }`]({{ site.baseurl }}{% link main/PQS.md %})
-- [`Ocean { }`]({{ site.baseurl }}{% link main/Ocean.md %})
-- [`Rings { }`]({{ site.baseurl }}{% link main/Rings.md %})
-- [~~`Particles { }`~~]({{ site.baseurl }}{% link main/Particles.md %}) *(Removed in 1.8.1-1!)*
-- [`HazardousBody { }`]({{ site.baseurl }}{% link main/HazardousBody.md %})
-- [`SpaceCenter { }`]({{ site.baseurl }}{% link main/SpaceCenter.md %})
-- [`Debug { }`]({{ site.baseurl }}{% link main/Debug.md %})
-- `PostSpawnOrbit { }`
+- [Template { }]({{ site.baseurl }}{% link main/Template.md %})
+- [Properties { }]({{ site.baseurl }}{% link main/Properties.md %})
+- [Orbit { }]({{ site.baseurl }}{% link main/Orbit.md %})
+- [ScaledVersion { }]({{ site.baseurl }}{% link main/ScaledVersion.md %})
+- [Atmosphere { }]({{ site.baseurl }}{% link main/Atmosphere.md %})
+- [PQS { }]({{ site.baseurl }}{% link main/PQS.md %})
+- [Ocean { }]({{ site.baseurl }}{% link main/Ocean.md %})
+- [Rings { }]({{ site.baseurl }}{% link main/Rings.md %})
+- [~~Particles { }~~]({{ site.baseurl }}{% link main/Particles.md %}) *(Removed in 1.8.1-1!)*
+- [HazardousBody { }]({{ site.baseurl }}{% link main/HazardousBody.md %})
+- [SpaceCenter { }]({{ site.baseurl }}{% link main/SpaceCenter.md %})
+- [Debug { }]({{ site.baseurl }}{% link main/Debug.md %})
+- PostSpawnOrbit { }
 
 **Example**
 ```
