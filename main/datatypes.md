@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="time; URL={{ site.baseurl }}{% link main/DataTypes.md %}" />
+<meta http-equiv="refresh" content="0; URL={{ site.baseurl }}{% link main/DataTypes.md %}" />
