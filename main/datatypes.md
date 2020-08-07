@@ -1,1 +1,3 @@
 <meta http-equiv="refresh" content="0; URL={{ site.baseurl }}{% link main/DataTypes.md %}" />
+
+### Redirecting...
