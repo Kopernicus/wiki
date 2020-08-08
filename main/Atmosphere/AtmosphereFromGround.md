@@ -34,4 +34,4 @@ Atmosphere
 |innerRadiusMult|Float|A multiplier that automatically sets innerRadius based on the planet's radius. Replaces `innerRadius`.|
 |outerRadiusMult|Float|A multiplier that automatically sets outerRadius based on the planet's radius. Replaces `outerRadius`.|
 
-BandOffset is an input type unique to AtmosphereFromGround and is not strictly a color. Instead, it is the maount a series of specifically-colored bands are offset up and down. Thw ay in which these bands overlap determine the atmosphere color.
+BandOffset is an input type unique to AtmosphereFromGround and is not strictly a color. Instead, it is the maount a series of specifically-colored bands are offset up and down. The way in which these bands overlap determine the atmosphere color.
