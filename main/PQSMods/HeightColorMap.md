@@ -17,6 +17,9 @@ PQS
     {
         HeightColorMap
         {
+            enabled = true
+            order = 24
+            
             blend = 0.1
             LandClasses
             {
