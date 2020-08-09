@@ -15,6 +15,7 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 **PQSMods**
 + [LandControl]({{ site.baseurl }}{% link main/PQSMods/LandControl/LandControlLanding.md %})
 + [VertexColorMap]({{ site.baseurl }}{% link main/PQSMods/VertexColorMap.md %})
++ [VertexColorMapBlend]({{ site.baseurl }}{% link main/PQSMods/VertexColorMapBlend.md %})
 + [HeightColorMap]({{ site.baseurl }}{% link main/PQSMods/HeightColorMap.md %})
 + [VertexHeightMap]({{ site.baseurl }}{% link main/PQSMods/VertexHeightMap.md %})
 + [VertexHeightNoise]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %})
