@@ -9,20 +9,20 @@ The `VertexSimplexHeight` PQSMod generates monochrome [Perlin noise]({{ site.bas
 ```
 PQS
 {
-  Mods
-  {
-    VertexSimplexHeight
+    Mods
     {
-      deformity = Float
-      frequency = Float
-      octaves = Float
-      persistence = Float
-      seed = 340978
+        VertexSimplexHeight
+        {
+            deformity = 10000
+            frequency = 0.6
+            octaves = 5
+            persistence = 0.7
+            seed = 78309
 
-      enabled = true
-      order = 2
+            enabled = true
+            order = 2
+        }
     }
-  }
 }
 ```
 
