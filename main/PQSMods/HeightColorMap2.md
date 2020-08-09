@@ -16,6 +16,9 @@ PQS
     {
         HeightColorMap2
         {
+            enabled = true
+            order = 24
+            
             blend = 0.1
             minHeight = -1000
             maxHeight = 50000
