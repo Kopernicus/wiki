@@ -16,7 +16,7 @@ subtitle: A mod to modify the planetary system used by KSP
 # Prerequisites
 * [What are ConfigNodes?]({{ site.baseurl }}{% link main/ConfigNodes.md %})
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
-* [Data Types]({{ site.baseurl }}{% link main/datatypes.md %})
+* [Data Types]({{ site.baseurl }}{% link main/DataTypes.md %})
 
 ## Syntax for planets
 * [Body node]({{ site.baseurl }}{% link main/Body.md %})
