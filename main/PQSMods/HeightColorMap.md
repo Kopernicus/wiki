@@ -3,7 +3,7 @@ layout: default
 title: HeightColorMap
 ---
 
-The `HeightColorMap` PQSMod is a mod that colors the tarrain based on altitude using user-defined landclasses.
+The `HeightColorMap` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses.
 
 **Example**
 ```
