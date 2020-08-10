@@ -3,26 +3,29 @@ layout: default
 title: ScatterColliders
 ---
 
+The `ScatterColliders` ModularScatter component allows for a scatter to be collidable via a set mesh.
+
 ```
-PQS
+LandControl
 {
-    Mods
+    ...
+    Scatters
     {
-        LandControl
+        Value
         {
             ...
-            scatters
+            Components
             {
-                Value
+                ScatterColliders
                 {
-                    ...
-                    Components
-                    {
-                        
-                    }
+                    collider = Fruits/PluginData/meshes/pineapple_leaves.mu
                 }
             }
         }
     }
 }
 ```
+
+|Property|Format|Description|
+|--------|------|-----------|
+|collider|File Path|The path to the collider mesh to use for the scatter.|

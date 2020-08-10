@@ -3,7 +3,7 @@ layout: default
 title: Biomes
 ---
 
-The `Biome { }` node is a subnode of `Biomes { }`, a wrapper node for all of the Biomes. Each biome contains its own name, color, and science multiplier.
+The `Biomes { }` node is a subnode of `Properties { }` and contains several `Biome { }` subnodes, each of which describes a biome. Each biome section contains its own name, corresponding color, and science multiplier.
 
 **Example**
 ```
@@ -26,7 +26,7 @@ Biomes
 
 |Property|Format|Description|
 |--------|------|-----------|
-|name|String|The name of the biome.|
+|name|String|The name of the biome. Sets `displayName` if it is not set.|
 |displayName|String|The name to be displayed. Can be a localization tag.|
 |value|Single|The science multiplier for the biome.|
 |color|Color|The color of the biome on the biomeMap, specified at `Properties/biomeMap`.|

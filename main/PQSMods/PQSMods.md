@@ -14,7 +14,7 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 |order|Integer|The order that the PQSMod should be processed in. PQSMods are processed in increasing `order` value, so a mod with `order` 20 would be applied before a mod with order `100`.|
 
 **PQSMods**
-+ [LandControl]({{ site.baseurl }}{% link main/PQSMods/LandControl/LandControl.md %})
++ [LandControl]({{ site.baseurl }}{% link main/PQSMods/LandControl/LandControlLanding.md %})
 + [HeightColorMap]({{ site.baseurl }}{% link main/PQSMods/HeightColorMap.md %})
 + [HeightColorMap2]({{ site.baseurl }}{% link main/PQSMods/HeightColorMap2.md %})
 + [VertexColorMap]({{ site.baseurl }}{% link main/PQSMods/VertexColorMap.md %})
