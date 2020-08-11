@@ -20,6 +20,7 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 + [VertexColorMap]({{ site.baseurl }}{% link main/PQSMods/VertexColorMap.md %})
 + [VertexColorMapBlend]({{ site.baseurl }}{% link main/PQSMods/VertexColorMapBlend.md %})
 + [VertexHeightMap]({{ site.baseurl }}{% link main/PQSMods/VertexHeightMap.md %})
++ [VertexHeightNoise]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %})
 + [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
 + [VertexSimplexHeight]({{ site.baseurl }}{% link main/PQSMods/VertexSimplexHeight.md %})
 + [VertexSimplexHeightAbsolute]({{ site.baseurl }}{% link main/PQSMods/VertexSimplexHeightAbsolute.md %})
