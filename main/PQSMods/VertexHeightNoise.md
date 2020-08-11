@@ -29,6 +29,17 @@ PQS
   }
 }
 ```
+|Property|Format|Description|
+|--------|------|-----------|
+|deformity|Single|The deformity of the simplex terrain noise.|
+|frequency|Single|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
+|octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
+|persistence|Single|The complexity of or amount of detail in the noise.|
+|lacunarity|Single|The size of the gaps that are in the noise.|
+|seed|Integer|The random seed of the noise.|
+|noiseType|[NoiseType]({{ site.baseurl }}{% link main/datatypes.md %})|The type of the specified noise.|
+|mode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The quality mode of the noise.|
+
 
 This may seem nice, but there are several issues with VertexHeightNoise. These include:
 
@@ -84,14 +95,3 @@ PQS
     }
 }
 ```
-
-|Property|Format|Description|
-|--------|------|-----------|
-|deformity|Single|The deformity of the simplex terrain noise.|
-|frequency|Single|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
-|octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|persistence|Single|The complexity of or amount of detail in the noise.|
-|lacunarity|Single|The size of the gaps that are in the noise.|
-|seed|Integer|The random seed of the noise.|
-|noiseType|[NoiseType]({{ site.baseurl }}{% link main/datatypes.md %})|The type of the specified noise.|
-|mode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The quality mode of the noise.|

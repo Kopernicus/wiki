@@ -29,8 +29,8 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|deformity|Single|The deformity of the simplex terrain noise.|
-|frequency|Single|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
+|deformity|Float|The deformity of the simplex terrain noise.|
+|frequency|Float|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
 |octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|persistence|Single|The complexity of or amount of detail in the noise.|
+|persistence|Float|The complexity of or amount of detail in the noise.|
 |seed|Integer|The random seed of the noise.|
