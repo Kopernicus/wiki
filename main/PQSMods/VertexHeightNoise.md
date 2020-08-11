@@ -6,6 +6,9 @@ title: VertexHeightNoise
 The `VertexHeightNoise` PQSMod is a mod that adds height noise to the terrain. This makes the terrain bumpier, though the "style" of bumps/features change with the noise type. 
 The noise is also additive, meaning that instead of overwriting the terrain altitude, it simply adds or subtracts from it.
 
+<button data-toggle="collapse" data-target="#collapse-vhn-example">Show Example</button>
+
+{: #collapse-vhn-example .collapse}  
 **Example**
 ```
 PQS
@@ -29,6 +32,10 @@ PQS
   }
 }
 ```
+
+<button data-toggle="collapse" data-target="#collapse-vhn-table">Show VertexHeightNoise Table</button>
+
+{: #collapse-vhn-table .collapse}  
 |Property|Format|Description|
 |--------|------|-----------|
 |deformity|Single|The deformity of the simplex terrain noise.|
@@ -37,8 +44,8 @@ PQS
 |persistence|Single|The complexity of or amount of detail in the noise.|
 |lacunarity|Single|The size of the gaps that are in the noise.|
 |seed|Integer|The random seed of the noise.|
-|noiseType|[NoiseType]({{ site.baseurl }}{% link main/datatypes.md %})|The type of the specified noise.|
-|mode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The quality mode of the noise.|
+|noiseType|[NoiseType]({{ site.baseurl }}{% link main/DataTypes.md %})|The type of the specified noise.|
+|mode|[NoiseQuality]({{ site.baseurl }}{% link main/DataTypes.md %})|The quality mode of the noise.|
 
 
 This may seem nice, but there are several issues with VertexHeightNoise. These include:
