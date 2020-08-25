@@ -97,8 +97,8 @@ Body
 |pressureCurve|FloatCurve|Assigns a pressure value (in kPa) to a height value inside of the atmosphere.|
 |temperatureCurveIsNormalized|Boolean|Whether the temperature curve should use absolute (0 - atmosphereDepth) or relative (0 - 1) values.|
 |temperatureCurve|FloatCurve|Assigns a temperature value (in Kelvin) to a height value inside of the atmosphere.|
-|temperatureSunMultCurve|FloatCurve|?|
-|temperatureLatitudeBiasCurve|FloatCurve|?|
-|temperatureLatitudeSunMultCurve|FloatCurve|?|
-|temperatureAxialSunBiasCurve|FloatCurve|?|
-|temperatureEccentricityBiasCurve|FloatCurve|?|
+|temperatureSunMultCurve|FloatCurve|This curve takes altitude (meters) and returns a multiplier.  Its value defines how `temperatureSeaLevel` varies with altitude.|
+|temperatureLatitudeBiasCurve|FloatCurve|This curve takes latitude (degrees) and returns temperature (K).  Its value defines the latitudinal temperature variation.|
+|temperatureLatitudeSunMultCurve|FloatCurve|This curve takes latitude (degrees) and returns temperature (K).  Its value defines the diurnal temperature variation.|
+|temperatureAxialSunBiasCurve|FloatCurve|This curve takes true anomaly (degrees) and returns temperature (K).  Its value defines the seasonal temperature variation.|
+|temperatureEccentricityBiasCurve|FloatCurve|This curve takes a value between 0 (periapsis) and 1 (apoapsis) and returns temperature (K).  Its value defines the temperature variation due to orbital eccentricity.|
