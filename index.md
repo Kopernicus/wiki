@@ -47,8 +47,9 @@ subtitle: A mod to modify the planetary system used by KSP
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
   
-  ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.***
-  + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
+  ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, but it has been re-added in versions after 1.8.1. Only use this node if your pack does not support 1.8.1.***
+  + [Particles subnode (Pre-1.8)]({{ site.baseurl }}{% link main/Particles-old.md %})
+  + [Particles subnode (Post-1.8)]({{ site.baseurl }}{% link main/Particles.md %})
 
 ## KopernicusExpansion
 **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
