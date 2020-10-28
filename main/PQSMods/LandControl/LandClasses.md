@@ -107,7 +107,7 @@ LandControl
 ## LerpRange
 Each `LerpRange { }` node describes a range of numbers to encompass, or lerp over. These ranges are applied to each dimension. The image below describes the valid ranges for latitude and longitude, with a handy diagram at the bottom for a visual description of the coverage of the LandClass over a single "dimension." Areas where coverage is not complete are determined by the `coverage___` properties.
 
-<Insert image pinned in #landcontrol here>
+![alttext](https://media.discordapp.net/attachments/717082915565076491/717506199100194876/LANDCONTROL.png)
 
 |Property|Format|Description|
 |--------|------|-----------|
