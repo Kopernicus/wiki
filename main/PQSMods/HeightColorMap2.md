@@ -1,10 +1,9 @@
 ---
 layout: default
-title: HeightColorMap
-subtitle: Coloring the world one *step* at a time.
+title: HeightColorMap2
 ---
 
-The `HeightColorMap` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses.
+The `HeightColorMap2` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses and has slightly more configuration options than [HeightColorMap]({{ site.baseurl }}{% link main/PQSMods/HeightColorMap.md %}).
 
 **Subnodes**
 * `LandClasses { }` (defined below)
@@ -15,12 +14,15 @@ PQS
 {
     Mods
     {
-        HeightColorMap
+        HeightColorMap2
         {
             enabled = true
             order = 24
             
             blend = 0.1
+            minHeight = -1000
+            maxHeight = 50000
+            
             LandClasses
             {
                 LandClass
@@ -72,6 +74,8 @@ PQS
 |Property|Format|Description|
 |--------|------|-----------|
 |blend|Float|The blend between the LandClasses.|
+|minHeight|Float|The minimum height, or `0.0` altitude, of a LandClass.|
+|maxHeight|Float|The maxmium height, or `1.0` altitude, of a LandClass.|
 
 ## LandClasses
 The `LandClasses { }` wraps several `LandClass { }` nodes that describe an individual region's color as defined by altitudes.
@@ -80,6 +84,6 @@ The `LandClasses { }` wraps several `LandClass { }` nodes that describe an indiv
 |--------|------|-----------|
 |name|String|The name of the LandClass.|
 |color|Color|The color to be applied to the LandClass.|
-|altitudeStart|Float|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of valid PQS height: `altitude = (vertexHeight - vertexMinHeightOfPQS) / vertexHeightDeltaOfPQS`.|
+|altitudeStart|Float|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of defined height: `altitude = (height - minHeight) / (maxHeight - minHeight)`.|
 |altitudeEnd|Float|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|
 |lerpToNext|Boolean|Whether to blend into the next LandClass. Highly recommended to set to true on all but the last LandClass.|

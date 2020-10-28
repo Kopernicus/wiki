@@ -41,8 +41,6 @@ Body
 
         mapMaxHeight = 8000
         
-        
-
         materialType = AtmosphericOptimized
         Material
         {

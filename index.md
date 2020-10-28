@@ -16,7 +16,7 @@ subtitle: A mod to modify the planetary system used by KSP
 ## Prerequisites
 * [What are ConfigNodes?]({{ site.baseurl }}{% link main/ConfigNodes.md %})
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
-* [Data Types]({{ site.baseurl }}{% link main/datatypes.md %})
+* [Data Types]({{ site.baseurl }}{% link main/DataTypes.md %})
 
 ## External Resources
 * [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
@@ -47,9 +47,10 @@ subtitle: A mod to modify the planetary system used by KSP
   + [HazardousBody subnode]({{ site.baseurl }}{% link main/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link main/Debug.md %})
   
-  ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, with no replacement. Only use this node if your pack is restricted to KSP 1.7.3 or earlier.***
-  + [~~Particles subnode~~]({{ site.baseurl }}{% link main/Particles.md %})
-  
+  ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, but it has been re-added in versions after 1.8.1. Only use this node if your pack does not support 1.8.1.***
+  + [Particles subnode (Pre-1.8)]({{ site.baseurl }}{% link main/Particles-old.md %})
+  + [Particles subnode (Post-1.8)]({{ site.baseurl }}{% link main/Particles.md %})
+
 ## KopernicusExpansion
 **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
 * [Comet Tails]({{ site.baseurl }}{% link kex/CometTails.md %})
