@@ -10,7 +10,7 @@ The `LandControl` PQSMod allows defining regions known as LandClasses, within wh
 * [LandClasses { }]({{ site.baseurl }}{% link main/PQSMods/LandControl/LandClasses.md %}) = Specifies land regions and their customizations
 
 **Example**
-```
+```md
 PQS
 {
   Mods
