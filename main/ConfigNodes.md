@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Config Nodes
-subtitle: The stuff used everywhere
 ---
 
 # What is a ConfigNode?
