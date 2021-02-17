@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Procedural Gas Giants
-subtitle: Low Effort Storms, circa 2015
 ---
 
 **Example**

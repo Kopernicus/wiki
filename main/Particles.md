@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Particles (Post 1.8)
-subtitle: "You would not believe your eyes, if ten million fireflies..."
 ---
 
 ### WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, but it has been re-added in versions after 1.8.1. Only use this node if your pack does not support 1.8.1.

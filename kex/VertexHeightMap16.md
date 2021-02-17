@@ -1,7 +1,6 @@
 ---
 layout: default
 title: VertexHeightMap16
-subtitle: A heightmap PQSMod that lets you use 16-bpp encoded textures.
 ---
 
 A replacement for the `VertexHeightMap` PQSMod that allows you to use textures encoded with 16 bpp. [What is "bpp"?](https://en.wikipedia.org/wiki/Color_depth)

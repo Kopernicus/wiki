@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Material
-subtitle: Ay-yi-yi, textures galore!
 ---
 
 The `Material { }` is a very complex subnode of the `ScaledVersion { }` node. It regulates the body's ScaledSpace material, and thus, is a crucial element in the formation of a body. Unfortunately, the subnode comes in three different formats, each depending on the value set in `ScaledVersion/type`. Therefore, three different examples will be given and types will be marked in the table.
