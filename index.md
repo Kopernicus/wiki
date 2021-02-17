@@ -10,7 +10,6 @@
 
 layout: default
 title: Kopernicus Wiki
-subtitle: A mod to modify the planetary system used by KSP
 ---
 
 ## Prerequisites

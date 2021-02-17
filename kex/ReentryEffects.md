@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Reentry Effects
-subtitle: Customize your Reentry like never before!
 ---
 
 The `ReentryFX { }` subnode is a part of Kopernicus Expansion and allows you to add and customize the body's reentry effects.
