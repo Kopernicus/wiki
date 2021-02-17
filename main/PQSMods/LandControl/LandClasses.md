@@ -10,7 +10,7 @@ title: LandClasses
 * Scatters { } = Defines used scatter amounts
 
 **Example**
-```
+```md
 LandControl
 {
   LandClasses

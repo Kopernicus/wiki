@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Wormholes
-subtitle: Interstellar Peekaboo with a chance of heat death
 ---
 
 The `Wormhole { }` node of the Kopernicus Expansion provides the ability to transform bodies into wormholes to other bodies.

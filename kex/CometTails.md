@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Comet Tails
-subtitle: Rosettas for us all
 ---
 
 The `CometTails { }` subnode is a part of Kopernicus Expansion and allows you to add Dust and Ion trails to bodies.

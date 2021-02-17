@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Rings
-subtitle: Enchanting Italians for 300 years
 ---
 
 Each `Body { }` may have a node called `Rings { }`, a wrapper node containing one or more `Ring { }` nodes, each of which defines a planetary ring. These may be flat discs as with Saturn, loops of ribbon as with the Ringworld, or voluminous cylinders.

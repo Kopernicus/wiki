@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Emissive FX
-subtitle: Ocean? More like Glow-cean!
 ---
 
 The EmissiveFX portion of Kopernicus Expansion allows you to configure an emission, or glow, for the specified body.
