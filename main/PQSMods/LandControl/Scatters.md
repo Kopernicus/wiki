@@ -30,6 +30,7 @@ LandControl
       maxSpeed = 1000
       recieveShadows = True
       name = BrownRock
+      allowedBiomes = Arid,Desert
       seed = 345234534
       verticalOffset = 0
       delete = False
@@ -49,7 +50,7 @@ LandControl
 |Property|Format|Description|
 |--------|------|-----------|
 |name|String|The name of the scatter|
-|allowedBiomes|String|A comma delimitted string of permitted scatter biome names.  If this list is not present, all biomes are spawned in.|
+|allowedBiomes|String|A comma delimitted string of permitted scatter biome names.  No spaces between entries.  If this list is not present, all biomes are spawned in.|
 |seed|Integer|The random seed for scatter distribution.|
 |materialType|[ScatterMaterialType]({{ site.baseurl }}{% link main/PQSMods/LandControl/ScatterMaterialType.md %})|The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]({{ site.baseurl }}{% link main/PQSMods/LandControl/ScatterMaterialType.md %}) page.
 |material|BUILTIN|Stock material to use instead of specifying a materialType and Material { }. Avoid using this! Will not work in conjunction with the materialType and Material { }.|
