@@ -5,6 +5,10 @@ title: LightEmitter
 
 The `LightEmitter` ModularScatter component allows for scatters to provide their own light based on numerous arguments. Most arguments are optional.
 
+**Performance warning**
+
+This feature can be quite performance heavy if used on a scatter type that has a large amount of objects per quad. Less than 5-20 scatters per quad is alright, higher numbers will start to have a quite noticeable impact.
+
 ```
 LandControl
 {
