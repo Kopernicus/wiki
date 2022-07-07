@@ -28,4 +28,4 @@ LandControl
 
 |Property|Format|Description|
 |--------|------|-----------|
-|collider|File Path|The path to the collider mesh to use for the scatter.|
+|collider|File Path|The path to the collider mesh to use for the scatter. If not defined, the rendering mesh will be used|
