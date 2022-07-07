@@ -3,7 +3,7 @@ layout: default
 title: SeaLevelScatter
 ---
 
-The `SeaLevelScatter` ModularScatter component allows scatters to be spawnable at (or relative?) to sea level.
+The `SeaLevelScatter` ModularScatter component make individual scatter objects spawn at a randomized altitude.
 
 ```
 LandControl
@@ -18,7 +18,7 @@ LandControl
             {
                 SeaLevelScatter
                 {
-                    altitudeVariance = 10
+                    altitudeVariance = 50 100
                 }
             }
         }
@@ -28,4 +28,4 @@ LandControl
 
 |Property|Format|Description|
 |--------|------|-----------|
-|altitudeVariance|Single|Either this determines how far the scatter can spawn from sea level (marking the vertical range) or the set altitude above sea level.|
+|altitudeVariance|Single pair|The min and max altitude offset from the ground. Note that the final value is added to the scatter `verticalOffset`.|
