@@ -74,8 +74,8 @@ LandControl
 
 **Scatter density**
 
-The amount of individual scatters per quad is determined as follows:\
+The amount of individual scatters per quad is determined as follows :\
 `baseAmount = maxScatter * densityFactor * (density defined in the LandClass)`
 
-Then, if `useBetterDensity` is enabled, the average amount will be:\
-`averageAmount = baseAmount * (spawnChance ^ baseAmount)`
+Then if `useBetterDensity` is enabled, the average amount will be :\
+`averageAmount = baseAmount * spawnChance`
