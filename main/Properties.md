@@ -44,7 +44,7 @@ Properties
 |radius|Double|The radius (half of the body's diameter) of the body in meters.|
 |mass|Double|The mass of the body in kilograms. You can use scientific notation here, like `1.234567+e20`|
 |[gravParameter](https://en.wikipedia.org/wiki/Standard_gravitational_parameter)|Double|Standard gravitational parameter, calculated as the gravitational constant (G) times the mass (M) of the body: G\*M. This is the parameter that is used in the actual simulation. The gravitational acceleration in any point would be calculated as gravParameter/r<sup>2</sup> where r is a distance from that point to the body center. NOTE: For historical reasons, in KSP G = 6.67408E-11.|
-|geeASL|Double|The gravitational acceleration at sea level measured in standard gravities, where 1 g = 9.80665 m/s². For Earth/Kerbin, geeASL = 1. The gravParameter and geeASL are related as follows, geeASL*9.80665 = gravParameter/radius².|
+|geeASL|Double|The gravitational acceleration at sea level measured in standard gravities, where 1 g = 9.80665 m/s<sup>2</sup>. For Earth/Kerbin, geeASL = 1. The gravParameter and geeASL are related as follows, geeASL*9.80665 = gravParameter/radius<sup>2</sup>.|
 |rotates|Boolean|Does the body rotate or not?|
 |[rotationPeriod](https://en.wikipedia.org/wiki/Rotation_period)|Double|The period in seconds that the body needs to rotate around its axis one time.|
 |initialRotation|Double|The rotation in degrees (0-359) that the body starts at (clockwise)|
