@@ -7,11 +7,11 @@ The `Body { }` node contains all the aspects of a body and describes the essenti
 
 **Subnodes**
 - [Template { }]({{ site.baseurl }}{% link content/Template.md %})
-- [Properties { }]({{ site.baseurl }}{% link content/Properties.md %})
+- [Properties { }]({{ site.baseurl }}{% link content/Properties/Properties.md %})
 - [Orbit { }]({{ site.baseurl }}{% link content/Orbit.md %})
-- [ScaledVersion { }]({{ site.baseurl }}{% link content/ScaledVersion.md %})
-- [Atmosphere { }]({{ site.baseurl }}{% link content/Atmosphere.md %})
-- [PQS { }]({{ site.baseurl }}{% link content/PQS.md %})
+- [ScaledVersion { }]({{ site.baseurl }}{% link content/ScaledVersion/ScaledVersion.md %})
+- [Atmosphere { }]({{ site.baseurl }}{% link content/Atmosphere/Atmosphere.md %})
+- [PQS { }]({{ site.baseurl }}{% link content/PQSMods/PQS.md %})
 - [Ocean { }]({{ site.baseurl }}{% link content/Ocean.md %})
 - [Rings { }]({{ site.baseurl }}{% link content/Rings.md %})
 - [~~Particles { }~~]({{ site.baseurl }}{% link content/Particles.md %}) *(Removed in 1.8.1-1!)*
