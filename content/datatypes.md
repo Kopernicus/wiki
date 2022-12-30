@@ -13,7 +13,7 @@ cacheFile = File Path
 radius = Float
 contractWeight = Integer
 timewarpAltitudeLimits = Integer[]
-cameraSmaRatioBounds = Single[]
+cameraSmaRatioBounds = Float[]
 pressureCurve = FloatCurve
 ```
 

@@ -18,23 +18,23 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
     {
         SpaceCenter
         {
-            latitude = // Double, latitude of the KSC building collection
-            longitude = // Double, longitude of the KSC building collection
+            latitude = // Float, latitude of the KSC building collection
+            longitude = // Float, longitude of the KSC building collection
             repositionRadial = // Vector3
-            decalLatitude = // Double, Latitude of the KSC MapDecal
-            decalLongitude = // Double, Longitude of the KSC MapDecal
-            lodvisibleRangeMultiplier = // Double
-            reorientFinalAngle = // Single
+            decalLatitude = // Float, Latitude of the KSC MapDecal
+            decalLongitude = // Float, Longitude of the KSC MapDecal
+            lodvisibleRangeMultiplier = // Float
+            reorientFinalAngle = // Float
             reorientInitialUp = // Vector3
             reorientToSphere = // Boolean
-            repositionRadiusOffset = // Double
+            repositionRadiusOffset = // Float
             repositionToSphere = // Boolean
             repositionToSphereSurface = // Boolean
             repositionToSphereSurfaceAddHeight = // Boolean
             position = // Vector3
-            radius = // Double, height of KSC
-            heightMapDeformity = // Double
-            absoluteOffset = // Double
+            radius = // Float, height of KSC
+            heightMapDeformity = // Float
+            absoluteOffset = // Float
             absolute = // Boolean
             groundColor = // Color, the color of the KSC grass
             groundTexture = // Texture2D, KSC grass texture when up close
@@ -42,18 +42,18 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
             Material
             {
                 nearGrassTexture = Texture2D
-                nearGrassTiling = Single
+                nearGrassTiling = Float
                 farGrassTexture = Texture2D
-                farGrassTiling = Single
-                farGrassBlendDistance = Single
+                farGrassTiling = Float
+                farGrassBlendDistance = Float
                 grassColor = Color
                 tarmacTexture = Texture2D
                 tarmacTextureOffset = Vector2
                 tarmacTextureScale = Vector2
-                opacity = Single
+                opacity = Float
                 rimColor = Color
-                rimFalloff = Single
-                underwaterFogFactor = Single
+                rimFalloff = Float
+                underwaterFogFactor = Float
             }
 
             editorGroundTex = // Texture2D, grass surface texture as seen from the editor
@@ -66,21 +66,21 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
 
 |Property|Format|Description|
 |--------|------|-----------|
-|latitude|Double|Latitude of the KSC building collection.|
-|longitude|Double|Longitude of the KSC building collection.|
+|latitude|Float|Latitude of the KSC building collection.|
+|longitude|Float|Longitude of the KSC building collection.|
 |repositionRadial|Vector3|?|
-|decalLatitude|Double|Latitude of the KSC MapDecal.|
-|decalLongitude|Double|Longitude of the KSC MapDecal.|
-|lodvisibleRangeMultiplier|Double|Multiplier of the visible range from the Space Center view(?).|
-|reorientFinalAngle|Single|Final angle of the KSC(?).|
+|decalLatitude|Float|Latitude of the KSC MapDecal.|
+|decalLongitude|Float|Longitude of the KSC MapDecal.|
+|lodvisibleRangeMultiplier|Float|Multiplier of the visible range from the Space Center view(?).|
+|reorientFinalAngle|Float|Final angle of the KSC(?).|
 |reorientInitialUp|Vector3|"Up" direction of the KSC(?).|
 |reorientToSphere|Boolean|Whether to reorient to a sphere(?).|
 |reorientToSphereSurface|Boolean|Whether to reorient to the sphere's surface(?).|
 |reorientToSphereSurfaceAddHeight|Boolean|Whether to add height to the reoriented sphere's surface(?).|
 |position|Vector3|The position of the KSC. NOT LAT/LONG!|
-|radius|Double|Height and scale of the KSC.|
-|heightMapDeformity|Double|External height map deformity(?).|
-|absoluteOffset|Double|Offset from the ground.|
+|radius|Float|Height and scale of the KSC.|
+|heightMapDeformity|Float|External height map deformity(?).|
+|absoluteOffset|Float|Offset from the ground.|
 |absolute|Boolean|?|
 |groundColor|Color|Color of the KSC grass.|
 |groundTexture|File Path|The texture containing the KSC's ground texture when viewed up close.|

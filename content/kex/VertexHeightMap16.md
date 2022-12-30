@@ -33,6 +33,6 @@ PQS
 |Property|Format|Description|
 |--------|------|-----------|
 |map|File Path|A 16-bpp encoded texture containing the body's heightmap in greyscale. Black is the `offset` height, and White is the `deformity + offset` height.|
-|offset|Double|The offset of the height map from the body's radius.|
-|deformity|Double|The deformity of the height map (difference between lowest and highest point).|
+|offset|Float|The offset of the height map from the body's radius.|
+|deformity|Float|The deformity of the height map (difference between lowest and highest point).|
 |scaleDeformityByRadius|Boolean|Whether to multiply the deformity by the planet's radius.|

@@ -32,11 +32,11 @@ ScaledVersion
 |stormMap|File Path|The texture containing the storm map for the gas giant.|
 |seed|Integer|The random seed for Perlin noise. Defaults to 0.|
 |animate|Boolean|Whether to animate the gas giant. Animation only speeds up until 5000x timewarp speed. Defaults to `true`.|
-|cloudSpeed|Single|The speed at which the clouds should move. Defaults to 20.|
+|cloudSpeed|Float|The speed at which the clouds should move. Defaults to 20.|
 |hasStorms|Boolean|Whether the gas giant should have storms.|
-|distortion|Single|The distortion amount for the gas giant bands?|
-|frequency|Single|The number of bands that should be present on the gas giant?|
-|lacunarity|Single|?|
-|gain|Single|?|
-|stormFrequency|Single|The frequency of the storms that should occur on the gas giant.|
-|stormDistortion|Single|The distortion of the storms.|
+|distortion|Float|The distortion amount for the gas giant bands?|
+|frequency|Float|The number of bands that should be present on the gas giant?|
+|lacunarity|Float|?|
+|gain|Float|?|
+|stormFrequency|Float|The frequency of the storms that should occur on the gas giant.|
+|stormDistortion|Float|The distortion of the storms.|
