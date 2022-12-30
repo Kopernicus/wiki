@@ -3,7 +3,7 @@ layout: default
 title: VertexSimplexNoiseColor
 ---
 
-The `VertexSimplexNoiseColor` PQSMod generates RGB [Perlin noise]({{ site.baseurl }}{% link main/datatypes.md %}) for use in terrain coloration.
+The `VertexSimplexNoiseColor` PQSMod generates RGB [Perlin noise]({{ site.baseurl }}{% link content/datatypes.md %}) for use in terrain coloration.
 
 **Example**
 ```
