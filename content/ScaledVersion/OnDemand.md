@@ -3,7 +3,7 @@ layout: default
 title: OnDemand
 ---
 
-The `OnDemand { }` subnode of the `ScaledVersion { }` node tells Kopernicus to use OnDemand loading for the textures specified inside the subnode. The fields set inside this subnode are exactly the same as their equivalents in the [`Material { }` subnode]({{ site.baseurl }}{% link main/ScaledVersion/Material.md %}) of the `ScaledVersion { }` node.
+The `OnDemand { }` subnode of the `ScaledVersion { }` node tells Kopernicus to use OnDemand loading for the textures specified inside the subnode. The fields set inside this subnode are exactly the same as their equivalents in the [`Material { }` subnode]({{ site.baseurl }}{% link content/ScaledVersion/Material.md %}) of the `ScaledVersion { }` node.
 
 **Example**
 ```

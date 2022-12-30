@@ -4,7 +4,7 @@ title: VertexHeightNoiseVertHeightCurve2
 ---
 
 The `VertexHeightNoiseVertHeightCurve2` PQSMod is one of several mods in the HeightNoise family. They all produce heightmap noise, which can make terrain considerably more interesting.
-It is considered by some to be a much more customizable and far stabler alternative to [`VertexHeightNoise`]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoise.md %}).
+It is considered by some to be a much more customizable and far stabler alternative to [`VertexHeightNoise`]({{ site.baseurl }}{% link content/PQSMods/VertexHeightNoise.md %}).
 
 To replicate the effects of `VertexHeightNoise`, simply set the `ridgedSub` and `simplex` keys to 0 and set the `simplexCurve` to 
 ```
@@ -62,7 +62,7 @@ NOTE: `___` is substituted for "Add" and "Sub." "Add" creates a "base layer" of 
 |Property|Format|Description|
 |--------|------|-----------|
 |deformity|Single|The overall deformity of the noise.|
-|ridgedMode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The noise quality for both `ridgedAdd` and `ridgedSub`.|
+|ridgedMode|[NoiseQuality]({{ site.baseurl }}{% link content/datatypes.md %})|The noise quality for both `ridgedAdd` and `ridgedSub`.|
 |ridged___Frequency|Single|The size of the each feature of the ridged noise. As frequency gets bigger, size gets smaller.|
 |ridged___Lacunarity|Single|The size of the gaps that are in the noise.|
 |ridged___Octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|

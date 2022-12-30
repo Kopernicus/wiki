@@ -30,7 +30,7 @@ LandControl
     }
 }
 ```
-Many parameters function identically to corresponding parameters in [HazardousBody]({{site.baseurl}}{% link main/HazardousBody.md %}).
+Many parameters function identically to corresponding parameters in [HazardousBody]({{site.baseurl}}{% link content/HazardousBody.md %}).
 
 |Property|Format|Description|
 |--------|------|-----------|

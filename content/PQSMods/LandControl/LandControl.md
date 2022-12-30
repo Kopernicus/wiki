@@ -6,8 +6,8 @@ title: LandControl
 The `LandControl` PQSMod allows defining regions known as LandClasses, within which you can customize several features of the particular region. 
 
 **Subnodes**
-* [Scatters { }]({{ site.baseurl }}{% link main/PQSMods/LandControl/Scatters.md %}) = Defines used scatters
-* [LandClasses { }]({{ site.baseurl }}{% link main/PQSMods/LandControl/LandClasses.md %}) = Specifies land regions and their customizations
+* [Scatters { }]({{ site.baseurl }}{% link content/PQSMods/LandControl/Scatters.md %}) = Defines used scatters
+* [LandClasses { }]({{ site.baseurl }}{% link content/PQSMods/LandControl/LandClasses.md %}) = Specifies land regions and their customizations
 
 **Example**
 ```md

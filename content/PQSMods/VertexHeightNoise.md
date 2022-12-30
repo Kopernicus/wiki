@@ -44,8 +44,8 @@ PQS
 |persistence|Single|The complexity of or amount of detail in the noise.|
 |lacunarity|Single|The size of the gaps that are in the noise.|
 |seed|Integer|The random seed of the noise.|
-|noiseType|[NoiseType]({{ site.baseurl }}{% link main/datatypes.md %})|The type of the specified noise.|
-|mode|[NoiseQuality]({{ site.baseurl }}{% link main/datatypes.md %})|The quality mode of the noise.|
+|noiseType|[NoiseType]({{ site.baseurl }}{% link content/datatypes.md %})|The type of the specified noise.|
+|mode|[NoiseQuality]({{ site.baseurl }}{% link content/datatypes.md %})|The quality mode of the noise.|
 
 
 This may seem nice, but there are several issues with VertexHeightNoise. These include:
@@ -57,7 +57,7 @@ This may seem nice, but there are several issues with VertexHeightNoise. These i
 It is recommended that you instead use one of the VertexHeightNoiseVertHeightCurve PQSMods instead.
 
 * VertexHeightNoiseVertHeightCurve
-* [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link main/PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
+* [VertexHeightNoiseVertHeightCurve2]({{ site.baseurl }}{% link content/PQSMods/VertexHeightNoiseVertHeightCurve2.md %})
 * VertexHeightNoiseVertHeightCurve3
 
 If you want to replicate the effect of VHN with one of the above mods, it is relatively simple to do so.
