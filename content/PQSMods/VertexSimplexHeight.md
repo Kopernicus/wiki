@@ -3,7 +3,7 @@ layout: default
 title: VertexSimplexHeight
 ---
 
-The `VertexSimplexHeight` PQSMod generates monochrome [Perlin noise]({{ site.baseurl }}{% link main/datatypes.md %}) for use in terrain deformation.
+The `VertexSimplexHeight` PQSMod generates monochrome [Perlin noise]({{ site.baseurl }}{% link content/datatypes.md %}) for use in terrain deformation.
 
 **Example**
 ```

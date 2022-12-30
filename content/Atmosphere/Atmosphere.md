@@ -6,7 +6,7 @@ title: Atmosphere
 The `Atmosphere { }` subnode of the `Body { }` node describes the body's atmospheric attributes, such as oxygen, pressure, and temperature. It also contains the `AtmosphereFromGround { }` subnode (AFG), which details the atmosphere's colors.
 
 **Subnodes**
-* [AtmosphereFromGround { }]({{ site.baseurl }}{% link main/Atmosphere/AtmosphereFromGround.md %})
+* [AtmosphereFromGround { }]({{ site.baseurl }}{% link content/Atmosphere/AtmosphereFromGround.md %})
 
 **Example**
 ```
