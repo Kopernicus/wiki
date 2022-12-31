@@ -3,7 +3,7 @@ layout: default
 title: Ocean
 ---
 
-The `Ocean { }` subnode contains all of the information needed to produce an ocean for the specified body. Note that the ocean is one of two Procedural Quad Spheres on the body it is applied to. This means that some PQS Settings can be applied to Oceans.
+The `Ocean { }` subnode contains all of the information needed to produce an ocean for the specified body. Note that the ocean is one of the two Procedural Quad Spheres on the body it is applied to. This means that some PQS Settings can be applied to Oceans.
 
 **Subnodes**
 * Material { }
