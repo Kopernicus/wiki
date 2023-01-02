@@ -11,5 +11,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
+    {%- unless include.title contains "Kopernicus Wiki" -%}
+    <title>{{ include.title }} - Kopernicus Wiki</title>
+    {%- else -%}
+    <title>{{ include.title }}</title>
+    {%- endunless -%}
+    
     {%- feed_meta -%}
   </head>
