@@ -51,7 +51,7 @@ title: Kopernicus Wiki
   + [Particles subnode (Post-1.8)]({{ site.baseurl }}{% link content/Particles.md %})
 
 ## KopernicusExpansion
-**WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
+> **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
 * [Comet Tails]({{ site.baseurl }}{% link content/kex/CometTails.md %})
 * [Emissive FX]({{ site.baseurl }}{% link content/kex/EmissiveFX.md %})
 * [EVA Footprints]({{ site.baseurl }}{% link content/kex/EVAFootprints.md %})

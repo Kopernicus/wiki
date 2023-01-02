@@ -3,7 +3,7 @@ layout: default
 title: Scatters
 ---
 
-The `Scatters` node in the LandControl PQSMod defines the scatters to be used within the [LandClasses]({{ site.baseurl }}{% link content/PQSMods/LandControl/LandClasses.md %}) provided by LandControl.
+The `Scatters` node in the LandControl PQSMod defines the scatters to be used within the [LandClasses]({{ site.baseurl }}{% link content/PQSMods/LandControl/LandClasses.md %}) provided by LandControl. Scatters are 3D meshed objects that are generated on the surface and can have various configurable features added via the `Components` subnode.
 
 **Subnodes**
 * [Material { }]({{ site.baseurl }}{% link content/PQSMods/LandControl/ScatterMaterialType.md %})

@@ -3,7 +3,7 @@ layout: default
 title: LandClasses
 ---
 
-`LandClasses` are regions defined by the LandControl PQSMod, in which several features can be customized including features which other PQSMods provide, such as HeightColorMap or noise PQSMods. LandControl regions can change terrain height, change terrain color, add color noise and height noise, and add ground scatters. LandClasses are defined via ranges of altitude, latitude, and longitude.
+`LandClasses` are regions specified by the LandControl PQSMod that can locally customize several features of the PQS, including features from other PQSMods like HeightColorMap or noise PQSMods. LandClasses can change terrain height, change terrain color, add color noise and height noise, and add ground scatters. LandClasses are defined via ranges of altitude, latitude, and longitude.
 
 **Subnodes** - Both are defined under the main table.
 * LerpRange { } = Defines range values
@@ -83,7 +83,7 @@ LandControl
 |name|String|The name of the LandClass.|
 |alterApparentHeight|Single|Supposedly adjusts the terrain's appearance. Only ever observed in the practice of forming icecaps.|
 |alterRealHeight|Double|Supposedly adjusts the terrain's actual height.|
-|minimumRealHeight|Double|The minimum height of the LandClass' terrain.|
+|minimumRealHeight|Double|The minimum height of the LandClass's terrain.|
 |color|Color|The color of the region.|
 |coverageBlend|Single|The blend of the coverage with surrounding LandClasses.|
 |coverageFrequency|Single|The size of the each feature of the LandClass coverage. As frequency gets bigger, size gets smaller.|
