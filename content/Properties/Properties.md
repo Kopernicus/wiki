@@ -3,14 +3,13 @@ layout: default
 title: Properties
 ---
 
-The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here. 
+The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here.
 
-### Subnodes
-***
+**Subnodes**
 * [Biomes/Biome { }]({{ site.baseurl }}{% link content/Properties/Biome.md %})
 * [ScienceValues { }]({{ site.baseurl }}{% link content/Properties/ScienceValues.md %})
 
-## Example
+**Example**
 ```md
 Properties
 {
