@@ -46,9 +46,8 @@ title: Kopernicus Wiki
   + [HazardousBody subnode]({{ site.baseurl }}{% link content/HazardousBody.md %})
   + [Debug subnode]({{ site.baseurl }}{% link content/Debug.md %})
   
-  ***WARNING - The Particles subnode has been removed in Kopernicus 1.8.1-1, but it has been re-added in versions after 1.8.1. Only use this node if your pack does not support 1.8.1.***
+  ***WARNING - The Particles subnode has been removed for KSP 1.8.1 and later versions. Only use this node if your mod does not support versions after KSP 1.7.3.***
   + [Particles subnode (Pre-1.8)]({{ site.baseurl }}{% link content/Particles-old.md %})
-  + [Particles subnode (Post-1.8)]({{ site.baseurl }}{% link content/Particles.md %})
 
 ## KopernicusExpansion
 > **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
