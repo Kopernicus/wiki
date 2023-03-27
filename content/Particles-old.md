@@ -48,16 +48,16 @@ Body
 
 |Property|Format|Description|
 |--------|------|-----------|
-|target|String|The name of the body that the particles move towards/away from.|
+|target|Text|The name of the body that the particles move towards/away from.|
 |texture|File Path|The particle texture. Keeping them on the small side is generally a good idea as there will be lots of particles in nearly every case.|
-|minEmission|Single|The particle emission rate.|
-|maxEmission|Single|Does not seem to have an observable effect.|
-|sizeMin|Single|The minimum size of each particle, presumably in unity-units.|
-|sizeMax|Single|The maximum size of each particle.|
-|lifespanMin|Single|The minimum time a particle will exist for, measured in seconds.|
-|lifespanMax|Single|The maximum time a particle will exist for, measured in seconds.|
-|speedScale|Single|The rate of particle movement. A negative rate means particles will move away from the target, while a positive one will make them move towards it. You MUST set them to low values with about the amount of zeroes in the example, be it positive or negative, if you wish to have your particles move at a reasonable rate.|
-|rate|Single|Controls the rate at which particles change scale. Positive rate makes them grow, negative rate makes them shrink.|
+|minEmission|Float|The particle emission rate.|
+|maxEmission|Float|Does not seem to have an observable effect.|
+|sizeMin|Float|The minimum size of each particle, presumably in unity-units.|
+|sizeMax|Float|The maximum size of each particle.|
+|lifespanMin|Float|The minimum time a particle will exist for, measured in seconds.|
+|lifespanMax|Float|The maximum time a particle will exist for, measured in seconds.|
+|speedScale|Float|The rate of particle movement. A negative rate means particles will move away from the target, while a positive one will make them move towards it. You MUST set them to low values with about the amount of zeroes in the example, be it positive or negative, if you wish to have your particles move at a reasonable rate.|
+|rate|Float|Controls the rate at which particles change scale. Positive rate makes them grow, negative rate makes them shrink.|
 |scale|Vector3|Determines the scale of the particle for each axis in the Vector3.|
 |collide|Boolean|Determines whether the particles have a collision mesh (can collide with each other, and possibly the vessel).|
 |mesh|File Path|The collision mesh of the particles, if `collide` is true. Likely in an .mu format.|

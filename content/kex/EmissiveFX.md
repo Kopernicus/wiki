@@ -40,13 +40,13 @@ Body
 |--------|------|-----------|
 |emissiveMap|File Path|The texture defining how emissive a spot on the planet is. The default is the ScaledVersion `mainTex`.|
 |color|Color|The color of the emission. Default is white.|
-|brightness|Single|The brightness of the emission. The default is 1.25.|
-|transparency|Single|The visibility of the original texture through the glow. The default is 0.75.|
+|brightness|Float|The brightness of the emission. The default is 1.25.|
+|transparency|Float|The visibility of the original texture through the glow. The default is 0.75.|
 
 *Mods/EmissiveFX*
 
 |Property|Format|Description|
 |--------|------|-----------|
 |color|Color|The color of the emission. Default is white.|
-|brightness|Single|The brightness of the emission. Default is 1.4.|
-|transparency|Single|The visibility of the original texture through the glow. Te default is 0.6.|
+|brightness|Float|The brightness of the emission. Default is 1.4.|
+|transparency|Float|The visibility of the original texture through the glow. Te default is 0.6.|

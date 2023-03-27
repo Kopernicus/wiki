@@ -64,14 +64,14 @@ NOTE: `Vacuum = "V"`, `Atmospheric = "A"`, and `Star = "S"`.
 |--------|------|------------------|-----------|
 |color|Color|V, A|The main color of the body. Default is (1, 1, 1, 1).|
 |specColor|Color|V, A|The specular color. Default is (0.5, 0.5, 0.5, 1).|
-|shininess|Single|V, A|The size of the bright spot of sunlight reflecting off the body. The effect is obvious on oceans, but it is less noticeable on bodies without oceans. Default is 0.078125.|
+|shininess|Float|V, A|The size of the bright spot of sunlight reflecting off the body. The effect is obvious on oceans, but it is less noticeable on bodies without oceans. Default is 0.078125.|
 |texture|File Path|V, A|(Also `mainTex`) The texture containing the ScaledSpace color map. Default is "White".|
 |mainTexScale|Vector2|V, A|The scale of the color map.|
 |mainTexOffset|Vector2|V, A|The offset of the color map.|
 |normals|File Path|V, A|(Also `bumpMap`) The texture containing the normal map. Default is "bump".|
 |bumpMapScale|Vector2|V, A|The scale of the normal map.|
 |bumpMapOffset|Vector2|V, A|The offset of the normal map.|
-|opacity|Single|V, A|The opacity of the ScaledSpace material. Default is 1.|
+|opacity|Float|V, A|The opacity of the ScaledSpace material. Default is 1.|
 |rampMap|File Path|S|The texture containing the star's ramp map. Default is "White".|
 |rampMapScale|Vector2|S|The scale of the ramp map.|
 |rampMapOffset|Vector2|S|The offset of the ramp map.|
@@ -83,11 +83,11 @@ NOTE: `Vacuum = "V"`, `Atmospheric = "A"`, and `Star = "S"`.
 |sunspotTex|File Path|S|The texture containing the star's sunspots. Default is "White".|
 |sunspotTexScale|Vector2|S|The scale of the sunspot texture.|
 |sunspotTexOffset|Vector2|S|The offset of the sunspot texture.|
-|sunspotPower|Single|S|The power of the sunspots. Default is 1.|
+|sunspotPower|Float|S|The power of the sunspots. Default is 1.|
 |sunspotColor|Color|S|The color of the sunspots. Default is (0, 0, 0, 0).|
 |rimColor|Color|S|The rim color. Default is (1, 1, 1, 1).|
-|rimPower|Single|A, S|How far from the rim of the sphere/planet the atmosphere rim will go. The lower the number, the greater the coverage. The higher the number, the closer to the edge of the sphere it will cling to. Default for "A" is 3, "S" is 0.2.|
-|rimBlend|Single|A, S|The blend between the atmosphere and the rim. Default for "A" is 1, "S" is 0.2.|
+|rimPower|Float|A, S|How far from the rim of the sphere/planet the atmosphere rim will go. The lower the number, the greater the coverage. The higher the number, the closer to the edge of the sphere it will cling to. Default for "A" is 3, "S" is 0.2.|
+|rimBlend|Float|A, S|The blend between the atmosphere and the rim. Default for "A" is 1, "S" is 0.2.|
 |rimColorRamp|File Path|A|The texture containing the atmosphere's rim color ramp. Default is "White".|
 |rimColorRampScale|Vector2|A|The scale of the rim color ramp.|
 |rimColorRampOffset|Vector2|A|The offset of the rim color ramp.|

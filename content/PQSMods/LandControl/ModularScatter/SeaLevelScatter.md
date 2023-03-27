@@ -28,4 +28,4 @@ LandControl
 
 |Property|Format|Description|
 |--------|------|-----------|
-|altitudeVariance|Single pair|The min and max altitude offset from the ground. Note that the final value is added to the scatter `verticalOffset`.|
+|altitudeVariance|Float pair|The min and max altitude offset from the ground. Note that the final value is added to the scatter `verticalOffset`.|

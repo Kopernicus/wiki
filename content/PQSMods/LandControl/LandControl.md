@@ -64,19 +64,19 @@ PQS
 |createScatters|Boolean|Whether to create scatters.|
 |heightMap|File Path|Use currently unknown - could be using it as a mask?|
 |useHeightMap|Boolean|Whether to use the height map for...?|
-|vHeightMax|Single|The max height for the height map?|
-|altitudeBlend|Single|The blend amount with adjacent terrain.|
-|altitudeFrequency|Single|The size of the each feature of the terrain noise. As frequency gets bigger, size gets smaller.|
+|vHeightMax|Float|The max height for the height map?|
+|altitudeBlend|Float|The blend amount with adjacent terrain.|
+|altitudeFrequency|Float|The size of the each feature of the terrain noise. As frequency gets bigger, size gets smaller.|
 |altitudeOctaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|altitudePersistance|Single|The complexity of or amount of detail in the noise.|
+|altitudePersistance|Float|The complexity of or amount of detail in the noise.|
 |altitudeSeed|Integer|The random seed of the noise.|
-|latitudeBlend|Single|The blend amount with adjacent terrain.|
-|latitudeFrequency|Single|The size of the each feature of the terrain noise. As frequency gets bigger, size gets smaller.|
+|latitudeBlend|Float|The blend amount with adjacent terrain.|
+|latitudeFrequency|Float|The size of the each feature of the terrain noise. As frequency gets bigger, size gets smaller.|
 |latitudeOctaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|latitudePersistance|Single|The complexity of or amount of detail in the noise.|
+|latitudePersistance|Float|The complexity of or amount of detail in the noise.|
 |latitudeSeed|Integer|The random seed of the noise.|
-|longitudeBlend|Single|The blend amount with adjacent terrain.|
-|longitudeFrequency|Single|The size of the each feature of the terrain noise. As frequency gets bigger, size gets smaller.|
+|longitudeBlend|Float|The blend amount with adjacent terrain.|
+|longitudeFrequency|Float|The size of the each feature of the terrain noise. As frequency gets bigger, size gets smaller.|
 |longitudeOctaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|longitudePersistance|Single|The complexity of or amount of detail in the noise.|
+|longitudePersistance|Float|The complexity of or amount of detail in the noise.|
 |longitudeSeed|Integer|The random seed of the noise.|

@@ -9,7 +9,7 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 
 |Property|Format|Description|
 |--------|------|-----------|
-|name|String|The set name of the PQSMod. Used for differentiating between two PQSMods of the same type being used in the same config.|
+|name|Text|The set name of the PQSMod. Used for differentiating between two PQSMods of the same type being used in the same config.|
 |enabled|Boolean|Whether the PQSMod should be enabled.|
 |order|Integer|The order that the PQSMod should be processed in. PQSMods are processed in increasing `order` value, so a mod with `order` 20 would be applied before a mod with order `100`.|
 

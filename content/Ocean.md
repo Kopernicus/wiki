@@ -113,9 +113,9 @@ Body
 |--------|------|-----------|
 |ocean|Boolean|Whether the ocean is enabled.|
 |oceanColor|Color|The color of the ocean on the map.|
-|oceanHeight|Double|The height of the ocean in meters.|
-|density|Double|The density of the ocean in g/m3. 1 is the density of actual water.|
+|oceanHeight|Float|The height of the ocean in meters.|
+|density|Float|The density of the ocean in g/m3. 1 is the density of actual water.|
 |minLevel|Integer|The PQS minimum level of triangles needed to display the ocean. Advised not to touch.|
 |maxLevel|Integer|The PQS maximum level of triangles needed to display the ocean.|
-|minDetailDistance|Double|The minimum detail distance of ???.|
-|maxQuadLengthsPerFrame|Single|Unknown use. Advised not to touch.|
+|minDetailDistance|Float|The minimum detail distance of ???.|
+|maxQuadLengthsPerFrame|Float|Unknown use. Advised not to touch.|
