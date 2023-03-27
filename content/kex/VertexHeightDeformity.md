@@ -21,5 +21,5 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|deformity|Double|The amount of deformation that the terrain should undergo. Each point's height on the sphere is multiplied by this value.|
+|deformity|Float|The amount of deformation that the terrain should undergo. Each point's height on the sphere is multiplied by this value.|
 |scaleDeformityByRadius|Boolean|Whether to multiply the deformity by the body's radius.|

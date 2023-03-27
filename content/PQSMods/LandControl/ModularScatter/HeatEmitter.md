@@ -34,5 +34,5 @@ Many parameters function identically to corresponding parameters in [HazardousBo
 
 |Property|Format|Description|
 |--------|------|-----------|
-|temperature|Double|The ambient temperature, corresponds to `ambientTemp` in HazardousBody.|
+|temperature|Float|The ambient temperature, corresponds to `ambientTemp` in HazardousBody.|
 |DistanceCurve|FloatCurve|Float curve that associates a distance from the scatter with a `temperature` multiplier.|

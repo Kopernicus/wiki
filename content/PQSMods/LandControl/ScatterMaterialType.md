@@ -52,7 +52,7 @@ Material
 	mainTex = Texture2D, default is white
 	mainTexScale = vector2
 	mainTexOffset = vector2
-	diff = Single, default is 2
+	diff = Float, default is 2
 }
 ```
 
@@ -64,7 +64,7 @@ Material
 	mainTex = Texture2D, default is white
 	mainTexScale = vector2
 	mainTexOffset = vector2
-	cutoff = Single, default is 0.5
+	cutoff = Float, default is 0.5
 }
 ```
 
@@ -76,11 +76,11 @@ Material
 	mainTex = Texture2D, default is white
 	mainTexScale = vector2
 	mainTexOffset = vector2
-	texCutoff = Single, default is 0.5
+	texCutoff = Float, default is 0.5
 	fogColor = Color, default is 0,0,1,1
 	heightFallOff = single, default is 1
 	globalDensity = single, default is 1
-	atmosphereDepth = Single, default is 1
+	atmosphereDepth = Float, default is 1
 }
 ```
 
@@ -92,23 +92,23 @@ Material
     mainTex = Texture2D, default is white
 	mainTexScale = vector2
 	mainTexOffset = vector2
-	cutoff = Single, default is 0.5, Alpha Cutoff
-    glossiness = Single, default is 0.5, smoothness
-    glossMapScale = Single, default is 1
+	cutoff = Float, default is 0.5, Alpha Cutoff
+    glossiness = Float, default is 0.5, smoothness
+    glossMapScale = Float, default is 1
     smoothnessTextureChannel = TextureChannel, default is 0
-    metallic = Single, default is 0
+    metallic = Float, default is 0
     metallicGlossMapScale = Vector2
     metallicGlossMapOffset = Vector2
     specularHighlights = Boolean, default is true
     glossyReflections = Boolean, default is true
-    bumpScale = Single, default is 1
+    bumpScale = Float, default is 1
     bumpMap = texture2d, default is "bump"
 	bumpMapScale = vector2
 	bumpMapOffset = vector2
-    parallax = Single, default is 0.02, height scale
+    parallax = Float, default is 0.02, height scale
     parallaxMap = texture2d, default is black
     parallaxMapOffset = Vector2
-    occlusionStrength = Single, default is 1
+    occlusionStrength = Float, default is 1
     occlusionMap = Texture2D, default is white
     occlusionMapScale = Vector2
     occlusionMapOffset = Vector2
@@ -127,8 +127,8 @@ Material
     detailNormalMapOffset = Vector2
     UVSec = UvSet, default is 0
     mode = BlendMode, default is 0
-    srcBlend = Single, default is 1
-    dstBlend = Single, default is 0
-    ZWrite = Single, default is 0
+    srcBlend = Float, default is 1
+    dstBlend = Float, default is 0
+    ZWrite = Float, default is 0
 }
 ```

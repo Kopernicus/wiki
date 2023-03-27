@@ -58,18 +58,18 @@ LandControl
 | Meshes | List of File Paths | A list of meshes that will be picked randomly. Inside this node, there can be keys named anything, and the value should be the file path to the .obj file. |
 | castShadows | Boolean | Whether the scatter should cast shadows. |
 | receiveShadows | Boolean | Whether the scatter should receive shadows - i.e., have shadows casted upon it. |
-| densityFactor | Double | A [0,1] base factor applied to `maxScatter`. Usually you want this set to 1 and just change `maxScatter`. |
+| densityFactor | Float | A [0,1] base factor applied to `maxScatter`. Usually you want this set to 1 and just change `maxScatter`. |
 | maxCache | Integer | Maximum amount of active scatter quads. Leaving this to the default value (512) should be always fine. |
 | maxCacheDelta | Integer | How many quads are added to the cache when it isn't large enough to hold all active scatter quads. `maxCache` must be a multiple of this value. Default value (64) should be fine. |
 | maxLevelOffset | Integer | The max offset from the PQS level? (the ones controlled by `minLevel` and `maxLevel`) |
-| maxScale | Single | The scatter model(s) will be scaled by a random multipler choosen between `minScale` and `maxScale`. |
-| minScale | Single | The scatter model(s) will be scaled by a random multipler choosen between `minScale` and `maxScale`. |
+| maxScale | Float | The scatter model(s) will be scaled by a random multipler choosen between `minScale` and `maxScale`. |
+| minScale | Float | The scatter model(s) will be scaled by a random multipler choosen between `minScale` and `maxScale`. |
 | maxScatter | Integer | The base amount of scatter objects per quad. Actual amount depends on `densityFactor`, the `density` defined in the `LandClasses` node and `spawnChance` if `useBetterDensity` is true. |
-| maxSpeed | Double | Scatter quads won't be created/rendered if the active vessel speed (in m/s) is higher than this value. Due to a stock bug, this is unreliable and quads might still appear anyway. |
-| verticalOffset | Single | Vertical offset from the ground in meters for scatter objects placement. |
+| maxSpeed | Float | Scatter quads won't be created/rendered if the active vessel speed (in m/s) is higher than this value. Due to a stock bug, this is unreliable and quads might still appear anyway. |
+| verticalOffset | Float | Vertical offset from the ground in meters for scatter objects placement. |
 | instancing | Boolean | Whether to instance the material, presumably to create better performance? |
 | useBetterDensity | Boolean | Set this to true to enable randomization of the amount of scatter objects per quad. |
-| spawnChance | Single | Requires `useBetterDensity` to be true. [0, 1] probability of each scatter object spawning. |
+| spawnChance | Float | Requires `useBetterDensity` to be true. [0, 1] probability of each scatter object spawning. |
 | ignoreDensityGameSetting | Boolean | If set to true, the KSP main menu settings scatter density % will be ignored. |
 
 **Scatter density**

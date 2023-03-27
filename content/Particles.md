@@ -52,9 +52,9 @@ Many of the new properties are optional, but there are a few tweaks that need to
 
 |Property|Format|Description|
 |--------|------|-----------|
-|target|String|The name of the body that the particles move towards/away from.|
+|target|Text|The name of the body that the particles move towards/away from.|
 |texture|File Path|The particle texture. Keeping them on the small side is generally a good idea as there will be lots of particles in nearly every case.|
-|shader|String|The shader to use for the particles.|
+|shader|Text|The shader to use for the particles.|
 |shape|EmissionShape|The shape of the particles. Possible values are `Ellipsoid`, `Ellipse`, `Sphere`, `Ring`, `Cuboid`, `Plane`, `Line`, and `Point`.|
 |shape1D|Float|The 1-dimensional size of the particles.|
 |shape2D|Vector2|The 2-dimensional size of the particles.|

@@ -85,14 +85,14 @@ Body
 |oxygen|Boolean|Whether the atmosphere contains oxygen. Used for whether jet engines should work in the atmosphere.|
 |ambientColor|Color|All objects inside of the atmosphere will slightly shine in this color.|
 |lightColor|Color|(Deprecated) Sets the AFG `waveLength` to this value. If AFG is not included, it automatically creates a new AFG.|
-|staticDensityASL|Double|Atmospheric density at sea level. Used to calculate the parameters of the atmosphere if no curves are used.|
-|staticPressureASL|Double|The static pressure at sea level in kPa. Used to calculate the parameters of the atmosphere if no curves are used. It is displayed in KSP under the body information.|
-|temperatureSeaLevel|Double|The static temperature in Kelvin at sea level. Used to calculate the parameters of the atmosphere if no curves are used.|
-|adiabaticIndex|Double|?|
-|atmosphereDepth|Double|(Also `altitude`,`maxAltitude`) The atmosphere cutoff altitude/height of the atmosphere.|
-|gasMassLapseRate|Double|?|
-|atmosphereMolarMass|Double|?|
-|temperatureLapseRate|Double|?|
+|staticDensityASL|Float|Atmospheric density at sea level. Used to calculate the parameters of the atmosphere if no curves are used.|
+|staticPressureASL|Float|The static pressure at sea level in kPa. Used to calculate the parameters of the atmosphere if no curves are used. It is displayed in KSP under the body information.|
+|temperatureSeaLevel|Float|The static temperature in Kelvin at sea level. Used to calculate the parameters of the atmosphere if no curves are used.|
+|adiabaticIndex|Float|?|
+|atmosphereDepth|Float|(Also `altitude`,`maxAltitude`) The atmosphere cutoff altitude/height of the atmosphere.|
+|gasMassLapseRate|Float|?|
+|atmosphereMolarMass|Float|?|
+|temperatureLapseRate|Float|?|
 |pressureCurveIsNormalized|Boolean|Whether the pressure curve height values should use absolute (0 - atmosphereDepth) or relative (0 - 1) values.|
 |pressureCurve|FloatCurve|Assigns a pressure value (in kPa) to a height value inside of the atmosphere.|
 |temperatureCurveIsNormalized|Boolean|Whether the temperature curve should use absolute (0 - atmosphereDepth) or relative (0 - 1) values.|
