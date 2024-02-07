@@ -12,14 +12,14 @@ iconColor = Color
 cacheFile = File Path
 radius = Float
 contractWeight = Integer
-timewarpAltitudeLimits = Integer[]
-cameraSmaRatioBounds = Float[]
+timewarpAltitudeLimits = List of Integers
+cameraSmaRatioBounds = List of Floats
 pressureCurve = FloatCurve
 ```
 
 |Data Type|Description|Examples|
 |---------|-----------|--------|
-|String|A collection of characters.|"Hello", "Kerbin", "Sarnus123"|
+|Text|A sequence of text characters, which can have spaces. In practice it is not surrounded by quotes.|"Hello", "Kerbin", "Sarnus123", "This body is green"|
 |Integer|A number that has no decimal part.|1, 100, -13, 69|
 |Float|A floating-point number.  It can store decimal values as well as integers. Used for most decimal keys.|3.1415926, 2, -100.01|
 |Color|A color. It can be expressed in many ways, each of which is shown in the table at the bottom of the page.|See Table|
