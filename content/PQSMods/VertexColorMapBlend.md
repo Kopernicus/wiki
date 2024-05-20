@@ -26,4 +26,4 @@ PQS
 |Property|Format|Description|
 |--------|------|-----------|
 |map|File Path|The path to the color map to use and blend.|
-|blend|Float|The amount of blend to use.|
+|blend|Decimal|The amount of blend to use.|

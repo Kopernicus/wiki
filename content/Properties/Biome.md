@@ -28,5 +28,5 @@ Biomes
 |--------|------|-----------|
 |name|Text|The name of the biome. Sets `displayName` if it is not set.|
 |displayName|Text|The name to be displayed. Can be a localization tag.|
-|value|Float|The science multiplier for the biome.|
+|value|Decimal|The science multiplier for the biome.|
 |color|Color|The color of the biome on the biomeMap, specified at `Properties/biomeMap`.|

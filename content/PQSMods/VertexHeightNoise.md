@@ -38,11 +38,11 @@ PQS
 {: #collapse-vhn-table .collapse}  
 |Property|Format|Description|
 |--------|------|-----------|
-|deformity|Float|The deformity of the simplex terrain noise.|
-|frequency|Float|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
+|deformity|Decimal|The deformity of the simplex terrain noise.|
+|frequency|Decimal|The size of the each feature of the simplex terrain noise. As frequency gets bigger, size gets smaller.|
 |octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|persistence|Float|The complexity of or amount of detail in the noise.|
-|lacunarity|Float|The size of the gaps that are in the noise.|
+|persistence|Decimal|The complexity of or amount of detail in the noise.|
+|lacunarity|Decimal|The size of the gaps that are in the noise.|
 |seed|Integer|The random seed of the noise.|
 |noiseType|[NoiseType]({{ site.baseurl }}{% link content/datatypes.md %})|The type of the specified noise.|
 |mode|[NoiseQuality]({{ site.baseurl }}{% link content/datatypes.md %})|The quality mode of the noise.|
