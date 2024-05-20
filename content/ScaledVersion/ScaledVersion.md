@@ -5,7 +5,6 @@ title: ScaledVersion
 
 The `ScaledVersion { }` node in a configuration file for Kopernicus describes a less-detailed model of your planet that appears in the map view and from large distances.
 
-
 **Subnodes**
 * [Material { }]({{ site.baseurl }}{% link content/ScaledVersion/Material.md %}) = Updates to textures and atmosphere rims.
 * [OnDemand { }]({{ site.baseurl }}{% link content/ScaledVersion/OnDemand.md %}) = Used for textures that should be loaded OnDemand.
@@ -28,7 +27,7 @@ ScaledVersion
 
 |Property|Format|Description|
 |--------|------|-----------|
-|type|String|Either `Vacuum`, `Atmospheric`, or `Star`, depending on whether the body is a star or a planet/moon that has an atmosphere or not. (Can also use `AtmosphericStandard`, but function is not yet known.)|
+|type|Text|Either `Vacuum`, `Atmospheric`, or `Star`, depending on whether the body is a star or a planet/moon that has an atmosphere or not. (Can also use `AtmosphericStandard`, but function is not yet known.)|
 |fadeStart|Float|Altitude, in meters, at which the transition to ScaledSpace starts.|
 |fadeEnd|Float|Altitude, in meters, at which the transition to ScaledSpace ends.|
 |sphericalModel|Boolean|Whether the ScaledSpace should be represented as a sphere instead of the actual PQS. Default is `false`.|

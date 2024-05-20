@@ -3,14 +3,13 @@ layout: default
 title: Properties
 ---
 
-The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here. 
+The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here.
 
-### Subnodes
-***
+**Subnodes**
 * [Biomes/Biome { }]({{ site.baseurl }}{% link content/Properties/Biome.md %})
 * [ScienceValues { }]({{ site.baseurl }}{% link content/Properties/ScienceValues.md %})
 
-## Example
+**Example**
 ```md
 Properties
 {
@@ -39,7 +38,7 @@ Properties
 
 |Property|Format|Description|
 |--------|------|-----------|
-|description|String|Here goes the description for the info box of the body that you can access in map view. *You can insert line breaks using the syntax `\\nn`*|
+|description|Text|Here goes the description for the info box of the body that you can access in map view. *You can insert line breaks using the syntax `\\nn`*|
 |useTheInName|Boolean|If the body name should be prefixed with "the" in some situations, such as "the sun."|
 |radius|Float|The radius (half of the body's diameter) of the body in meters.|
 |mass|Float|The mass of the body in kilograms. You can use scientific notation here, like `1.234567+e20`|
@@ -54,7 +53,7 @@ Properties
 |coreTemperatureOffset|?|?|
 |[tidallyLocked](https://en.wikipedia.org/wiki/Tidal_locking)|Boolean|Statement that determines if the body is tidally locked to its parent. This means that it takes as long to rotate around its own axis as it does to make a full orbit around its parent. In real-life and KSP most (large) moons are tidally locked.|
 |isHomeWorld|Boolean|Statement that determines if this is the body that houses KSC. For stability's sake It's recommended to keep this at false for any bodies you add.|
-|timewarpAltitudeLimits|Integer[]|Determines at which altitude above sea level certain timewarp altitudes become available. 0 30000 30000 60000 100000 300000 600000 800000 means that 1x timewarp is available at 0 meters, 5x timewarp at 30000 meters all the way up to the max timewarp starting at 800000 meters.|
+|timewarpAltitudeLimits|Integer List|Determines at which altitude above sea level certain timewarp altitudes become available. 0 30000 30000 60000 100000 300000 600000 800000 means that 1x timewarp is available at 0 meters, 5x timewarp at 30000 meters all the way up to the max timewarp starting at 800000 meters.|
 |sphereOfInfluence|Float|In meters. The sphere of influence of the body. This is generally calculated as described [here](http://wiki.kerbalspaceprogram.com/wiki/Sphere_of_influence). In case you need it to be unrealistically big or small you can change it here.|
 |solarRotationPeriod|Boolean|Whether the body should use the solar day instead of the sidereal day.|
 |navballSwitchRadiusMult|Float|Altitude, in meters, where the NavBall switches from surface velocity to orbital velocity while ascending.|

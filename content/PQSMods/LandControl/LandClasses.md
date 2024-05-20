@@ -3,7 +3,7 @@ layout: default
 title: LandClasses
 ---
 
-`LandClasses` are regions defined by the LandControl PQSMod, in which several features can be customized including features which other PQSMods provide, such as HeightColorMap or noise PQSMods. LandControl regions can change terrain height, change terrain color, add color noise and height noise, and add ground scatters. LandClasses are defined via ranges of altitude, latitude, and longitude.
+`LandClasses` are regions specified by the LandControl PQSMod that can locally customize several features of the PQS, including features from other PQSMods like HeightColorMap or noise PQSMods. LandClasses can change terrain height, change terrain color, add color noise and height noise, and add ground scatters. LandClasses are defined via ranges of altitude, latitude, and longitude.
 
 **Subnodes** - Both are defined under the main table.
 * LerpRange { } = Defines range values
@@ -27,7 +27,7 @@ LandControl
       coverageSeed = 234124
       name = IceCaps
       latDelta = 0
-      latitudeDouble = True
+      latitudeFloat = True
       lonDelta = 1
       minimumRealHeight = 20
       noiseBlend = 0.25
@@ -50,7 +50,7 @@ LandControl
         startEnd = -10
         startStart = -10
       }
-      latitudeDoubleRange
+      latitudeFloatRange
       {
         endEnd = 11
         endStart = 11
@@ -80,10 +80,10 @@ LandControl
 
 |Property|Format|Description|
 |--------|------|-----------|
-|name|String|The name of the LandClass.|
+|name|Text|The name of the LandClass.|
 |alterApparentHeight|Float|Supposedly adjusts the terrain's appearance. Only ever observed in the practice of forming icecaps.|
 |alterRealHeight|Float|Supposedly adjusts the terrain's actual height.|
-|minimumRealHeight|Float|The minimum height of the LandClass' terrain.|
+|minimumRealHeight|Float|The minimum height of the LandClass's terrain.|
 |color|Color|The color of the region.|
 |coverageBlend|Float|The blend of the coverage with surrounding LandClasses.|
 |coverageFrequency|Float|The size of the each feature of the LandClass coverage. As frequency gets bigger, size gets smaller.|
@@ -101,7 +101,7 @@ LandControl
 |lonDelta|Float|The change between min and max of ~~the longitude specified.~~ 0 longitude?|
 |altitudeRange|LerpRange|Determines the heights at which the LandClass encompasses.|
 |latitudeRange|LerpRange|Determines the latitudes at which the LandClass encompasses.|
-|latitudeDoubleRange|LerpRange|Determines the second latitudes at which the LandClass encompasses - only used if `latitudeDouble` is true.|
+|latitudeFloatRange|LerpRange|Determines the second latitudes at which the LandClass encompasses - only used if `latitudeFloat` is true.|
 |longitudeRange|LerpRange|Determines the longitudes at which the LandClass encompasses.|
 
 ## LerpRange
@@ -122,4 +122,4 @@ Although not a true scatters node, the `Scatters { }` node in a LandClass node h
 |Property|Format|Description|
 |--------|------|-----------|
 |density|Float|The amount to modify the scatter's density with. Seems to be multiplied with the scatter's `maxScatter`?|
-|scatterName|String|The name of the scatter to modify the density of.|
+|scatterName|Text|The name of the scatter to modify the density of.|

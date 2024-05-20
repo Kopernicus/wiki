@@ -7,8 +7,8 @@ The `PQS { }` node describes properties of the Procedural Quad Sphere that makes
 **Subnodes**
 * PhysicsMaterial { } (below)
 * Material { }
-  * [AtmosphericTriplanarZoomRotation]({{ site.baseurl }}{% link content/Material/PQSAtmosphericTriplanarZoomRotation.md %})
-  * [AtmosphericTriplanarZoomRotationTextureArray]({{ site.baseurl }}{% link content/Material/PQSAtmosphericTriplanarZoomRotationTextureArray.md %})
+  + [AtmosphericTriplanarZoomRotation]({{ site.baseurl }}{% link content/Material/PQSAtmosphericTriplanarZoomRotation.md %})
+  + [AtmosphericTriplanarZoomRotationTextureArray]({{ site.baseurl }}{% link content/Material/PQSAtmosphericTriplanarZoomRotationTextureArray.md %})
 * FallbackMaterial { }
 * [Mods { }]({{ site.baseurl }}{% link content/PQSMods/PQSMods.md%})
 
@@ -64,7 +64,7 @@ Body
 |fadeStart|Float|The altitude, in meters, in which the PQS begins to fade out. Should line up with ScaledVersion's `fadeStart`.|
 |fadeEnd|Float|The altitude, in meters, in which the PQS is fully faded. Should line up with ScaledVersion's `fadeEnd`.|
 |deactivateAltitude|Float|The altitude, in meters, in which the PQS is deactivated.|
-|mapMaxHeight|Float|The maximum altitude, in meters, that can be possibly represented by the height map?|
+|mapMaxHeight|Float|The maximum altitude, in meters, that can be represented in a height map exported from Kittopia. Omit to use the full height of the current PQS.|
 |materialType|PQSMaterial|The name of the material type to use in the `Material { }` subnode. Possible values: Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation, AtmosphericTriplanarZoomRotationTextureArray (1.9).|
 
 ## PhysicsMaterial

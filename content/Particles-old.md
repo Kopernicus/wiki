@@ -48,7 +48,7 @@ Body
 
 |Property|Format|Description|
 |--------|------|-----------|
-|target|String|The name of the body that the particles move towards/away from.|
+|target|Text|The name of the body that the particles move towards/away from.|
 |texture|File Path|The particle texture. Keeping them on the small side is generally a good idea as there will be lots of particles in nearly every case.|
 |minEmission|Float|The particle emission rate.|
 |maxEmission|Float|Does not seem to have an observable effect.|

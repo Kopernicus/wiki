@@ -82,7 +82,7 @@ The `LandClasses { }` wraps several `LandClass { }` nodes that describe an indiv
 
 |Property|Format|Description|
 |--------|------|-----------|
-|name|String|The name of the LandClass.|
+|name|Text|The name of the LandClass.|
 |color|Color|The color to be applied to the LandClass.|
 |altitudeStart|Float|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of defined height: `altitude = (height - minHeight) / (maxHeight - minHeight)`.|
 |altitudeEnd|Float|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|

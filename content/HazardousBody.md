@@ -56,7 +56,7 @@ Body
 |Property|Format|Description|
 |--------|------|-----------|
 |sumTemp|Boolean|Whether or not to add the ambientTemp to the calculated temperature.|
-|biomeName|String|Optional. This limits this instance of HazardousBody to the specified biome.|
+|biomeName|Text|Optional. This limits this instance of HazardousBody to the specified biome.|
 |ambientTemp|Float|Optional, defaults to 0. This is the base temperature before applying modifiers such as the Alt/Lon/Lat Curves and the HeatMap. After all such modifiers are applied, if the new temperature is higher than KSP's default ambient temperature, then the new one will be applied. If KSP's is higher, KSP's shall be used instead.|
 |HeatMap|File Path|Optional. A greyscale map for fine control of the ambient temperature. It acts as a multiplier map. Black = 0, White = 1.|
 |AltitudeCurve|FloatCurve|Optional, defaults to 1 at all altitudes. A multiplier of the average heat that gets applied at a certain altitude.|

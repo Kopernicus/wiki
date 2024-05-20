@@ -3,7 +3,7 @@ layout: default
 title: VertexHeightNoise
 ---
 
-The `VertexHeightNoise` PQSMod is a mod that adds height noise to the terrain. This makes the terrain bumpier, though the "style" of bumps/features change with the noise type. 
+The `VertexHeightNoise` PQSMod is a mod that adds height noise to the terrain. This makes the terrain bumpier, though the "style" of bumps/features change with the noise type.  
 The noise is also additive, meaning that instead of overwriting the terrain altitude, it simply adds or subtracts from it.
 
 <button data-toggle="collapse" data-target="#collapse-vhn-example">Show Example</button>
@@ -25,7 +25,7 @@ PQS
       noiseType = Perlin
       mode = High
       lacunarity = 0.7
-      
+
       enabled = true
       order = 25
     }
@@ -69,19 +69,19 @@ PQS
     {
         VertexHeightNoiseVertHeightCurve2
         {
-            // All blank fields can be whatever you want, see the VHNVHC2 page for more information on them. 
-            deformity = 
-            ridgedMode = 
+            // All blank fields can be whatever you want, see the VHNVHC2 page for more information on them.
+            deformity =
+            ridgedMode =
 
-            ridgedAddSeed = 
-            ridgedAddFrequency = 
-            ridgedAddLacunarity = 
-            ridgedAddOctaves = 
+            ridgedAddSeed =
+            ridgedAddFrequency =
+            ridgedAddLacunarity =
+            ridgedAddOctaves =
 
-            ridgedSubSeed = 
+            ridgedSubSeed =
             ridgedSubFrequency = 0
-            ridgedSubLacunarity = 
-            ridgedSubOctaves = 
+            ridgedSubLacunarity =
+            ridgedSubOctaves =
 
             simplexCurve
             {
@@ -89,15 +89,15 @@ PQS
                 key = 1 0
             }
 
-            simplexHeightStart = 
-            simplexHeightEnd = 
-            simplexSeed = 
-            simplexOctaves = 
-            simplexPersistence = 
+            simplexHeightStart =
+            simplexHeightEnd =
+            simplexSeed =
+            simplexOctaves =
+            simplexPersistence =
             simplexFrequency = 0
 
             enabled = true
-            order = 
+            order =
         }
     }
 }
