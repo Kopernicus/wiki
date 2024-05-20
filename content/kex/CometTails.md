@@ -50,14 +50,14 @@ Body
 |Property|Format|Description|
 |type|CometTailType|The type of comet tail. The possible values are `Ion` and `Dust`.|
 |color|Color|The color of the tail. Default is white. NOTE: Alpha value does not matter.|
-|rimPower|Float|How close the tail rim stays to the edge of the body. The higher the number, the closer it is. Default is 1.41.|
-|distortion|Float|The distortion of the tail. Default is 0.143.|
-|alphaDistortion|Float|The transparency distortion of the tail. Default is 0.262.|
-|zDistortion|Float|? Default is 0.12|
-|frequency|Float|The frequency of the comet tail's noise. Default is 1.547|
-|lacunarity|Float|The [lacunarity](https://en.wikipedia.org/wiki/Lacunarity) of the comet tail's noise. Default is 1.518.|
-|gain|Float|? Default is 0.734.|
-|radius|Float|The radius of the teardrop that makes up the comet tail. Default is 2000.|
-|length|Float|The length of the comet tail. Default is 16000.|
+|rimPower|Decimal|How close the tail rim stays to the edge of the body. The higher the number, the closer it is. Default is 1.41.|
+|distortion|Decimal|The distortion of the tail. Default is 0.143.|
+|alphaDistortion|Decimal|The transparency distortion of the tail. Default is 0.262.|
+|zDistortion|Decimal|? Default is 0.12|
+|frequency|Decimal|The frequency of the comet tail's noise. Default is 1.547|
+|lacunarity|Decimal|The [lacunarity](https://en.wikipedia.org/wiki/Lacunarity) of the comet tail's noise. Default is 1.518.|
+|gain|Decimal|? Default is 0.734.|
+|radius|Decimal|The radius of the teardrop that makes up the comet tail. Default is 2000.|
+|length|Decimal|The length of the comet tail. Default is 16000.|
 |opacityCurve|FloatCurve|A curve that associates a distance value with an opacity value from 0 to 1?|
 |brightnessCurve|FloatCurve|A curve that associates a distance value with a brightness value.|

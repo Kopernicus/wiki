@@ -56,22 +56,22 @@ Many of the new properties are optional, but there are a few tweaks that need to
 |texture|File Path|The particle texture. Keeping them on the small side is generally a good idea as there will be lots of particles in nearly every case.|
 |shader|Text|The shader to use for the particles.|
 |shape|EmissionShape|The shape of the particles. Possible values are `Ellipsoid`, `Ellipse`, `Sphere`, `Ring`, `Cuboid`, `Plane`, `Line`, and `Point`.|
-|shape1D|Float|The 1-dimensional size of the particles.|
+|shape1D|Decimal|The 1-dimensional size of the particles.|
 |shape2D|Vector2|The 2-dimensional size of the particles.|
 |shape3D|Vector3|The 3-dimensional size of the particles.|
 |minEmission|Integer|The particle emission rate.|
 |maxEmission|Integer|Does not seem to have an observable effect.|
-|sizeMin|Float|The minimum size of each particle, presumably in unity-units.|
-|sizeMax|Float|The maximum size of each particle.|
-|lifespanMin|Float|The minimum time a particle will exist for, measured in seconds.|
-|lifespanMax|Float|The maximum time a particle will exist for, measured in seconds.|
-|speedScale|Float|The rate of particle movement. A negative rate means particles will move away from the target, while a positive one will make them move towards it. You MUST set them to low values with about the amount of zeroes in the example, be it positive or negative, if you wish to have your particles move at a reasonable rate.|
-|rate|Float|Controls the rate at which particles change scale. Positive rate makes them grow, negative rate makes them shrink.|
+|sizeMin|Decimal|The minimum size of each particle, presumably in unity-units.|
+|sizeMax|Decimal|The maximum size of each particle.|
+|lifespanMin|Decimal|The minimum time a particle will exist for, measured in seconds.|
+|lifespanMax|Decimal|The maximum time a particle will exist for, measured in seconds.|
+|speedScale|Decimal|The rate of particle movement. A negative rate means particles will move away from the target, while a positive one will make them move towards it. You MUST set them to low values with about the amount of zeroes in the example, be it positive or negative, if you wish to have your particles move at a reasonable rate.|
+|rate|Decimal|Controls the rate at which particles change scale. Positive rate makes them grow, negative rate makes them shrink.|
 |scale|Vector3|Determines the scale of the particle for each axis in the Vector3.|
 |emitMesh|File Path|The emission mesh of the particles. Likely in an .mu format.|
 |collide|Boolean|Determines whether the particles have a collision mesh (can collide with each other, and possibly the vessel).|
-|bounce|Float|The amount of force applied to a particle after colliding.|
-|damping|Float|The amount of speed a particle loses after colliding.|
+|bounce|Decimal|The amount of force applied to a particle after colliding.|
+|damping|Decimal|The amount of speed a particle loses after colliding.|
 |shadowCast|Boolean|Whether the particles should cast shadows.|
 |shadowEffect|Boolean|Whether the particles should have shadows cast upon it (i.e., receive shadows).|
 |autoSeed|Boolean|Whether to automatically generate a random seed. Overwrites the set `seed`.|

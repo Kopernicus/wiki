@@ -73,9 +73,9 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|blend|Float|The blend between the LandClasses.|
-|minHeight|Float|The minimum height, or `0.0` altitude, of a LandClass.|
-|maxHeight|Float|The maxmium height, or `1.0` altitude, of a LandClass.|
+|blend|Decimal|The blend between the LandClasses.|
+|minHeight|Decimal|The minimum height, or `0.0` altitude, of a LandClass.|
+|maxHeight|Decimal|The maxmium height, or `1.0` altitude, of a LandClass.|
 
 ## LandClasses
 The `LandClasses { }` wraps several `LandClass { }` nodes that describe an individual region's color as defined by altitudes.
@@ -84,6 +84,6 @@ The `LandClasses { }` wraps several `LandClass { }` nodes that describe an indiv
 |--------|------|-----------|
 |name|Text|The name of the LandClass.|
 |color|Color|The color to be applied to the LandClass.|
-|altitudeStart|Float|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of defined height: `altitude = (height - minHeight) / (maxHeight - minHeight)`.|
-|altitudeEnd|Float|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|
+|altitudeStart|Decimal|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of defined height: `altitude = (height - minHeight) / (maxHeight - minHeight)`.|
+|altitudeEnd|Decimal|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|
 |lerpToNext|Boolean|Whether to blend into the next LandClass. Highly recommended to set to true on all but the last LandClass.|

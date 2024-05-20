@@ -30,9 +30,9 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|blend|Float|The amount to blend the noise by.|
+|blend|Decimal|The amount to blend the noise by.|
 |colorStart|Color|The starting color to use for the perlin noise. Noise will generate between this color and `colorEnd`.|
 |colorEnd|Color|The ending color to use for the perlin noise. Noise will generate between this color and `colorStart`.|
-|frequency|Float|The size of the each feature of the perlin noise. As frequency gets bigger, size gets smaller.|
-|persistence|Float|The complexity of or amount of detail in the noise.|
+|frequency|Decimal|The size of the each feature of the perlin noise. As frequency gets bigger, size gets smaller.|
+|persistence|Decimal|The complexity of or amount of detail in the noise.|
 |seed|Integer|The random seed of the noise.|
