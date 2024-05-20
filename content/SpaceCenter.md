@@ -37,17 +37,17 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
             absoluteOffset = // Float
             absolute = // Boolean
             groundColor = // Color, the color of the KSC grass
-            groundTexture = // Texture2D, KSC grass texture when up close
+            groundTexture = // Texture, KSC grass texture when up close
             editorGroundColor = // Color, color of the ksc grass as seen from the editor
             Material
             {
-                nearGrassTexture = Texture2D
+                nearGrassTexture = Texture
                 nearGrassTiling = Float
-                farGrassTexture = Texture2D
+                farGrassTexture = Texture
                 farGrassTiling = Float
                 farGrassBlendDistance = Float
                 grassColor = Color
-                tarmacTexture = Texture2D
+                tarmacTexture = Texture
                 tarmacTextureOffset = Vector2
                 tarmacTextureScale = Vector2
                 opacity = Float
@@ -56,7 +56,7 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
                 underwaterFogFactor = Float
             }
 
-            editorGroundTex = // Texture2D, grass surface texture as seen from the editor
+            editorGroundTex = // Texture, grass surface texture as seen from the editor
             editorGroundTexScale = // Vector2, scale of the grass surface texture as seen from inside the editor
             editorGroundTexOffset = // Vector2, offset of the ksc grass surface texture as seen from inside the editor
         }
