@@ -28,8 +28,8 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|deformity|Float|The deformity of the perlin noise.|
-|frequency|Float|The size of the each feature of the perlin noise. As frequency gets bigger, size gets smaller.|
-|octaves|Float|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
-|persistence|Float|The complexity of or amount of detail in the noise.|
+|deformity|Decimal|The deformity of the perlin noise.|
+|frequency|Decimal|The size of the each feature of the perlin noise. As frequency gets bigger, size gets smaller.|
+|octaves|Decimal|The amount of blanketing over the noise. Higher octaves mean rougher noise.|
+|persistence|Decimal|The complexity of or amount of detail in the noise.|
 |seed|Integer|The random seed of the noise.|

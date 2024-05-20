@@ -55,22 +55,22 @@ Rings
 
 |Property|Format|Description|
 |--------|------|-----------|
-|innerRadius|Float|The distance from center of parent to inner edge of ring in milliradii.|
-|outerRadius|Float|The distance from center of parent to outer edge of ring in milliradii.|
+|innerRadius|Decimal|The distance from center of parent to inner edge of ring in milliradii.|
+|outerRadius|Decimal|The distance from center of parent to outer edge of ring in milliradii.|
 |InnerRadiusMultiplier|FloatCurve|A curve that defines a multiplier for the inner radius using an angle. The first value is an angle in degrees, while the second is the multiplier. Allows for the deformation of rings.|
 |OuterRadiusMultiplier|FloatCurve|Similar to `InnerRadiusMultiplier`, but for the outer radius rather than the inner radius.|
-|thickness|Float|The distance between top and bottom faces of ring in milliradii.|
-|angle|Float|The axis angle in degrees (inclination) of the ring.|
-|longitudeOfAscendingNode|Float|Angle in degrees between the absolute reference direction and the ascending node. Works just like the corresponding property on celestial bodies. Only effective if `lockRotation` is true.|
+|thickness|Decimal|The distance between top and bottom faces of ring in milliradii.|
+|angle|Decimal|The axis angle in degrees (inclination) of the ring.|
+|longitudeOfAscendingNode|Decimal|Angle in degrees between the absolute reference direction and the ascending node. Works just like the corresponding property on celestial bodies. Only effective if `lockRotation` is true.|
 |texture|File Path|The path to the ring texture.|
 |color|Color|A tint applied to the ring.|
 |lockRotation|Boolean|Whether to lock the rotation of the ring. If false, the ring's LAN rotates with the parent body (unnatural if the `angle` is not 0).|
-|rotationPeriod|Float|The number of seconds for the ring to complete one rotation. If zero, it will default to the parent body's `rotationPeriod`. Only noticeable if `tiles` is not 0.|
+|rotationPeriod|Decimal|The number of seconds for the ring to complete one rotation. If zero, it will default to the parent body's `rotationPeriod`. Only noticeable if `tiles` is not 0.|
 |unlit|Boolean|Whether to apply an Unlit/Transparent shader instead of a Transparent/Diffuse shader.|
 |useNewShader|Boolean|Whether to use the new custom ring shader that includes a planet shadow instead of the built-in Unity shaders.|
-|penumbraMultiplier|Float|A penumbra multiplier to the NewShader. Makes planet shadow softer (values larger than one) or less soft (smaller than one). Softness still depends on distance from sun, distance from planet and radius of sun and planet.|
+|penumbraMultiplier|Decimal|A penumbra multiplier to the NewShader. Makes planet shadow softer (values larger than one) or less soft (smaller than one). Softness still depends on distance from sun, distance from planet and radius of sun and planet.|
 |steps|Integer|The amount of vertices around the ring.|
 |tiles|Integer|Number of times the texture should be tiled around the cylinder. If zero, use the old behavior of sampling a thin diagonal strip from (0,0) to (1,1). Look at the example above for more info.|
 |innerShadeTexture|File Path|The path to the texture whose opaque pixels cast shadows on the ring's inner surface.|
 |innerShadeTiles|Integer|The `innerShadeTexture` repeats this many times over the inner surface.|
-|innerShadeRotationPeriod|Float|The number of seconds the `innerShadeTexture` takes to complete one rotation.|
+|innerShadeRotationPeriod|Decimal|The number of seconds the `innerShadeTexture` takes to complete one rotation.|

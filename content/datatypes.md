@@ -21,7 +21,7 @@ pressureCurve = FloatCurve
 |---------|-----------|--------|
 |Text|A collection of characters, potentially including spaces. Only include quotes if you want them to appear in-game.|Hello, "Sarnus 123"|
 |Integer|A number that has no decimal part.|1, 100, -13, 69|
-|Float|A floating-point number.  It can store decimal values as well as integers. Used for decimal keys.|3.1415926, 2.0, 7, -100.01|
+|Decimal|A floating-point number.  It can store decimal values as well as integers. Used for decimal keys.|3.1415926, 2.0, 7, -100.01|
 |Color|A color. It can be expressed in many ways, each of which is shown in the table at the bottom of the page.|See Table|
 |Filepath|A String containing a file path to a file. There are two main ways of specifiying paths, shown in the second table on this page.|See Table|
 |NoiseType|The type of noise to use with Noise-generating PSQMods|Options are "Perlin", "Billow", or "RidgedMultiFractal"|
