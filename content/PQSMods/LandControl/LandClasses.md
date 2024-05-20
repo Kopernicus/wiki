@@ -27,7 +27,7 @@ LandControl
       coverageSeed = 234124
       name = IceCaps
       latDelta = 0
-      latitudeFloat = True
+      latitudeDouble = True
       lonDelta = 1
       minimumRealHeight = 20
       noiseBlend = 0.25
@@ -50,7 +50,7 @@ LandControl
         startEnd = -10
         startStart = -10
       }
-      latitudeFloatRange
+      latitudeDoubleRange
       {
         endEnd = 11
         endStart = 11
@@ -97,11 +97,11 @@ LandControl
 |noiseSeed|Integer|The random seed of the LandClass noise.|
 |noiseColor|Color|The main color of the noise to be added to the LandClass.|
 |latDelta|Float|The change between min and max of ~~the latitude specified.~~ 0 latitude?|
-|latitudeFloat|Boolean|Whether to use a second latitude range - could be used for mirroring over the equator.|
+|latitudeDouble|Boolean|Whether to use a second latitude range - could be used for mirroring over the equator.|
 |lonDelta|Float|The change between min and max of ~~the longitude specified.~~ 0 longitude?|
 |altitudeRange|LerpRange|Determines the heights at which the LandClass encompasses.|
 |latitudeRange|LerpRange|Determines the latitudes at which the LandClass encompasses.|
-|latitudeFloatRange|LerpRange|Determines the second latitudes at which the LandClass encompasses - only used if `latitudeFloat` is true.|
+|latitudeDoubleRange|LerpRange|Determines the second latitudes at which the LandClass encompasses - only used if `latitudeDouble` is true.|
 |longitudeRange|LerpRange|Determines the longitudes at which the LandClass encompasses.|
 
 ## LerpRange
