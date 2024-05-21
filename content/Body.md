@@ -75,7 +75,7 @@ The `Body { }` node contains all the aspects of a body and describes the essenti
 |contractWeight|Integer|How often contracts should be generated for a body. Default is 30.|
 
 **Note on cbNameLater**
-A common usecase for cbNameLater was for mods that replaced Kerbin with another planet, to name it to the correct (non-Kerbin) name after loading. A new, better way to do this has been added in recent versions:
+A common usecase for cbNameLater was for mods that replaced Kerbin with another planet, to name it to the correct (non-Kerbin) name after loading if Properties/displayName didn't work. A new, better way to do this has been added in recent versions:
 ```
 @Kopernicus_config
 {
