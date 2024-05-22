@@ -14,7 +14,6 @@ The `Body { }` node contains all the aspects of a body and describes the essenti
 - [PQS { }]({{ site.baseurl }}{% link content/PQSMods/PQS.md %})
 - [Ocean { }]({{ site.baseurl }}{% link content/Ocean.md %})
 - [Rings { }]({{ site.baseurl }}{% link content/Rings.md %})
-- [~~Particles { }~~]({{ site.baseurl }}{% link content/Particles.md %}) *(Removed in 1.8.1-1!)*
 - [HazardousBody { }]({{ site.baseurl }}{% link content/HazardousBody.md %})
 - [SpaceCenter { }]({{ site.baseurl }}{% link content/SpaceCenter.md %})
 - [Debug { }]({{ site.baseurl }}{% link content/Debug.md %})
@@ -69,9 +68,17 @@ The `Body { }` node contains all the aspects of a body and describes the essenti
 |name|Text|The name of the body.|
 |cacheFile|File Path|The path to the cache file for the body.|
 |barycenter|Boolean|Whether the body should act as a barycenter. Also makes the body unselectable.|
-|cbNameLater|Text|(Deprecated, use `Properties/displayName` to change the name instead.) Applies a name change after loading the body.|
 |identifier|Text|The Unique Body Identifier (UBI) for the body. Used in the [Interstellar Consortium](https://forum.kerbalspaceprogram.com/index.php?/topic/177439-kopernicus-interstellar-consortium/) and follows the format `System/Body`.|
 |implements|Text|(Optional) The UBIs that the body implements. Any number of these can be used. Each line should have the key "implements" and have a UBI as the value.|
 |finalizeOrbit|Boolean|Whether the orbit of the body should be finalized.|
 |randomMainMenuBody|Boolean|Whether the body should have a chance at being displayed on the Main Menu.|
 |contractWeight|Integer|How often contracts should be generated for a body. Default is 30.|
+
+**Note on cbNameLater**
+A common usecase for cbNameLater was for mods that replaced Kerbin with another planet, to name it to the correct (non-Kerbin) name after loading if Properties/displayName didn't work. A new, better way to do this has been added in recent versions:
+```
+@Kopernicus_config
+{
+    %HomeWorldName = CorrectName
+}
+```
