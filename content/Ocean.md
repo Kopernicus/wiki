@@ -3,7 +3,7 @@ layout: default
 title: Ocean
 ---
 
-The `Ocean { }` subnode contains all of the information needed to produce an ocean for the specified body. Note that the ocean is one of the two Procedural Quad Spheres on the body it is applied to. This means that some PQS Settings can be applied to Oceans.
+The `Ocean { }` subnode contains all of the information needed to produce an ocean for the specified body. Note that the ocean is one of the two Procedural Quad Spheres on the body it is applied to. This means that some PQS Settings can be applied to Oceans. If you want to set a certain ocean height, see [the note  regarding Height Map offsets]({{ site.baseurl }}{% link content/PQSMods/VertexHeightMap.md %}).
 
 **Subnodes**
 * Material { }
@@ -19,11 +19,10 @@ Body
     {
         ocean = True
         oceanColor = 0,0,1,1
-        oceanHeight = 100
         density = 1.25
         minLevel = 1
         maxLevel = 6
-        minDetailDistance = 8
+        minDetailDistance = 6
         maxQuadLengthsPerFrame = 0.03
         Material
         {
@@ -83,7 +82,7 @@ Body
         }
         Mods
         {
-            // just put PQSMods here. WHether they work is a different story
+            // just put PQSMods here. Whether they work is a different story
         }
         Fog
         {
@@ -113,9 +112,8 @@ Body
 |--------|------|-----------|
 |ocean|Boolean|Whether the ocean is enabled.|
 |oceanColor|Color|The color of the ocean on the map.|
-|oceanHeight|Decimal|The height of the ocean in meters.|
 |density|Decimal|The density of the ocean in g/m3. 1 is the density of actual water.|
-|minLevel|Integer|The PQS minimum level of triangles needed to display the ocean. Advised not to touch.|
-|maxLevel|Integer|The PQS maximum level of triangles needed to display the ocean.|
-|minDetailDistance|Decimal|The minimum detail distance of ???.|
+|minLevel|Integer|The PQS minimum subdivision level. Advised not to touch.|
+|maxLevel|Integer|The PQS maximum subdivision level.|
+|minDetailDistance|Decimal|The minimum subdivision level for scatters to spawn.|
 |maxQuadLengthsPerFrame|Decimal|Unknown use. Advised not to touch.|
