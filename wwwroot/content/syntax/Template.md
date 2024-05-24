@@ -1,7 +1,7 @@
 If you add a  `Template` node to the configuration, Kopernicus will import the planetary data and adapt it using the rest of your configuration file. There are various parameters to describe if specific data should be ignored, such as oceans or atmosphere. This node is completely optional, but if you miss an important value, then Kopernicus may throw an exception if you do not specify a template body.
 
 ## Example {#example}
-```md
+```
 Template
 {
   name = Eve
