@@ -1,0 +1,14 @@
+﻿@((MarkupString)htmlText)
+
+@code {
+    [Parameter]
+    public string srcFile { get; set; } = "";
+    public string htmlText = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"\wwwroot\content\" + srcFile}";
+        var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+        htmlText = Markdown.ToHtml(File.ReadAllText(markdownFile), pipeline);
+    }
+}
