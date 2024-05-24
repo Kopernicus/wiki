@@ -1,23 +1,65 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<body>
+  <nav class="navbar-inverse" style="background-color: #222;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand site-title" style="color: #eee;" rel="author" href="/@relativeUrl">@siteTitle</a>
+      </div>
+      <ul class="nav navbar-nav wikinav">
+        @foreach(SitePage page in navPages) {
+          <li><a class="page-link" style="background-color: #222; border-color: #222; color: #eee; padding-top: 1.3em;" href="@(page.relativePageUrl)">@(page.title)</a></li>
+        }
+      </ul>
     </div>
+  </nav>
+  <main class="page-content" aria-label="Content">
+    <div class="container">
+      <div class="content-wrapper">
+        @Body
+      </div>
+    </div>
+  </main>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+  <footer class="site-footer h-card">
+    <data class="u-url" href="/@relativeUrl"></data>
+  
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          
         </div>
+        <div class="footer-col footer-col-2">
+          <h2 class="footer-heading">@siteTitle</h2>
+          <a class="u-email" href="https://github.com/Kopernicus/wiki/discussions/65">Feedback</a>
+        </div>
+        <div class="footer-col footer-col-3">
+          <h6>Contribute on GitHub!</h6>
+          <a href="https://github.com/Kopernicus/wiki">Kopernicus/wiki</a>
+        </div>
+        <div class="footer-col footer-col-4">
+          <h6>Last Updated: May 23, 2024</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+@code {
+  string relativeUrl = @"";
+  string siteTitle = "Kopernicus Wiki";
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+  record SitePage(string title, string relativePageUrl);
+  List<SitePage> navPages = [
+    new SitePage("ConfigNodes",   "/prerequisites/confignodes"),
+    new SitePage("Body",          "/syntax/body"),
+    new SitePage("Template",      "/syntax/template"),
+    new SitePage("Properties",    "/syntax/properties"),
+    new SitePage("Orbit",         "/syntax/orbit"),
+    new SitePage("ScaledVersion", "/syntax/scaledversion"),
+    new SitePage("PQS",           "/syntax/pqs"),
+    new SitePage("PQSMods",       "/syntax/pqsmods"),
+    new SitePage("Rings",         "/syntax/rings"),
+    new SitePage("Data Types",    "/prerequisites/datatypes")
+  ];
+}
