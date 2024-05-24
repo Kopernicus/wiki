@@ -1,17 +1,17 @@
 The `Body { }` node contains all the aspects of a body and describes the essential components for making a body. `Body { }` is a subnode of the `@Kopernicus` node.
 
  ## Subnodes {#subnodes}
-- [Template { }](/syntax/template)
-- [Properties { }](/syntax/properties)
-- [Orbit { }](/syntax/orbit)
-- [ScaledVersion { }](/syntax/scaledversion)
-- [Atmosphere { }]({/syntax/atmosphere)
-- [PQS { }](/syntax/pqs)
-- [Ocean { }](/syntax/ocean)
-- [Rings { }](/syntax/rings)
-- [HazardousBody { }](/syntax/hazardousbody)
-- [SpaceCenter { }](/syntax/spacecenter)
-- [Debug { }](/syntax/debug)
+- [Template { }](/Syntax/Template)
+- [Properties { }](/Syntax/Properties)
+- [Orbit { }](/Syntax/Orbit)
+- [ScaledVersion { }](/Syntax/ScaledVersion)
+- [Atmosphere { }]({/Syntax/Atmosphere)
+- [PQS { }](/Syntax/PQS)
+- [Ocean { }](/Syntax/Ocean)
+- [Rings { }](/Syntax/Rings)
+- [HazardousBody { }](/Syntax/HazardousBody)
+- [SpaceCenter { }](/Syntax/SpaceCenter)
+- [Debug { }](/Syntax/Debug)
 - PostSpawnOrbit { }
 
 ## Example {#example}

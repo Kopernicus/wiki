@@ -1,8 +1,8 @@
 The `Properties { }` node describes the body itself, and is a subnode of `Body { }`. Basic parameters like description, radius, gravity and biomes are specified here.
 
 ## Subnodes {#subnodes}
-* [Biomes](/syntax/properties/biomes)
-* [ScienceValues](/syntax/properties/sciencevalues)
+* [Biomes](/Syntax/Properties/Biomes)
+* [ScienceValues](/Syntax/Properties/ScienceValues)
 
 ## Example {#example}
 ```
