@@ -1,6 +1,6 @@
 The `Debug { }` subnode of the `Body { }` node describes the various debugging properties of the body.
 
-## Example {#example}
+## Example {#Example}
 ```
 Debug
 {

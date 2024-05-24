@@ -1,6 +1,6 @@
 The `Light { }` subnode of the `ScaledVersion { }` node describes the light quality of the star itself. 
 
-## Example {#example}
+## Example {#Example}
 ```
 Light
 {

@@ -1,6 +1,6 @@
 The `PQS { }` node describes properties of the Procedural Quad Sphere that makes up the body and the material used for it (physics and redering-wise). It also contains the `Mods { }` subnode, which specifies which PQSMods to apply to customize the body.
 
-## Subnodes {#subnodes}
+## Subnodes {#Subnodes}
 * PhysicsMaterial { } (below)
 * Material { }
   + [AtmosphericTriplanarZoomRotation]({{ site.baseurl }}{% link content/Material/PQSAtmosphericTriplanarZoomRotation.md %})
@@ -8,7 +8,7 @@ The `PQS { }` node describes properties of the Procedural Quad Sphere that makes
 * FallbackMaterial { }
 * [Mods { }]({{ site.baseurl }}{% link content/PQSMods/PQSMods.md%})
 
-## Example {#example}
+## Example {#Example}
 ```
 Body
 {

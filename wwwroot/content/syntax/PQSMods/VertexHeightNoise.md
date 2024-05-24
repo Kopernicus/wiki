@@ -4,7 +4,7 @@ The noise is also additive, meaning that instead of overwriting the terrain alti
 <button data-toggle="collapse" data-target="#collapse-vhn-example">Show Example</button>
 
 {: #collapse-vhn-example .collapse}  
-## Example {#example}
+## Example {#Example}
 ```
 PQS
 {

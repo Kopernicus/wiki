@@ -35,7 +35,7 @@ Kopernicus
 Make sure you use a fixed indentation level (4 spaces in this example), so your config stays clean and readable. Also make sure that your editor doesn't mix tabs and spaces, since tabs can have a dynamic width. A config that looks good to you might look totally horrible to a person that wants to read it.
 The best way would be to use only tabs (so no spaces at all!), or to have your editor convert all tabs into spaces automatically.
 
-## Subnodes {#subnodes}
+## Subnodes {#Subnodes}
 
 Since adding all values into the same ConfigNode could get messy at some point, mods can structure them into subnodes. This means, that every node can contain an unlimited amount of other nodes. The "main" node, i.e. the node in the `.cfg` file that isn't enclosed by another one, is then called the **root** or the **root-node**
 

@@ -1,9 +1,9 @@
 The `Coronas { }` node is a wrapper node for separate `Corona { }` subnodes that contain information for a corona.
 
-## Subnodes {#subnodes}
+## Subnodes {#Subnodes}
 * `Material { }` (parameters below)
 
-## Example {#example}
+## Example {#Example}
 ```
 ScaledVersion
 {
