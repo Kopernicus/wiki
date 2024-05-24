@@ -1,8 +1,8 @@
-The `Scatters` node in the LandControl PQSMod defines the scatters to be used within the [LandClasses]({{ site.baseurl }}{% link content/PQSMods/LandControl/LandClasses.md %}) provided by LandControl. Scatters are 3D meshed objects that are generated on the surface and can have various configurable features added via the `Components` subnode.
+The `Scatters` node in the LandControl PQSMod defines the scatters to be used within the [LandClasses]( /Syntax/PQSMods/LandControl/LandClasses) provided by LandControl. Scatters are 3D meshed objects that are generated on the surface and can have various configurable features added via the `Components` subnode.
 
 ## Subnodes {#Subnodes}
-* [Material { }]({{ site.baseurl }}{% link content/PQSMods/LandControl/ScatterMaterialType.md %})
-* [Components { }]({{ site.baseurl }}{% link content/PQSMods/LandControl/ModularScatter/ModularScatter.md %}) (Also known as ModularScatter)
+* [Material { }]( /Syntax/PQSMods/LandControl/ScatterMaterialType)
+* [Components { }]( /Syntax/PQSMods/LandControl/ModularScatter/ModularScatter) (Also known as ModularScatter)
 
 ## Example {#Example}
 ```
@@ -47,7 +47,7 @@ LandControl
 | name | String | The name of the scatter. |
 | allowedBiomes | String | A comma delimitted string of permitted scatter biome names.  No spaces between entries.  If this list is not present, all biomes are spawned in. |
 | seed | Integer | The random seed for scatter distribution. |
-| materialType | [ScatterMaterialType]({{ site.baseurl }}{% link content/PQSMods/LandControl/ScatterMaterialType.md %}) | The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]({{ site.baseurl }}{% link content/PQSMods/LandControl/ScatterMaterialType.md %}) page. |
+| materialType | [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterialType) | The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterialType) page. |
 | material | BUILTIN | Stock material to use instead of specifying a materialType and Material { }. Avoid using this! Will not work in conjunction with the materialType and Material { }. |
 | mesh | File Path | The path to an .obj file that contains the scatter's mesh. |
 | Meshes | List of File Paths | A list of meshes that will be picked randomly. Inside this node, there can be keys named anything, and the value should be the file path to the .obj file. |
