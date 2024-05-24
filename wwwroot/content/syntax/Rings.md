@@ -2,7 +2,7 @@ Each `Body { }` may have a node called `Rings { }`, a wrapper node containing on
 
 Distance units for rings are milliradii, thousandths of the radius of the parent body. So 1000 is 1 radius, 2000 is 2 radii, etc.
 
-## Example {#example}
+## Example {#Example}
 ```
 Rings
 {

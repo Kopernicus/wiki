@@ -1,6 +1,6 @@
 A PQS Material utilizing 1.9's "ultra" shader.
 
-## Example {#example}
+## Example {#Example}
 ```
 PQS
 {

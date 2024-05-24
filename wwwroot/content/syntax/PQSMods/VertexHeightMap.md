@@ -6,7 +6,7 @@ A common desire for planets with oceans is to set the ocean to a certain height 
 1. Make sure your heghtmap is normalized (darkest value is 0 and highest is 255).
 2. Set `offset` in VertexHeightMap to `-1 * (deformity * travel)`, where `travel` is the percentage of the deformity up from the lowest point of the height map that you want the sea surface to be at. For example, a `travel` of 0.5 would mean the ocean surface is at 50% grey on the height map. 
 
-## Example {#example}
+## Example {#Example}
 ```
 PQS
 {

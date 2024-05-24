@@ -10,7 +10,7 @@ simplexCurve
 }
 ```
 
-## Example {#example}
+## Example {#Example}
 ```
 PQS
 {

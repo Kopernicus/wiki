@@ -1,6 +1,6 @@
 The `Body { }` node contains all the aspects of a body and describes the essential components for making a body. `Body { }` is a subnode of the `@Kopernicus` node.
 
- ## Subnodes {#subnodes}
+ ## Subnodes {#Subnodes}
 - [Template { }](/Syntax/Template)
 - [Properties { }](/Syntax/Properties)
 - [Orbit { }](/Syntax/Orbit)
@@ -14,7 +14,7 @@ The `Body { }` node contains all the aspects of a body and describes the essenti
 - [Debug { }](/Syntax/Debug)
 - PostSpawnOrbit { }
 
-## Example {#example}
+## Example {#Example}
 ```
 @Kopernicus:AFTER[Kopernicus]
 {

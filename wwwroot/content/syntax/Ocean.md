@@ -1,12 +1,12 @@
 The `Ocean { }` subnode contains all of the information needed to produce an ocean for the specified body. Note that the ocean is one of the two Procedural Quad Spheres on the body it is applied to. This means that some PQS Settings can be applied to Oceans. If you want to set a certain ocean height, see [the note  regarding Height Map offsets]({{ site.baseurl }}{% link content/PQSMods/VertexHeightMap.md %}).
 
-## Subnodes {#subnodes}
+## Subnodes {#Subnodes}
 * Material { }
 * FallbackMaterial { }
 * Mods { }
 * Fog { }
 
-## Example {#example}
+## Example {#Example}
 ```
 Body
 {

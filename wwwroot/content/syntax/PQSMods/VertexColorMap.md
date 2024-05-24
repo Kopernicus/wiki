@@ -1,6 +1,6 @@
 The `VertexColorMap` PQSMod is a mod that applies a color map over the terrain.
 
-## Example {#example}
+## Example {#Example}
 ```
 PQS
 {

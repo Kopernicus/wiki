@@ -1,12 +1,12 @@
 The `ScaledVersion { }` node in a configuration file for Kopernicus describes a less-detailed model of your planet that appears in the map view and from large distances.
 
-## Subnodes {#subnodes}
+## Subnodes {#Subnodes}
 * [Material { }]({{ site.baseurl }}{% link content/ScaledVersion/Material.md %}) = Updates to textures and atmosphere rims.
 * [OnDemand { }]({{ site.baseurl }}{% link content/ScaledVersion/OnDemand.md %}) = Used for textures that should be loaded OnDemand.
 * [Light { }]({{ site.baseurl }}{% link content/ScaledVersion/Light.md %}) = Used for making stars.
 * [Coronas { }]({{ site.baseurl }}{% link content/ScaledVersion/Corona.md %}) = Used for making stars.
 
-## Example {#example}
+## Example {#Example}
 ```
 ScaledVersion
 {

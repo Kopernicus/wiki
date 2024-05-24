@@ -1,10 +1,10 @@
 The `SpaceCenter { }` node describes the location and altitude of the KSC and the MapDecal that creates the flat region it is located on. It is a subnode of `Body { }`. It should only be used for the home world(?).
 
-## Subnodes {#subnodes}
+## Subnodes {#Subnodes}
 ```
 * `Material { }` link to grassamaterial
 ```
-## Example {#example} 
+## Example {#Example} 
 ```
 @Kopernicus
 {

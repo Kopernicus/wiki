@@ -1,4 +1,4 @@
-## Example {#example}
+## Example {#Example}
 ```
 ScienceValues
 {
