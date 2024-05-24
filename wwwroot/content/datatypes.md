@@ -1,5 +1,3 @@
-# Data Types
-
 The Data Types used by Kopernicus are used for every key/value pair, and some have their own unique values.
 
 ## Example {#example}
