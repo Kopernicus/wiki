@@ -7,6 +7,6 @@ The `LandControl` PQSMod allows very detailed control over the coloration of ter
 
 It is both verbose and complex with multiple key parts, so in the interest of ease of use and readability (as well as the sanity of the maintainers), LandControl will be split up into a series of pages.
 
-* [LandControl]({{ site.baseurl }}{% link content/PQSMods/LandControl/LandControl.md %})
-* [LandClasses]({{ site.baseurl }}{% link content/PQSMods/LandControl/LandClasses.md %})
-* [Scatters]({{ site.baseurl }}{% link content/PQSMods/LandControl/Scatters.md %})
+* [LandControl]( /Syntax/PQSMods/LandControl/LandControl)
+* [LandClasses]( /Syntax/PQSMods/LandControl/LandClasses)
+* [Scatters]( /Syntax/PQSMods/LandControl/Scatters)
