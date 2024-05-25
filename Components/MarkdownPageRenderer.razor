@@ -1,14 +1,27 @@
-﻿@((MarkupString)htmlText)
+﻿@using System.Text.RegularExpressions
+@((MarkupString)htmlText)
 
 @code {
     [Parameter]
     public string srcFile { get; set; } = "";
+    //[Parameter]
+    //public string route { get; set; } = "";
     public string htmlText = "";
 
+    private Regex idLink = new(@"(\#\W.*)");
     protected override async Task OnInitializedAsync()
     {
         string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"\wwwroot\content\" + srcFile}";
         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
-        htmlText = Markdown.ToHtml(File.ReadAllText(markdownFile), pipeline);
+        string rawMarkdown = File.ReadAllText(markdownFile);
+        //rawMarkdown = idLink.Replace(rawMarkdown, Evaluate);
+        
+        htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
+    }
+
+    private string Evaluate(Match match)
+    {   
+        //$"$1 <a href=\"{route}$1\">#</a>"
+        return "";//match.;
     }
 }
