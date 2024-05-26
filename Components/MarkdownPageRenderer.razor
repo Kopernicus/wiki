@@ -17,8 +17,11 @@
         string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"\wwwroot\content\" + srcFile}";
         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
         string rawMarkdown = File.ReadAllText(markdownFile);
-        string markdown = linkAdder.Replace(rawMarkdown, $"[\\#]({RouteList.Instance[pageName]}$1) {{$1");
-        markdown = curlCleaner.Replace(markdown, "");
-        htmlText = Markdown.ToHtml(markdown, pipeline);
+        string markdown = "";
+        if (pageName is not "") {
+            markdown = linkAdder.Replace(rawMarkdown, $"[\\#]({RouteList.Routes[pageName]}$1) {{$1");
+            markdown = curlCleaner.Replace(markdown, "");
+            htmlText = Markdown.ToHtml(markdown, pipeline);
+        } else htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
     }
 }

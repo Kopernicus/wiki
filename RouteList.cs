@@ -1,32 +1,60 @@
 namespace kopernicus_wiki;
 
 public class RouteList {
-    private Dictionary<string, string> routes = new()
+    private static readonly Dictionary<string, string> routes = new()
     {
+        // Resources
         {"Home", "/"},
         {"Config Nodes", "/Prerequisites/ConfigNodes"},
         {"Data Types", "/Prerequisites/DataTypes"},
         {"Getting Started", "/Guides/GettingStarted"},
-        {"Atmosphere", "/Syntax/Atmosphere"}
+        // Body node
+        {"Body", "/Syntax/Body"},
+        // Body subnodes
+        {"Atmosphere",              "/Syntax/Atmosphere"},
+        {"AtmosphereFromGround",    "/Syntax/AtmosphereFromGround"},
+        {"Debug",                   "/Syntax/Debug"},
+        {"HazardousBody",           "/Syntax/HazardousBody"},
+        {"Ocean",                   "/Syntax/Ocean"},
+        {"PQS",                     "/Syntax/PQS"},
+        {"Properties",              "/Syntax/Properties"},
+        {"Rings",                   "/Syntax/Rings"},
+        {"ScaledVersion",           "/Syntax/ScaledVersion"},
+        {"SpaceCenter",             "/Syntax/SpaceCenter"},
+        {"Template",                "/Syntax/Template"},
+        // PQSMods
+        {"LandControl",                         "/Syntax/PQSMods/LandControl/LandControl"},
+        {"HeightColorMap",                      "/Syntax/PQSMods/HeightColorMap"},
+        {"HeightColorMap2",                     "/Syntax/PQSMods/HeightColorMap2"},
+        {"VertexColorMap",                      "/Syntax/PQSMods/HeightColorMap"},
+        {"VertexColorMapBlend",                 "/Syntax/PQSMods/VertexColorMapBlend"},
+        {"VertexHeightMap",                     "/Syntax/PQSMods/VertexHeightMap"},
+        {"VertexHeightNoise",                   "/Syntax/PQSMods/VertexHeightNoise"},
+        {"VertexHeightNoiseVertHeightCurve2",   "/Syntax/PQSMods/VertexHeightNoiseVertHeightCurve2"},
+        {"VertexSimplexHeight",                 "/Syntax/PQSMods/VertexSimplexHeight"},
+        {"VertexSimplexHeightAbsolute",         "/Syntax/PQSMods/VertexSimplexHeightAbsolute"},
+        {"VertexSimplexNoiseColor",             "/Syntax/PQSMods/VertexSimplexNoiseColor"},
+        // LandControl subnodes
+        {"LandClasses",                         "/Syntax/PQSMods/LandControl/LandClasses"},
+        {"ScatterMaterialType",                 "/Syntax/PQSMods/LandControl/ScatterMaterials"},
+        {"Scatters",                            "/Syntax/PQSMods/LandControl/Scatters"},
+        {"ModularScatter",                      "/Syntax/PQSMods/LandControl/ModularScatter"},
+        {"HeatEmitter",                         "/Syntax/PQSMods/LandControl/ModularScatter/HeatEmitter"},
+        {"LightEmitter",                        "/Syntax/PQSMods/LandControl/ModularScatter/LightEmitter"},
+        {"ScatterColliders",                    "/Syntax/PQSMods/LandControl/ModularScatter/ScatterColliders"},
+        {"SeaLevelScatters",                    "/Syntax/PQSMods/LandControl/ModularScatter/SeaLevelScatters"},
+        // Properties subnodes
+        {"Biomes",                              "/Syntax/Properties/Biomes"},
+        {"ScienceValues",                       "/Syntax/Properties/ScienceValues"},
+        // ScaledVersion subnodes
+        {"Corona",                              "/Syntax/ScaledVersion/Corona"},
+        {"Light",                               "/Syntax/ScaledVersion/Light"},
+        {"Material",                            "/Syntax/ScaledVersion/Material"},
+        {"OnDemand",                            "/Syntax/ScaledVersion/OnDemand"},
+        // PQS Materials
+        {"AtmosphericTriplanarZoomRotation",                "/Syntax/Material/AtmosphericTriplanarZoomRotation"},
+        {"AtmosphericTriplanarZoomRotationTextureArray",    "/Syntax/Material/AtmosphericTriplanarZoomRotationTextureArray"}
     };
 
-    public string this[string page] {
-        get {
-            if (routes.Count == 0)
-            {
-                SetupRouteDictionary();
-            }
-            return routes[page];
-        }
-    }
-
-    private static RouteList _instance = new RouteList();
-
-    public static RouteList Instance {
-        get { return _instance; }
-    }
-
-    private void SetupRouteDictionary() {
-
-    }
+    public static Dictionary<string, string> Routes => routes;
 }
