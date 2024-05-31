@@ -26,6 +26,7 @@ LandControl
       recieveShadows = True
       name = BrownRock
       allowedBiomes = Arid,Desert
+      lethalRadius = 5
       seed = 345234534
       verticalOffset = 0
       delete = False
@@ -44,8 +45,11 @@ LandControl
 
 | Property | Format | Description |
 |---|---|---|
-| name | String | The name of the scatter. |
-| allowedBiomes | String | A comma delimitted string of permitted scatter biome names.  No spaces between entries.  If this list is not present, all biomes are spawned in. |
+| name | Text | The name of the scatter. |
+| allowedBiomes | Text | A comma delimitted string of permitted scatter biome names.  No spaces between entries.  If this list is not present, all biomes are spawned in. |
+| lethalRadius | Decimal | The closest a kerbal can get to this scatter without being killed, in meters. Set to 0 (the default) to disable. |
+| lethalRadiusMsg | Text | A message to be displayed in a dialog box when a kerbal is killed by `lethalRadius`. Leave empty to disable. |
+| lethalRadiusWarnMsg | Text | A message to be displayed in a dialog box when a kerbal comes within 2x `lethalRadius` to alert the player. Leave empty to disable. |
 | seed | Integer | The random seed for scatter distribution. |
 | materialType | [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterialType) | The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterialType) page. |
 | material | BUILTIN | Stock material to use instead of specifying a materialType and Material { }. Avoid using this! Will not work in conjunction with the materialType and Material { }. |
