@@ -12,16 +12,23 @@
 
     private Regex linkAdder = new(@"(#\w+)");
     private Regex curlCleaner = new(@"(?<=##.*)({)(?=\[)");
+    private Regex idAdder = new(@"(?:## ([\w ]*))");
     protected override async Task OnInitializedAsync()
     {
         string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"\wwwroot\content\" + srcFile}";
         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
         string rawMarkdown = File.ReadAllText(markdownFile);
         string markdown = "";
-        if (pageName is not "") {
-            markdown = linkAdder.Replace(rawMarkdown, $"[\\#]({RouteList.Routes[pageName]}$1) {{$1");
+
+        if (pageName is not "" && RouteList.Get(pageName) is not "") {
+            markdown = idAdder.Replace(rawMarkdown, Evaluate); // todo: handle space after heading name
+            markdown = linkAdder.Replace(markdown, $"[\\#]({RouteList.Get(pageName)}$1) {{$1");
             markdown = curlCleaner.Replace(markdown, "");
             htmlText = Markdown.ToHtml(markdown, pipeline);
         } else htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
+    }
+
+    private string Evaluate(Match match) {
+        return $"{match.Value.TrimEnd()} {{#{match.Groups[1].Value.Trim()}}}";
     }
 }
