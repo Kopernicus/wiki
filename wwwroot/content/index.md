@@ -35,13 +35,13 @@
 
 ## KopernicusExpansion
 > **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
-* [Comet Tails](/Syntax/kopernicus-expansion/comettails)
-* [Emissive FX](/Syntax/kopernicus-expansion/emissivefx)
-* [EVA Footprints](/Syntax/kopernicus-expansion/evafootprints)
+* [Comet Tails](/Syntax/Expansion/CometTails)
+* [Emissive FX](/Syntax/Expansion/EmissiveFX)
+* [EVA Footprints](/Syntax/Expansion/EVAFootprints)
 * Modular Noise
-* [Procedural Gas Giants](/Syntax/kopernicus-expansion/proceduralgasgiants)
-* [Reentry Effects](/Syntax/kopernicus-expansion/reentryeffects)
+* [Procedural Gas Giants](/Syntax/Expansion/ProceduralGasGiants)
+* [Reentry Effects](/Syntax/Expansion/ReentryEffects)
 * Regional PQS Mods
-* [VertexHeightDeformity](/Syntax/kopernicus-expansion/VertexHeightDeformity)
-* [VertexHeightMap16](/Syntax/kopernicus-expansion/VertexHeightMap16)
-* [Wormholes](/Syntax/kopernicus-expansion/Wormholes)
+* [VertexHeightDeformity](/Syntax/Expansion/VertexHeightDeformity)
+* [VertexHeightMap16](/Syntax/Expansion/VertexHeightMap16)
+* [Wormholes](/Syntax/Expansion/Wormholes)
