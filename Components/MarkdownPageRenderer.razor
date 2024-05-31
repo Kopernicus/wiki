@@ -1,27 +1,34 @@
 ﻿@using System.Text.RegularExpressions
+@using System.Text
 @((MarkupString)htmlText)
 
 @code {
     [Parameter]
     public string srcFile { get; set; } = "";
-    //[Parameter]
-    //public string route { get; set; } = "";
+    [Parameter]
+    public string pageName { get; set; } = "";
+
     public string htmlText = "";
 
-    private Regex idLink = new(@"(\#\W.*)");
+    private Regex linkAdder = new(@"(#\w+)");
+    private Regex curlCleaner = new(@"(?<=##.*)({)(?=\[)");
+    private Regex idAdder = new(@"(?:## ([\w ]*))");
     protected override async Task OnInitializedAsync()
     {
         string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"\wwwroot\content\" + srcFile}";
         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
         string rawMarkdown = File.ReadAllText(markdownFile);
-        //rawMarkdown = idLink.Replace(rawMarkdown, Evaluate);
-        
-        htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
+        string markdown = "";
+
+        if (pageName is not "" && RouteList.Get(pageName) is not "") {
+            markdown = idAdder.Replace(rawMarkdown, Evaluate); // todo: handle space after heading name
+            markdown = linkAdder.Replace(markdown, $"[\\#]({RouteList.Get(pageName)}$1) {{$1");
+            markdown = curlCleaner.Replace(markdown, "");
+            htmlText = Markdown.ToHtml(markdown, pipeline);
+        } else htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
     }
 
-    private string Evaluate(Match match)
-    {   
-        //$"$1 <a href=\"{route}$1\">#</a>"
-        return "";//match.;
+    private string Evaluate(Match match) {
+        return $"{match.Value.TrimEnd()} {{#{match.Groups[1].Value.Trim()}}}";
     }
 }

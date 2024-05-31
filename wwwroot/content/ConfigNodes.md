@@ -25,7 +25,7 @@ It is **required** to pay attention to the indentation of the braces, since ever
 
 If you want to add values to your ConfigNode, you need a key and a value. The key is most likely predefined by the mod you are trying to configure, the value is something you need to choose.
 
-```text
+```
 Kopernicus
 {
     name = My cool system
