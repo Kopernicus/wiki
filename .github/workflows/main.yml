@@ -23,7 +23,7 @@ jobs:
     - name: 📂 Upload files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp://kopernicuswiki.org
+        server: kopernicuswiki.org
         port: 2121
         username: kopwiki
         local-dir: bin/Release/net8.0/publish/
