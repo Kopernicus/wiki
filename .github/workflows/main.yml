@@ -26,5 +26,5 @@ jobs:
         server: ftp://Glacialsoftware.net
         port: 2121
         username: kopwiki
-        local-dir: bin\Release\net8.0\publish\
+        local-dir: bin/Release/net8.0/publish/
         password: ${{ secrets.password }}
