@@ -24,8 +24,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: kopernicuswiki.org
-        port: 2121
+        port: 21
         username: kopwiki
         local-dir: bin/Release/net8.0/publish/
-        dangerous-clean-slate: true
         password: ${{ secrets.password }}
