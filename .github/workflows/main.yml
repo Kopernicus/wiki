@@ -27,4 +27,5 @@ jobs:
         port: 2121
         username: kopwiki
         local-dir: bin/Release/net8.0/publish/
+        dangerous-clean-slate: true
         password: ${{ secrets.password }}
