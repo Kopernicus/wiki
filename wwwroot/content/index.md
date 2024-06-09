@@ -13,18 +13,18 @@
 ## Syntax for Celestial Bodies
 * [Body node](/Syntax/Body)
   + [Template subnode](/Syntax/Template)
-  + [Properties subnode](/Syntax/Properties/Properties)
+  + [Properties subnode](/Syntax/Properties)
     - [ScienceValues subnode](/Syntax/Properties/ScienceValues)
     - [Biomes subnode](/Syntax/Properties/Biome)
   + [Orbit subnode](/Syntax/Orbit)
-  + [ScaledVersion subnode](/Syntax/ScaledVersion/ScaledVersion)
+  + [ScaledVersion subnode](/Syntax/ScaledVersion)
     - [Material subnode](/Syntax/ScaledVersion/Material)
     - [OnDemand subnode](/Syntax/ScaledVersion/OnDemand)
     - [Light subnode](/Syntax/ScaledVersion/Light) **STARS ONLY**
     - [Coronas subnode](/Syntax/ScaledVersion/Corona) **STARS ONLY**
   + [Rings subnode](/Syntax/Rings)
-  + [Atmosphere subnode](/Syntax/Atmosphere/Atmosphere)
-    - [AtmosphereFromGround subnode](/Syntax/Atmosphere/AtmosphereFromGround) **NON-STARS ONLY**
+  + [Atmosphere subnode](/Syntax/Atmosphere)
+    - [AtmosphereFromGround subnode](/Syntax/AtmosphereFromGround) **NON-STARS ONLY**
   + [PQS subnode](/Syntax/PQS) **NON-STARS ONLY**
     - [PQSMod subnodes](/Syntax/PQSMods) **NON-STARS ONLY**
   + [Ocean subnode](/Syntax/Ocean) **NON-STARS ONLY**
