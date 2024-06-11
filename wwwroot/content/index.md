@@ -15,7 +15,7 @@
   + [Template subnode](/Syntax/Template)
   + [Properties subnode](/Syntax/Properties)
     - [ScienceValues subnode](/Syntax/Properties/ScienceValues)
-    - [Biomes subnode](/Syntax/Properties/Biome)
+    - [Biomes subnode](/Syntax/Properties/Biomes)
   + [Orbit subnode](/Syntax/Orbit)
   + [ScaledVersion subnode](/Syntax/ScaledVersion)
     - [Material subnode](/Syntax/ScaledVersion/Material)
