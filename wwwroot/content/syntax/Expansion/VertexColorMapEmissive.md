@@ -17,7 +17,7 @@ VertexColorMapEmissive
 |--------------|-----------|---------------|
 | map          | File Path | The RGBA color map to use for the emissive overlay|
 | brightness   | Decimal   | A global multiplier to apply to the RGB channels of the map. The default value is 1, smaller values will dim the emissive and larger values will brighten it.|
-| transparency | Decimal   | A global multiplier to apply to the Alpha channel of the map. Default is 0.5, larger values will make the emissive less opaque and smaller values will make it more opaque.|
+| transparency | Decimal   | A global multiplier to apply to the Alpha channel of the map. Default is 0.5, larger values will make the emissive more opaque (less transparent) and smaller values will make it less opaque (or more transparent).|
 
 ### ScaledVersion
 ```
