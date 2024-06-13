@@ -22,6 +22,7 @@ public class RouteList {
             "SpaceCenter" =>             "/Syntax/SpaceCenter",
             "Template" =>                "/Syntax/Template",
             // PQSMods
+            "PQSMods" =>                             "/Syntax/PQSMods",
             "LandControl" =>                         "/Syntax/PQSMods/LandControl/LandControl",
             "HeightColorMap" =>                      "/Syntax/PQSMods/HeightColorMap",
             "HeightColorMap2" =>                     "/Syntax/PQSMods/HeightColorMap2",
