@@ -26,7 +26,7 @@
   + [Atmosphere subnode](/Syntax/Atmosphere)
     - [AtmosphereFromGround subnode](/Syntax/AtmosphereFromGround) **NON-STARS ONLY**
   + [PQS subnode](/Syntax/PQS) **NON-STARS ONLY**
-    - [PQSMod subnodes](/Syntax/PQSMods) **NON-STARS ONLY**
+    - [PQSMod subnodes]([/Syntax/PQSMods](/Syntax/PQSMods/PQSMods)) **NON-STARS ONLY**
   + [Ocean subnode](/Syntax/Ocean) **NON-STARS ONLY**
     - Fog subnode **NON-STARS ONLY**
   + [SpaceCenter subnode](/Syntax/SpaceCenter) **HOMEWORLD ONLY**
