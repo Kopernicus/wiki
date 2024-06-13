@@ -30,6 +30,7 @@ ScaledVersion
     }
 }
 ```
+![A view of a planet from far away showing the emissive across the terminator.](/content/images/VCME_ScaledSpaceEmissive.png)
 
 ### PQS
 ```
@@ -44,6 +45,7 @@ PQS
     }
 }
 ```
+![An up close view of the night side of a planet showing the oceans and terrain glowing.](/content/images/VCME_PQSEmissive.png)
 
 ### Ocean
 ```
