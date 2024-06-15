@@ -1,0 +1,9 @@
+@page "/Sample/Url"
+
+<h1>@pageTitle</h1>
+
+<MarkdownPageRenderer srcFile="content/folder/example-page.md" pageName=@pageTitle/>
+
+@code {
+    string pageTitle = "Example Page";
+}
