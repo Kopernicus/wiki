@@ -83,10 +83,10 @@ Body
 |staticDensityASL|Decimal|Atmospheric density at sea level. Used to calculate the parameters of the atmosphere if no curves are used.|
 |staticPressureASL|Decimal|The static pressure at sea level in kPa. Used to calculate the parameters of the atmosphere if no curves are used. It is displayed in KSP under the body information.|
 |temperatureSeaLevel|Decimal|The static temperature in Kelvin at sea level. Used to calculate the parameters of the atmosphere if no curves are used.|
-|adiabaticIndex|Decimal|?|
+|adiabaticIndex|Decimal|The ratio of the heat capacity of a gas at constant pressure to its heat capacity at constant volume. Used to determine the speed of sound.|
 |atmosphereDepth|Decimal|(Also `altitude`,`maxAltitude`) The atmosphere cutoff altitude/height of the atmosphere.|
 |gasMassLapseRate|Decimal|?|
-|atmosphereMolarMass|Decimal|?|
+|atmosphereMolarMass|Decimal|The average molar mass of all the gases in the atmosphere in kg/mol. Used to determine density (which is then also a factor in the speed of sound.)|
 |temperatureLapseRate|Decimal|?|
 |pressureCurveIsNormalized|Boolean|Whether the pressure curve height values should use absolute (0 - atmosphereDepth) or relative (0 - 1) values.|
 |pressureCurve|FloatCurve|Assigns a pressure value (in kPa) to a height value inside of the atmosphere.|
