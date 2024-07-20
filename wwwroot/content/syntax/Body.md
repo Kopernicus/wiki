@@ -5,7 +5,7 @@ The `Body { }` node contains all the aspects of a body and describes the essenti
 - [Properties { }](/Syntax/Properties)
 - [Orbit { }](/Syntax/Orbit)
 - [ScaledVersion { }](/Syntax/ScaledVersion)
-- [Atmosphere { }]({/Syntax/Atmosphere)
+- [Atmosphere { }](/Syntax/Atmosphere)
 - [PQS { }](/Syntax/PQS)
 - [Ocean { }](/Syntax/Ocean)
 - [Rings { }](/Syntax/Rings)
