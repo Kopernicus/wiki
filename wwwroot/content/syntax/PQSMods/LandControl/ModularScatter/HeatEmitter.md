@@ -26,7 +26,7 @@ LandControl
     }
 }
 ```
-Many parameters function identically to corresponding parameters in [HazardousBody](/Syntax/HazardousBody.md).
+Many parameters function identically to corresponding parameters in [HazardousBody](/Syntax/HazardousBody).
 
 |Property|Format|Description|
 |--------|------|-----------|
