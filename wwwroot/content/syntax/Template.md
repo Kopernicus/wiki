@@ -16,7 +16,7 @@ Template
 |name|Text|The name of your template body. *Only the names of stock-bodies are valid.*|
 |removePQS|Boolean|Whether Kopernicus should remove the surface of the template body. See the [PQS subnode]( /Syntax/PQSMods/PQS) for more details.|
 |removeAtmosphere|Boolean|Whether to remove the atmosphere from the template body. See the [Atmosphere subnode]( /Syntax/Atmosphere/Atmosphere) for more details.|
-|removeBiomes|Boolean|Whether to remove the biomes of the template body. See the [Biome subnode]( /Syntax/Properties/Biome) for more details.|
+|removeBiomes|Boolean|Whether to remove the biomes of the template body. See the [Biomes subnode]( /Syntax/Properties/Biomes) for more details.|
 |removeOcean|Boolean|Whether to remove the ocean of the template body. See the [Ocean subnode]( /Syntax/Ocean) for more details.|
 |removePQSMods|Text List|A selection of terrain modifications that Kopernicus should remove. Possible values are listed on the [PQSMods page]( /Syntax/PQSMods).|
 |removeAllPQSMods|Boolean|Whether to remove every terrain modification from the template body and make it a perfect sphere.|
