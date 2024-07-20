@@ -57,7 +57,7 @@ NOTE: `___` is substituted for "Add" and "Sub." "Add" creates a "base layer" of 
 |Property|Format|Description|
 |--------|------|-----------|
 |deformity|Decimal|The overall deformity of the noise.|
-|ridgedMode|[NoiseQuality]( /Syntax/datatypes)|The noise quality for both `ridgedAdd` and `ridgedSub`.|
+|ridgedMode|[NoiseQuality]( /Prerequisites/DataTypes)|The noise quality for both `ridgedAdd` and `ridgedSub`.|
 |ridged___Frequency|Decimal|The size of the each feature of the ridged noise. As frequency gets bigger, size gets smaller.|
 |ridged___Lacunarity|Decimal|The size of the gaps that are in the noise.|
 |ridged___Octaves|Integer|The amount of blanketing over the noise. Higher octaves mean rougher noise.|

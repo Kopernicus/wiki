@@ -39,8 +39,8 @@ PQS
 |persistence|Decimal|The complexity of or amount of detail in the noise.|
 |lacunarity|Decimal|The size of the gaps that are in the noise.|
 |seed|Integer|The random seed of the noise.|
-|noiseType|[NoiseType]( /Syntax/datatypes)|The type of the specified noise.|
-|mode|[NoiseQuality]( /Syntax/datatypes)|The quality mode of the noise.|
+|noiseType|[NoiseType]( /Prerequisites/DataTypes)|The type of the specified noise.|
+|mode|[NoiseQuality]( /Prerequisites/DataTypes)|The quality mode of the noise.|
 
 
 This may seem nice, but there are several issues with VertexHeightNoise. These include:
