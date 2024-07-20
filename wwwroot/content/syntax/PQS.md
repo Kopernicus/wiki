@@ -3,8 +3,8 @@ The `PQS { }` node describes properties of the Procedural Quad Sphere that makes
 ## Subnodes {#Subnodes}
 * PhysicsMaterial { } (below)
 * Material { }
-  + [AtmosphericTriplanarZoomRotation]( /Syntax/Material/PQSAtmosphericTriplanarZoomRotation)
-  + [AtmosphericTriplanarZoomRotationTextureArray]( /Syntax/Material/PQSAtmosphericTriplanarZoomRotationTextureArray)
+  + [AtmosphericTriplanarZoomRotation]( /Syntax/Material/AtmosphericTriplanarZoomRotation)
+  + [AtmosphericTriplanarZoomRotationTextureArray]( /Syntax/Material/AtmosphericTriplanarZoomRotationTextureArray)
 * FallbackMaterial { }
 * [Mods { }]( /Syntax/PQSMods)
 

@@ -1,4 +1,4 @@
-The `VertexSimplexHeight` PQSMod generates monochrome [Perlin noise](/Prerequisites/datatypes.md) for use in terrain deformation.
+The `VertexSimplexHeight` PQSMod generates monochrome [Perlin noise](/Prerequisites/DataTypes.md) for use in terrain deformation.
 
 ## Example {#Example}
 ```

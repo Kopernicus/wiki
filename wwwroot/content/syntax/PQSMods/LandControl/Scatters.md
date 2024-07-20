@@ -51,7 +51,7 @@ LandControl
 | lethalRadiusMsg | Text | A message to be displayed in a dialog box when a kerbal is killed by `lethalRadius`. Leave empty to disable. |
 | lethalRadiusWarnMsg | Text | A message to be displayed in a dialog box when a kerbal comes within 2x `lethalRadius` to alert the player. Leave empty to disable. |
 | seed | Integer | The random seed for scatter distribution. |
-| materialType | [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterialType) | The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterialType) page. |
+| materialType | [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterial) | The type of the material of the scatter. Valid options can be found on the [ScatterMaterialType]( /Syntax/PQSMods/LandControl/ScatterMaterial) page. |
 | material | BUILTIN | Stock material to use instead of specifying a materialType and Material { }. Avoid using this! Will not work in conjunction with the materialType and Material { }. |
 | mesh | File Path | The path to an .obj file that contains the scatter's mesh. |
 | Meshes | List of File Paths | A list of meshes that will be picked randomly. Inside this node, there can be keys named anything, and the value should be the file path to the .obj file. |
