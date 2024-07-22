@@ -1,4 +1,4 @@
-https://discordapp.com/channels/609759014384828446/609759014384828449/678797826255487008 // fog examples in gregs server
+## Example
 ```
 Body
 {
