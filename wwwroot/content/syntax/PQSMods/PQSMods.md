@@ -28,4 +28,6 @@ Note: **name** is the name you should be using in your configs. **Internal Name*
 |[VertexSimplexNoiseColor](/Syntax/PQSMods/VertexSimplexNoiseColor)|PQSMod_VertexSimplexNoiseColor|
 
 ## Community PQSMods {#Community_PQSMods}
-This section is a work-in-progress.
+|Name|Internal Name|
+|----|-------------|
+|[VertexMitchellNetravaliHeightMap](/Syntax/PQSMods/Community/VertexMitchellNetravaliHeightMap)|PQSMod_VertexMitchellNetravaliHeightMap|
