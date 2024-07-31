@@ -1,4 +1,6 @@
-The `HeightColorMap2` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses and has slightly more configuration options than [HeightColorMap](/pqsmods/heightcolormap).
+**Internal mod name:** `PQSMod_HeightColorMap2`
+
+The `HeightColorMap2` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses and has slightly more configuration options than [HeightColorMap](/pqsmods/heightcolormap). The behavior is mostly identical, the difference lies in the two extra parameters: `minHeight` and `maxHeight`. Regular HeightColorMap normalizes the altitude using an inference of maximum terrain altitude. This PQSMod, by contrast, lets you specify the altitude range.
 
 ## Subnodes {#Subnodes}
 * `LandClasses { }` (defined below)
@@ -68,7 +70,7 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|blend|Decimal|The blend between the LandClasses.|
+|blend|Decimal|This parameter controls the total blending of the output. In other words, if `blend = 0.7` then the result of the PQSMod is, at most, 70% of the mod's output and 30% of the original vertex color.|
 |minHeight|Decimal|The minimum height, or `0.0` altitude, of a LandClass.|
 |maxHeight|Decimal|The maxmium height, or `1.0` altitude, of a LandClass.|
 
@@ -78,7 +80,7 @@ The `LandClasses { }` wraps several `LandClass { }` nodes that describe an indiv
 |Property|Format|Description|
 |--------|------|-----------|
 |name|Text|The name of the LandClass.|
-|color|Color|The color to be applied to the LandClass.|
+|color|Color|The color to be applied to terrain that falls within the LandClass.|
 |altitudeStart|Decimal|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of defined height: `altitude = (height - minHeight) / (maxHeight - minHeight)`.|
 |altitudeEnd|Decimal|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|
 |lerpToNext|Boolean|Whether to blend into the next LandClass. Highly recommended to set to true on all but the last LandClass.|

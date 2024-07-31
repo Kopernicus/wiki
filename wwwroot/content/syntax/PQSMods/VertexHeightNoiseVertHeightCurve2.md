@@ -1,3 +1,5 @@
+**Internal mod name:** `PQSMod_VertexHeightNoiseVertHeightCurve2`
+
 The `VertexHeightNoiseVertHeightCurve2` PQSMod is one of several mods in the HeightNoise family. They all produce heightmap noise, which can make terrain considerably more interesting.
 It is considered by some to be a much more customizable and far stabler alternative to [`VertexHeightNoise`](/PQSMods/VertexHeightNoise).
 

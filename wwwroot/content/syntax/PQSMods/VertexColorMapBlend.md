@@ -1,3 +1,5 @@
+**Internal mod name:** `PQSMod_VertexColorMapBlend`
+
 Like its alternative [VertexColorMap](/PQSMods/VertexColorMap), the `VertexColorMapBlend` PQSMod adds color to a body using a color map. However, this PQSMod "blends" in the color map to the existing texture by blending the edges of the color segment (i.e., between transparent and colored sections on the map).
 
 ## Example {#Example}
@@ -18,6 +20,7 @@ PQS
 }
 ```
 
+## Properties {#Properties}
 |Property|Format|Description|
 |--------|------|-----------|
 |map|File Path|The path to the color map to use and blend.|

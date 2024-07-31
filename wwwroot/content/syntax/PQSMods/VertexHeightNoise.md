@@ -1,3 +1,5 @@
+**Internal mod name:** `PQSMod_VertexHeightNoise`
+
 The `VertexHeightNoise` PQSMod is a mod that adds height noise to the terrain. This makes the terrain bumpier, though the "style" of bumps/features change with the noise type.  
 The noise is also additive, meaning that instead of overwriting the terrain altitude, it simply adds or subtracts from it.
 

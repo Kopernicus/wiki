@@ -1,3 +1,5 @@
+**Internal mod name:** `PQSMod_VertexHeightMap`
+
 The `VertexHeightMap` PQSMod is a mod that *adds* a given height map to the terrain. This means that height mods are additive, i.e. heightmaps don't set a fixed height.
 
 ## Notes on Heightmaps {#offsetnote}
@@ -34,9 +36,10 @@ PQS
 }
 ```
 
+## Properties {#Properties}
 |Property|Format|Description|
 |--------|------|-----------|
 |map|File Path|The texture containing the height map in greyscale. Black is the `offset` height, and White is the `deformity + offset` height.|
 |offset|Decimal|The offset of the height map.|
 |deformity|Decimal|The deformity of the height map (difference between lowest and highest point).|
-|scaleDeformityByRadius|Boolean|Unknown|
+|scaleDeformityByRadius|Boolean|Experimentation implies that this parameter is used only in the computation of the minimum and maximum altitudes of this PQSMod. Specifically, if true, then the `GetVertexMaxHeight` function increases proportional to the sphere's radius. The intended use of this is unknown.|

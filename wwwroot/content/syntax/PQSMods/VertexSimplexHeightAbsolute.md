@@ -1,3 +1,5 @@
+**Internal mod name:** `PQSMod_VertexSimplexHeightAbsolute`
+
 The `VertexSimplexHeightAbsolute` PQSMod conforms the terrain to a set height using simplex noise.
 
 ## Example {#Example}

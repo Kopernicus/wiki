@@ -1,4 +1,7 @@
-The `HeightColorMap` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses.
+**Internal mod name:** `PQSMod_HeightColorMap`
+
+The `HeightColorMap` PQSMod is a mod that colors the terrain based on altitude using user-defined landclasses. A LandClass in this context is a color and an altitude range within which this color should be applied.
+
 
 ## Subnodes {#Subnodes}
 * `LandClasses { }` (defined below)
@@ -65,15 +68,15 @@ PQS
 
 |Property|Format|Description|
 |--------|------|-----------|
-|blend|Decimal|The blend between the LandClasses.|
+|blend|Decimal|This parameter controls the total blending of the output. In other words, if `blend = 0.7` then the result of the PQSMod is, at most, 70% of the mod's output and 30% of the original vertex color.|
 
-## LandClasses {#landclasses}
-The `LandClasses { }` wraps several `LandClass { }` nodes that describe an individual region's color as defined by altitudes.
+## LandClasses {#LandClasses}
+The `LandClasses { }` node wraps several `LandClass { }` subnodes that describe an individual region's color as defined by altitudes.
 
 |Property|Format|Description|
 |--------|------|-----------|
 |name|Text|The name of the LandClass.|
-|color|Color|The color to be applied to the LandClass.|
+|color|Color|The color to be applied to the terrain that falls within this LandClass.|
 |altitudeStart|Decimal|The starting altitude of the LandClass. NOTE: Altitude is measured in fractions of valid PQS height: `altitude = (vertexHeight - vertexMinHeightOfPQS) / vertexHeightDeltaOfPQS`.|
 |altitudeEnd|Decimal|The ending altitude of the LandClass. Follows same measurement unit as `altitudeStart`.|
 |lerpToNext|Boolean|Whether to blend into the next LandClass. Highly recommended to set to true on all but the last LandClass.|
