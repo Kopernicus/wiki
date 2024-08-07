@@ -43,6 +43,7 @@ Body
 ```
 
 |Property|Format|Description|
+|--------|------|-----------|
 |type|CometTailType|The type of comet tail. The possible values are `Ion` and `Dust`.|
 |color|Color|The color of the tail. Default is white. NOTE: Alpha value does not matter.|
 |rimPower|Decimal|How close the tail rim stays to the edge of the body. The higher the number, the closer it is. Default is 1.41.|

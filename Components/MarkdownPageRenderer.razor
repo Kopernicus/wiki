@@ -22,13 +22,14 @@
 
         if (pageName is not "" && RouteList.Get(pageName) is not "") {
             markdown = idAdder.Replace(rawMarkdown, Evaluate); // todo: handle space after heading name
+            
             markdown = linkAdder.Replace(markdown, $"[\\#]({RouteList.Get(pageName)}$1) {{$1");
+            //Console.WriteLine(markdown);
             markdown = curlCleaner.Replace(markdown, "");
             htmlText = Markdown.ToHtml(markdown, pipeline);
         } else htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
     }
 
-    private string Evaluate(Match match) {
-        return $"{match.Value.TrimEnd()} {{#{match.Groups[1].Value.Trim()}}}";
-    }
+    private string Evaluate(Match match) => 
+        $"{match.Value.TrimEnd()} {{#{match.Groups[1].Value.Trim().Replace(' ', '-')}}}";
 }
