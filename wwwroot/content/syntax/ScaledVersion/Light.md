@@ -1,6 +1,7 @@
-The `Light { }` subnode of the `ScaledVersion { }` node describes the light quality of the star itself. 
+The `Light { }` subnode of the `ScaledVersion { }` node describes the light quality of the star itself.
 
 ## Example {#Example}
+
 ```
 Light
 {
@@ -25,8 +26,8 @@ Light
   }
   IntensityCurve
   {
-  	key = 0 0.9 0 0
-	  key = 1 0.9 0 0
+    key = 0 0.9 0 0
+    key = 1 0.9 0 0
   }
   ScaledIntensityCurve
   {
@@ -54,12 +55,11 @@ Light
 |ambientLightColor|Color|The color of ambient lighting when orbiting near the star.|
 |sunLensFlareColor|Color|The color of the star's LensFlare effect. Gets multiplied with the color of the base texture (yellow-ish for stock flare).|
 |givesOffLight|Boolean|Whether the star should emit light and have a LensFlare effect, or whether it's an object like a black hole.|
-|sunAU|Decimal|Distance in meters. ?Something to do with setting AU from parent star to home world? What's it for? we know it does not affect star luminosity calculation.|
+|sunAU|Decimal|Distance in meters. This is the AU value used by `brightnessCurve`.|
 |luminosity|Decimal|Misnomer. Insolation in watts per square meter at Kerbin's orbit. Calculate for other stars as the (starLuminosity)^0.5 * 1360, where starLuminosity = 1 is the starLuminosity of the stock sun (roughly 1/100th the luminosity of the real world sun). You can use it to calculate the starLuminosity by 4 * Math.PI * kerbinAU * kerbinAU * luminosity. |
 |insolation|Decimal| ?value modifying _luminosity_ for power reaching surface?|
-|radiationFactor|Decimal|?Description here?|
-|brightnessCurve|FloatCurve|Associates a distance value with a multiplier for the brightness of the LensFlare effect. The distances are measured in 1/`AU` value, with 0 being the farthest. See the example above for more info.|
+|radiationFactor|Decimal|Unknown, testing desired|
+|brightnessCurve|FloatCurve|Associates a distance value with a multiplier for the brightness (which is actually just the size) of the sunflare effect. The distances are measured in 1/`AU` value, with 0 being the farthest. See the example above for more info.|
 |IntensityCurve|FloatCurve|Associates a distance value (in meters) with a value that describes the intensity of the LocalSpace starlight at that point.|
 |ScaledIntensityCurve|FloatCurve|Associates a distance value (in meters / 6000) with a value that describes the intensity of the ScaledSpace starlight at that point.|
 |IVAIntensityCurve|FloatCurve|Associates a distance value (in meters) with a value that describes the intensity of the IVA starlight at that point.|
-
