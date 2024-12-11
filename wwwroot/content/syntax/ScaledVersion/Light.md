@@ -59,7 +59,7 @@ Light
 |luminosity|Decimal|Misnomer. Insolation in watts per square meter at Kerbin's orbit. Calculate for other stars as the (starLuminosity)^0.5 * 1360, where starLuminosity = 1 is the starLuminosity of the stock sun (roughly 1/100th the luminosity of the real world sun). You can use it to calculate the starLuminosity by 4 * Math.PI * kerbinAU * kerbinAU * luminosity. |
 |insolation|Decimal| ?value modifying _luminosity_ for power reaching surface?|
 |radiationFactor|Decimal|Unknown, testing desired|
-|brightnessCurve|FloatCurve|Associates a distance value with a multiplier for the brightness (which is actually just the size) of the sunflare effect. The distances are measured in 1/`AU` value, with 0 being the farthest. See the example above for more info.|
+|brightnessCurve|FloatCurve|Associates a distance value with a multiplier for the brightness (which is actually just the size) of the sunflare effect. The distances are specified as 1/x AU, with 0 being the farthest and x being measured in units of `sunAU`. For example, a value of 2 means that key applies at 1/2 AU. See the example above for more information.|
 |IntensityCurve|FloatCurve|Associates a distance value (in meters) with a value that describes the intensity of the LocalSpace starlight at that point.|
 |ScaledIntensityCurve|FloatCurve|Associates a distance value (in meters / 6000) with a value that describes the intensity of the ScaledSpace starlight at that point.|
 |IVAIntensityCurve|FloatCurve|Associates a distance value (in meters) with a value that describes the intensity of the IVA starlight at that point.|
