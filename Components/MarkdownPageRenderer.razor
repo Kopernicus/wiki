@@ -15,7 +15,7 @@
     private Regex idAdder = new(@"(?:## ([\w ]*))");
     protected override async Task OnInitializedAsync()
     {
-        string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"\wwwroot\content\" + srcFile}";
+        string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"/wwwroot/content/" + srcFile}";
         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
         string rawMarkdown = File.ReadAllText(markdownFile);
         string markdown = "";
