@@ -63,6 +63,7 @@ public class RouteList {
             "VertexHeightDeformity" => "/Syntax/Expansion/VertexHeightDeformity",
             "VertexHeightMap16"     => "/Syntax/Expansion/VertexHeightMap16",
             "Wormholes"             => "/Syntax/Expansion/Wormholes",
+            "VertexColorMapEmissive"=> "/Syntax/Expansion/VertexColorMapEmissive",
             _ => ""
         };
     } 
