@@ -13,6 +13,7 @@
     private Regex linkAdder = new(@"(#\w+)");
     private Regex curlCleaner = new(@"(?<=##.*)({)(?=\[)");
     private Regex idAdder = new(@"(?:## ([\w ]*))");
+    #pragma warning disable CS1998
     protected override async Task OnInitializedAsync()
     {
         string markdownFile = $"{System.IO.Directory.GetCurrentDirectory()}{@"/wwwroot/content/" + srcFile}";
@@ -29,6 +30,7 @@
             htmlText = Markdown.ToHtml(markdown, pipeline);
         } else htmlText = Markdown.ToHtml(rawMarkdown, pipeline);
     }
+    #pragma warning restore CS1998
 
     private string Evaluate(Match match) => 
         $"{match.Value.TrimEnd()} {{#{match.Groups[1].Value.Trim().Replace(' ', '-')}}}";
