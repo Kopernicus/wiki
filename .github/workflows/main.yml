@@ -6,7 +6,7 @@ name: 🚀 Deploy website on push
 jobs:
   publish:
     name: 🎉 Publish
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v4.0.0
