@@ -12,19 +12,19 @@ jobs:
       uses: actions/setup-dotnet@v4.0.0
       with:
         # Optional SDK version(s) to use. If not provided, will install global.json version when available. Examples: 2.2.104, 3.1, 3.1.x, 3.x, 6.0.2xx
-        dotnet-version: 8.0.x
+        dotnet-version: 9.0.x
         
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
       
     - name: Run Publish
-      run: dotnet publish
+      run: dotnet publish -c Release
       
     - name: 📂 Upload files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
         server: kopernicuswiki.org
         port: 2121
         username: kopwiki
-        local-dir: bin/Release/net8.0/publish/
+        local-dir: bin/Release/net9.0/publish/
         password: ${{ secrets.password }}
