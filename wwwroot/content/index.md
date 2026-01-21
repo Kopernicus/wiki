@@ -45,3 +45,6 @@
 * [VertexHeightDeformity](/Syntax/Expansion/VertexHeightDeformity)
 * [VertexHeightMap16](/Syntax/Expansion/VertexHeightMap16)
 * [Wormholes](/Syntax/Expansion/Wormholes)
+
+## Other Expansions
+* [VertexColorMapEmissive](/Syntax/Expansion/VertexColorMapEmissive)
