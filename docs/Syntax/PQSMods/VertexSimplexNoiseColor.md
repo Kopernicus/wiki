@@ -1,3 +1,5 @@
+# VertexSimplexNoiseColor
+
 The `VertexSimplexNoiseColor` PQSMod generates RGB [Perlin noise](/Prerequisites/DataTypes) for use in terrain coloration.
 
 ## Example

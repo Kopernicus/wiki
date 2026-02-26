@@ -1,3 +1,5 @@
+# ScatterColliders
+
 The `ScatterColliders` ModularScatter component allows for a scatter to be collidable via a set mesh.
 
 ## Performance warning

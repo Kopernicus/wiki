@@ -1,3 +1,5 @@
+# VertexHeightMap16
+
 A replacement for the `VertexHeightMap` PQSMod that allows you to use textures encoded with 16 bpp. [What is "bpp"?](https://en.wikipedia.org/wiki/Color_depth)
 Any textures that are to be used with VertexHeightMap16 need to be passed through a converter, which can be found along with VHM16 and the other KopernicusExpansion packages at [https://github.com/StollD/KopernicusExpansion-Continued/releases](https://github.com/StollD/KopernicusExpansion-Continued/releases)
 In order to work with the converter the textures:

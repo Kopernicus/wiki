@@ -1,3 +1,5 @@
+# LandControl
+
 The `LandControl` PQSMod allows defining regions known as LandClasses, within which you can customize several features of the particular region.
 
 ## Subnodes

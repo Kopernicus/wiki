@@ -1,3 +1,5 @@
+# LandClasses
+
 `LandClasses` are regions specified by the LandControl PQSMod that can locally customize several features of the PQS, including features from other PQSMods like HeightColorMap or noise PQSMods. LandClasses can change terrain height, change terrain color, add color noise and height noise, and add ground scatters. LandClasses are defined via ranges of altitude, latitude, and longitude.
 
 ## Subnodes - Both are defined under the main table.

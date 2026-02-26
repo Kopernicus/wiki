@@ -1,3 +1,5 @@
+# Scatters
+
 The `Scatters` node in the LandControl PQSMod defines the scatters to be used within the [LandClasses](/Syntax/PQSMods/LandControl/LandClasses) provided by LandControl. Scatters are 3D meshed objects that are generated on the surface and can have various configurable features added via the `Components` subnode.
 
 ## Subnodes

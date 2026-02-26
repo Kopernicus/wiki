@@ -1,3 +1,5 @@
+# Config Nodes
+
 ConfigNodes are a data storage / settings format that is used by KSP. They are most commonly used in `.cfg` files, but you can find them inside of `.craft` and `.sfs` files too.
 Whenever you want to modify anything in KSP, you will have to deal with ConfigNodes.
 

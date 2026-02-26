@@ -1,3 +1,5 @@
+# Body
+
 The `Body { }` node contains all the aspects of a body and describes the essential components for making a body. `Body { }` is a subnode of the `@Kopernicus` node.
 
  ## Subnodes

@@ -1,3 +1,5 @@
+# SeaLevelScatter
+
 The `SeaLevelScatter` ModularScatter component make individual scatter objects spawn at a randomized altitude.
 
 ```

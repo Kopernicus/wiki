@@ -1,3 +1,5 @@
+# ScatterMaterialType
+
 The contents of the `Material {}` node can very greatly and depend on the value assigned to `materialType`
 
 ## Diffuse

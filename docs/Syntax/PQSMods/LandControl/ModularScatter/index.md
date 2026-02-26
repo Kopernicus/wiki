@@ -1,3 +1,5 @@
+# ModularScatter
+
 ModularScatter is a PQS LandControl system for easily adding behavior to ground scatters in much the same way that PartModules add behavior to parts.
 
 There are currently four ModularScatter components that you can add to a scatter.

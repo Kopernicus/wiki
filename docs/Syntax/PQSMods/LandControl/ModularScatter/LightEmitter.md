@@ -1,3 +1,5 @@
+# LightEmitter
+
 The `LightEmitter` ModularScatter component allows for scatters to provide their own light based on numerous arguments. Most arguments are optional.
 
 ## Performance warning

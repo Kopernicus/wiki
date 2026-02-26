@@ -1,3 +1,5 @@
+# PQS
+
 The `PQS { }` node describes properties of the Procedural Quad Sphere that makes up the body and the material used for it (physics and redering-wise). It also contains the `Mods { }` subnode, which specifies which PQSMods to apply to customize the body.
 
 ## Subnodes
