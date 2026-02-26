@@ -2,43 +2,34 @@ on:
   push:
     branches:
       - master
-  pull_request:
 
 name: Deploy to Github Pages
+
+permissions:
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-dotnet@v4.0.0
+      - uses: actions/setup-node@v6
         with:
-          dotnet-version: 9.0.x
+          node-version: 20
 
-      - name: build
-        run: dotnet build
+      - name: Install dependencies
+        run: npm install
 
-      - name: list files
-        run: tree
-
-      - uses: miguelteixeiraa/action-run-in-background@v1
-        with:
-          script: dotnet run
-          readiness-script: curl http://localhost:5029 > /dev/null
-
-      - name: clone site
-        # avoid failing the build on master if we have broken links, but fail in CI
-        # continue-on-error: ${{ github.base_ref == 'master' }}
-        run: |
-          wget -mpEk -e robots=off --no-verbose http://localhost:5029
+      - name: Build
+        run: npm run build
 
       - uses: actions/upload-pages-artifact@v4
-        id: deployment
         with:
-          path: 'localhost:5029/'
+          path: docs/.vitepress/dist
 
   deploy:
-    if: ${{ github.base_ref == 'master' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
