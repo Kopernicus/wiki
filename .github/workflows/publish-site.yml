@@ -1,0 +1,50 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+name: Deploy to Github Pages
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4.0.0
+        with:
+          dotnet-version: 9.0.x
+
+      - name: build
+        run: dotnet build
+
+      - name: list files
+        run: tree
+
+      - uses: miguelteixeiraa/action-run-in-background@v1
+        with:
+          script: dotnet run
+          readiness-script: curl http://localhost:5029 > /dev/null
+
+      - name: clone site
+        # avoid failing the build on master if we have broken links, but fail in CI
+        # continue-on-error: ${{ github.base_ref == 'master' }}
+        run: |
+          wget -mpEk -e robots=off --no-verbose http://localhost:5029
+
+      - uses: actions/upload-pages-artifact@v4
+        id: deployment
+        with:
+          path: 'localhost:5029/'
+
+  deploy:
+    if: ${{ github.base_ref == 'master' }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
