@@ -4,6 +4,7 @@ on:
     types: [completed]
 
 name: preview
+run-name: preview - ${{ github.event.workflow_run.head_sha }}
 
 permissions:
   actions: read

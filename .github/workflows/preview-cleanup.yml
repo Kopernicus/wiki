@@ -3,6 +3,7 @@ on:
     types: [closed]
 
 name: preview-cleanup
+run-name: preview-cleanup - PR #${{ github.event.pull_request.number }}
 
 permissions: {}
 
