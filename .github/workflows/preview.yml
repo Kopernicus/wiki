@@ -46,14 +46,14 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deploy site --project-name=kopernicus-wiki --branch=pr-${{ steps.pr.outputs.number }}
+        command: pages deploy site --project-name=kopernicus-wiki-preview --branch=pr-${{ steps.pr.outputs.number }}
 
     - name: Comment on PR
       uses: actions/github-script@v7
       with:
         script: |
           const prNumber = ${{ steps.pr.outputs.number }};
-          const url = `https://pr-${prNumber}.kopernicus-wiki.pages.dev`;
+          const url = `https://pr-${prNumber}.kopernicus-wiki-preview.pages.dev`;
           const body = `Preview deployment available at: ${url}`;
 
           const { data: comments } = await github.rest.issues.listComments({

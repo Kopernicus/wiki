@@ -18,4 +18,4 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deployment delete --project-name=kopernicus-wiki --branch=pr-${{ github.event.pull_request.number }}
+        command: pages deployment delete --project-name=kopernicus-wiki-preview --branch=pr-${{ github.event.pull_request.number }}
