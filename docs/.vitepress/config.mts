@@ -6,7 +6,7 @@ export default defineConfig({
   description: "Kopernicus Wiki",
 
   head: [
-    ['link', { rel: 'icon', href: '/assets/KopernicusIcon.png' }],
+    ['link', { rel: 'icon', href: '/icon.png' }],
   ],
 
   // https://vitepress.dev/reference/default-theme-config
@@ -46,7 +46,7 @@ export default defineConfig({
       provider: 'local',
     },
 
-    logo: '/assets/KopernicusIcon.png',
+    logo: '/icon.png',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Kopernicus/wiki' }
     ]
