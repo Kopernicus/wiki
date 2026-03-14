@@ -3,7 +3,7 @@ on:
     types: [closed]
 
 name: preview-cleanup
-run-name: preview-cleanup - PR #${{ github.event.pull_request.number }}
+run-name: preview-cleanup - PR \#${{ github.event.pull_request.number }}
 
 permissions: {}
 
@@ -13,9 +13,27 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.head.repo.fork == true
     steps:
-    - name: Delete preview deployment
+    - name: List deployments
+      id: list
       uses: cloudflare/wrangler-action@v3
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deployment delete --project-name=kopernicus-wiki-preview --branch=pr-${{ github.event.pull_request.number }}
+        command: pages deployment list --project-name=kopernicus-wiki-preview --json
+
+    # This is a bit of a mess, but is based off a script from here: https://github.com/cloudflare/pages-action/issues/47
+    - name: Delete all deployments
+      id: select-deployment
+      run: |
+        DEPLOYMENTS_JSON='${{ steps.list.outputs.command-output }}'
+        DEPLOYMENT_IDS="$(echo "$DEPLOYMENTS_JSON" | jq -r '.[] | select(.Branch == "pr-${{ github.event.pull_request.number }}") | .Id')"
+        
+        for id in $DEPLOYMENT_IDS; do
+          echo "Deleting $id"
+
+          curl -s -X DELETE "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/project/kopernicus-wiki-preview/deployments/$id?force=true" \
+              -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+              -H "Content-Type: application/json"
+        done
+
+  
