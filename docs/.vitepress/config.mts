@@ -39,6 +39,12 @@ export default defineConfig({
           { text: 'PQSMods', link: '/Syntax/PQSMods/' },
           { text: 'Rings', link: '/Syntax/Rings' },
         ]
+      },
+      {
+        text: 'API Documentation',
+        items: [
+          { text: 'PQSMod', link: '/API/PQSMod' }
+        ]
       }
     ],
 
