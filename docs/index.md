@@ -34,6 +34,9 @@
   + [HazardousBody subnode](/Syntax/HazardousBody)
   + [Debug subnode](/Syntax/Debug)
 
+## API Documentation
+* [`PQSMod`](/API/PQSMod)
+
 ## KopernicusExpansion
 > **WARNING: These pages are not intended for beginners, and a basic level of experience is assumed.**
 * [Comet Tails](/Syntax/Expansion/CometTails)
