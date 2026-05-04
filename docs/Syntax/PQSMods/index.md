@@ -15,14 +15,27 @@ Each PQSMod subnode contains `name`, `order`, and `enabled` keys, as described b
 ::: info
 This is a non-exhaustive list, so contributions are especially welcome in this area!
 :::
-+ [LandControl](/Syntax/PQSMods/LandControl/LandControl)
-+ [HeightColorMap](/Syntax/PQSMods/HeightColorMap)
-+ [HeightColorMap2](/Syntax/PQSMods/HeightColorMap2)
-+ [VertexColorMap](/Syntax/PQSMods/VertexColorMap)
-+ [VertexColorMapBlend](/Syntax/PQSMods/VertexColorMapBlend)
-+ [VertexHeightMap](/Syntax/PQSMods/VertexHeightMap)
-+ [VertexHeightNoise](/Syntax/PQSMods/VertexHeightNoise)
-+ [VertexHeightNoiseVertHeightCurve2](/Syntax/PQSMods/VertexHeightNoiseVertHeightCurve2)
-+ [VertexSimplexHeight](/Syntax/PQSMods/VertexSimplexHeight)
-+ [VertexSimplexHeightAbsolute](/Syntax/PQSMods/VertexSimplexHeightAbsolute)
-+ [VertexSimplexNoiseColor](/Syntax/PQSMods/VertexSimplexNoiseColor)
+
+Note: **name** is the name you should be using in your configs. **Internal Name** is the name of the C# class that corresponds to this PQSMod. **To remove a specific mod in the Template node, refer to it by its internal name**.
+
+|Name|Internal Name|
+|----|-------------|
+|[AerialPerspectiveMaterial](/Syntax/PQSMods/AerialPerspectiveMaterial)|PQSMod_AerialPerspectiveMaterial|
+|[AltitudeAlpha](/Syntax/PQSMods/AltitudeAlpha)|PQSMod_AltitudeAlpha|
+|[HeightColorMap](/Syntax/PQSMods/HeightColorMap)|PQSMod_HeightColorMap|
+|[HeightColorMap2](/Syntax/PQSMods/HeightColorMap2)|PQSMod_HeightColorMap2|
+|[LandControl](/Syntax/PQSMods/LandControl/)|PQSLandControl|
+|[VertexColorMap](/Syntax/PQSMods/VertexColorMap)|PQSMod_VertexColorMap|
+|[VertexColorMapBlend](/Syntax/PQSMods/VertexColorMapBlend)|PQSMod_VertexColorMapBlend|
+|[VertexHeightMap](/Syntax/PQSMods/VertexHeightMap)|PQSMod_VertexHeightMap|
+|[VertexHeightNoise](/Syntax/PQSMods/VertexHeightNoise)|PQSMod_VertexHeightNoise|
+|[VertexHeightNoiseVertHeightCurve2](/Syntax/PQSMods/VertexHeightNoiseVertHeightCurve2)|PQSMod_VertexHeightNoiseVertHeightCurve2|
+|[VertexSimplexHeight](/Syntax/PQSMods/VertexSimplexHeight)|PQSMod_VertexSimplexHeight|
+|[VertexSimplexHeightAbsolute](/Syntax/PQSMods/VertexSimplexHeightAbsolute)|PQSMod_VertexSimplexHeightAbsolute|
+|[VertexSimplexNoiseColor](/Syntax/PQSMods/VertexSimplexNoiseColor)|PQSMod_VertexSimplexNoiseColor|
+
+## Community PQSMods
+
+|Name|Internal Name|
+|----|-------------|
+|[VertexMitchellNetravaliHeightMap](/Syntax/PQSMods/Community/VertexMitchellNetravaliHeightMap)|PQSMod_VertexMitchellNetravaliHeightMap|

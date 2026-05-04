@@ -1,5 +1,7 @@
 # VertexColorMap
 
+**Internal mod name:** `PQSMod_VertexColorMap`
+
 The `VertexColorMap` PQSMod is a mod that applies a color map over the terrain.
 
 ## Example
@@ -18,6 +20,7 @@ PQS
 }
 ```
 
+## Properties
 |Property|Format|Description|
 |--------|------|-----------|
 |map|File Path|The texture containing the color map for the body.|
