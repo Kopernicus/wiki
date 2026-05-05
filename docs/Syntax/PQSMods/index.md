@@ -25,6 +25,7 @@ Note: **name** is the name you should be using in your configs. **Internal Name*
 |[HeightColorMap](/Syntax/PQSMods/HeightColorMap)|PQSMod_HeightColorMap|
 |[HeightColorMap2](/Syntax/PQSMods/HeightColorMap2)|PQSMod_HeightColorMap2|
 |[LandControl](/Syntax/PQSMods/LandControl/)|PQSLandControl|
+|[QuadEnhanceCoast](/Syntax/PQSMods/QuadEnhanceCoast)|PQSMod_QuadEnhanceCoast|
 |[VertexColorMap](/Syntax/PQSMods/VertexColorMap)|PQSMod_VertexColorMap|
 |[VertexColorMapBlend](/Syntax/PQSMods/VertexColorMapBlend)|PQSMod_VertexColorMapBlend|
 |[VertexHeightMap](/Syntax/PQSMods/VertexHeightMap)|PQSMod_VertexHeightMap|
