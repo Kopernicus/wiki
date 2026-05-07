@@ -41,7 +41,7 @@ jobs:
         for id in $DEPLOYMENT_IDS; do
           echo "Deleting $id"
 
-          curl -s -X DELETE "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/project/kopernicus-wiki-preview/deployments/$id?force=true" \
+          curl -s --fail-with-body -X DELETE "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/kopernicus-wiki-preview/deployments/$id?force=true" \
               -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
               -H "Content-Type: application/json"
         done
