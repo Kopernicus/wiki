@@ -1,9 +1,15 @@
 on:
   pull_request_target:
     types: [closed]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number whose preview deployments should be deleted'
+        required: true
+        type: string
 
 name: preview-cleanup
-run-name: preview-cleanup - PR \#${{ github.event.pull_request.number }}
+run-name: preview-cleanup - PR \#${{ inputs.pr_number || github.event.pull_request.number }}
 
 permissions: {}
 
@@ -11,7 +17,9 @@ jobs:
   delete-preview:
     name: delete-preview
     runs-on: ubuntu-latest
-    if: github.event.pull_request.head.repo.fork == true
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.fork == true
+    env:
+      PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
     steps:
     - name: List deployments
       id: list
@@ -19,15 +27,17 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        wranglerVersion: '4'
         command: pages deployment list --project-name=kopernicus-wiki-preview --json
 
     # This is a bit of a mess, but is based off a script from here: https://github.com/cloudflare/pages-action/issues/47
     - name: Delete all deployments
       id: select-deployment
+      env:
+        DEPLOYMENTS_JSON: ${{ steps.list.outputs.command-output }}
       run: |
-        DEPLOYMENTS_JSON='${{ steps.list.outputs.command-output }}'
-        DEPLOYMENT_IDS="$(echo "$DEPLOYMENTS_JSON" | jq -r '.[] | select(.Branch == "pr-${{ github.event.pull_request.number }}") | .Id')"
-        
+        DEPLOYMENT_IDS="$(echo "$DEPLOYMENTS_JSON" | jq -r --arg branch "pr-$PR_NUMBER" '.[] | select(.Branch == $branch) | .Id')"
+
         for id in $DEPLOYMENT_IDS; do
           echo "Deleting $id"
 
@@ -35,5 +45,3 @@ jobs:
               -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
               -H "Content-Type: application/json"
         done
-
-  
