@@ -28,7 +28,6 @@ jobs:
 
     - name: Delete preview deployments for PR
       run: |
-        set -eux
         DEPLOYMENTS_JSON="$(wrangler pages deployment list --project-name=kopernicus-wiki-preview --json)"
         DEPLOYMENT_IDS="$(echo "$DEPLOYMENTS_JSON" | jq -r --arg branch "pr-$PR_NUMBER" '.[] | select(.Branch == $branch) | .Id')"
 
