@@ -9,7 +9,7 @@ on:
         type: string
 
 name: preview-cleanup
-run-name: preview-cleanup - PR \#${{ inputs.pr_number || github.event.pull_request.number }}
+run-name: preview-cleanup - PR ${{ '#' }}${{ inputs.pr_number || github.event.pull_request.number }}
 
 permissions: {}
 
@@ -20,28 +20,18 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.fork == true
     env:
       PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
-    - name: List deployments
-      id: list
-      uses: cloudflare/wrangler-action@v3
-      with:
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        wranglerVersion: '4'
-        command: pages deployment list --project-name=kopernicus-wiki-preview --json
+    - name: Install wrangler
+      run: npm install --global wrangler@4
 
-    # This is a bit of a mess, but is based off a script from here: https://github.com/cloudflare/pages-action/issues/47
-    - name: Delete all deployments
-      id: select-deployment
-      env:
-        DEPLOYMENTS_JSON: ${{ steps.list.outputs.command-output }}
+    - name: Delete preview deployments for PR
       run: |
+        set -eux
+        DEPLOYMENTS_JSON="$(wrangler pages deployment list --project-name=kopernicus-wiki-preview --json)"
         DEPLOYMENT_IDS="$(echo "$DEPLOYMENTS_JSON" | jq -r --arg branch "pr-$PR_NUMBER" '.[] | select(.Branch == $branch) | .Id')"
 
         for id in $DEPLOYMENT_IDS; do
-          echo "Deleting $id"
-
-          curl -s --fail-with-body -X DELETE "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/kopernicus-wiki-preview/deployments/$id?force=true" \
-              -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
-              -H "Content-Type: application/json"
+          wrangler pages deployment delete --project-name=kopernicus-wiki-preview --force "$id"
         done
