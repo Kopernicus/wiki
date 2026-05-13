@@ -59,8 +59,8 @@ Body
 |maxLevel|Integer|The maximum level of triangles needed to render the PQS (subdivision level). Higher levels can lead to more detailed, yet much more noisy and sharp, terrain.|
 |minDetailDistance|Decimal|The minimum subdivision level for scatters to spawn.|
 |maxQuadLengthsPerFrame|Decimal|Unknown use. Advised not to alter.|
-|fadeStart|Decimal|The altitude, in meters, in which the PQS begins to fade out. Should line up with ScaledVersion's `fadeStart`.|
-|fadeEnd|Decimal|The altitude, in meters, in which the PQS is fully faded. Should line up with ScaledVersion's `fadeEnd`.|
+|fadeStart|Decimal|The altitude, in meters, in which the PQS begins to fade out. Should line up with ScaledVersion's `fadeEnd`.|
+|fadeEnd|Decimal|The altitude, in meters, in which the PQS is fully faded. Should line up with ScaledVersion's `fadeStart`.|
 |deactivateAltitude|Decimal|The altitude, in meters, in which the PQS is deactivated.|
 |mapMaxHeight|Decimal|The maximum altitude, in meters, that can be represented in a height map exported from Kittopia. Omit to use the full height of the current PQS.|
 |materialType|PQSMaterial|The name of the material type to use in the `Material { }` subnode. Possible values: Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation, AtmosphericTriplanarZoomRotationTextureArray (1.9).|
