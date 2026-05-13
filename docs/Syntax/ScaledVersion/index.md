@@ -26,7 +26,7 @@ ScaledVersion
 |--------|------|-----------|
 |type|Text|Either `Vacuum`, `Atmospheric`, or `Star`, depending on whether the body is a star or a planet/moon that has an atmosphere or not. (Can also use `AtmosphericStandard`, but function is not yet known.)|
 |fadeStart|Decimal|Altitude, in meters, at which the transition to ScaledSpace starts.|
-|fadeEnd|Decimal|Altitude, in meters, at which the transition to ScaledSpace ends.|
+|fadeEnd|Decimal|Altitude, in meters, at which the transition to ScaledSpace ends. Should be higher than fadeStart.|
 |sphericalModel|Boolean|Whether the ScaledSpace should be represented as a sphere instead of the actual PQS. Default is `false`.|
 |deferMesh|Boolean|Whether to not generate a new mesh every time KSP is run. Default is `false`.|
 |invisible|Boolean|Whether the ScaledSpace should be invisible. Also sets deferMesh to the same value. Defaults to `false`.|
