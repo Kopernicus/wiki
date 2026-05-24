@@ -45,6 +45,10 @@ export default defineConfig({
         items: [
           { text: 'PQSMod', link: '/API/PQSMod' }
         ]
+      },
+      {
+        text: "Release Notes",
+        link: "/RelNotes"
       }
     ],
 
