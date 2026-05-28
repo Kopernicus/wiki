@@ -2,7 +2,7 @@
 
 **Shader:** `Terrain/Gas Giant` &nbsp;·&nbsp; **Runtime component:** `GasGiantMaterialControls`
 
-The Gas Giant `Material { }` drives the `Terrain/Gas Giant` shader — the animated, banded scaled-space surface used by Jool. Unlike the [Vacuum/Atmospheric materials](/Syntax/ScaledVersion/Material), which paint the planet from a single colour map, the gas giant builds its appearance procedurally from two **swirling cloud band layers**:
+The Gas Giant `Material { }` drives the `Terrain/Gas Giant` shader — the animated, banded scaled-space surface used by Jool. Unlike the [Vacuum](/Syntax/Material/Scaled/Vacuum) and [Atmospheric](/Syntax/Material/Scaled/Atmospheric) materials, which paint the planet from a single colour map, the gas giant builds its appearance procedurally from two **swirling cloud band layers**:
 
 * A **far (base) layer** that defines the overall banding and is visible at any distance.
 * A **detail (near) layer** of higher-frequency cloud structure that fades in as the camera approaches.
