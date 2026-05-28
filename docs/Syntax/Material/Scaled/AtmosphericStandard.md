@@ -14,7 +14,7 @@ We shall first see how to enable the material, then how the shader lights the su
 
 ## Enabling
 
-Select the material by setting `type = AtmosphericStandard` in the [`ScaledVersion { }`](/Syntax/ScaledVersion) node. The `Material { }` node then accepts the properties listed below.
+Select the material by setting `type = AtmosphericStandard` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/) node. The `Material { }` node then accepts the properties listed below.
 
 ```
 ScaledVersion
@@ -107,7 +107,7 @@ The properties fall into five groups, which we shall take in turn:
 
 ## Notes
 
-* `opacity` is marked `[PerRendererData]` and is driven at runtime by the scaled-space fader, which Kopernicus attaches to every non-star body with its `floatName` bound to `_Opacity`. As the camera crosses the [`fadeStart` and `fadeEnd`](/Syntax/ScaledVersion) altitudes the fader sweeps this value, fading the atmospheric halo with the transition. A static config value is therefore normally left at its default of 1.
+* `opacity` is marked `[PerRendererData]` and is driven at runtime by the scaled-space fader, which Kopernicus attaches to every non-star body with its `floatName` bound to `_Opacity`. As the camera crosses the [`fadeStart` and `fadeEnd`](/Syntax/ScaledVersion/) altitudes the fader sweeps this value, fading the atmospheric halo with the transition. A static config value is therefore normally left at its default of 1.
 * `localLightDirection` is likewise `[PerRendererData]` and rewritten each frame, so although the loader exposes it as a config field, setting it has no lasting effect — it exists so KSP can keep the rim ramp tracking the real Sun as the planet rotates and orbits.
 * Unlike the plain [Atmospheric](/Syntax/Material/Scaled/Atmospheric) shader, whose rim is keyed to the body's smooth **geometric** normal, this build computes the rim's view-angle term against the **normal-mapped** surface normal — so surface relief feeds the limb glow as well as the lit surface, though the effect is subtle at the grazing angles where the rim is brightest.
 * The shader requires mesh **tangents** for its normal mapping — the scaled mesh Kopernicus generates already provides them. A custom mesh without tangents will render with broken normals.

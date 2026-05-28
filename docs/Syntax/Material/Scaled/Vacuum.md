@@ -12,7 +12,7 @@ We shall first see how to enable the material, then how the shader lights the su
 
 ## Enabling
 
-Select the vacuum material by setting `type = Vacuum` in the [`ScaledVersion { }`](/Syntax/ScaledVersion) node. The `Material { }` node then accepts the properties listed below.
+Select the vacuum material by setting `type = Vacuum` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/) node. The `Material { }` node then accepts the properties listed below.
 
 ```
 ScaledVersion
@@ -86,7 +86,7 @@ The properties fall into four groups, which we shall take in turn:
 
 ## Notes
 
-* `opacity` is marked `[PerRendererData]` and is driven at runtime by the scaled-space fader, which cross-fades the body between its scaled-space and local (PQS) representations as the camera crosses the [`fadeStart` and `fadeEnd`](/Syntax/ScaledVersion) altitudes. A static config value is therefore normally left at its default of 1.
+* `opacity` is marked `[PerRendererData]` and is driven at runtime by the scaled-space fader, which cross-fades the body between its scaled-space and local (PQS) representations as the camera crosses the [`fadeStart` and `fadeEnd`](/Syntax/ScaledVersion/) altitudes. A static config value is therefore normally left at its default of 1.
 * `resourceMap` is likewise `[PerRendererData]`: KSP's surface-resource visualisation layer sets it per-renderer when a scan is active. The default black texture means no overlay is shown.
 * The shader requires mesh **tangents** for its normal mapping — the scaled mesh Kopernicus generates already provides them. A custom mesh without tangents will render with broken normals.
 * If the shader fails to compile on the target platform it falls back to Unity's `Standard` shader.

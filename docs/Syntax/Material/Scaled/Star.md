@@ -6,13 +6,13 @@ The Star `Material { }` drives the `Emissive Multi Ramp Sunspots` shader — the
 
 In the stock system this material is used by the Sun (Kerbol) — the only star in the stock game.
 
-Selecting `type = Star` does more than pick a shader: it also tells Kopernicus that this body is a star. The body's [`ScaledVersion { }`](/Syntax/ScaledVersion) node then additionally accepts a `Light { }` block (a `LightShifter` controlling the star's lighting) and a `Coronas { }` collection (the flat corona billboards around the disc), and Kopernicus attaches the runtime components that make a star behave like one — the `SunShaderController` that animates this material, plus `ScaledSun` and `StarComponent`. Those star-wide pieces are out of scope here; this page documents only the surface material.
+Selecting `type = Star` does more than pick a shader: it also tells Kopernicus that this body is a star. The body's [`ScaledVersion { }`](/Syntax/ScaledVersion/) node then additionally accepts a `Light { }` block (a `LightShifter` controlling the star's lighting) and a `Coronas { }` collection (the flat corona billboards around the disc), and Kopernicus attaches the runtime components that make a star behave like one — the `SunShaderController` that animates this material, plus `ScaledSun` and `StarComponent`. Those star-wide pieces are out of scope here; this page documents only the surface material.
 
 We shall first see how to enable the material, then how the shader builds and animates the surface, and finally discuss each group of properties in turn.
 
 ## Enabling
 
-Select the star material by setting `type = Star` in the [`ScaledVersion { }`](/Syntax/ScaledVersion) node. The `Material { }` node then accepts the properties listed below.
+Select the star material by setting `type = Star` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/) node. The `Material { }` node then accepts the properties listed below.
 
 ```
 ScaledVersion
