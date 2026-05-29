@@ -4,9 +4,7 @@ The `PQS { }` node describes properties of the Procedural Quad Sphere that makes
 
 ## Subnodes
 * PhysicsMaterial { } (below)
-* Material { }
-  + [AtmosphericTriplanarZoomRotation](/Syntax/Material/AtmosphericTriplanarZoomRotation)
-  + [AtmosphericTriplanarZoomRotationTextureArray](/Syntax/Material/AtmosphericTriplanarZoomRotationTextureArray)
+* [Material { }](/Syntax/Material/PQS/)
 * FallbackMaterial { }
 * [Mods { }](/Syntax/PQSMods/)
 
@@ -63,7 +61,7 @@ Body
 |fadeEnd|Decimal|The altitude, in meters, in which the PQS is fully faded. Should line up with ScaledVersion's `fadeStart`.|
 |deactivateAltitude|Decimal|The altitude, in meters, in which the PQS is deactivated.|
 |mapMaxHeight|Decimal|The maximum altitude, in meters, that can be represented in a height map exported from Kittopia. Omit to use the full height of the current PQS.|
-|materialType|PQSMaterial|The name of the material type to use in the `Material { }` subnode. Possible values: Vacuum, AtmosphericBasic, AtmosphericMain, AtmosphericOptimized, AtmosphericExtra, AtmosphericOptimizedFastBlend, AtmosphericTriplanarZoomRotation, AtmosphericTriplanarZoomRotationTextureArray (1.9).|
+|materialType|PQSMaterial|The name of the material type to use in the `Material { }` subnode. See [PQS terrain materials](/Syntax/Material/PQS/) for the available values and what each renders.|
 
 ## PhysicsMaterial
 The `PhysicsMaterial { }` subnode describes how the PQS's terrain acts physically.
