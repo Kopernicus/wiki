@@ -27,6 +27,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Guides',
+        items: [
+          { text: 'Getting Started', link: '/Guides/GettingStarted' },
+          { text: 'DDS Formats', link: '/Guides/DDSFormatGuide' },
+        ]
+      },
+      {
         text: 'Syntax',
         items: [
           { text: 'Body', link: '/Syntax/Body' },
