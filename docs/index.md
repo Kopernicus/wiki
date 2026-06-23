@@ -5,10 +5,14 @@
 * [A Beginner's Guide to Kopernicus: The Basics](https://forum.kerbalspaceprogram.com/index.php?/topic/129540-a-beginners-guide-to-kopernicus-the-basics/)
 * [Data Types](/Prerequisites/DataTypes)
 
-## External Resources
+## Guides
+* [Getting Started](/Guides/GettingStarted)
 * [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
 * [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
 * [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
+* [Singularity](/Guides/Singularity/)
+
+## External Resources
 * [List of BUILTIN Textures for 1.8](https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8)
 * [KSPCurveBuilder - DGerry](https://forum.kerbalspaceprogram.com/topic/229626-kspcurvebuilder-v200-rc1-visualize-create-and-edit-float-curves-for-ksp/)
 
