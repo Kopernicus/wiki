@@ -1,7 +1,7 @@
 # DDS Format Guide
 *Written by ballisticfox*
 
-![DDS_Flowchart](./Assets/DDS_Flowchart.png)
+![DDS_Flowchart](./DDS_Flowchart.png)
 
 You've probably heard of image formats before, .png, .jpg, .webp, maybe even .dds. An image format at the most basic level is simply an agreed upon structure (usually created by some very smart people) on how to encode image data in some specific way. Different image formats are often tailored to very specific tasks, and it's important to use the correct format in your work.
 
@@ -31,26 +31,25 @@ A PNG texture loaded on the GPU will more than likely undergo a conversion to a 
 It's clear why we'd use DDS here, but what's the downside?
 1. You'll have to save a development copy of your planets.
 
-    Every time you make an edit to your world, you'll need to re-export it to save your changes. This will trigger another block recompression if you export as DDS, "crunching" your maps further.
+   Every time you make an edit to your world, you'll need to re-export it to save your changes. This will trigger another block recompression if you export as DDS, "crunching" your maps further.
 
-    I'd personally advise you to save a .png or a .tif copy of your maps, edit that, then use the commands and the bottom of this guide to compress your data when you're ready to load the game.
+   I'd personally advise you to save a .png or a .tif copy of your maps, edit that, then use the commands and the bottom of this guide to compress your data when you're ready to load the game.
 
 2. Sometimes you want lossless.
 
-    When working with heightmap data specifically, your options for DDS are pretty limited. BC4 is the standard but it can cause some nasty artifacting in scenarios where height accuracy is necessary.
+   When working with heightmap data specifically, your options for DDS are pretty limited. BC4 is the standard but it can cause some nasty artifacting in scenarios where height accuracy is necessary.
 
-    I actually keep two heightmaps per planet for Sol, one is R16 and kept on the CPU/RAM side by only using it for the PQS, and one is BC4 and is only used in scaled space via Parallax Scaled. It's entirely possible you may only need a BC4 map though!
+   I actually keep two heightmaps per planet for Sol, one is R16 and kept on the CPU/RAM side by only using it for the PQS, and one is BC4 and is only used in scaled space via Parallax Scaled. It's entirely possible you may only need a BC4 map though!
 
-    Another example is sometimes you want to store very specific types of data, this could a heightmap or a normal map or perhaps some sort of flow map. DDS is going to try its best to make the data "look" the same, it doesn't care about precision, it doesn't care about the fact you're encoding a vector, its only job is to make it "look" similar
+   Another example is sometimes you want to store very specific types of data, this could a heightmap or a normal map or perhaps some sort of flow map. DDS is going to try its best to make the data "look" the same, it doesn't care about precision, it doesn't care about the fact you're encoding a vector, its only job is to make it "look" similar
 
 <br>
 
 Example of data loss from different types of DDS compression :
 
-![DDS_Flowchart](./Assets/brick_blocks_compare_dark.png)
+![DDS_Flowchart](./brick_blocks_compare_dark.png)
 
-
-![DDS_Flowchart](./Assets/brick_blocks_compare_bc7_dark.png)
+![DDS_Flowchart](./brick_blocks_compare_bc7_dark.png)
 
 *(Credit Nathan Reed)*
 
@@ -58,7 +57,7 @@ Example of data loss from different types of DDS compression :
 
 ### Mipmapping
 
-![DDS_Flowchart](./Assets/Mipmapping.png)
+![DDS_Flowchart](./Mipmapping.png)
 
 Another major benefit of DDS textures is their native support for mipmaps.
 
@@ -81,21 +80,21 @@ Using the correct DDS format is extremely important in your pursuit for high qua
 
 The formats most relevant to KSP are as follows:
 
-| Format        | Channels           |  bytes / px  | Usage                     | Notes |
-| :---          |    :----:             |     :----:   |        :----             | --- |
-| BC1 (DXT1)    |   RGB + 1-bit alpha   |   0.5        | Legacy/Low Cost Colormaps | Relatively bad compression quality when compared to BC7 or BC3 |
-| BC3 (DXT5)    |   RGBA                |   1.0        | Legacy Colormaps          | Okay compression quality |
-| BC3n (DXT5nm) |   RGA                 |   1.0        | Legacy Normal Maps        | Uses alpha to reconstruct the vector in R, this hurts the green channel significantly |
-| BC4           |   L/R                 |   1.0        | Heightmaps (Lossy)        | Okay compression quality, you may want R8 or R16 for full detail for PQS |
-| BC5           |   RG                  |   1.0        | Normal Maps               | Good compression quality, use this over BC3n |
-| BC7           |   RGBA                |   1.0        | Colormaps                 | Best compression quality, unsupported on MacOS OpenGL
-| R8            |   R                   |   1.0        | Heightmaps (8b, Lossless)  | Use if you need a uncompressed version of your heightmap for PQS |
-| R16           |   R                   |   2.0        | Heightmaps (16b, Lossless) | Use if you need a uncompressed 16 bit heightmap for PQS, do not use unless you really need to |
+| Format        | Channels          | bytes / px | Usage                      | Notes |
+| :---          | :----:            | :----:     | :----                      | ----- |
+| BC1 (DXT1)    | RGB + 1-bit alpha | 0.5        | Legacy/Low Cost Colormaps  | Relatively bad compression quality when compared to BC7 or BC3 |
+| BC3 (DXT5)    | RGBA              | 1.0        | Legacy Colormaps           | Okay compression quality |
+| BC3n (DXT5nm) | RGA               | 1.0        | Legacy Normal Maps         | Uses alpha to reconstruct the vector in R, this hurts the green channel significantly |
+| BC4           | L/R               | 1.0        | Heightmaps (Lossy)         | Okay compression quality, you may want R8 or R16 for full detail for PQS |
+| BC5           | RG                | 1.0        | Normal Maps                | Good compression quality, use this over BC3n |
+| BC7           | RGBA              | 1.0        | Colormaps                  | Best compression quality, unsupported on MacOS OpenGL
+| R8            | R                 | 1.0        | Heightmaps (8b, Lossless)  | Use if you need a uncompressed version of your heightmap for PQS |
+| R16           | R                 | 2.0        | Heightmaps (16b, Lossless) | Use if you need a uncompressed 16 bit heightmap for PQS, do not use unless you really need to |
 
-> [!CAUTION]
+> [!WARNING]
 > The MacOS version of KSP is locked to an old version of OpenGL which doesn't support `BC7` textures.
 >
-> They will still load, however they'll be parsed as `RGBA32` instead of as proper `BC7`.
+> They will still load, however they'll be loaded as `RGBA32` instead of as proper `BC7`.
 
 ---
 
@@ -121,24 +120,24 @@ Open up command prompt and type in `texconv`, you should see the command argumen
 
 To use texconv, you simply type in `texconv` followed by your command arguments, followed by your texture name, below I've listed out all the command arguments that may be useful:
 
-| Argument        | Usage             |
-| :---          |    :----:           |
-| -m    |   Mipmap levels. Texconv will automatically make mipmaps, to disable mipmaps do -m 0 |
-| -srgb |   Ensures that the texture is treated as srgb on load and on export, use for colormaps
-| -o    |   Specify an output directory, otherwise it'll write to the current location with the same filename except as .dds
-| -y    |   Overwrite on disk, if this isn't set it'll halt if the texture already exists
+| Argument  | Usage           |
+| :---      | :----           |
+| -m        | Mipmap levels. Texconv will automatically make mipmaps, to disable mipmaps do `-m 0` |
+| -srgb     | Ensures that the texture is treated as srgb on load and on export, use for colormaps
+| -o        | Specify an output directory, otherwise it'll write to the current location with the same filename except as .dds
+| -y        | Overwrite on disk, if this isn't set it'll halt if the texture already exists
 | -sepalpha | Generates alpha mipmaps separately from the normal mipmaps. HIGHLY RECOMMENDED IF YOU HAVE ALPHA.
-| -wrap | Texture addressing mode, use -wrap for equirectangular textures
-| -bc x | Maximum compression effort, only valid for BC7
-| -bc u | Equal channel compression effort, use if you're compressing non-color data into channels
-| -f    | Specifies a specific texture compression format
+| -wrap     | Texture addressing mode, use -wrap for equirectangular textures
+| -bc x     | Maximum compression effort, only valid for BC7
+| -bc u     | Equal channel compression effort, use if you're compressing non-color data into channels
+| -f        | Specifies a specific texture compression format
 
 
 Here is a list of all the relevant compression format options:
 
 
 | Format          | Usage                       | Code |
-| :---            |        :----                | --- |
+| :---            | :----                       | ---- |
 | BC1 (DXT1)      | Legacy/Low Cost Colormaps   | BC1_UNORM
 | BC3 (DXT5)      | Legacy Colormaps            | BC3_UNORM
 | BC3n (DXT5nm)   | Legacy Normal Maps          | BC3n or DXT5nm
@@ -155,7 +154,7 @@ Here is a list of all the relevant compression format options:
 
 ### Scripts
 
-![DDS_Flowchart](./Assets/Scripts.png)
+![DDS_Flowchart](./Scripts.png)
 
 Assuming you followed the instructions above, you now have a folder on path you can put scripts into!
 
