@@ -94,7 +94,7 @@ The formats most relevant to KSP are as follows:
 > [!WARNING]
 > The MacOS version of KSP is locked to an old version of OpenGL which doesn't support `BC7` textures.
 >
-> They will still load, however they'll be loaded as `RGBA32` instead of as proper `BC7`.
+> They will still load, however they'll be decompressed to `RGBA32` instead of staying as `BC7`.
 
 ---
 
