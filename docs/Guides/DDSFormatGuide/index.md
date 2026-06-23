@@ -154,7 +154,7 @@ Here is a list of all the relevant compression format options:
 
 ### Scripts
 
-![DDS_Flowchart](./Scripts.png)
+![DDS_Flowchart](./scripts.png)
 
 Assuming you followed the instructions above, you now have a folder on path you can put scripts into!
 
