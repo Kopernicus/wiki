@@ -7,7 +7,7 @@ The `Scatters` node in the LandControl PQSMod defines one or more detail meshes 
 * [Components { }](/Syntax/PQSMods/LandControl/ModularScatter/) (Also known as ModularScatter)
 
 ## Example
-```
+```cfg
 LandControl
 {
   Scatters

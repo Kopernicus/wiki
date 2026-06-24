@@ -5,7 +5,7 @@
 AerialPerspectiveMaterial is a peculiar PQSMod. It appears to have no effect on the vertex height or color of the planet. Instead, it seems to partially configure the material of the planet's surface. It is suspected that the intent of this mod is to update certain shader parameters on every frame so as to correct any atmospheric effects.
 
 ## Example
-```
+```cfg
 PQS
 {
     Mods

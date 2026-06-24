@@ -14,7 +14,7 @@ We shall first see how to enable the material, then how the shader assembles the
 
 Select the material by setting `materialType = OptimizedFastBlend` in the [`PQS { }`](/Syntax/PQS) node. The `Material { }` node then accepts the properties listed below.
 
-```
+```cfg
 PQS
 {
     materialType = OptimizedFastBlend

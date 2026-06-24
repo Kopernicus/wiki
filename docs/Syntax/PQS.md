@@ -9,7 +9,7 @@ The `PQS { }` node describes properties of the Procedural Quad Sphere that makes
 * [Mods { }](/Syntax/PQSMods/)
 
 ## Example
-```
+```cfg
 Body
 {
     PQS

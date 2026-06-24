@@ -21,7 +21,7 @@ By default, `QuadEnhanceCoast` will decrease the detail on ocean quads by 50%, a
 increase the detail on coastline quads by 50%.
 
 ## Example
-```
+```cfg
 PQS
 {
     Mods

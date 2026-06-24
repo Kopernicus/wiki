@@ -3,7 +3,7 @@
 The `ReentryFX { }` subnode is a part of Kopernicus Expansion and allows you to add and customize the body's reentry effects.
 
 ## Example
-```
+```cfg
 // This is the default effect configuration, provided by SnailsAttack.
 Body
 {

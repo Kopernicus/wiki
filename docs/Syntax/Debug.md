@@ -3,7 +3,7 @@
 The `Debug { }` subnode of the `Body { }` node describes the various debugging properties of the body.
 
 ## Example
-```
+```cfg
 Debug
 {
   exportMesh = true
@@ -19,7 +19,7 @@ Debug
 
 ## Notes
 The most common use of the Debug node is to bypass cache files so they don't have to be deleted every time a change is made. For this you want Kopernicus to both regenerate the mesh AND ignore the cache file.
-```
+```cfg
 Debug
 {
   exportMesh = false

@@ -16,7 +16,7 @@ We shall first see how to enable the material, then how the shader lights the su
 
 Select the material by setting `type = AtmosphericStandard` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/) node. The `Material { }` node then accepts the properties listed below.
 
-```
+```cfg
 ScaledVersion
 {
     type = AtmosphericStandard

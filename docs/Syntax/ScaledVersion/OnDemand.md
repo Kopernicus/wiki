@@ -3,7 +3,7 @@
 The `OnDemand { }` subnode of the `ScaledVersion { }` node tells Kopernicus to use OnDemand loading for the textures specified inside the subnode. The fields set inside this subnode are exactly the same as their equivalents in the [`Material { }` subnode](/Syntax/ScaledVersion/Material) of the `ScaledVersion { }` node.
 
 ## Example
-```
+```cfg
 ScaledVersion
 {
   OnDemand

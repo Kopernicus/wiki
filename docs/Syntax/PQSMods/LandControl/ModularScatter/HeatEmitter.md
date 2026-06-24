@@ -2,7 +2,7 @@
 
 The `HeatEmitter` ModularScatter component allows for scatters and their respective body to emit heat depending on the biome of and distance to the scatter.
 
-```
+```cfg
 LandControl
 {
     ...

@@ -5,7 +5,7 @@
 AltitudeAlpha, much like [AerialPerspectiveMaterial](/Syntax/PQSMods/AerialPerspectiveMaterial), is a PQSMod that operates on mesh data for the sake of the terrain shader. While AerialPerspectiveMaterial seems to directly modify material properties, AltitudeAlpha (as its name implies) passes altitude data to the alpha channel of the color data of the mesh vertices. How this is used in the terrain shader is unknown.
 
 ## Example
-```
+```cfg
 PQS
 {
     Mods

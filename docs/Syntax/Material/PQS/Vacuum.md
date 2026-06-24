@@ -11,7 +11,7 @@ We shall first see how to enable the material, then how the shader assembles the
 
 Select the material by setting `materialType = Vacuum` in the [`PQS { }`](/Syntax/PQS) node. The `Material { }` node then accepts the properties listed below.
 
-```
+```cfg
 PQS
 {
     materialType = Vacuum

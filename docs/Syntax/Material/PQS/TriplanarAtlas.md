@@ -17,7 +17,7 @@ We shall first see how to enable the material, then how the shader assembles the
 
 Select the material by setting `materialType = TriplanarAtlas` in the [`PQS { }`](/Syntax/PQS) node. The `Material { }` node then accepts the properties listed below. The albedo and normal arrays are built from `AtlasTex { }` and `NormalTex { }` collection nodes — each line inside is one slice texture, added to the array in order; the slice **index** that ends up at each vertex comes from the PQS build (see Notes), so the order you list them in must match the indices your terrain assigns.
 
-```
+```cfg
 PQS
 {
     materialType = TriplanarAtlas

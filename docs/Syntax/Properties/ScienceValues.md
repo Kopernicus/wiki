@@ -1,7 +1,7 @@
 # ScienceValues
 
 ## Example
-```
+```cfg
 ScienceValues
 {
   landedDataValue = 15

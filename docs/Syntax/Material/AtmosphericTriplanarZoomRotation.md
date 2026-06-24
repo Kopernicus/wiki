@@ -3,7 +3,7 @@
 The `AtmosphericTriplanarZoomRotation` material is used for planetary surfaces with an atmosphere.
 
 ## Example
-```
+```cfg
 Body
 {
     PQS

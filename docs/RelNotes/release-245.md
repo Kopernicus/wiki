@@ -10,7 +10,7 @@ works for any shader, not just stock ones, though you will need to use
 something like Shabby to load the shaders into KSP.
 
 As an example, this makes Minmus' PQS terrain use Unity's internal error shader
-```
+```cfg
 @Kopernicus:AFTER[Kopernicus]
 {
     @Body[Minmus]
@@ -39,7 +39,7 @@ in the `Material` node. This will automatically parse it as the right type
 textures on-demand.
 
 Here's an example
-```
+```cfg
 Material
 {
     shader = MyMod/CustomShader
@@ -53,7 +53,7 @@ Material
 
 For textures, you can also set the offset and scale by using `_TexScale` and
 `_TexOffset` properties, like this:
-```
+```cfg
 Material
 {
     _MainTex = MyMod/PluginData/MyPlanet/MyPlanetColor.dds
@@ -66,7 +66,7 @@ For custom shaders without their own loader (i.e. not stock materials) you can
 also directly set shader keywords by using the `keyword` property. You can
 pass multiple to set multiple keywords. Example:
 
-```
+```cfg
 Material
 {
     shader = MyMod/CustomShader

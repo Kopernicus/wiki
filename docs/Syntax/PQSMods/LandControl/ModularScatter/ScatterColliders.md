@@ -6,7 +6,7 @@ The `ScatterColliders` ModularScatter component allows for a scatter to be colli
 
 This feature can be quite performance heavy if used on a scatter type that has a large amount of objects per quad. Less than 5-20 scatters per quad is fine, higher numbers will start to have a quite noticeable impact.
 
-```
+```cfg
 LandControl
 {
     ...

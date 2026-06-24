@@ -1,6 +1,6 @@
 # Getting Started
 
-```
+```cfg
 Body
 {
 	Welcome!
@@ -25,7 +25,7 @@ However, many of you probably have no idea what all those confusing lines and nu
 So, now you`ve got your config file! The next step is adding everything Kopernicus needs to create a planet.
 
 Step 1: starting
-```
+```cfg
 @Kopernicus:AFTER[Kopernicus]
 {
 	Body
@@ -39,7 +39,7 @@ Now, what everthing does: the `@Kopernicus:AFTER[Kopernicus]` forces KSP to load
 Now, we need to add some basic information.
 
 Step 2: basic info
-```
+```cfg
 @Kopernicus:AFTER[Kopernicus]
 {
 	Body
@@ -54,7 +54,7 @@ The planet's name speaks for itself, it is the name that will be seen in-game. T
 Step 3: Template
 
 It might be a good idea to add the following lines:
-```
+```cfg
 Template
 {
     name = Kerbin
@@ -63,7 +63,7 @@ Template
 }
 ```
 These lines go right after `name` in the `Body { }` node. Your entire config now looks like this:
-```
+```cfg
 @Kopernicus:AFTER[Kopernicus]
 {
 	Body
@@ -93,7 +93,7 @@ As you can see I also added `removeOcean = true`. I think that line is pretty se
 Step 4: Properties
 
 Now we will set the physical properties of your planet.
-```
+```cfg
 Properties //Physical properties
 {
     description = First planet you ever made! You can be proud of yourself.
@@ -126,7 +126,7 @@ Then there`s `timewarpAltitudeLimits`. This entry determines what timewarp speed
 Step 5: Orbit Properties
 
 It`s already starting to look like something, isn`t it? Now, we must specify your planet`s orbit.
-```
+```cfg
 Orbit //Orbit properties
 {
     referenceBody = Sun
@@ -147,7 +147,7 @@ The `color` entry defines the color of your planet`s orbit line in the map view.
 Step 6: ScaledSpace
 
 If you`d load up your planet right now, it wouldn`t work yet. But if it would work, in the map view it would look identical to the templated planet. To combat this we need to update the ScaledSpace with the following lines:
-```
+```cfg
 ScaledVersion // version of your planet that exists in scaledspace
 {
     type = Atmospheric
@@ -185,7 +185,7 @@ Step 7: Atmospheres (optional step)
 If you want to create a planet that has an atmosphere, then do not skip this step. Otherwise, go on.
 
 If you`re still here, add the following lines:
-```
+```cfg
 Atmosphere
 {
     ambientColor = 0.24, 0.25, 0.25, 1

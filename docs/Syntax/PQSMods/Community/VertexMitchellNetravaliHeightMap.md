@@ -39,7 +39,7 @@ The upshot is that parameters B and C essentially control the smoothness of the 
 
 ## Example
 You are allowed to bundle Mitchell-Netravali interpolation with your planet mods. In this case, define it as a substitute for VertexHeightMap:
-```
+```cfg
 PQS
 {
     Mods
@@ -60,7 +60,7 @@ PQS
 ```
 But if you want to leave it up to the user, there is a trick you can do. When KSP imports a code library from a mod, ModuleManager picks up on it. As such, you can define config nodes if and only if a specific mod is installed, or if a specific mod is not installed. Using this, you can define both VertexHeightMap and VertexMitchellNetravaliHeightMap and have ModuleManager select one depending on whether Mitchell-Netravali interpolation is installed.
 
-```
+```cfg
 PQS
 {
     Mods

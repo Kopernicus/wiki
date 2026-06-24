@@ -1,7 +1,7 @@
 # Procedural Gas Giants
 
 ## Example
-```
+```cfg
 ScaledVersion
 {
   ProceduralGasGiant

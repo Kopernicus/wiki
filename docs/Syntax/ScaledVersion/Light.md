@@ -4,7 +4,7 @@ The `Light { }` subnode of the `ScaledVersion { }` node describes the light qual
 
 ## Example
 
-```
+```cfg
 Light
 {
   sunlightColor = 1.0,0.384,0.345,1.0

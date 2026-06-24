@@ -9,7 +9,7 @@ The `Ocean { }` subnode contains all of the information needed to produce an oce
 * Fog { }
 
 ## Example
-```
+```cfg
 Body
 {
     Ocean

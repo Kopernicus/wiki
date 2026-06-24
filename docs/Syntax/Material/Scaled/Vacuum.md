@@ -14,7 +14,7 @@ We shall first see how to enable the material, then how the shader lights the su
 
 Select the vacuum material by setting `type = Vacuum` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/) node. The `Material { }` node then accepts the properties listed below.
 
-```
+```cfg
 ScaledVersion
 {
     type = Vacuum

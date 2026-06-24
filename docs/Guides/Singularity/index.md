@@ -17,7 +17,7 @@ Make a Base kopernicus body just how you would make a Gas giant, but do not incl
   * A Properties node. Now here, make the size 1000 or less. The smaller the better.
   * Orbit nodes are pretty easy to make, use it just like you are making a planet.
   * The ScaledVersion for both wormholes and blackholes are provided:
-    ```
+    ```cfg
     ScaledVersion
     {
         invisible = true
@@ -26,7 +26,7 @@ Make a Base kopernicus body just how you would make a Gas giant, but do not incl
 
 This is an example config for a wormhole as a Kopernicus planet.
 
-```
+```cfg
 @Kopernicus:AFTER[Kopernicus]
 {
     Body
@@ -71,7 +71,7 @@ After that, you need to make these:
 
 After that, you will start the Singularity config with:
 
-```
+```cfg
 Singularity
 {
     // your code will be here
@@ -83,7 +83,7 @@ Which is going to be **Wormhole1.**
 
 So add this inside the Sinularity Config:
 
-```
+```cfg
 Singularity
 {
     Singularity_object
@@ -104,7 +104,7 @@ Singularity
 
 Adding 2 Singularities in 1 Config. it's like this:
 
-```
+```cfg
 Singularity
 {
     Singularity_object
@@ -136,7 +136,7 @@ Singularity
 
 Now let's add a 3rd singularity and it will be a black hole.
 
-```
+```cfg
 Singularity
 {
     // it's honestly the same exact thing. You just swap the names. Now if you are adding a blackhole it's different.

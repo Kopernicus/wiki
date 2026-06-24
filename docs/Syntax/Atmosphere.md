@@ -6,7 +6,7 @@ The `Atmosphere { }` subnode of the `Body { }` node describes the body's atmosph
 * [AtmosphereFromGround { }](/Syntax/AtmosphereFromGround)
 
 ## Example
-```
+```cfg
 Body
 {
 	...

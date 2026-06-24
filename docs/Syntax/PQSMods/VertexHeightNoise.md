@@ -9,7 +9,7 @@ The noise is also additive, meaning that instead of overwriting the terrain alti
 <summary>Show Example</summary>
 
 ## Example
-```
+```cfg
 PQS
 {
   Mods
@@ -64,7 +64,7 @@ It is recommended that you instead use one of the VertexHeightNoiseVertHeightCur
 
 If you want to replicate the effect of VHN with one of the above mods, it is relatively simple to do so.
 
-```
+```cfg
 PQS
 {
     Mods

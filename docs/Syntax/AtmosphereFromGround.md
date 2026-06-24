@@ -3,7 +3,7 @@
 The `AtmosphereFromGround { }` subnode of the `Atmosphere { }` node describes the atmosphere's color when seen in LocalSpace.
 
 ## Example
-```
+```cfg
 Atmosphere
 {
 	AtmosphereFromGround

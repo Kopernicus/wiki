@@ -14,7 +14,7 @@ We shall first see how to enable the material, then how the shader builds and an
 
 Select the star material by setting `type = Star` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/) node. The `Material { }` node then accepts the properties listed below.
 
-```
+```cfg
 ScaledVersion
 {
     type = Star
