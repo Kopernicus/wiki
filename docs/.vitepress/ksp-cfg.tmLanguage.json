@@ -1,0 +1,460 @@
+{
+  "name": "ksp-cfg",
+  "displayName": "KSP Config / ModuleManager",
+  "scopeName": "source.ksp-cfg",
+  "aliases": ["cfg"],
+  "fileTypes": ["cfg"],
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#external-value-access" },
+    { "include": "#paste-node" },
+    { "include": "#node-header" },
+    { "include": "#braces" },
+    { "include": "#numeric-key-line" },
+    { "include": "#value-line" }
+  ],
+  "repository": {
+    "comment": {
+      "match": "(?:^|(?<=\\s))(//).*$",
+      "name": "comment.line.double-slash.ksp-cfg",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.ksp-cfg" }
+      }
+    },
+    "node-header": {
+      "begin": "(?:^|(?<=\\{)|(?<=\\}))\\s*([@%+\\-!&$*]?)\\s*([A-Za-z0-9_][A-Za-z0-9_.+*?\\-]*|\\*)(?=(?:[^=\\[{}]|\\[[^\\]]*\\])*(?:\\{|\\}|$))",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.mm.ksp-cfg" },
+        "2": { "name": "entity.name.tag.ksp-cfg" }
+      },
+      "end": "(?=\\{)|(?=\\})|$",
+      "patterns": [
+        { "include": "#node-suffixes" },
+        { "include": "#node-selector" },
+        { "include": "#name-index" },
+        { "include": "#paste-path" },
+        { "include": "#comment" }
+      ]
+    },
+    "paste-path": {
+      "match": "(/)([A-Za-z0-9_.\\-]+|\\.\\.)",
+      "captures": {
+        "1": { "name": "punctuation.separator.path.ksp-cfg" },
+        "2": { "name": "variable.other.path.ksp-cfg" }
+      }
+    },
+    "paste-node": {
+      "begin": "(?:^|(?<=\\{)|(?<=\\}))\\s*(#)(?=[/A-Za-z]|\\.\\.)",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.paste.ksp-cfg" }
+      },
+      "end": "(?=\\{)|(?=\\})|$",
+      "name": "meta.paste-node.ksp-cfg",
+      "patterns": [
+        { "include": "#node-suffixes" },
+        {
+          "match": "/",
+          "name": "punctuation.separator.path.ksp-cfg"
+        },
+        {
+          "match": "\\.\\.",
+          "name": "keyword.operator.parent.ksp-cfg"
+        },
+        {
+          "match": "[A-Za-z0-9_.\\-]+",
+          "name": "variable.other.path.ksp-cfg"
+        },
+        { "include": "#comment" }
+      ]
+    },
+    "node-suffixes": {
+      "patterns": [
+        {
+          "begin": "(:(?i:HAS))\\s*(\\[)",
+          "beginCaptures": {
+            "1": { "name": "keyword.control.has.ksp-cfg" },
+            "2": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+          },
+          "end": "(\\])",
+          "endCaptures": {
+            "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+          },
+          "name": "meta.selector.has.ksp-cfg",
+          "patterns": [
+            { "include": "#has-body" }
+          ]
+        },
+        {
+          "begin": "(:(?i:NEEDS))\\s*(\\[)",
+          "beginCaptures": {
+            "1": { "name": "keyword.control.needs.ksp-cfg" },
+            "2": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+          },
+          "end": "(\\])",
+          "endCaptures": {
+            "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+          },
+          "name": "meta.selector.needs.ksp-cfg",
+          "patterns": [
+            { "include": "#needs-body" }
+          ]
+        },
+        {
+          "begin": "(:(?i:FOR|BEFORE|AFTER|LAST))\\s*(\\[)",
+          "beginCaptures": {
+            "1": { "name": "keyword.control.ordering.ksp-cfg" },
+            "2": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+          },
+          "end": "(\\])",
+          "endCaptures": {
+            "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+          },
+          "name": "meta.selector.ordering.ksp-cfg",
+          "patterns": [
+            {
+              "match": "[A-Za-z0-9/_?.\\-]+",
+              "name": "support.function.modname.ksp-cfg"
+            }
+          ]
+        },
+        {
+          "match": ":(?i:FIRST|FINAL)\\b",
+          "name": "keyword.control.ordering.ksp-cfg"
+        }
+      ]
+    },
+    "node-selector": {
+      "begin": "(\\[)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+      },
+      "end": "(\\])",
+      "endCaptures": {
+        "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+      },
+      "name": "meta.selector.name.ksp-cfg",
+      "patterns": [
+        { "include": "#wildcards" },
+        {
+          "match": ",",
+          "name": "punctuation.separator.ksp-cfg"
+        },
+        {
+          "match": "[A-Za-z0-9/_.\\-+]+",
+          "name": "variable.parameter.selector.ksp-cfg"
+        }
+      ]
+    },
+    "has-body": {
+      "patterns": [
+        { "include": "#has-nested" },
+        {
+          "match": "([#~])\\s*([A-Za-z0-9_.\\-*?]+)",
+          "captures": {
+            "1": { "name": "keyword.operator.has.ksp-cfg" },
+            "2": { "name": "variable.parameter.has-key.ksp-cfg" }
+          }
+        },
+        {
+          "match": "([@!])\\s*([A-Za-z0-9_.\\-*?]+)",
+          "captures": {
+            "1": { "name": "keyword.operator.has.ksp-cfg" },
+            "2": { "name": "entity.name.tag.has-node.ksp-cfg" }
+          }
+        },
+        { "include": "#has-value-brackets" },
+        {
+          "match": "[&,]",
+          "name": "keyword.operator.logical.ksp-cfg"
+        }
+      ]
+    },
+    "has-nested": {
+      "begin": "(:(?i:HAS))\\s*(\\[)",
+      "beginCaptures": {
+        "1": { "name": "keyword.control.has.ksp-cfg" },
+        "2": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+      },
+      "end": "(\\])",
+      "endCaptures": {
+        "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+      },
+      "name": "meta.selector.has.nested.ksp-cfg",
+      "patterns": [
+        { "include": "#has-body" }
+      ]
+    },
+    "has-value-brackets": {
+      "begin": "(\\[)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+      },
+      "end": "(\\])",
+      "endCaptures": {
+        "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+      },
+      "patterns": [
+        { "include": "#wildcards" },
+        { "include": "#number" },
+        {
+          "match": "[A-Za-z0-9/_.\\-+]+",
+          "name": "string.unquoted.has-value.ksp-cfg"
+        }
+      ]
+    },
+    "needs-body": {
+      "patterns": [
+        {
+          "match": "[&|,]",
+          "name": "keyword.operator.logical.ksp-cfg"
+        },
+        {
+          "match": "!",
+          "name": "keyword.operator.logical.not.ksp-cfg"
+        },
+        {
+          "match": "[A-Za-z0-9/_?.\\-]+",
+          "name": "support.function.modname.ksp-cfg"
+        }
+      ]
+    },
+    "name-index": {
+      "match": "(,)(\\*|-?[0-9]+)",
+      "captures": {
+        "1": { "name": "punctuation.separator.index.ksp-cfg" },
+        "2": { "name": "constant.numeric.index.ksp-cfg" }
+      }
+    },
+    "braces": {
+      "begin": "\\{",
+      "beginCaptures": {
+        "0": { "name": "punctuation.section.braces.begin.ksp-cfg" }
+      },
+      "end": "\\}",
+      "endCaptures": {
+        "0": { "name": "punctuation.section.braces.end.ksp-cfg" }
+      },
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#external-value-access" },
+        { "include": "#paste-node" },
+        { "include": "#node-header" },
+        { "include": "#braces" },
+        { "include": "#numeric-key-line" },
+        { "include": "#value-line" }
+      ]
+    },
+    "wildcards": {
+      "match": "[*?]",
+      "name": "keyword.operator.wildcard.ksp-cfg"
+    },
+    "numeric-key-line": {
+      "begin": "(?:^|(?<=\\{)|(?<=\\}))\\s*([-+]?(?:[0-9]+\\.?[0-9]*|\\.[0-9]+)(?:[eE][-+]?[0-9]+)?)(?=\\s*=)",
+      "beginCaptures": {
+        "1": { "name": "constant.numeric.ksp-cfg" }
+      },
+      "end": "(?=\\})|$",
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#assignment" }
+      ]
+    },
+    "value-line": {
+      "begin": "(?:^|(?<=\\{)|(?<=\\}))\\s*([@%+\\-!&$|]?)\\s*(\\*?[A-Za-z0-9_#][A-Za-z0-9_.#?+*\\-]*)",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.mm.ksp-cfg" },
+        "2": { "name": "support.type.property-name.ksp-cfg" }
+      },
+      "end": "(?=\\})|$",
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#value-key-decorations" },
+        { "include": "#assignment" }
+      ]
+    },
+    "external-value-access": {
+      "begin": "(?:^|(?<=\\{)|(?<=\\}))\\s*(\\*)(?=[@/.A-Za-z])",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.external.ksp-cfg" }
+      },
+      "end": "(?=\\})|$",
+      "name": "meta.external-value-access.ksp-cfg",
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#assignment" },
+        {
+          "match": "@",
+          "name": "keyword.operator.root.ksp-cfg"
+        },
+        {
+          "match": "\\.\\.",
+          "name": "keyword.operator.parent.ksp-cfg"
+        },
+        {
+          "match": "/",
+          "name": "punctuation.separator.path.ksp-cfg"
+        },
+        { "include": "#node-suffixes" },
+        { "include": "#node-selector" },
+        { "include": "#name-index" },
+        {
+          "match": "[A-Za-z0-9_.\\-]+",
+          "name": "variable.other.path.ksp-cfg"
+        }
+      ]
+    },
+    "value-key-decorations": {
+      "patterns": [
+        {
+          "match": "[*?](?!=)",
+          "name": "keyword.operator.wildcard.ksp-cfg"
+        },
+        { "include": "#node-suffixes" },
+        { "include": "#array-index" },
+        { "include": "#node-selector" },
+        { "include": "#name-index" },
+        { "include": "#external-path" }
+      ]
+    },
+    "external-path": {
+      "match": "(/)([A-Za-z0-9_.\\-]+|\\.\\.)",
+      "captures": {
+        "1": { "name": "punctuation.separator.path.ksp-cfg" },
+        "2": { "name": "variable.other.path.ksp-cfg" }
+      }
+    },
+    "array-index": {
+      "begin": "(\\[)(?=[\\s\\d*,.+\\-]*\\])",
+      "beginCaptures": {
+        "1": { "name": "punctuation.section.brackets.begin.ksp-cfg" }
+      },
+      "end": "(\\])",
+      "endCaptures": {
+        "1": { "name": "punctuation.section.brackets.end.ksp-cfg" }
+      },
+      "name": "meta.array-index.ksp-cfg",
+      "patterns": [
+        { "include": "#wildcards" },
+        { "include": "#number" },
+        {
+          "match": ",",
+          "name": "punctuation.separator.ksp-cfg"
+        }
+      ]
+    },
+    "assignment": {
+      "begin": "(\\^=|\\!=|\\+=|\\-=|\\*=|/=|=)",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.assignment.ksp-cfg" }
+      },
+      "end": "(?=\\s//)|(?=\\})|$",
+      "patterns": [
+        { "include": "#regex-replace" },
+        { "include": "#value" }
+      ]
+    },
+    "regex-replace": {
+      "match": "(?<=\\^=)\\s*(\\S)[^}]*?(?=\\s//|\\}|$)",
+      "name": "string.regexp.ksp-cfg",
+      "captures": {
+        "1": { "name": "punctuation.definition.separator.regexp.ksp-cfg" }
+      }
+    },
+    "value": {
+      "patterns": [
+        { "include": "#mm-value-ref" },
+        { "include": "#rgba-function" },
+        { "include": "#number" },
+        { "include": "#boolean" },
+        { "include": "#enum" },
+        { "include": "#localization-tag" },
+        { "include": "#file-path" },
+        {
+          "match": ",",
+          "name": "punctuation.separator.ksp-cfg"
+        },
+        {
+          "match": "[^\\s,}]+",
+          "name": "string.unquoted.ksp-cfg"
+        }
+      ]
+    },
+    "mm-value-ref": {
+      "begin": "(#)(\\$)",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.variable.ksp-cfg" },
+        "2": { "name": "punctuation.definition.variable.begin.ksp-cfg" }
+      },
+      "end": "(\\$)",
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.variable.end.ksp-cfg" }
+      },
+      "name": "variable.other.reference.ksp-cfg",
+      "patterns": [
+        {
+          "match": "@",
+          "name": "keyword.operator.root.ksp-cfg"
+        },
+        {
+          "match": "\\.\\.",
+          "name": "keyword.operator.parent.ksp-cfg"
+        },
+        {
+          "match": "/",
+          "name": "punctuation.separator.path.ksp-cfg"
+        },
+        {
+          "match": "(,)(\\*|-?[0-9]+)",
+          "captures": {
+            "1": { "name": "punctuation.separator.index.ksp-cfg" },
+            "2": { "name": "constant.numeric.index.ksp-cfg" }
+          }
+        },
+        { "include": "#node-selector" },
+        { "include": "#array-index" },
+        {
+          "match": "[A-Za-z0-9_.\\-]+",
+          "name": "variable.other.reference.ksp-cfg"
+        }
+      ]
+    },
+    "rgba-function": {
+      "begin": "(?i:(RGBA))\\s*(\\()",
+      "beginCaptures": {
+        "1": { "name": "support.function.rgba.ksp-cfg" },
+        "2": { "name": "punctuation.section.parens.begin.ksp-cfg" }
+      },
+      "end": "(\\))",
+      "endCaptures": {
+        "1": { "name": "punctuation.section.parens.end.ksp-cfg" }
+      },
+      "patterns": [
+        { "include": "#number" },
+        {
+          "match": ",",
+          "name": "punctuation.separator.ksp-cfg"
+        }
+      ]
+    },
+    "number": {
+      "match": "(?<![A-Za-z0-9_./])[-+]?(?:[0-9]+\\.?[0-9]*|\\.[0-9]+)(?:[eE][-+]?[0-9]+)?(?![A-Za-z0-9_/])",
+      "name": "constant.numeric.ksp-cfg"
+    },
+    "boolean": {
+      "match": "(?<![\\w./])(?i:true|false)(?![\\w./])",
+      "name": "constant.language.boolean.ksp-cfg"
+    },
+    "enum": {
+      "match": "(?<![\\w./])(?:Perlin|RiggedMultifractal|Billow|Atmospheric|AtmosphericStandard|Vacuum|GasGiant|Scaled|OFF|REDRAW_ONLY|REDRAW_AND_FOLLOW|REDRAW_AND_RECALCULATE|OBJ_PE_AP|OBJ|Opaque|Cutout|Fade|Transparent|MetallicAlpha|AlbedoAlpha)(?![\\w./])",
+      "name": "constant.language.enum.ksp-cfg"
+    },
+    "localization-tag": {
+      "match": "#[A-Za-z0-9_]+",
+      "name": "constant.other.localization.ksp-cfg"
+    },
+    "file-path": {
+      "match": "[A-Za-z0-9_.\\-]+(?:/[A-Za-z0-9_.\\-]+)+/?",
+      "name": "string.unquoted.path.ksp-cfg"
+    }
+  }
+}

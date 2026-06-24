@@ -9,7 +9,7 @@ In order to work with the converter the textures:
 
  
 ## Example
-```
+```cfg
 PQS
 {
   Mods

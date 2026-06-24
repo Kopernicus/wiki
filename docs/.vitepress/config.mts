@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import kspCfgGrammar from './ksp-cfg.tmLanguage.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,6 +9,11 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/icon.png' }],
   ],
+
+  markdown: {
+    // Register our custom shiki grammar for KSP config files.
+    languages: [kspCfgGrammar as any],
+  },
 
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {

@@ -15,7 +15,7 @@ The bands scroll and swirl over time. We shall first see how to enable the mater
 
 Select the gas giant material by setting `type = GasGiant` in the [`ScaledVersion { }`](/Syntax/ScaledVersion/Material) node. The `Material { }` node then accepts the properties listed below.
 
-```
+```cfg
 ScaledVersion
 {
     type = GasGiant
@@ -151,7 +151,7 @@ Surface lighting uses a standard PBR specular workflow, and a view-angle rim emi
 | `rimColorRampScale` / `rimColorRampOffset` | Vector2 | Tiling and offset of the rim colour ramp. |
 | `Gradient` | Gradient | The `rimColorRamp`, but defined explicitly as a gradient instead of a texture. Works the same way as the [atmospheric material's `Gradient`](/Syntax/ScaledVersion/Material): the left value is the position from 0 (lit side) to 1 (dark side), and the right value is the colour there. |
 
-```
+```cfg
 Material
 {
     specColor = 0.5, 0.5, 0.5, 1

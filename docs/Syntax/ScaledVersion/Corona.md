@@ -6,7 +6,7 @@ The `Coronas { }` node is a wrapper node for separate `Corona { }` subnodes that
 * `Material { }` (parameters below)
 
 ## Example
-```
+```cfg
 ScaledVersion
 {
     Coronas

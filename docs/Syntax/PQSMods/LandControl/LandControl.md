@@ -9,7 +9,7 @@ The `LandControl` PQSMod allows defining regions known as LandClasses, within wh
 * [LandClasses { }](/Syntax/PQSMods/LandControl/LandClasses) = Specifies land regions and their customizations
 
 ## Example
-```
+```cfg
 PQS
 {
   Mods

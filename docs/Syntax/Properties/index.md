@@ -7,7 +7,7 @@ The `Properties { }` node describes the body itself, and is a subnode of `Body {
 * [ScienceValues](/Syntax/Properties/ScienceValues)
 
 ## Example
-```
+```cfg
 Properties
 {
   description = A big ol' round blueberry. I wonder if it's sweet and juicy?

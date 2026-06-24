@@ -5,7 +5,7 @@ The `CometTails { }` subnode is a part of Kopernicus Expansion and allows you to
 ## Example
 
 This is the default configuration, except for the `type`.
-```
+```cfg
 Body
 {
   CometTails

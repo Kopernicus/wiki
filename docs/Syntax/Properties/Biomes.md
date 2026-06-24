@@ -3,7 +3,7 @@
 The `Biomes { }` node is a subnode of `Properties { }` and contains several `Biome { }` subnodes, each of which describes a biome. Each biome section contains its own name, corresponding color, and science multiplier.
 
 ## Example
-```
+```cfg
 Biomes
 {
   Biome

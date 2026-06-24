@@ -9,7 +9,7 @@ Similarly to HeightColorMap, the LandClasses are limited by altitude, but unlike
 * Scatters { } = Defines the terrain scatters that may spawn in this LandClass, and the prominence of each.
 
 ## Example
-```
+```cfg
 LandControl
 {
   LandClasses
@@ -167,7 +167,7 @@ LandClasses may specify which terrain scatters may spawn in the area that they h
 
 Each `Value { }` node references a terrain scatter from the main `Scatters { }` (as defined under in the LandControl node) by name. Example:
 
-```
+```cfg
 LandControl
 {
     // The 'main' scatters node. This DEFINES the terrain scatters.

@@ -189,7 +189,7 @@ struct DetailPass
 Notice: the above shader code is not optimized and is written to enhance readability. In the actual shader the effect is implemented so as to take advantage of SIMD/vectorized arithmetic.
 
 ## Example
-```
+```cfg
 Rings
 {
 	Ring

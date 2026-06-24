@@ -27,7 +27,7 @@ color render_pixel(vector2 texture_coordinate, vector3 surface_normal)
 ```
 
 ### Example
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1
@@ -69,7 +69,7 @@ color render_pixel(vector2 texture_coordinate, vector3 surface_normal)
 ```
 
 ### Example
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1
@@ -111,7 +111,7 @@ color render_pixel(vector2 texture_coordinate, vector3 surface_normal)
 ```
 
 ### Example
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1
@@ -125,7 +125,7 @@ Material
 ```
 
 ## DiffuseWrapped
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1
@@ -174,7 +174,7 @@ color render_pixel(vector2 texture_coordinate, vector3 surface_normal)
 ```
 
 ### Example
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1
@@ -186,7 +186,7 @@ Material
 ```
 
 ## AerialCutout
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1
@@ -278,7 +278,7 @@ color render_pixel(vector2 uv_channel_0, vector2 uv_channel_1, vector3 surface_n
 }
 ```
 
-```
+```cfg
 Material
 {
 	color = Color, default is 1,1,1,1

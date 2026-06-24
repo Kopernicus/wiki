@@ -6,7 +6,7 @@ The `VertexHeightNoiseVertHeightCurve2` PQSMod is one of several mods in the Hei
 It is considered by some to be a much more customizable and far stabler alternative to [`VertexHeightNoise`](/Syntax/PQSMods/VertexHeightNoise).
 
 To replicate the effects of `VertexHeightNoise`, simply set the `ridgedSub` and `simplex` keys to 0 and set the `simplexCurve` to 
-```
+```cfg
 simplexCurve
 {
   key = 0 1
@@ -15,7 +15,7 @@ simplexCurve
 ```
 
 ## Example
-```
+```cfg
 PQS
 {
     Mods
@@ -76,7 +76,7 @@ NOTE: `___` is substituted for "Add" and "Sub." "Add" creates a "base layer" of 
 
 If you want to replicate the effect of VertexHeightNoise with this mod, it is relatively simple to do so.
 
-```
+```cfg
 PQS
 {
     Mods

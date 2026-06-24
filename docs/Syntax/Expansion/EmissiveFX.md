@@ -3,7 +3,7 @@
 The EmissiveFX portion of Kopernicus Expansion allows you to configure an emission, or glow, for the specified body.
 
 ## Example
-```
+```cfg
 Body
 {
   ScaledVersion

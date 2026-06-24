@@ -14,7 +14,7 @@ We shall first see how to enable the material, then how the shader assembles the
 
 You do not select this material with a type keyword. Inside the body's [`Ocean { }`](/Syntax/Ocean) node, the `Material { }` block *is* the Ocean Surface Quad material — Kopernicus binds it to the ocean PQS automatically, defaulting the shader to `Terrain/PQS/Ocean Surface Quad`. (A `shader = ...` line inside `Material { }` is honoured if you want to force a specific shader, but it defaults to this one, so it is normally omitted.) Just provide the properties below.
 
-```
+```cfg
 Ocean
 {
     ocean = True

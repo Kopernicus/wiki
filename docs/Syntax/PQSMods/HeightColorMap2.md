@@ -8,7 +8,7 @@ The `HeightColorMap2` PQSMod is a mod that colors the terrain based on altitude 
 * `LandClasses { }` (defined below)
 
 ## Example
-```
+```cfg
 PQS
 {
     Mods

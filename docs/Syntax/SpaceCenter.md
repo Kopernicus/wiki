@@ -7,7 +7,7 @@ The `SpaceCenter { }` node describes the location and altitude of the KSC and th
 * `Material { }` link to grassamaterial
 ```
 ## Example
-```
+```cfg
 @Kopernicus
 {
     Body

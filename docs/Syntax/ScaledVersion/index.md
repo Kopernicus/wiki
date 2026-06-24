@@ -19,7 +19,7 @@ The types you can use are:
 - `Custom` - this one needs you to provide your own shader.
 
 ## Example
-```
+```cfg
 ScaledVersion
 {
   type = Vacuum

@@ -3,7 +3,7 @@
 The `Wormhole { }` node of the Kopernicus Expansion provides the ability to transform bodies into wormholes to other bodies.
 
 ## Example
-```
+```cfg
 Body
 {
   Wormhole
