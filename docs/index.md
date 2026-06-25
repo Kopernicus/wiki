@@ -7,12 +7,13 @@
 
 ## Guides
 * [Getting Started](/Guides/GettingStarted)
-* [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
-* [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
-* [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
+* [DDS Formats](/Guides/DDSFormatGuide/)
 * [Singularity](/Guides/Singularity/)
 
 ## External Resources
+* [Kopernicus Asteroids - OhioBob](https://www.dropbox.com/s/lag8opde3zimjqc/KopernicusAsteroids.pdf?dl=0)
+* [VoronoiCraters PQSMod - OhioBob](https://www.dropbox.com/s/fnd0bblv5otqlhc/KSP_VoronoiCraters.pdf?dl=0)
+* [Planetary Texturing Guide Repository](https://forum.kerbalspaceprogram.com/index.php?/topic/165285-planetary-texturing-guide-repository/)
 * [List of BUILTIN Textures for 1.8](https://github.com/GER-Space/Kerbal-Konstructs/wiki/Builtin-Textures-for-KSP-1.8)
 * [KSPCurveBuilder - DGerry](https://forum.kerbalspaceprogram.com/topic/229626-kspcurvebuilder-v200-rc1-visualize-create-and-edit-float-curves-for-ksp/)
 
