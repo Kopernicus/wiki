@@ -85,7 +85,7 @@ The formats most relevant to KSP are as follows:
 | BC1 (DXT1)    | RGB + 1-bit alpha | 0.5        | Legacy/Low Cost Colormaps  | Relatively bad compression quality when compared to BC7 or BC3 |
 | BC3 (DXT5)    | RGBA              | 1.0        | Legacy Colormaps           | Okay compression quality |
 | BC3n (DXT5nm) | RGA               | 1.0        | Legacy Normal Maps         | Uses alpha to reconstruct the vector in R, this hurts the green channel significantly |
-| BC4           | L/R               | 1.0        | Heightmaps (Lossy)         | Okay compression quality, you may want R8 or R16 for full detail for PQS |
+| BC4           | L/R               | 0.5        | Heightmaps (Lossy)         | Okay compression quality, you may want R8 or R16 for full detail for PQS |
 | BC5           | RG                | 1.0        | Normal Maps                | Good compression quality, use this over BC3n |
 | BC7           | RGBA              | 1.0        | Colormaps                  | Best compression quality, unsupported on MacOS OpenGL
 | R8            | R                 | 1.0        | Heightmaps (8b, Lossless)  | Use if you need a uncompressed version of your heightmap for PQS |
