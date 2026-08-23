@@ -34,6 +34,7 @@ Note: **name** is the name you should be using in your configs. **Internal Name*
 |[VertexSimplexHeight](/Syntax/PQSMods/VertexSimplexHeight)|PQSMod_VertexSimplexHeight|
 |[VertexSimplexHeightAbsolute](/Syntax/PQSMods/VertexSimplexHeightAbsolute)|PQSMod_VertexSimplexHeightAbsolute|
 |[VertexSimplexNoiseColor](/Syntax/PQSMods/VertexSimplexNoiseColor)|PQSMod_VertexSimplexNoiseColor|
+|[City](/Syntax/PQSMods/City)|PQSMod_City|
 
 ## Community PQSMods
 
