@@ -22,6 +22,7 @@ Note: **name** is the name you should be using in your configs. **Internal Name*
 |----|-------------|
 |[AerialPerspectiveMaterial](/Syntax/PQSMods/AerialPerspectiveMaterial)|PQSMod_AerialPerspectiveMaterial|
 |[AltitudeAlpha](/Syntax/PQSMods/AltitudeAlpha)|PQSMod_AltitudeAlpha|
+|[City](/Syntax/PQSMods/City)|PQSMod_City|
 |[HeightColorMap](/Syntax/PQSMods/HeightColorMap)|PQSMod_HeightColorMap|
 |[HeightColorMap2](/Syntax/PQSMods/HeightColorMap2)|PQSMod_HeightColorMap2|
 |[LandControl](/Syntax/PQSMods/LandControl/)|PQSLandControl|
@@ -34,6 +35,7 @@ Note: **name** is the name you should be using in your configs. **Internal Name*
 |[VertexSimplexHeight](/Syntax/PQSMods/VertexSimplexHeight)|PQSMod_VertexSimplexHeight|
 |[VertexSimplexHeightAbsolute](/Syntax/PQSMods/VertexSimplexHeightAbsolute)|PQSMod_VertexSimplexHeightAbsolute|
 |[VertexSimplexNoiseColor](/Syntax/PQSMods/VertexSimplexNoiseColor)|PQSMod_VertexSimplexNoiseColor|
+
 
 ## Community PQSMods
 
