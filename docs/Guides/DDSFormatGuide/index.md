@@ -122,7 +122,7 @@ To use texconv, you simply type in `texconv` followed by your command arguments,
 
 | Argument  | Usage           |
 | :---      | :----           |
-| -m        | Mipmap levels. Texconv will automatically make mipmaps, to disable mipmaps do `-m 0` |
+| -m        | Mipmap levels. Texconv will automatically make mipmaps, to disable mipmaps do `-m 1` |
 | -srgb     | Ensures that the texture is treated as srgb on load and on export, use for colormaps
 | -o        | Specify an output directory, otherwise it'll write to the current location with the same filename except as .dds
 | -y        | Overwrite on disk, if this isn't set it'll halt if the texture already exists
